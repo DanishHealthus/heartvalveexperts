@@ -2,9 +2,11 @@ import React from "react";
 import RelatedBlog from "@/component/Blog/RelatedBlog";
 import CardiacComparison from "@/component/Blog/CardiacComparison";
 import BlogBreadCrumb from "@/component/BlogBreadCrumb";
-import { notFound } from "next/navigation";
+
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
+
+/* ================= TYPES ================= */
 
 interface FAQItem {
   question: string;
@@ -27,6 +29,8 @@ interface BlogPost {
   faq_list?: FAQItem[];
 }
 
+/* ================= API HELPERS ================= */
+
 async function getBlogData(slug: string): Promise<BlogPost | null> {
   try {
     const res = await fetch(
@@ -38,24 +42,24 @@ async function getBlogData(slug: string): Promise<BlogPost | null> {
 
     const data = await res.json();
 
-    // ✅ CASE 1: API returns array
+    // CASE 1: API returns array
     if (Array.isArray(data)) {
-      return data.length > 0 ? data[0] : null;
+      return data.length ? data[0] : null;
     }
 
-    // ✅ CASE 2: API returns { posts: [] }
-    if (data?.posts && Array.isArray(data.posts)) {
-      return data.posts.length > 0 ? data.posts[0] : null;
+    // CASE 2: API returns { posts: [] }
+    if (Array.isArray(data?.posts)) {
+      return data.posts.length ? data.posts[0] : null;
     }
 
-    // ✅ CASE 3: API returns single object
+    // CASE 3: API returns single object
     if (data?.slug) {
       return data;
     }
 
     return null;
-  } catch (err) {
-    console.error("Error fetching blog:", err);
+  } catch (error) {
+    console.error("Blog fetch error:", error);
     return null;
   }
 }
@@ -69,45 +73,46 @@ async function getBlogs() {
 
     if (!res.ok) return [];
     const data = await res.json();
-    return data.posts || [];
+    return data?.posts || [];
   } catch (error) {
-    console.error("Error fetching related blogs:", error);
+    console.error("Related blogs error:", error);
     return [];
   }
 }
+
+/* ================= SEO METADATA ================= */
 
 export async function generateMetadata({
   params,
 }: {
   params: { slug: string };
 }) {
-  const { slug } = params;
-  const blog = await getBlogData(slug);  
+  const blog = await getBlogData(params.slug);
 
-if (!blog) {
+  if (!blog) {
     return {
       title: "Blog Not Found | Heart Valve Experts",
       description: "The requested blog does not exist.",
-      robots: {
-        index: false,
-        follow: false,
-      },
+      robots: { index: false, follow: false },
     };
   }
+
   return {
     title: blog.meta_title || blog.title,
     description:
       blog.meta_description ||
       blog.short_description ||
       "Heart Valve Experts – Trusted cardiac specialists.",
-    alternates: { canonical: `https://heartvalveexperts.com/blog/${slug}` },
+    alternates: {
+      canonical: `https://heartvalveexperts.com/blog/${blog.slug}`,
+    },
     openGraph: {
       title: blog.meta_title || blog.title,
       description:
         blog.meta_description ||
         blog.short_description ||
         "Heart Valve Experts – Trusted cardiac specialists.",
-      url: `https://heartvalveexperts.com/blog/${slug}`,
+      url: `https://heartvalveexperts.com/blog/${blog.slug}`,
       type: "article",
       images: [
         {
@@ -121,25 +126,32 @@ if (!blog) {
   };
 }
 
+/* ================= PAGE ================= */
+
 export default async function SingleBlogPage({
   params,
 }: {
   params: { slug: string };
 }) {
-  const { slug } = params;
-  const blog = await getBlogData(slug);
+  const blog = await getBlogData(params.slug);
 
- if (!blog) {
-  notFound();
-}
+  // 🚫 DO NOT USE notFound() (causes 404 bug)
+  if (!blog) {
+    return (
+      <div className="py-20 text-center">
+        <h1 className="text-2xl font-semibold">Blog not available</h1>
+        <p className="text-gray-500 mt-2">
+          This blog may be unpublished or temporarily unavailable.
+        </p>
+      </div>
+    );
+  }
+
+  /* ================= SCHEMA ================= */
 
   const blogSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `https://heartvalveexperts.com/blog/${blog.slug}`,
-    },
     headline: blog.title,
     description:
       blog.meta_description ||
@@ -158,60 +170,30 @@ export default async function SingleBlogPage({
         url: "https://heartvalveexperts.com/images/homeimages/logo.png",
       },
     },
-    datePublished: blog.date || new Date().toISOString(),
-    dateModified: blog.updated_at || blog.date || new Date().toISOString(),
+    datePublished: blog.date,
+    dateModified: blog.updated_at || blog.date,
   };
- async function extractFAQsFromHTML(html: string) {
-  if (!html) return [];
-
-  const { JSDOM } = await import("jsdom");
-
-  const dom = new JSDOM(html);
-  const document = dom.window.document;
-
-  const faqSections = document.querySelectorAll(".schema-faq-section");
-  const faqList: { question: string; answer: string }[] = [];
-
-  faqSections.forEach((section) => {
-    const q = section.querySelector(".schema-faq-question")?.textContent?.trim();
-    const a = section.querySelector(".schema-faq-answer")?.textContent?.trim();
-    if (q && a) faqList.push({ question: q, answer: a });
-  });
-
-  return faqList;
-}
-
-
-let extractedFaqs: FAQItem[] = [];
-
-try {
-  extractedFaqs = await extractFAQsFromHTML(blog.long_description || "");
-} catch (e) {
-  console.error("FAQ parse error", e);
-}
 
   const faqSchema =
-    (blog.faq_list && blog.faq_list.length > 0
-      ? blog.faq_list
-      : extractedFaqs
-    ).length > 0
+    blog.faq_list && blog.faq_list.length
       ? {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: (blog.faq_list && blog.faq_list.length > 0
-          ? blog.faq_list
-          : extractedFaqs
-        ).map((faq) => ({
-          "@type": "Question",
-          name: faq.question,
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: faq.answer,
-          },
-        })),
-      }
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: blog.faq_list.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: faq.answer,
+            },
+          })),
+        }
       : null;
-const posts = await getBlogs();
+
+  const posts = await getBlogs();
+
+  /* ================= RENDER ================= */
+
   return (
     <>
       <script
@@ -226,7 +208,12 @@ const posts = await getBlogs();
         />
       )}
 
-      <BlogBreadCrumb title={blog.title} subpage="true" image="/images/contact.webp" />
+      <BlogBreadCrumb
+        title={blog.title}
+        subpage="true"
+        image="/images/contact.webp"
+      />
+
       <CardiacComparison blog={blog} />
       <RelatedBlog posts={posts} />
     </>
