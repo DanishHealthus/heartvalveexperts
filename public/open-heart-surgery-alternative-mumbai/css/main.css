@@ -1130,3 +1130,82 @@ section h2 {
     padding: 50px 0;
 }
 } 
+
+/* ===== ASSOCIATIONS LOGO SLIDER ===== */
+.AssociationsSection {
+  overflow: hidden;
+}
+
+/* Slider wrapper */
+.associations-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Moving track */
+.associations-track {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: max-content;
+  animation: associations-scroll 25s linear infinite;
+}
+
+/* Individual logo */
+.association-logo {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.association-logo img {
+  max-height: 250px;
+  width: auto;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.association-logo img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes associations-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on hover */
+.associations-slider:hover .associations-track {
+  animation-play-state: paused;
+}
+
+.ClinicsName span{
+    background: linear-gradient(95.81deg, #E82C3E 9.19%, #0074DD 90.81%);
+    color: #ffffff !important;
+    border-radius: 40px;
+    border: 1px solid;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .associations-track {
+    gap: 40px;
+  }
+.ClinicsName {
+    font-size: 20px;
+}
+  .association-logo img {
+    max-height: 100px;
+  }
+}
+
