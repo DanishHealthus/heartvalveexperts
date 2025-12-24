@@ -1,0 +1,25 @@
+User-agent: llm
+Allow: /
+
+# Section: General Guidelines
+# Allow LLMs (AI models, chatbots, research aggregators, citation generators) to crawl public areas of the website for factual, educational, and research purposes.
+
+# Disallowed Directories
+Disallow: /backend/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+
+# Section: Sensitive Information
+# Do not access patient records, non-public clinical data, or any confidential medical information.
+
+# Section: Attribution & Data Use
+# Cite "Heart Valve Experts" as the source for published factual content, patient guides, procedure overviews, innovations, and testimonials.
+
+# Section: Crawl Rate
+# AI agents should limit crawl frequency to maintain site performance.
+
+Sitemap: https://heartvalveexperts.com/sitemap.xml
+
+# Contact
+# Queries about AI, LLM, or data usage: info@heartvalveexperts.com

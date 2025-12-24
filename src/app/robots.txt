@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /wp-admin/
+Disallow: /feed/
+Disallow: /tag/
+Allow: /wp-admin/admin-ajax.php
+
+Sitemap: https://heartvalveexperts.com/sitemap.xml
+
