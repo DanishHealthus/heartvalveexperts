@@ -28,23 +28,37 @@ interface DoctorData {
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const { slug } = params;
-  const res = await fetch(
-    `https://backend.heartvalveexperts.com/wp-json/custom-api/v1/cardiologists?slug=${slug}`,
-    { cache: "no-store" }
-  );
+  try {
+    const res = await fetch(
+      `https://backend.heartvalveexperts.com/wp-json/custom-api/v1/cardiologists?slug=${params.slug}`,
+      { cache: "no-store" }
+    );
 
-  const doctor: DoctorData = await res.json();
+    if (!res.ok) {
+      throw new Error("API failed");
+    }
 
-  return {
-    title: `${doctor.meta_title}`,
-    description:
-      doctor.meta_description ||
-      "Meet our expert cardiac surgeons in Mumbai at Heart Valve Experts, offering advanced heart valve treatments and compassionate care.",
-    alternates: {
-      canonical: `https://heartvalveexperts.com/cardiologist-mumbai/${slug}`,
-    },
-  };
+    const data = await res.json();
+    const doctor = Array.isArray(data) ? data[0] : data;
+
+    if (!doctor) {
+      throw new Error("Doctor not found");
+    }
+
+    return {
+      title: doctor.meta_title,
+      description: doctor.meta_description,
+      alternates: {
+        canonical: `https://heartvalveexperts.com/cardiologist-mumbai/${params.slug}`,
+      },
+    };
+  } catch (error) {
+    return {
+      title: "Heart Valve Experts",
+      description:
+        "Meet our expert cardiac surgeons in Mumbai at Heart Valve Experts.",
+    };
+  }
 }
 
 interface PhysicianSchema {
@@ -184,33 +198,32 @@ const staticDoctorSchema: Record<string, PhysicianSchema> = {
 };
 
 export default async function DoctorPage({ params }: { params: { slug: string } }) {
-  const { slug } = params;
-
   const res = await fetch(
-    `https://backend.heartvalveexperts.com/wp-json/custom-api/v1/cardiologists?slug=${slug}`,
+    `https://backend.heartvalveexperts.com/wp-json/custom-api/v1/cardiologists?slug=${params.slug}`,
     { cache: "no-store" }
   );
 
   if (!res.ok) {
     return (
-      <div className="text-center py-20">
-        <p className="text-xl text-red-600">Failed to load doctor details.</p>
+      <div className="text-center py-20 text-red-600">
+        Failed to load doctor details.
       </div>
     );
   }
 
-  const doctor: DoctorData = await res.json();
+  const data = await res.json();
+  const doctor: DoctorData | null = Array.isArray(data) ? data[0] : data;
 
   if (!doctor) {
     return (
       <div className="text-center py-20">
-        <p className="text-xl text-red-600">Doctor not found</p>
+        <h1 className="text-2xl font-semibold">Doctor Not Found</h1>
       </div>
     );
   }
 
-  const schemaData: PhysicianSchema =
-    staticDoctorSchema[doctor.slug] || {
+  const schemaData =
+    staticDoctorSchema[doctor.slug] ?? {
       "@context": "https://schema.org",
       "@type": "Physician",
       name: doctor.title,
@@ -226,11 +239,9 @@ export default async function DoctorPage({ params }: { params: { slug: string } 
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
-      <BreadCrumb
-        title={doctor.title}
-        subpage="false"
-        image="/images/contact.webp"
-      />
+
+      <BreadCrumb title={doctor.title} subpage="false" image="/images/contact.webp" />
+
       <Doctor
         image={doctor.featured_image?.url ?? "/placeholder.png"}
         alt={doctor.featured_image?.alt ?? doctor.title}
@@ -239,10 +250,11 @@ export default async function DoctorPage({ params }: { params: { slug: string } 
         description={doctor.cardiologist_description}
         buttonText="Book Appointment Now"
       />
+
       <DoctorProfile
         sections={
           Array.isArray(doctor.cardiologist_long_details)
-            ? doctor.cardiologist_long_details.map((item) => ({
+            ? doctor.cardiologist_long_details.map(item => ({
                 title: item.title,
                 description: item.description,
                 iconUrl: item.icon?.url || "",

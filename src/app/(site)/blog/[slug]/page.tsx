@@ -135,7 +135,6 @@ export default async function SingleBlogPage({
 }) {
   const blog = await getBlogData(params.slug);
 
-  // 🚫 DO NOT USE notFound() (causes 404 bug)
   if (!blog) {
     return (
       <div className="py-20 text-center">
