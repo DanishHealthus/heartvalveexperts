@@ -33,13 +33,33 @@ async function getBlogData(slug: string): Promise<BlogPost | null> {
       `https://backend.heartvalveexperts.com/wp-json/custom-api/v1/blogs?slug=${slug}`,
       { cache: "no-store" }
     );
+
     if (!res.ok) return null;
-    return await res.json();
+
+    const data = await res.json();
+
+    // ✅ CASE 1: API returns array
+    if (Array.isArray(data)) {
+      return data.length > 0 ? data[0] : null;
+    }
+
+    // ✅ CASE 2: API returns { posts: [] }
+    if (data?.posts && Array.isArray(data.posts)) {
+      return data.posts.length > 0 ? data.posts[0] : null;
+    }
+
+    // ✅ CASE 3: API returns single object
+    if (data?.slug) {
+      return data;
+    }
+
+    return null;
   } catch (err) {
     console.error("Error fetching blog:", err);
     return null;
   }
 }
+
 async function getBlogs() {
   try {
     const res = await fetch(
