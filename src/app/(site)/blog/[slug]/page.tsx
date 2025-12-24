@@ -3,6 +3,7 @@ import RelatedBlog from "@/component/Blog/RelatedBlog";
 import CardiacComparison from "@/component/Blog/CardiacComparison";
 import { JSDOM } from "jsdom";
 import BlogBreadCrumb from "@/component/BlogBreadCrumb";
+import { notFound } from "next/navigation";
 
 interface FAQItem {
   question: string;
@@ -57,18 +58,21 @@ async function getBlogs() {
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 }) {
-  const { slug } = await params;
+  const { slug } = params;
   const blog = await getBlogData(slug);  
 
-  if (!blog) {
+if (!blog) {
     return {
-      title: "Heart Valve Experts | Blog",
-      description: "Expert insights on cardiac health and heart valve care.",
+      title: "Blog Not Found | Heart Valve Experts",
+      description: "The requested blog does not exist.",
+      robots: {
+        index: false,
+        follow: false,
+      },
     };
   }
-
   return {
     title: blog.meta_title || blog.title,
     description:
@@ -99,18 +103,14 @@ export async function generateMetadata({
 export default async function SingleBlogPage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 }) {
-  const { slug } = await params;
+  const { slug } = params;
   const blog = await getBlogData(slug);
 
-  if (!blog) {
-    return (
-      <div className="text-center py-10 text-red-600 text-xl font-medium">
-        Blog not found!
-      </div>
-    );
-  }
+ if (!blog) {
+  notFound();
+}
 
   const blogSchema = {
     "@context": "https://schema.org",
@@ -162,7 +162,14 @@ export default async function SingleBlogPage({
     return faqList;
   }
 
-  const extractedFaqs = extractFAQsFromHTML(blog.long_description || "");
+ let extractedFaqs: FAQItem[] = [];
+
+try {
+  extractedFaqs = extractFAQsFromHTML(blog.long_description || "");
+} catch (e) {
+  console.error("FAQ parse error", e);
+}
+
   const faqSchema =
     (blog.faq_list && blog.faq_list.length > 0
       ? blog.faq_list
