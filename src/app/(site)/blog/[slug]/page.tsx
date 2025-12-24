@@ -1,9 +1,10 @@
 import React from "react";
 import RelatedBlog from "@/component/Blog/RelatedBlog";
 import CardiacComparison from "@/component/Blog/CardiacComparison";
-import { JSDOM } from "jsdom";
 import BlogBreadCrumb from "@/component/BlogBreadCrumb";
 import { notFound } from "next/navigation";
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
 
 interface FAQItem {
   question: string;
@@ -140,32 +141,31 @@ export default async function SingleBlogPage({
     datePublished: blog.date || new Date().toISOString(),
     dateModified: blog.updated_at || blog.date || new Date().toISOString(),
   };
-  function extractFAQsFromHTML(html: string) {
-    const dom = new JSDOM(html);
-    const document = dom.window.document;
+ async function extractFAQsFromHTML(html: string) {
+  if (!html) return [];
 
-    const faqSections = document.querySelectorAll(".schema-faq-section");
-    const faqList: { question: string; answer: string }[] = [];
+  const { JSDOM } = await import("jsdom");
 
-    faqSections.forEach((section) => {
-      const questionEl = section.querySelector(".schema-faq-question");
-      const answerEl = section.querySelector(".schema-faq-answer");
+  const dom = new JSDOM(html);
+  const document = dom.window.document;
 
-      const question = questionEl?.textContent?.trim() || "";
-      const answer = answerEl?.textContent?.trim() || "";
+  const faqSections = document.querySelectorAll(".schema-faq-section");
+  const faqList: { question: string; answer: string }[] = [];
 
-      if (question && answer) {
-        faqList.push({ question, answer });
-      }
-    });
+  faqSections.forEach((section) => {
+    const q = section.querySelector(".schema-faq-question")?.textContent?.trim();
+    const a = section.querySelector(".schema-faq-answer")?.textContent?.trim();
+    if (q && a) faqList.push({ question: q, answer: a });
+  });
 
-    return faqList;
-  }
+  return faqList;
+}
 
- let extractedFaqs: FAQItem[] = [];
+
+let extractedFaqs: FAQItem[] = [];
 
 try {
-  extractedFaqs = extractFAQsFromHTML(blog.long_description || "");
+  extractedFaqs = await extractFAQsFromHTML(blog.long_description || "");
 } catch (e) {
   console.error("FAQ parse error", e);
 }

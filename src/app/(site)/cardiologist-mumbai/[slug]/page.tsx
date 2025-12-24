@@ -240,12 +240,17 @@ export default async function DoctorPage({ params }: { params: { slug: string } 
         buttonText="Book Appointment Now"
       />
       <DoctorProfile
-        sections={doctor.cardiologist_long_details?.map((item) => ({
-          title: item.title,
-          description: item.description,
-          iconUrl: item.icon?.url || "",
-        }))}
+        sections={
+          Array.isArray(doctor.cardiologist_long_details)
+            ? doctor.cardiologist_long_details.map((item) => ({
+                title: item.title,
+                description: item.description,
+                iconUrl: item.icon?.url || "",
+              }))
+            : []
+        }
       />
+
       <AppointmentCTA />
     </>
   );
