@@ -1,7 +1,6 @@
 import Script from "next/script";
 import "./globals.css";
 import type { Metadata } from "next";
-import ClientModalWrapper from "@/component/ClientModalWrapper";
 
 export const metadata: Metadata = {
   title: "Heart Valve Experts",
@@ -15,7 +14,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
-        {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-W0DD0BVY5G"
           strategy="afterInteractive"
@@ -58,29 +56,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </Script>
         {/* --- End Google Tag Manager --- */}
       </head>
-
       <body>
-        {/* --- Google Tag Manager (noscript) --- */}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-599QJTKW"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
-        </noscript>
-         <ClientModalWrapper />
-        {/* --- End Google Tag Manager (noscript) --- */}
-
         {children}
-
-        {/* Kenyt Chatbot */}
-        <script
-          defer
-          src="https://india.kenyt.ai/botapp/ChatbotUI/dist/js/bot-loader.js"
-          type="text/javascript"
-          data-bot="51349922"
-        ></script>
       </body>
     </html>
   );
