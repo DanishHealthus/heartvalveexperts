@@ -82,49 +82,49 @@ async function getBlogs() {
 
 /* ================= SEO METADATA ================= */
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const blog = await getBlogData(params.slug);
+// export async function generateMetadata({
+//   params,
+// }: {
+//   params: { slug: string };
+// }) {
+//   const blog = await getBlogData(params.slug);
 
-  if (!blog) {
-    return {
-      title: "Blog Not Found | Heart Valve Experts",
-      description: "The requested blog does not exist.",
-      robots: { index: false, follow: false },
-    };
-  }
+//   if (!blog) {
+//     return {
+//       title: "Blog Not Found | Heart Valve Experts",
+//       description: "The requested blog does not exist.",
+//       robots: { index: false, follow: false },
+//     };
+//   }
 
-  return {
-    title: blog.meta_title || blog.title,
-    description:
-      blog.meta_description ||
-      blog.short_description ||
-      "Heart Valve Experts – Trusted cardiac specialists.",
-    alternates: {
-      canonical: `https://heartvalveexperts.com/blog/${blog.slug}`,
-    },
-    openGraph: {
-      title: blog.meta_title || blog.title,
-      description:
-        blog.meta_description ||
-        blog.short_description ||
-        "Heart Valve Experts – Trusted cardiac specialists.",
-      url: `https://heartvalveexperts.com/blog/${blog.slug}`,
-      type: "article",
-      images: [
-        {
-          url: blog.image_url || blog.image || "/default-blog.jpg",
-          width: 1200,
-          height: 630,
-          alt: blog.title,
-        },
-      ],
-    },
-  };
-}
+//   return {
+//     title: blog.meta_title || blog.title,
+//     description:
+//       blog.meta_description ||
+//       blog.short_description ||
+//       "Heart Valve Experts – Trusted cardiac specialists.",
+//     alternates: {
+//       canonical: `https://heartvalveexperts.com/blog/${blog.slug}`,
+//     },
+//     openGraph: {
+//       title: blog.meta_title || blog.title,
+//       description:
+//         blog.meta_description ||
+//         blog.short_description ||
+//         "Heart Valve Experts – Trusted cardiac specialists.",
+//       url: `https://heartvalveexperts.com/blog/${blog.slug}`,
+//       type: "article",
+//       images: [
+//         {
+//           url: blog.image_url || blog.image || "/default-blog.jpg",
+//           width: 1200,
+//           height: 630,
+//           alt: blog.title,
+//         },
+//       ],
+//     },
+//   };
+// }
 
 /* ================= PAGE ================= */
 
