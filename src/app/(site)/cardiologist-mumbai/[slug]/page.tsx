@@ -27,39 +27,39 @@ interface DoctorData {
   meta_description: string;
 }
 
-// export async function generateMetadata({ params }: { params: { slug: string } }) {
-//   try {
-//     const res = await fetch(
-//       `https://backend.heartvalveexperts.com/wp-json/custom-api/v1/cardiologists?slug=${params.slug}`,
-//       { cache: "no-store" }
-//     );
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  try {
+    const res = await fetch(
+      `https://backend.heartvalveexperts.com/wp-json/custom-api/v1/cardiologists?slug=${params.slug}`,
+      { cache: "no-store" }
+    );
 
-//     if (!res.ok) {
-//       throw new Error("API failed");
-//     }
+    if (!res.ok) {
+      throw new Error("API failed");
+    }
 
-//     const data = await res.json();
-//     const doctor = Array.isArray(data) ? data[0] : data;
+    const data = await res.json();
+    const doctor = Array.isArray(data) ? data[0] : data;
 
-//     if (!doctor) {
-//       throw new Error("Doctor not found");
-//     }
+    if (!doctor) {
+      throw new Error("Doctor not found");
+    }
 
-//     return {
-//       title: doctor.meta_title,
-//       description: doctor.meta_description,
-//       alternates: {
-//         canonical: `https://heartvalveexperts.com/cardiologist-mumbai/${params.slug}`,
-//       },
-//     };
-//   } catch (error) {
-//     return {
-//       title: "Heart Valve Experts",
-//       description:
-//         "Meet our expert cardiac surgeons in Mumbai at Heart Valve Experts.",
-//     };
-//   }
-// }
+    return {
+      title: doctor.meta_title,
+      description: doctor.meta_description,
+      alternates: {
+        canonical: `https://heartvalveexperts.com/cardiologist-mumbai/${params.slug}`,
+      },
+    };
+  } catch (error) {
+    return {
+      title: "Heart Valve Experts",
+      description:
+        "Meet our expert cardiac surgeons in Mumbai at Heart Valve Experts.",
+    };
+  }
+}
 
 interface PhysicianSchema {
   "@context": string;
