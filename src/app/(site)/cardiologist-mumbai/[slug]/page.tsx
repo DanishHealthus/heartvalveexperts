@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
         canonical: `https://heartvalveexperts.com/cardiologist-mumbai/${params.slug}`,
       },
     };
-  } catch (error) {
+  } catch {
     return {
       title: "Heart Valve Experts",
       description:
