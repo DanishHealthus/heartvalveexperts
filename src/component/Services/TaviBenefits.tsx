@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface Benefit {
   iconSrc: string;
@@ -49,7 +50,9 @@ const TaviBenefits = ({
           className="text-gray-600 text-base font-medium tracking-wide flex items-center justify-center gap-1 uppercase"
         >
           <span className="w-6 h-6 rounded-full">
-            <img src={sectionIconSrc} alt="" className="w-full h-full object-contain" />
+            {sectionIconSrc &&
+            <Image width={1000} height={1000} src={sectionIconSrc} alt="" className="w-full h-full object-contain" />
+}
           </span>
           {sectionLabel}
         </motion.p>
@@ -87,7 +90,9 @@ const TaviBenefits = ({
                   ${idx === 5 ? "border-b-0" : ""}`}
               >
                 <div className="w-6 h-6 flex-shrink-0">
-                  <img
+                  <Image
+                  width={1000}
+                  height={1000}
                     src={item.iconSrc}
                     alt={item.title}
                     className="w-full h-full -mt-1 object-contain"

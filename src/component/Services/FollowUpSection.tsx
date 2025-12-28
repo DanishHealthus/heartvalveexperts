@@ -65,7 +65,7 @@ export default function FollowUpSection({
             {bulletPoints.map((point, idx) => (
               <li key={idx} className="flex items-start gap-2">
                 <span className="flex-shrink-0 w-5 h-5">
-                  <img
+                  <Image
                     src="/images/service/icon/fluent_arrow-enter-left-20-filled.svg"
                     alt=""
                     className="w-full h-full object-contain"

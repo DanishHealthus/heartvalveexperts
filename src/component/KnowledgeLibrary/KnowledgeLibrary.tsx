@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 
 interface Video {
@@ -122,7 +123,7 @@ const KnowledgeLibrary: React.FC = () => {
                 }}
               >
                 <div className="relative">
-                  <img
+                  <Image
                     src={video.thumbnail}
                     alt={video.title}
                     className="w-full h-60 object-cover"

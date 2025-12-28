@@ -5,16 +5,15 @@ import { gsap } from "gsap";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import Link from "next/link";
 import { VscCallOutgoing } from "react-icons/vsc";
-import he from "he";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import Image from "next/image";
 
-interface ServicesProps {
-  title: string;
-  subpage: string;
-  image: string;
+// interface ServicesProps {
+//   title: string;
+//   subpage: string;
+//   image: string;
 
-}
+// }
 
 export default function Services() {
   const titleRef = useRef<HTMLHeadingElement>(null);
@@ -117,7 +116,7 @@ export default function Services() {
     <section className="absolute h-[150px] w-full flex items-center justify-center bg-transparent text-white overflow-hidden z-50">
       {/* Background */}
       <div ref={bgRef} className="absolute inset-0 will-change-transform">
-        {/* <img
+        {/* <Image
           src={image}
           alt="Background"
           className="w-full h-full object-cover fixed scale-105 opacity-80"

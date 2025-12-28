@@ -1,27 +1,25 @@
 "use client";
-
-import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-interface BlogPost {
-  id: number;
-  slug: string;
-  title: string;
-  short_description: string;
-  image?: string;
-  date: string
-}
+// interface BlogPost {
+//   id: number;
+//   slug: string;
+//   title: string;
+//   short_description: string;
+//   image?: string;
+//   date: string
+// }
 
-interface Pagination {
-  current_page: number;
-  has_next: boolean;
-  has_previous: boolean;
-  last_page: number;
-  per_page: number;
-  total_pages: number;
-  total_posts: number;
-}
+// interface Pagination {
+//   current_page: number;
+//   has_next: boolean;
+//   has_previous: boolean;
+//   last_page: number;
+//   per_page: number;
+//   total_pages: number;
+//   total_posts: number;
+// }
 
 export default function CaseStudy() {
 //   const [posts, setPosts] = useState<BlogPost[]>([]);

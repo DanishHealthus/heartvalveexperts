@@ -10,7 +10,7 @@ const Mision = () => {
       {/* Watermark background */}
       {/* <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
         <div className="opacity-10 scale-125">
-          <img src="" alt="" />
+          <Image src="" alt="" />
         </div>
       </div> */}
 

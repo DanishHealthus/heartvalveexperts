@@ -2,8 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
-import { FiX, FiChevronDown, FiChevronUp, FiArrowRightCircle } from "react-icons/fi";
-import { BsArrowRightCircleFill } from "react-icons/bs";
+import { FiChevronDown, FiChevronUp, FiArrowRightCircle } from "react-icons/fi";
 import { VscCallOutgoing } from "react-icons/vsc";
 import Link from "next/link";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
@@ -117,12 +116,12 @@ export default function HomePage() {
     <section className="relative h-[55vh] lg:h-screen w-full flex items-center justify-center bg-black text-white overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 will-change-transform">
-        <img
+        <Image
           src="/images/homeimages/Background_Layer.webp"
           alt="Background"
           className="w-full h-full object-cover fixed opacity-80 scale-125"
         />
-        <img 
+        <Image 
           ref={bgRef}
           src="/images/homeimages/Foreground_Layer.webp"
           alt="Background"
@@ -137,7 +136,7 @@ export default function HomePage() {
           onClick={() => setMenuOpen(true)}
           className="px-4 group cursor-pointer flex gap-2 text-xl py-2 rounded-full border border-white hover:bg-white hover:text-black transition duration-500 ease-in-out"
         >
-         <img className="transition duration-300 group-hover:brightness-0" width="15" src="/images/icon/menu.svg" alt="" /> 
+         <Image className="transition duration-300 group-hover:brightness-0" width="15" src="/images/icon/menu.svg" alt="" /> 
          <span className="hidden lg:block">Menu</span>
         </button>
       </div>
@@ -200,7 +199,7 @@ export default function HomePage() {
           onClick={() => setMenuOpen(false)}
           className="flex cursor-pointer items-center gap-2 text-lg font-semibold text-black hover:text-gray-700 px-8 pt-8"
         >
-          <img src="/images/icon/closemenu.svg" alt="close" /> Close
+          <Image src="/images/icon/closemenu.svg" alt="close" /> Close
         </button>
 
         {/* Nav Links (scrollable area) */}

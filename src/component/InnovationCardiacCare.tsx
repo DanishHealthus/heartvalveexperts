@@ -82,7 +82,7 @@ export default function InnovationCardiacCare() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {innovations.map((item, i) => (
             <div
-              key={item.id}
+              key={i}
             //   ref={(el) => {
             //     if (el) cardsRef.current[i] = el;
             //   }}

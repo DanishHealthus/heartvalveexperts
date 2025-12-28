@@ -103,7 +103,7 @@ export default function Services() {
     <section className=" relative h-[350px] lg:h-[400px] 2xl:h-[450px] w-full flex items-center justify-center bg-black text-white overflow-hidden">
       {/* Background */}
       <div ref={bgRef} className="animate-gradient-circle absolute scale-105 inset-0 will-change-transform">
-        {/* <img
+        {/* <Image
           src={image}
           alt="Background"
           className="w-full h-full object-cover fixed scale-105 opacity-80"

@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   const bgRef = useRef(null); // ✅ no <HTMLDivElement>
@@ -49,7 +50,7 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Left Column - Logo + Contact */}
         <div>
-          <img
+          <Image
             src="/images/homeimages/logo.png"
             alt="Heart Valve Experts"
             className="h-36 mb-6 lg:mx-0 mx-auto"

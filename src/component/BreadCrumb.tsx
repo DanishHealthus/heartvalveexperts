@@ -117,7 +117,7 @@ export default function Services({ title,subpage ,image}: ServicesProps) {
     <section className="relative h-[500px] lg:h-[400px] 2xl:h-[500px] w-full flex items-center justify-center bg-black text-white overflow-hidden">
       {/* Background */}
       <div ref={bgRef} className="absolute inset-0 will-change-transform">
-        <img
+        <Image
           src={image}
           alt="Background"
           className="w-full h-full object-cover fixed scale-105 opacity-80"
@@ -131,7 +131,7 @@ export default function Services({ title,subpage ,image}: ServicesProps) {
           onClick={() => setMenuOpen(true)}
           className="px-4 group cursor-pointer flex gap-2 text-xl py-2 rounded-full border border-white hover:bg-white hover:text-black transition duration-500 ease-in-out"
         >
-         <img className="transition duration-300 group-hover:brightness-0" width="15" src="/images/icon/menu.svg" alt="" /> 
+         <Image className="transition duration-300 group-hover:brightness-0" width="15" src="/images/icon/menu.svg" alt="" /> 
          <span className="hidden lg:block">Menu</span>
         </button>
       </div>
@@ -215,7 +215,7 @@ export default function Services({ title,subpage ,image}: ServicesProps) {
           onClick={() => setMenuOpen(false)}
           className="flex cursor-pointer items-center gap-2 text-lg font-semibold text-black hover:text-gray-700 px-8 pt-8"
         >
-          <img src="/images/icon/closemenu.svg" alt="close" /> Close
+          <Image src="/images/icon/closemenu.svg" alt="close" /> Close
         </button>
 
         {/* Nav Links (scrollable area) */}
