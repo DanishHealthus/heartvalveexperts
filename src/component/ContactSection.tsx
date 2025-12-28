@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
 import Swal from "sweetalert2";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function ContactSection() {
   const router = useRouter();
@@ -92,11 +93,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             className="text-gray-600 text-base font-medium tracking-wide flex items-center justify-start mb-3 gap-1 uppercase"
           >
             <span className="w-6 h-6 rounded-full">
-              <img
-                src="/images/icon/Ellipse 3.svg"
-                alt=""
-                className="w-full h-full object-contain"
-              />
+              <Image width={25} height={25} src="/images/icon/Ellipse 3.svg" alt="" />
             </span>
             Get in Touch
           </p>

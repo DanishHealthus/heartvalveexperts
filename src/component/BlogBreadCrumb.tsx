@@ -4,17 +4,11 @@ import { gsap } from "gsap";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import Link from "next/link";
 import { VscCallOutgoing } from "react-icons/vsc";
-import he from "he";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import Image from "next/image";
 
-interface ServicesProps {
-  title: string;
-  subpage: string;
-  image: string;
 
-}
-
-export default function Services({ title,subpage ,image}: ServicesProps) {
+export default function Services() {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
   const logoRef = useRef<HTMLDivElement>(null);
@@ -123,7 +117,7 @@ export default function Services({ title,subpage ,image}: ServicesProps) {
           onClick={() => setMenuOpen(true)}
           className="px-4 group cursor-pointer flex gap-2 text-xl py-2 rounded-full border border-white hover:bg-white hover:text-black transition duration-500 ease-in-out"
         >
-         <img className="transition duration-300 group-hover:brightness-0" width="15" src="/images/icon/menu.svg" alt="" /> 
+         <Image className="transition duration-300 group-hover:brightness-0" width="15" src="/images/icon/menu.svg" alt="" /> 
          <span className="hidden lg:block">Menu</span>
         </button>
       </div>
@@ -142,45 +136,13 @@ export default function Services({ title,subpage ,image}: ServicesProps) {
       {/* Logo */}
        <div ref={logoRef} className="absolute top-3 lg:top-6 left-1/2 -translate-x-1/2">
         <Link href='/'>
-          <img src="/images/homeimages/logo.png" alt="Logo" className="h-20 lg:h-24" />
+          <Image width={1000} height={800} src="/images/homeimages/logo.png" alt="Logo" className="h-20 lg:h-24" />
         </Link>
       </div>
 
       {/* Hero content */}
       <div className="relative z-10 text-center max-w-4xl px-6">
-        {/* <h1
-          ref={titleRef}
-          className="text-3xl md:text-5xl font-semibold leading-snug"
-        >
-         {he.decode(title)}
-        </h1> */}
-
-        {/* Breadcrumb */}
-        {/* <nav
-          aria-label="breadcrumb"
-          className="mt-6 text-sm text-gray-200"
-          ref={scrollRef}
-        >
-          <ol className="flex items-center justify-center space-x-2">
-            <li>
-              <Link href="/" className="hover:text-white">
-                Home
-              </Link>
-            </li>
-            <li>/</li>
-            {subpage === 'true' ? <> <li>
-              <Link href="/blog" className="hover:text-white">
-                Blog
-              </Link>
-            </li>
-            <li>/</li>
-            <li className="text-[#00aaff]">{he.decode(title)}</li> </>:
-           
-            <li className="text-[#00aaff]">{he.decode(title)}</li> 
-            }
-
-          </ol>
-        </nav> */}
+       
       </div>
 
       {/* Overlay */}
@@ -207,7 +169,7 @@ export default function Services({ title,subpage ,image}: ServicesProps) {
           onClick={() => setMenuOpen(false)}
           className="flex cursor-pointer items-center gap-2 text-lg font-semibold text-black hover:text-gray-700 px-8 pt-8"
         >
-          <img src="/images/icon/closemenu.svg" alt="close" /> Close
+          <Image width={25} height={25} src="/images/icon/closemenu.svg" alt="close" /> Close
         </button>
 
         {/* Nav Links (scrollable area) */}

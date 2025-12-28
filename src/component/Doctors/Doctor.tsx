@@ -6,7 +6,6 @@ import Link from "next/link";
 interface DoctorProps {
   image: string;
   alt: string;
-  tag: string;
   title: string;
   description?: string; // optional banaya
   buttonText: string;
@@ -16,7 +15,6 @@ interface DoctorProps {
 export default function Doctor({
   image,
   alt,
-  tag,
   title,
   description, // default empty array
   buttonText,
@@ -29,7 +27,7 @@ export default function Doctor({
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* Left: Image */}
         <div className="relative w-full md:w-1/2 h-72 md:h-[420px] rounded-2xl overflow-hidden shadow">
-          <img
+          <Image
             src={image}
             alt={alt}
             width={1000}

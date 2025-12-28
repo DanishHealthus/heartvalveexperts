@@ -25,7 +25,7 @@ export default function AppointmentCTA() {
           className="text-white text-base font-medium tracking-wide flex items-center justify-start mb-5 gap-1 uppercase"
         >
           <span className="w-6 h-6 rounded-full">
-            <img src="/images/icon/Ellipse 3.svg" alt="" className="w-full h-full object-contain" />
+            <Image src="/images/icon/Ellipse 3.svg" width={1000} height={1000} alt="" className="w-full h-full object-contain" />
           </span>
            Your Heart Deserves Expert Care
         </p>

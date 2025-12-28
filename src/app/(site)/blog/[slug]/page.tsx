@@ -207,11 +207,7 @@ export default async function SingleBlogPage({
         />
       )}
 
-      <BlogBreadCrumb
-        title={blog.title}
-        subpage="true"
-        image="/images/contact.webp"
-      />
+      <BlogBreadCrumb />
 
       <CardiacComparison blog={blog} />
       <RelatedBlog posts={posts} />

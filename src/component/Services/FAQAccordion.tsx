@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 
@@ -34,11 +35,7 @@ export default function FAQAccordion({
           className="text-gray-600 text-base font-medium tracking-wide flex items-center justify-center gap-1 uppercase"
         >
           <span className="w-6 h-6 rounded-full">
-            <img
-              src="/images/icon/Ellipse 3.svg"
-              alt=""
-              className="w-full h-full object-contain"
-            />
+            <Image width={25} height={25} src="/images/icon/Ellipse 3.svg" alt="" />
           </span>
           {sectionLabel}
         </p>

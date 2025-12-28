@@ -50,7 +50,7 @@ export default function ProcedureTimeline({
           className="text-white text-base font-medium tracking-wide flex items-center justify-start gap-1 uppercase mb-3"
         >
           <span className="w-6 h-6 rounded-full">
-            <img src="/images/icon/Ellipse 3.svg" alt="" />
+            <Image width={25} height={25} src="/images/icon/Ellipse 3.svg" alt="" />
           </span>{" "}
           {sectionTitle}
         </p>

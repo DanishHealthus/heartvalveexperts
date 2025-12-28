@@ -9,6 +9,7 @@ export const config = {
 
 async function toNodeReadable(req) {
 //   const buffer = Buffer.from(await req.arrayBuffer());
+console.log(req)
   const readable = new Readable();
   readable._read = () => {};
   readable.push(buffer);

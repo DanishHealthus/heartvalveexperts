@@ -54,7 +54,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     };
   } catch (error) {
     return {
-      title: "Heart Valve Experts",
+      title: `Heart Valve Experts ${error}`,
       description:
         "Meet our expert cardiac surgeons in Mumbai at Heart Valve Experts.",
     };
@@ -245,7 +245,6 @@ export default async function DoctorPage({ params }: { params: { slug: string } 
       <Doctor
         image={doctor.featured_image?.url ?? "/placeholder.png"}
         alt={doctor.featured_image?.alt ?? doctor.title}
-        tag={doctor.designation}
         title={doctor.title}
         description={doctor.cardiologist_description}
         buttonText="Book Appointment Now"

@@ -93,8 +93,8 @@ export default function Blog() {
                     </div>
                   </div>
                 ))
-            : posts.map((post) => (
-                <Link key={post.id} href={`/blog/${post.slug}`}>
+            : posts.map((post,index) => (
+                <Link key={index} href={`/blog/${post.slug}`}>
                   <div
                     style={{
                       boxShadow:

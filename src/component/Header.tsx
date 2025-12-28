@@ -2,10 +2,10 @@
 
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
-import { FiX, FiChevronDown, FiChevronUp, FiArrowRightCircle } from "react-icons/fi";
-import { BsArrowRightCircleFill } from "react-icons/bs";
+import { FiChevronDown, FiChevronUp, FiArrowRightCircle } from "react-icons/fi";
 import { VscCallOutgoing } from "react-icons/vsc";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const titleRef = useRef<HTMLHeadingElement>(null);
@@ -112,12 +112,12 @@ export default function Header() {
     <section className="relative h-screen w-full flex items-center justify-center bg-black text-white overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 will-change-transform">
-        <img
+        <Image
           src="/images/homeimages/Background_Layer.webp"
           alt="Background"
           className="w-full h-full object-cover fixed opacity-80 scale-125"
         />
-        <img 
+        <Image 
           // ref={bgRef}
           src="/images/homeimages/Foreground_Layer.webp"
           alt="Background"
@@ -132,7 +132,7 @@ export default function Header() {
           onClick={() => setMenuOpen(true)}
           className="px-4 flex gap-2 text-xl py-2 rounded-full border border-white hover:bg-white hover:text-black transition duration-500 ease-in-out"
         >
-         <img width="15" src="/images/icon/menu.svg" alt="" /> 
+         <Image width="15" src="/images/icon/menu.svg" alt="" /> 
          <span className="hidden lg:block">Menu</span>
         </button>
       </div>
@@ -151,7 +151,7 @@ export default function Header() {
       {/* Logo */}
       <div ref={logoRef} className="absolute top-3 lg:top-6 left-1/2 -translate-x-1/2">
         <Link href='fg'>
-          <img src="/images/homeimages/logo.png" alt="Logo" className="h-20 lg:h-24" />
+          <Image src="/images/homeimages/logo.png" alt="Logo" className="h-20 lg:h-24" />
         </Link>
       </div>
       
@@ -200,7 +200,7 @@ export default function Header() {
           onClick={() => setMenuOpen(false)}
           className="flex items-center gap-2 text-lg font-semibold text-black hover:text-gray-900 transition duration-300"
         >
-          <img src="/images/icon/closemenu.svg" alt="" /> Close
+          <Image src="/images/icon/closemenu.svg" alt="" /> Close
         </button>
 
         {/* Nav Links */}
@@ -345,7 +345,7 @@ export default function Header() {
           <p className="text-xs tracking-widest text-gray-500 pl-8 mb-4">STAY CONNECTED</p>
           <div className="flex space-x-6 text-xl text-gray-700">
             <Link href="#" className="text-[#0074dd]">
-              <img src="" className="fab fa-facebook-f"/>
+              <Image alt="" src="" className="fab fa-facebook-f"/>
             </Link>
             <Link href="#" className="hover:text-[#0074dd]">
               <i className="fab fa-instagram"></i>

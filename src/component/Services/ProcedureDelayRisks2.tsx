@@ -34,7 +34,7 @@ export default function ProcedureDelayRisks2({ data }: ProcedureDelayRisks2Props
             className="text-gray-600 text-base font-medium tracking-wide flex items-center justify-start gap-1 uppercase"
           >
             <span className="w-6 h-6 rounded-full">
-              <img src="/images/icon/Ellipse 3.svg" alt="" />
+              <Image width={25} height={25} src="/images/icon/Ellipse 3.svg" alt="" />
             </span>{" "}
            {heading}
           </p>

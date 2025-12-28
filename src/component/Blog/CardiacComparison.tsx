@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
@@ -59,8 +60,9 @@ export default function CardiacComparison({ blog }: CardiacComparisonProps) {
     <section className="bg-white px-2 md:px-6 xl:px-10 py-10 [overflow-x:clip]">
       <div className="max-w-7xl mx-auto relative -top-56 z-0">
         {blog?.image && (
-          <img
+          <Image
             src={blog.image}
+            width={1000} height={1000}
             alt={blog?.title || "Heart Valve Experts"}
             className="w-full h-auto mb-8 shadow-2xl"
           />

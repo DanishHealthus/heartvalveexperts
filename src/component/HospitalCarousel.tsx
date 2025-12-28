@@ -2,10 +2,8 @@
 
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import { Autoplay, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const hospitals = [
   { src: "/images/hospitals/Logo 1.svg", alt: "P.D. Hinduja Hospital" },
@@ -21,15 +19,6 @@ export default function HospitalCarousel() {
   return (
     <section className="py-10 bg-white">
       <div className="text-center">
-        {/* <p
-          style={{ letterSpacing: "2px" }}
-          className="text-[#000] mb-4 text-lg uppercase font-light tracking-wide flex items-center justify-center gap-1"
-        >
-          <span className="w-6 h-6 rounded-full">
-            <img src="/images/icon/Ellipse 3.svg" alt="" />
-          </span>
-          Our Doctors
-        </p> */}
 
         <h2 className="text-2xl md:text-3xl font-medium text-gray-900 mb-12 ">
           Doctors Affiliation 

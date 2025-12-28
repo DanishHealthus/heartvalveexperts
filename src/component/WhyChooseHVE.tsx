@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import ProceduresOverview from "./ProceduresOverview";
 import Link from "next/link";
 
@@ -39,7 +40,7 @@ export default function WhyChooseHVE() {
             className="text-[#fff] text-lg font-light tracking-wide flex items-center justify-center gap-1"
           >
             <span className="w-6 h-6 rounded-full">
-              <img src="/images/icon/Ellipse 3.svg" alt="" />
+              <Image width={25} height={25} src="/images/icon/Ellipse 3.svg" alt="" />
             </span>{" "}
             WHY CHOOSE HVE?
           </p>

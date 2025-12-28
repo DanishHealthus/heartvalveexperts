@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -102,7 +103,7 @@ export default function WhoWeAreHero() {
           style={{ letterSpacing: "2px" }}
         >
           <span className="w-6 h-6 rounded-full">
-            <img src="/images/icon/Ellipse 3.svg" alt="" />
+            <Image width={25} height={25} src="/images/icon/Ellipse 3.svg" alt="" />
           </span>{" "}
           Who We Are
         </div>

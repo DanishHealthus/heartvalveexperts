@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { FC } from "react";
 
 interface Section {
@@ -19,7 +20,7 @@ const SectionCard: FC<{ section: Section; isLast?: boolean }> = ({ section, isLa
   >
     <div className="flex items-center gap-4 mb-4">
       {section.iconUrl && (
-        <img src={section.iconUrl} alt={section.title} className="w-16 h-16 border p-3 rounded-full" />
+        <Image width={500} height={500} src={section.iconUrl} alt={section.title} className="w-16 h-16 border p-3 rounded-full" />
       )}
       <h2 className="text-2xl font-semibold text-white">{section.title}</h2>
     </div>

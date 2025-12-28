@@ -47,7 +47,7 @@ export default function Doctors() {
           className="text-[#000] mb-6 text-lg uppercase font-light tracking-wide flex items-center justify-center gap-1"
         >
           <span className="w-6 h-6 rounded-full">
-            <img src="/images/icon/Ellipse 3.svg" alt="" />
+            <Image width={25} height={25} src="/images/icon/Ellipse 3.svg" alt="" />
           </span>
           Who We Are
         </p>

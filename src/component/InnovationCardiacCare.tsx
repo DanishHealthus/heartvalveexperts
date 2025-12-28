@@ -70,7 +70,7 @@ export default function InnovationCardiacCare() {
         {/* Section Label */}
         
         <p style={{letterSpacing :'2px'}} className="text-[#000] mb-6 text-lg uppercase font-light tracking-wide flex items-center justify-center gap-1">
-          <span className="w-6 h-6 rounded-full "><img src="/images/icon/Ellipse 3.svg" alt="" /></span>Innovation in Cardiac Care
+          <span className="w-6 h-6 rounded-full "><Image width={25} height={25} src="/images/icon/Ellipse 3.svg" alt="" /></span>Innovation in Cardiac Care
         </p>
 
         {/* Title */}
