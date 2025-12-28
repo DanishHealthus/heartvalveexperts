@@ -118,11 +118,15 @@ export default function HomePage() {
       <div className="absolute inset-0 will-change-transform">
         <Image
           src="/images/homeimages/Background_Layer.webp"
+          width={2500}
+          height={1500}
           alt="Background"
           className="w-full h-full object-cover fixed opacity-80 scale-125"
         />
         <Image 
           ref={bgRef}
+          width={2500}
+          height={1500}
           src="/images/homeimages/Foreground_Layer.webp"
           alt="Background"
           className="w-full h-full object-cover fixed opacity-80"
@@ -136,7 +140,7 @@ export default function HomePage() {
           onClick={() => setMenuOpen(true)}
           className="px-4 group cursor-pointer flex gap-2 text-xl py-2 rounded-full border border-white hover:bg-white hover:text-black transition duration-500 ease-in-out"
         >
-         <Image className="transition duration-300 group-hover:brightness-0" width="15" src="/images/icon/menu.svg" alt="" /> 
+         <Image className="transition duration-300 group-hover:brightness-0" width={25} height={25} src="/images/icon/menu.svg" alt="" /> 
          <span className="hidden lg:block">Menu</span>
         </button>
       </div>
@@ -154,7 +158,7 @@ export default function HomePage() {
 
       <div ref={logoRef} className="absolute top-3 lg:top-6 left-1/2 -translate-x-1/2">
         <Link href='/'>
-          <Image src="/images/homeimages/logo.png" alt="Logo" className="h-20 lg:h-24" />
+          <Image src="/images/homeimages/logo.png" alt="Logo" width={180} height={100} className="h-20 lg:h-24" />
         </Link>
       </div>
 
@@ -199,7 +203,7 @@ export default function HomePage() {
           onClick={() => setMenuOpen(false)}
           className="flex cursor-pointer items-center gap-2 text-lg font-semibold text-black hover:text-gray-700 px-8 pt-8"
         >
-          <Image src="/images/icon/closemenu.svg" alt="close" /> Close
+          <Image src="/images/icon/closemenu.svg" width={25} height={25} alt="close" /> Close
         </button>
 
         {/* Nav Links (scrollable area) */}

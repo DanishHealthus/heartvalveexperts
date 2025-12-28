@@ -51,6 +51,7 @@ export default function Footer() {
         {/* Left Column - Logo + Contact */}
         <div>
           <Image
+          width={220} height={100}
             src="/images/homeimages/logo.png"
             alt="Heart Valve Experts"
             className="h-36 mb-6 lg:mx-0 mx-auto"

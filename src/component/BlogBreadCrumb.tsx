@@ -136,7 +136,7 @@ export default function Services() {
       {/* Logo */}
        <div ref={logoRef} className="absolute top-3 lg:top-6 left-1/2 -translate-x-1/2">
         <Link href='/'>
-          <Image src="/images/homeimages/logo.png" alt="Logo" width={220} height={100} className="h-20 lg:h-24" />
+          <Image src="/images/homeimages/logo.png" alt="Logo" width={180} height={100} className="h-20 lg:h-24" />
         </Link>
       </div>
 

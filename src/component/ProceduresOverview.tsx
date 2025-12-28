@@ -52,7 +52,7 @@ export default function ProceduresOverview() {
           className="text-[#fff] mb-6 text-lg uppercase font-light tracking-wide flex items-center justify-center gap-1"
         >
           <span className="w-6 h-6 rounded-full ">
-            <Image src="/images/icon/Ellipse 3.svg" alt="" />
+            <Image width={25} height={25} src="/images/icon/Ellipse 3.svg" alt="" />
           </span>
           Procedures Overview
         </p>

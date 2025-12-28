@@ -9,10 +9,12 @@ import he from "he";
 import { useState } from "react";
 
 interface BlogPost {
+ id?: number;
   slug: string;
-  image?: string;
   title: string;
-  date: string;
+  image?: string;
+  image_alt?: string;
+  date?: string;
 }
 
 export default function RelatedBlogClient({ posts }: { posts: BlogPost[] }) {
