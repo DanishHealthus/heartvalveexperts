@@ -37,17 +37,22 @@ interface DoctorData {
 /* ================= PAGE ================= */
 
 export default function DoctorPage() {
-  const params = useParams<{ slug: string }>();
+  const params = useParams();
+  const slug = Array.isArray(params?.slug)
+    ? params.slug[0]
+    : params?.slug;
+
   const [doctor, setDoctor] = useState<DoctorData | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (!params?.slug) return;
+    if (!slug) return;
 
     async function fetchDoctor() {
       try {
         const res = await fetch(
-          `https://backend.heartvalveexperts.com/wp-json/custom-api/v1/cardiologists?slug=${params.slug}`
+          `https://backend.heartvalveexperts.com/wp-json/custom-api/v1/cardiologists?slug=${slug}`,
+          { cache: "no-store" }
         );
 
         if (!res.ok) {
@@ -55,9 +60,18 @@ export default function DoctorPage() {
           return;
         }
 
-        const data: DoctorData[] = await res.json();
-        setDoctor(data?.[0] ?? null);
-      } catch {
+        const data = await res.json();
+
+        // ✅ ARRAY + OBJECT BOTH HANDLE
+        const doctorData: DoctorData | null = Array.isArray(data)
+          ? data[0] ?? null
+          : data?.id
+          ? data
+          : null;
+
+        setDoctor(doctorData);
+      } catch (error) {
+        console.error("Doctor fetch failed:", error);
         setDoctor(null);
       } finally {
         setLoading(false);
@@ -65,7 +79,7 @@ export default function DoctorPage() {
     }
 
     fetchDoctor();
-  }, [params?.slug]);
+  }, [slug]);
 
   if (loading) {
     return <div className="py-20 text-center">Loading...</div>;
