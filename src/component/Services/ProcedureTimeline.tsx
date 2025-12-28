@@ -67,7 +67,7 @@ export default function ProcedureTimeline({
                 className="absolute -left-14 flex items-center justify-center w-14 h-14 border bg-transparent rounded-full shadow-md z-10"
                 style={{ top: "0.25rem" }}
               >
-                <Image src={item.iconSrc} alt={item.title} className="w-8 h-8" />
+                <Image width={32} height={32} src={item.iconSrc} alt={item.title} className="w-8 h-8" />
               </div>
 
               {/* Vertical line */}

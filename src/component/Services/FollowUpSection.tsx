@@ -68,6 +68,7 @@ export default function FollowUpSection({
                   <Image
                     src="/images/service/icon/fluent_arrow-enter-left-20-filled.svg"
                     alt=""
+                    width={25} height={25}
                     className="w-full h-full object-contain"
                   />
                 </span>

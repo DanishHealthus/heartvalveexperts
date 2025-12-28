@@ -1,4 +1,9 @@
-import { notFound } from "next/navigation";
+"use client";
+
+import { useEffect, useState } from "react";
+import { useParams } from "next/navigation";
+import Head from "next/head";
+
 import BreadCrumb from "@/component/BreadCrumb";
 import Doctor from "@/component/Doctors/Doctor";
 import DoctorProfile from "@/component/Doctors/DoctorProfile";
@@ -29,60 +34,50 @@ interface DoctorData {
   meta_description?: string;
 }
 
-/* ================= SEO ================= */
-
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  try {
-    const res = await fetch(
-      `https://backend.heartvalveexperts.com/wp-json/custom-api/v1/cardiologists?slug=${params.slug}`,
-      { cache: "no-store" }
-    );
-
-    if (!res.ok) throw new Error("API Error");
-
-    const data: DoctorData[] = await res.json();
-    const doctor = data?.[0];
-
-    if (!doctor) throw new Error("Not found");
-
-    return {
-      title: doctor.meta_title ?? doctor.title,
-      description: doctor.meta_description ?? "",
-      alternates: {
-        canonical: `https://heartvalveexperts.com/cardiologist-mumbai/${params.slug}`,
-      },
-    };
-  } catch {
-    return {
-      title: "Heart Valve Experts",
-      description:
-        "Meet our expert cardiologists in Mumbai at Heart Valve Experts.",
-    };
-  }
-}
-
 /* ================= PAGE ================= */
 
-export default async function DoctorPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const res = await fetch(
-    `https://backend.heartvalveexperts.com/wp-json/custom-api/v1/cardiologists?slug=${params.slug}`,
-    { cache: "no-store" }
-  );
+export default function DoctorPage() {
+  const params = useParams<{ slug: string }>();
+  const [doctor, setDoctor] = useState<DoctorData | null>(null);
+  const [loading, setLoading] = useState(true);
 
-  if (!res.ok) notFound();
+  useEffect(() => {
+    if (!params?.slug) return;
 
-  const data: DoctorData[] = await res.json();
-  const doctor = data?.[0];
+    async function fetchDoctor() {
+      try {
+        const res = await fetch(
+          `https://backend.heartvalveexperts.com/wp-json/custom-api/v1/cardiologists?slug=${params.slug}`
+        );
 
-  if (!doctor) notFound();
+        if (!res.ok) {
+          setDoctor(null);
+          return;
+        }
+
+        const data: DoctorData[] = await res.json();
+        setDoctor(data?.[0] ?? null);
+      } catch {
+        setDoctor(null);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchDoctor();
+  }, [params?.slug]);
+
+  if (loading) {
+    return <div className="py-20 text-center">Loading...</div>;
+  }
+
+  if (!doctor) {
+    return (
+      <div className="py-20 text-center">
+        <h1 className="text-2xl font-semibold">Doctor Not Found</h1>
+      </div>
+    );
+  }
 
   /* ================= SCHEMA ================= */
 
@@ -98,10 +93,22 @@ export default async function DoctorPage({
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
+      {/* ================= SEO ================= */}
+      <Head>
+        <title>{doctor.meta_title ?? doctor.title}</title>
+        <meta
+          name="description"
+          content={doctor.meta_description ?? ""}
+        />
+        <link
+          rel="canonical"
+          href={`https://heartvalveexperts.com/cardiologist-mumbai/${doctor.slug}`}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      </Head>
 
       <BreadCrumb
         title={doctor.title}
