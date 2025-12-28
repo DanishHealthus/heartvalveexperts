@@ -1,13 +1,16 @@
+import { notFound } from "next/navigation";
 import BreadCrumb from "@/component/BreadCrumb";
 import Doctor from "@/component/Doctors/Doctor";
 import DoctorProfile from "@/component/Doctors/DoctorProfile";
 import AppointmentCTA from "@/component/AppointmentCTA";
 
+/* ================= TYPES ================= */
+
 interface SectionData {
   title: string;
   description: string;
   icon?: {
-    url: string;
+    url?: string;
     alt?: string;
   };
 }
@@ -17,230 +20,94 @@ interface DoctorData {
   title: string;
   slug: string;
   featured_image?: {
-    url: string;
-    alt: string;
+    url?: string;
+    alt?: string;
   };
-  designation: string;
   cardiologist_description: string;
   cardiologist_long_details?: SectionData[];
-  meta_title: string;
-  meta_description: string;
+  meta_title?: string;
+  meta_description?: string;
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
+/* ================= SEO ================= */
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}) {
   try {
     const res = await fetch(
       `https://backend.heartvalveexperts.com/wp-json/custom-api/v1/cardiologists?slug=${params.slug}`,
       { cache: "no-store" }
     );
 
-    if (!res.ok) {
-      throw new Error("API failed");
-    }
+    if (!res.ok) throw new Error("API Error");
 
-    const data = await res.json();
-    const doctor = Array.isArray(data) ? data[0] : data;
+    const data: DoctorData[] = await res.json();
+    const doctor = data?.[0];
 
-    if (!doctor) {
-      throw new Error("Doctor not found");
-    }
+    if (!doctor) throw new Error("Not found");
 
     return {
-      title: doctor.meta_title,
-      description: doctor.meta_description,
+      title: doctor.meta_title ?? doctor.title,
+      description: doctor.meta_description ?? "",
       alternates: {
         canonical: `https://heartvalveexperts.com/cardiologist-mumbai/${params.slug}`,
       },
     };
-  } catch (error) {
+  } catch {
     return {
-      title: `Heart Valve Experts ${error}`,
+      title: "Heart Valve Experts",
       description:
-        "Meet our expert cardiac surgeons in Mumbai at Heart Valve Experts.",
+        "Meet our expert cardiologists in Mumbai at Heart Valve Experts.",
     };
   }
 }
 
-interface PhysicianSchema {
-  "@context": string;
-  "@type": "Physician";
-  name: string;
-  image?: string;
-  description?: string;
-  medicalSpecialty?: string;
-  url: string;
-  address?: {
-    "@type": "PostalAddress";
-    streetAddress: string;
-    addressLocality: string;
-    addressRegion: string;
-    postalCode: string;
-    addressCountry: string;
-  };
-  telephone?: string;
-  email?: string;
-}
+/* ================= PAGE ================= */
 
-const staticDoctorSchema: Record<string, PhysicianSchema> = {
-  "dr-ankur-u-phatarpekar": {
-    "@context": "https://schema.org",
-    "@type": "Physician",
-    name: "Dr. Ankur U. Phatarpekar",
-    image: "https://backend.heartvalveexperts.com/wp-content/uploads/2025/09/Dr.webp",
-    description:
-      "Dr. Ankur U. Phatarpekar is a leading Interventional and Structural Cardiologist in Mumbai with expertise in TAVI, TMVR, TEER, device closure procedures, and advanced coronary interventions.",
-    medicalSpecialty: "Interventional Cardiology",
-    url: "https://heartvalveexperts.com/cardiologist-mumbai/dr-ankur-u-phatarpekar",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress:
-        "Silver Apartments, A12, Shankar Ghanekar Road, Behind Siddhivinayak Mandir, Prabhadevi",
-      addressLocality: "Mumbai",
-      addressRegion: "Maharashtra",
-      postalCode: "400025",
-      addressCountry: "IN",
-    },
-    telephone: "+91 9004506263",
-    email: "heartvalveexperts@gmail.com",
-  },
-
-  "dr-meghav-manoj-shah": {
-    "@context": "https://schema.org",
-    "@type": "Physician",
-    name: "Dr. Meghav Manoj Shah",
-    image:
-      "https://backend.heartvalveexperts.com/wp-content/uploads/2025/09/Rectangle-29.webp",
-    description:
-      "Dr. Meghav Manoj Shah is a structural and interventional cardiologist in Mumbai with expertise in TAVI, Mitral TEER, device closure procedures, and complex coronary interventions.",
-    medicalSpecialty: "Interventional Cardiology",
-    url: "https://heartvalveexperts.com/cardiologist-mumbai/dr-meghav-manoj-shah",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress:
-        "Silver Apartments, A12, Shankar Ghanekar Road, Behind Siddhivinayak Mandir, Prabhadevi",
-      addressLocality: "Mumbai",
-      addressRegion: "Maharashtra",
-      postalCode: "400025",
-      addressCountry: "IN",
-    },
-    telephone: "+91 9004506263",
-    email: "heartvalveexperts@gmail.com",
-  },
-
-  "dr-amit-s-gangwani": {
-    "@context": "https://schema.org",
-    "@type": "Physician",
-    name: "Dr. Amit S. Gangwani",
-    image:
-      "https://backend.heartvalveexperts.com/wp-content/uploads/2025/09/Rectangle-32.webp",
-    description:
-      "Dr. Amit S. Gangwani is a structural and interventional cardiologist based in Mumbai, specialising in TAVI, mitral and tricuspid valve interventions, and congenital heart disease treatments.",
-    medicalSpecialty: "Interventional Cardiology",
-    url: "https://heartvalveexperts.com/cardiologist-mumbai/dr-amit-s-gangwani",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress:
-        "Silver Apartments, A12, Shankar Ghanekar Road, Behind Siddhivinayak Mandir, Prabhadevi",
-      addressLocality: "Mumbai",
-      addressRegion: "Maharashtra",
-      postalCode: "400025",
-      addressCountry: "IN",
-    },
-    telephone: "+91 9004506263",
-    email: "heartvalveexperts@gmail.com",
-  },
-
-  "dr-harshad-sagar-uttamrao": {
-    "@context": "https://schema.org",
-    "@type": "Physician",
-    name: "Dr. Harshad Sagar Uttamrao",
-    image:
-      "https://backend.heartvalveexperts.com/wp-content/uploads/2025/09/Rectangle-31.webp",
-    description:
-      "Dr. Harshad Sagar Uttamrao is a structural and interventional cardiologist based in Mumbai, with advanced training in intravascular imaging (OCT) and intravascular lithotripsy.",
-    medicalSpecialty: "Interventional Cardiology",
-    url: "https://heartvalveexperts.com/cardiologist-mumbai/dr-harshad-sagar-uttamrao",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress:
-        "Silver Apartments, A12, Shankar Ghanekar Road, Behind Siddhivinayak Mandir, Prabhadevi",
-      addressLocality: "Mumbai",
-      addressRegion: "Maharashtra",
-      postalCode: "400025",
-      addressCountry: "IN",
-    },
-    telephone: "+91 9004506263",
-    email: "heartvalveexperts@gmail.com",
-  },
-
-  "dr-kunal-ajay-patankar": {
-    "@context": "https://schema.org",
-    "@type": "Physician",
-    name: "Dr. Kunal Ajay Patankar",
-    image:
-      "https://backend.heartvalveexperts.com/wp-content/uploads/2025/09/Rectangle-30.webp",
-    description:
-      "Dr. Kunal A. Patankar is an experienced interventional and structural cardiologist based in Mumbai, with expertise in cardiovascular diagnostics, minimally invasive interventions, and comprehensive heart failure management.",
-    medicalSpecialty: "Interventional Cardiology",
-    url: "https://heartvalveexperts.com/cardiologist-mumbai/dr-kunal-ajay-patankar",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress:
-        "Silver Apartments, A12, Shankar Ghanekar Road, Behind Siddhivinayak Mandir, Prabhadevi",
-      addressLocality: "Mumbai",
-      addressRegion: "Maharashtra",
-      postalCode: "400025",
-      addressCountry: "IN",
-    },
-    telephone: "+91 9004506263",
-    email: "heartvalveexperts@gmail.com",
-  },
-};
-
-export default async function DoctorPage({ params }: { params: { slug: string } }) {
+export default async function DoctorPage({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const res = await fetch(
     `https://backend.heartvalveexperts.com/wp-json/custom-api/v1/cardiologists?slug=${params.slug}`,
     { cache: "no-store" }
   );
 
-  if (!res.ok) {
-    return (
-      <div className="text-center py-20 text-red-600">
-        Failed to load doctor details.
-      </div>
-    );
-  }
+  if (!res.ok) notFound();
 
-  const data = await res.json();
-  const doctor: DoctorData | null = Array.isArray(data) ? data[0] : data;
+  const data: DoctorData[] = await res.json();
+  const doctor = data?.[0];
 
-  if (!doctor) {
-    return (
-      <div className="text-center py-20">
-        <h1 className="text-2xl font-semibold">Doctor Not Found</h1>
-      </div>
-    );
-  }
+  if (!doctor) notFound();
 
-  const schemaData =
-    staticDoctorSchema[doctor.slug] ?? {
-      "@context": "https://schema.org",
-      "@type": "Physician",
-      name: doctor.title,
-      image: doctor.featured_image?.url,
-      description: doctor.cardiologist_description,
-      medicalSpecialty: "Interventional Cardiology",
-      url: `https://heartvalveexperts.com/cardiologist-mumbai/${doctor.slug}`,
-    };
+  /* ================= SCHEMA ================= */
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    name: doctor.title,
+    image: doctor.featured_image?.url,
+    description: doctor.cardiologist_description,
+    medicalSpecialty: "Interventional Cardiology",
+    url: `https://heartvalveexperts.com/cardiologist-mumbai/${doctor.slug}`,
+  };
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
 
-      <BreadCrumb title={doctor.title} subpage="false" image="/images/contact.webp" />
+      <BreadCrumb
+        title={doctor.title}
+        subpage="false"
+        image="/images/contact.webp"
+      />
 
       <Doctor
         image={doctor.featured_image?.url ?? "/placeholder.png"}
@@ -253,10 +120,10 @@ export default async function DoctorPage({ params }: { params: { slug: string } 
       <DoctorProfile
         sections={
           Array.isArray(doctor.cardiologist_long_details)
-            ? doctor.cardiologist_long_details.map(item => ({
+            ? doctor.cardiologist_long_details.map((item) => ({
                 title: item.title,
                 description: item.description,
-                iconUrl: item.icon?.url || "",
+                iconUrl: item.icon?.url ?? "",
               }))
             : []
         }
