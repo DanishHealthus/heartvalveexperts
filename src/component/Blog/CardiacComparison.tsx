@@ -21,40 +21,59 @@ interface CardiacComparisonProps {
 }
 
 export default function CardiacComparison({ blog }: CardiacComparisonProps) {
+  console.log(blog,"tra danish");
   const pathname = usePathname();
   const currentUrl = `${process.env.NEXT_PUBLIC_SITE_URL || "https://heartvalveexperts.com"}${pathname}`;
   const [toc, setToc] = useState<{ id: string; text: string; level: number }[]>([]);
   const [htmlContent, setHtmlContent] = useState("");
 
-  useEffect(() => {
-    if (!blog?.long_description) return;
+ useEffect(() => {
+  if (!blog?.long_description) return;
 
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(blog.long_description, "text/html");
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(blog.long_description, "text/html");
 
-    const headings = [...doc.querySelectorAll("h2, h3")];
+  // h2, h3 + strong inside p
+  const headingNodes = [
+  ...Array.from(doc.querySelectorAll<HTMLElement>("h2, h3")),
+  ...Array.from(doc.querySelectorAll<HTMLElement>("p > strong")),
+];
 
-    const tocItems: { id: string; text: string; level: number }[] = [];
+  const tocItems: { id: string; text: string; level: number }[] = [];
 
-    headings.forEach((heading) => {
-      const text = heading.textContent || "";
-      const id = text
-        .toLowerCase()
-        .replace(/\s+/g, "-")
-        .replace(/[^\w-]/g, "");
+  headingNodes.forEach((node) => {
+    const text = node.textContent?.trim();
+    if (!text) return;
 
-      heading.setAttribute("id", id);
+    const id = text
+      .toLowerCase()
+      .replace(/\s+/g, "-")
+      .replace(/[^\w-]/g, "");
 
+    // If <strong>, attach id to parent <p>
+    if (node.tagName === "STRONG") {
+      node.parentElement?.setAttribute("id", id);
       tocItems.push({
         id,
         text,
-        level: heading.tagName === "H2" ? 2 : 3,
+        level: 2, // treat strong as h2
       });
-    });
+    } else {
+      node.setAttribute("id", id);
+      tocItems.push({
+        id,
+        text,
+        level: node.tagName === "H3" ? 3 : 2,
+      });
+    }
+  });
 
-    setToc(tocItems);
-    setHtmlContent(doc.body.innerHTML);
-  }, [blog?.long_description]);
+  console.log("Detected TOC:", tocItems);
+
+  setToc(tocItems);
+  setHtmlContent(doc.body.innerHTML);
+}, [blog?.long_description]);
+
 
   return (
     <section className="bg-white px-2 md:px-6 xl:px-10 py-10 [overflow-x:clip]">

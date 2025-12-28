@@ -2,6 +2,7 @@ import React from "react";
 import RelatedBlog from "@/component/Blog/RelatedBlog";
 import CardiacComparison from "@/component/Blog/CardiacComparison";
 import BlogBreadCrumb from "@/component/BlogBreadCrumb";
+import { notFound } from "next/navigation";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -31,38 +32,38 @@ interface BlogPost {
 
 /* ================= API HELPERS ================= */
 
-async function getBlogData(slug: string): Promise<BlogPost | null> {
-  try {
-    const res = await fetch(
-      `https://backend.heartvalveexperts.com/wp-json/custom-api/v1/blogs?slug=${slug}`,
-      { cache: "no-store" }
-    );
+// async function getBlogData(slug: string): Promise<BlogPost | null> {
+//   try {
+//     const res = await fetch(
+//       `https://backend.heartvalveexperts.com/wp-json/custom-api/v1/blogs?slug=${slug}`,
+//       { cache: "no-store" }
+//     );
 
-    if (!res.ok) return null;
+//     if (!res.ok) return null;
 
-    const data = await res.json();
+//     const data = await res.json();
 
-    // CASE 1: API returns array
-    if (Array.isArray(data)) {
-      return data.length ? data[0] : null;
-    }
+//     // CASE 1: API returns array
+//     if (Array.isArray(data)) {
+//       return data.length ? data[0] : null;
+//     }
 
-    // CASE 2: API returns { posts: [] }
-    if (Array.isArray(data?.posts)) {
-      return data.posts.length ? data.posts[0] : null;
-    }
+//     // CASE 2: API returns { posts: [] }
+//     if (Array.isArray(data?.posts)) {
+//       return data.posts.length ? data.posts[0] : null;
+//     }
 
-    // CASE 3: API returns single object
-    if (data?.slug) {
-      return data;
-    }
+//     // CASE 3: API returns single object
+//     if (data?.slug) {
+//       return data;
+//     }
 
-    return null;
-  } catch (error) {
-    console.error("Blog fetch error:", error);
-    return null;
-  }
-}
+//     return null;
+//   } catch (error) {
+//     console.error("Blog fetch error:", error);
+//     return null;
+//   }
+// }
 
 async function getBlogs() {
   try {
@@ -82,12 +83,22 @@ async function getBlogs() {
 
 /* ================= SEO METADATA ================= */
 
-export async function generateMetadata({
-  params,
-}: {
+export async function generateMetadata({  params}: {
   params: { slug: string };
 }) {
-  const blog = await getBlogData(params.slug);
+   const res = await fetch(
+    `https://backend.heartvalveexperts.com/wp-json/custom-api/v1/blogs?slug=${params?.slug}`,
+    { cache: "no-store" }
+  );
+  
+  if (!res.ok) return null;
+  
+  const blog = await res.json();
+  
+  
+  // const blog = await getBlogData(params.slug);
+
+
 
   if (!blog) {
     return {
@@ -133,18 +144,25 @@ export default async function SingleBlogPage({
 }: {
   params: { slug: string };
 }) {
-  const blog = await getBlogData(params.slug);
+  // const blog = await getBlogData(params.slug);
 
-  if (!blog) {
-    return (
-      <div className="py-20 text-center">
-        <h1 className="text-2xl font-semibold">Blog not available</h1>
-        <p className="text-gray-500 mt-2">
-          This blog may be unpublished or temporarily unavailable.
-        </p>
-      </div>
-    );
-  }
+  const res = await fetch(
+    `https://backend.heartvalveexperts.com/wp-json/custom-api/v1/blogs?slug=${params.slug}`,
+    { cache: "no-store" }
+  );
+  
+  if (!res.ok) return null;
+  
+  const blog = await res.json();
+  // console.log(blog,"tra danish");
+  
+  // const blog = await getBlogData(params.slug);
+
+  
+if (!blog) {
+  notFound();
+}
+
 
   /* ================= SCHEMA ================= */
 
@@ -173,21 +191,21 @@ export default async function SingleBlogPage({
     dateModified: blog.updated_at || blog.date,
   };
 
-  const faqSchema =
-    blog.faq_list && blog.faq_list.length
-      ? {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: blog.faq_list.map((faq) => ({
-            "@type": "Question",
-            name: faq.question,
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: faq.answer,
-            },
-          })),
-        }
-      : null;
+  // const faqSchema =
+  //   blog.faq_list && blog.faq_list.length
+  //     ? {
+  //         "@context": "https://schema.org",
+  //         "@type": "FAQPage",
+  //         mainEntity: blog.faq_list.map((faq:any) => ({
+  //           "@type": "Question",
+  //           name: faq.question,
+  //           acceptedAnswer: {
+  //             "@type": "Answer",
+  //             text: faq.answer,
+  //           },
+  //         })),
+  //       }
+  //     : null;
 
   const posts = await getBlogs();
 
@@ -200,12 +218,12 @@ export default async function SingleBlogPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
       />
 
-      {faqSchema && (
+      {/* {faqSchema && (
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
-      )}
+      )} */}
 
       <BlogBreadCrumb />
 

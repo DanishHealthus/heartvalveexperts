@@ -8,6 +8,7 @@ import { VscCallOutgoing } from "react-icons/vsc";
 import Link from "next/link";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import ModalContactForm from "./ModalContactForm";
+import Image from "next/image";
 
 export default function HomePage() {
   const titleRef = useRef<HTMLHeadingElement>(null);
@@ -154,7 +155,7 @@ export default function HomePage() {
 
       <div ref={logoRef} className="absolute top-3 lg:top-6 left-1/2 -translate-x-1/2">
         <Link href='/'>
-          <img src="/images/homeimages/logo.png" alt="Logo" className="h-20 lg:h-24" />
+          <Image src="/images/homeimages/logo.png" alt="Logo" className="h-20 lg:h-24" />
         </Link>
       </div>
 
