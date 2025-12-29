@@ -27,6 +27,22 @@
         return false;
       }
       </script>
+      <script>
+          function gtag_report_conversion(url) {
+            var callback = function () {
+              if (typeof(url) != 'undefined') {
+                window.location = url;
+              }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-17726300204/7ABuCOSOidkbEKzAx4RC',
+                'value': 1.0,
+                'currency': 'INR',
+                'event_callback': callback
+            });
+            return false;
+          }
+        </script>
   </head>
   <body>
     <section class="hero-section" id="hero">
@@ -781,6 +797,7 @@ form.addEventListener("submit", function (e) {
     return;
   }
 
+
   const formData = new FormData(form);
 
   fetch("https://script.google.com/macros/s/AKfycbxfEKY__0MHNNqQetaS7hVnSAL0Yitw1qPrZcQY0jL24YXbbw67CX2fQwOmpboLi8uG/exec", {
@@ -789,10 +806,11 @@ form.addEventListener("submit", function (e) {
   })
   .then(res => res.text())
   .then(response => {
-    msg.innerHTML = `
-      <div class="alert alert-success">
-        Thank you! Your details have been submitted successfully.
-      </div>`;
+    // msg.innerHTML = `
+    //   <div class="alert alert-success">
+    //     Thank you! Your details have been submitted successfully.
+    //   </div>`;
+    window.location.href = "https://heartvalveexperts.com/thank-you";
     form.reset();
     form.classList.remove("was-validated");
   })
