@@ -44,7 +44,7 @@ export async function POST(req) {
       secure: false,
       auth: {
         user: "ithealthus@gmail.com",
-        pass: "YOUR_APP_PASSWORD", // Gmail App Password
+        pass: "mtxz gqin ddhz zfqk", 
       },
     });
 
@@ -59,7 +59,7 @@ export async function POST(req) {
 
     await transporter.sendMail({
       from: "ithealthus@gmail.com",
-      to: "ithealthus@gmail.com",
+      to: "danish@healthus.ai",
       subject: "New Consultation Request",
       html: `
         <p><b>Name:</b> ${name}</p>

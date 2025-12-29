@@ -15,6 +15,9 @@ export async function POST(req) {
       message: message,
     };
 
+    console.log(wpPayload,"wpPayload");
+    
+
     const wpRes = await fetch(
       "https://backend.heartvalveexperts.com/wp-json/custom/v1/submit-wpgi-contact",
       {
@@ -36,7 +39,7 @@ export async function POST(req) {
       secure: false,
       auth: {
         user: "ithealthus@gmail.com",
-        pass: "tbwn htaz sbyh bade", 
+        pass: "mtxz gqin ddhz zfqk", 
       },
     });
 
