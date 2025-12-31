@@ -45,7 +45,7 @@ export async function POST(req) {
 
     await transporter.sendMail({
       from: "ithealthus@gmail.com",
-      to: "ithealthus@gmail.com",
+      to: "heartvalveexperts@gmail.com, naresh@healthus.ai, mohit@healthus.ai", // multiple recipients
       replyTo: email,
       subject: "New Enquiry from Heart Valve Experts Site",
       html: `

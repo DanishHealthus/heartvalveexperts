@@ -154,10 +154,10 @@
                 <div class="invalid-feedback">Please select an option.</div>
               </div>
 
-              <div class="mb-3">
+              <!-- <div class="mb-3">
                 <label class="form-label">Upload reports</label>
                 <input type="file" name="file" class="form-control">
-              </div>
+              </div> -->
 
               <div class="mb-3">
                 <label class="form-label">Notes (optional)</label>
@@ -784,45 +784,47 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
+<script>
 const form = document.getElementById("consultationForm");
 const msg  = document.getElementById("formMsg");
 
-form.addEventListener("submit", function (e) {
+form.addEventListener("submit", async function (e) {
   e.preventDefault();
 
-  // Bootstrap validation
   if (!form.checkValidity()) {
     form.classList.add("was-validated");
     return;
   }
 
-
+  // Collect form fields only, ignore file
   const formData = new FormData(form);
+  const dataObj = {};
+  for (let [key, value] of formData.entries()) {
+    if (key !== "file") dataObj[key] = value; // skip file
+  }
 
-  fetch("https://script.google.com/macros/s/AKfycbxfEKY__0MHNNqQetaS7hVnSAL0Yitw1qPrZcQY0jL24YXbbw67CX2fQwOmpboLi8uG/exec", {
-    method: "POST",
-    body: formData
-  })
-  .then(res => res.text())
-  .then(response => {
-    // msg.innerHTML = `
-    //   <div class="alert alert-success">
-    //     Thank you! Your details have been submitted successfully.
-    //   </div>`;
-    window.location.href = "https://heartvalveexperts.com/thank-you";
-    form.reset();
-    form.classList.remove("was-validated");
-  })
-  .catch(error => {
-    msg.innerHTML = `
-      <div class="alert alert-danger">
-        Something went wrong. Please try again.
-      </div>`;
-    console.error(error);
-  });
+  try {
+    const response = await fetch("/api/landing-mail", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(dataObj),
+    });
+
+    const data = await response.json();
+    console.log(data, "API response");
+
+    if (data.success) {
+      window.location.href = "/thank-you";
+    } else {
+      alert(data.message || "Something went wrong");
+    }
+  } catch (err) {
+    console.error("Form submit error:", err);
+    alert("Something went wrong");
+  }
 });
 </script>
+
 
 
     <script>
