@@ -95,7 +95,7 @@ export default function CardiacComparison({ blog }: CardiacComparisonProps) {
           </Link>
         </div>
       </div>
-      <h1 className="invisible">{he.decode(blog?.title || "")}</h1>
+      
       <div className={`max-w-7xl mx-auto flex flex-col-reverse ${toc.length === 0 ? "lg:flex-col" : "lg:flex-row"}  justify-between gap-6 lg:-mt-20 -mt-36`}>
 
         <div className="w-full lg:w-[30%]">
@@ -142,6 +142,7 @@ export default function CardiacComparison({ blog }: CardiacComparisonProps) {
         </div>
 
         <div className={`${toc.length === 0 ? "lg:w-full" : "lg:w-2/3"} `}>
+        <h1 className="text-black text-3xl lg:text-4xl font-bold mb-5">{he.decode(blog?.title || "")}</h1>
           <div
             className="prose prose-blue max-w-none border-b pb-8 mb-8"
             dangerouslySetInnerHTML={{ __html: htmlContent }}
