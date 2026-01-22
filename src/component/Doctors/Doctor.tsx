@@ -8,7 +8,9 @@ interface DoctorProps {
   alt: string;
   title: string;
   description?: string; // optional banaya
+  tag: string;
   buttonText: string;
+
   buttonLink?: string; // optional future ke liye
 }
 

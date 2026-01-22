@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
+import he from "he";
 import {
   FaFacebookF,
   FaTwitter,
@@ -27,52 +28,52 @@ export default function CardiacComparison({ blog }: CardiacComparisonProps) {
   const [toc, setToc] = useState<{ id: string; text: string; level: number }[]>([]);
   const [htmlContent, setHtmlContent] = useState("");
 
- useEffect(() => {
-  if (!blog?.long_description) return;
+  useEffect(() => {
+    if (!blog?.long_description) return;
 
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(blog.long_description, "text/html");
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(blog.long_description, "text/html");
 
-  // h2, h3 + strong inside p
-  const headingNodes = [
-  ...Array.from(doc.querySelectorAll<HTMLElement>("h2, h3")),
-  ...Array.from(doc.querySelectorAll<HTMLElement>("p > strong")),
-];
+    // h2, h3 + strong inside p
+    const headingNodes = [
+      ...Array.from(doc.querySelectorAll<HTMLElement>("h2, h3")),
+      ...Array.from(doc.querySelectorAll<HTMLElement>("p > strong")),
+    ];
 
-  const tocItems: { id: string; text: string; level: number }[] = [];
+    const tocItems: { id: string; text: string; level: number }[] = [];
 
-  headingNodes.forEach((node) => {
-    const text = node.textContent?.trim();
-    if (!text) return;
+    headingNodes.forEach((node) => {
+      const text = node.textContent?.trim();
+      if (!text) return;
 
-    const id = text
-      .toLowerCase()
-      .replace(/\s+/g, "-")
-      .replace(/[^\w-]/g, "");
+      const id = text
+        .toLowerCase()
+        .replace(/\s+/g, "-")
+        .replace(/[^\w-]/g, "");
 
-    // If <strong>, attach id to parent <p>
-    if (node.tagName === "STRONG") {
-      node.parentElement?.setAttribute("id", id);
-      tocItems.push({
-        id,
-        text,
-        level: 2, // treat strong as h2
-      });
-    } else {
-      node.setAttribute("id", id);
-      tocItems.push({
-        id,
-        text,
-        level: node.tagName === "H3" ? 3 : 2,
-      });
-    }
-  });
+      // If <strong>, attach id to parent <p>
+      if (node.tagName === "STRONG") {
+        node.parentElement?.setAttribute("id", id);
+        tocItems.push({
+          id,
+          text,
+          level: 2, // treat strong as h2
+        });
+      } else {
+        node.setAttribute("id", id);
+        tocItems.push({
+          id,
+          text,
+          level: node.tagName === "H3" ? 3 : 2,
+        });
+      }
+    });
 
-  console.log("Detected TOC:", tocItems);
+    console.log("Detected TOC:", tocItems);
 
-  setToc(tocItems);
-  setHtmlContent(doc.body.innerHTML);
-}, [blog?.long_description]);
+    setToc(tocItems);
+    setHtmlContent(doc.body.innerHTML);
+  }, [blog?.long_description]);
 
 
   return (
@@ -94,7 +95,7 @@ export default function CardiacComparison({ blog }: CardiacComparisonProps) {
           </Link>
         </div>
       </div>
-
+      <h1 className="invisible">{he.decode(blog?.title || "")}</h1>
       <div className={`max-w-7xl mx-auto flex flex-col-reverse ${toc.length === 0 ? "lg:flex-col" : "lg:flex-row"}  justify-between gap-6 lg:-mt-20 -mt-36`}>
 
         <div className="w-full lg:w-[30%]">

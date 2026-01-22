@@ -1,12 +1,9 @@
-"use client";
-
-import { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
+import React from "react";
 import BlogBreadCrumb from "@/component/BlogBreadCrumb";
-import CardiacComparison from "@/component/Blog/CardiacComparison";
 import RelatedBlog from "@/component/Blog/RelatedBlog";
-
-/* ================= TYPES ================= */
+import CardiacComparison from "@/component/Blog/CardiacComparison";
+import { JSDOM } from "jsdom";
+import { getRelatedBLog } from "@/app/api/allapi";
 
 interface FAQItem {
   question: string;
@@ -17,8 +14,8 @@ interface BlogPost {
   id: number;
   slug: string;
   title: string;
-  short_description?: string;
-  long_description?: string;
+  short_description: string;
+  long_description: string;
   image?: string;
   image_url?: string;
   meta_title?: string;
@@ -28,8 +25,7 @@ interface BlogPost {
   updated_at?: string;
   faq_list?: FAQItem[];
 }
-
-interface RelatedBlogItem {
+  interface RelatedBlogItem {
   id?: number;
   slug: string;
   title: string;
@@ -41,107 +37,91 @@ interface RelatedBlogItem {
 interface RelatedBlogApiResponse {
   posts?: RelatedBlogItem[];
 }
-
-/* ================= PAGE ================= */
-
-export default function SingleBlogPage() {
-  const params = useParams();
-  const slug = typeof params?.slug === "string" ? params.slug : "";
-
-  const [blog, setBlog] = useState<BlogPost | null>(null);
-  const [relatedBlogs, setRelatedBlogs] = useState<RelatedBlogItem[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
-
-  /* ================= FETCH BLOG ================= */
-
-  useEffect(() => {
-    if (!slug) return;
-
-    const fetchBlog = async (): Promise<void> => {
-      try {
-        const res = await fetch(
-          `https://backend.heartvalveexperts.com/wp-json/custom-api/v1/blogs?slug=${slug}`
-        );
-
-        const contentType = res.headers.get("content-type");
-        if (!contentType || !contentType.includes("application/json")) {
-          setBlog(null);
-          return;
-        }
-
-        const data: unknown = await res.json();
-
-        if (Array.isArray(data) && data.length > 0) {
-          setBlog(data[0] as BlogPost);
-        } else if (
-          typeof data === "object" &&
-          data !== null &&
-          "slug" in data
-        ) {
-          setBlog(data as BlogPost);
-        } else {
-          setBlog(null);
-        }
-      } catch (error) {
-        console.error("Blog fetch error:", error);
-        setBlog(null);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchBlog();
-  }, [slug]);
-
-  /* ================= FETCH RELATED BLOGS ================= */
-
-  useEffect(() => {
-    const fetchRelated = async (): Promise<void> => {
-      try {
-        const res = await fetch(
-          "https://backend.heartvalveexperts.com/wp-json/custom-api/v1/blogs?fields=title,image,image_alt,slug,date&page=1&per_page=6"
-        );
-
-        const data: RelatedBlogApiResponse = await res.json();
-        setRelatedBlogs(data.posts ?? []);
-      } catch (error) {
-        console.error("Related blog error:", error);
-        setRelatedBlogs([]);
-      }
-    };
-
-    fetchRelated();
-  }, []);
-
-  /* ================= STATES ================= */
-
-  if (loading) {
-    return (
-      <div className="py-20 text-center text-lg font-semibold">
-        Loading blog...
-      </div>
+async function getBlogData(slug: string): Promise<BlogPost | null> {
+  try {
+    const res = await fetch(
+      `https://backend.heartvalveexperts.com/wp-json/custom-api/v1/blogs?slug=${slug}`,
+      { cache: "no-store" }
     );
+    if (!res.ok) return null;
+    return await res.json();
+  } catch (err) {
+    console.error("Error fetching blog:", err);
+    return null;
   }
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const blog = await getBlogData(slug);
+
+  if (!blog) {
+    return {
+      title: "Heart Valve Experts | Blog",
+      description: "Expert insights on cardiac health and heart valve care.",
+    };
+  }
+
+  return {
+    title: blog.meta_title || blog.title,
+    description:
+      blog.meta_description ||
+      blog.short_description ||
+      "Heart Valve Experts – Trusted cardiac specialists.",
+    alternates: { canonical: `https://heartvalveexperts.com/blog/${slug}` },
+    openGraph: {
+      title: blog.meta_title || blog.title,
+      description:
+        blog.meta_description ||
+        blog.short_description ||
+        "Heart Valve Experts – Trusted cardiac specialists.",
+      url: `https://heartvalveexperts.com/blog/${slug}`,
+      type: "article",
+      images: [
+        {
+          url: blog.image_url || blog.image || "/default-blog.jpg",
+          width: 1200,
+          height: 630,
+          alt: blog.title,
+        },
+      ],
+    },
+  };
+}
+
+export default async function SingleBlogPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const blog = await getBlogData(slug);
 
   if (!blog) {
     return (
-      <div className="py-20 text-center">
-        <h1 className="text-2xl font-bold">Blog not found</h1>
+      <div className="text-center py-10 text-red-600 text-xl font-medium">
+        Blog not found!
       </div>
     );
   }
-
-  /* ================= SCHEMA ================= */
 
   const blogSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://heartvalveexperts.com/blog/${blog.slug}`,
+    },
     headline: blog.title,
     description:
       blog.meta_description ||
       blog.short_description ||
-      "",
-    image: blog.image_url || blog.image,
+      "Heart Valve Experts – Cardiac health insights.",
+    image: blog.image_url || blog.image || "/default-blog.jpg",
     author: {
       "@type": "Person",
       name: blog.author_name || "Heart Valve Experts",
@@ -154,9 +134,74 @@ export default function SingleBlogPage() {
         url: "https://heartvalveexperts.com/images/homeimages/logo.png",
       },
     },
-    datePublished: blog.date,
-    dateModified: blog.updated_at || blog.date,
+    datePublished: blog.date || new Date().toISOString(),
+    dateModified: blog.updated_at || blog.date || new Date().toISOString(),
   };
+  function extractFAQsFromHTML(html: string) {
+    const dom = new JSDOM(html);
+    const document = dom.window.document;
+
+    const faqSections = document.querySelectorAll(".schema-faq-section");
+    const faqList: { question: string; answer: string }[] = [];
+
+    faqSections.forEach((section) => {
+      const questionEl = section.querySelector(".schema-faq-question");
+      const answerEl = section.querySelector(".schema-faq-answer");
+
+      const question = questionEl?.textContent?.trim() || "";
+      const answer = answerEl?.textContent?.trim() || "";
+
+      if (question && answer) {
+        faqList.push({ question, answer });
+      }
+    });
+
+    return faqList;
+  }
+
+  const extractedFaqs = extractFAQsFromHTML(blog.long_description || "");
+  const faqSchema =
+    (blog.faq_list && blog.faq_list.length > 0
+      ? blog.faq_list
+      : extractedFaqs
+    ).length > 0
+      ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: (blog.faq_list && blog.faq_list.length > 0
+          ? blog.faq_list
+          : extractedFaqs
+        ).map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer,
+          },
+        })),
+      }
+      : null;
+
+
+const relatedPost = await getRelatedBLog()
+  // const [relatedBlogs, setRelatedBlogs] = useState<RelatedBlogItem[]>([]);
+  // useEffect(() => {
+  //   const fetchRelated = async (): Promise<void> => {
+  //     try {
+  //       const res = await fetch(
+  //         "https://backend.heartvalveexperts.com/wp-json/custom-api/v1/"
+  //       );
+
+  //       const data: RelatedBlogApiResponse = await res.json();
+  //       setRelatedBlogs(data.posts ?? []);
+  //     } catch (error) {
+  //       console.error("Related blog error:", error);
+  //       setRelatedBlogs([]);
+  //     }
+  //   };
+
+  //   fetchRelated();
+  // }, []);
 
   return (
     <>
@@ -165,9 +210,16 @@ export default function SingleBlogPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
       />
 
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+
       <BlogBreadCrumb />
       <CardiacComparison blog={blog} />
-      <RelatedBlog posts={relatedBlogs} />
+      <RelatedBlog posts={relatedPost.posts}/>
     </>
   );
 }
