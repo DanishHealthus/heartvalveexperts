@@ -2,6 +2,7 @@ import BreadCrumb from "@/component/BreadCrumb";
 import Doctor from "@/component/Doctors/Doctor";
 import DoctorProfile from "@/component/Doctors/DoctorProfile";
 import AppointmentCTA from "@/component/AppointmentCTA";
+import { notFound } from "next/navigation";
 
 interface SectionData {
   title: string;
@@ -191,13 +192,7 @@ export default async function DoctorPage({ params }: { params: { slug: string } 
     { cache: "no-store" }
   );
 
-  if (!res.ok) {
-    return (
-      <div className="text-center py-20">
-        <p className="text-xl text-red-600">Failed to load doctor details.</p>
-      </div>
-    );
-  }
+  if (!res.ok) return notFound();
 
   const doctor: DoctorData = await res.json();
 

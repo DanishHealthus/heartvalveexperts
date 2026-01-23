@@ -4,6 +4,7 @@ import RelatedBlog from "@/component/Blog/RelatedBlog";
 import CardiacComparison from "@/component/Blog/CardiacComparison";
 import { JSDOM } from "jsdom";
 import { getRelatedBLog } from "@/app/api/allapi";
+import { notFound } from "next/navigation";
 
 interface FAQItem {
   question: string;
@@ -59,12 +60,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const blog = await getBlogData(slug);
 
-  if (!blog) {
-    return {
-      title: "Heart Valve Experts | Blog",
-      description: "Expert insights on cardiac health and heart valve care.",
-    };
-  }
+  if (!blog) return notFound();
 
   return {
     title: blog.meta_title || blog.title,
@@ -101,13 +97,7 @@ export default async function SingleBlogPage({
   const { slug } = await params;
   const blog = await getBlogData(slug);
 
-  if (!blog) {
-    return (
-      <div className="text-center py-10 text-red-600 text-xl font-medium">
-        Blog not found!
-      </div>
-    );
-  }
+  if (!blog) return notFound();
 
   const blogSchema = {
     "@context": "https://schema.org",

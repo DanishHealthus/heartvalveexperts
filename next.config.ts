@@ -191,11 +191,11 @@ const nextConfig: NextConfig = {
         destination: "https://heartvalveexperts.com/case-studies",
         permanent: true,
       },
-      // {
-      //   source: "/contact-us/",
-      //   destination: "https://heartvalveexperts.com/contact-us",
-      //   permanent: true,
-      // },
+      {
+        source: "/blog/how-vsr-closure-is-managed-after-a-myocardial-infarction-life-saving-interventions",
+        destination: "https://heartvalveexperts.com/blog/vsr-closure-after-myocardial-infarction",
+        permanent: true,
+      },
       {
         source: "/cardiologist-in-mumbai",
         destination: "https://heartvalveexperts.com/cardiologist-mumbai",
