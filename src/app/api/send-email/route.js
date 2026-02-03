@@ -15,8 +15,8 @@ export async function POST(req) {
       message: message,
     };
 
-    console.log(wpPayload,"wpPayload");
-    
+    console.log(wpPayload, "wpPayload");
+
 
     const wpRes = await fetch(
       "https://backend.heartvalveexperts.com/wp-json/custom/v1/submit-wpgi-contact",
@@ -39,13 +39,13 @@ export async function POST(req) {
       secure: false,
       auth: {
         user: "ithealthus@gmail.com",
-        pass: "mtxz gqin ddhz zfqk", 
+        pass: "mtxz gqin ddhz zfqk",
       },
     });
 
     await transporter.sendMail({
       from: "ithealthus@gmail.com",
-      to: "heartvalveexperts@gmail.com, naresh@healthus.ai, mohit@healthus.ai,info@healthus.ai ,drankurmd@gmail.com, marketinghead@hvshospitals.in",
+      to: "heartvalveexperts@gmail.com, sahil@healthus.ai, shwetha@healthus.ai, mohit@healthus.ai,info@healthus.ai ,drankurmd@gmail.com, marketinghead@hvshospitals.in",
       replyTo: email,
       subject: "New Enquiry from Heart Valve Experts Site",
       html: `
