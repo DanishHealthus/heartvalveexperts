@@ -8,7 +8,7 @@ const HeroValve = () => {
     return (
         <section id="book-appointment" className="pb-10 w-full animate-gradient-circle-aalekh text-white landing-main-font">
             {/* Header */}
-            <header className="flex items-center gap-4 justify-between px-3 md:px-12 xl:px-16 2xl:px-24 py-2 border-b border-white-500">
+            <header className="flex items-center gap-4 justify-between px-3 md:px-12 xl:px-16 2xl:px-24 py-2 border-b border-white/30">
                 <div className="flex items-center gap-3">
                     <Link href='#'>
                         <Image src="/images/homeimages/logo.png" alt="Logo" width={150} height={100} className="" />

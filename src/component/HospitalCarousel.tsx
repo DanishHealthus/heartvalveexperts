@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -21,18 +22,22 @@ export default function HospitalCarousel() {
       <div className="text-center">
 
         <h2 className="text-2xl md:text-3xl font-medium text-gray-900 mb-12 ">
-          Doctors Affiliation 
+          Doctors Affiliation
         </h2>
         {/* <hr /> */}
       </div>
       <div className="max-w-7xl mx-auto relative">
         <Swiper
-        //   modules={[Autoplay, Navigation]}
+           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={30}
-          slidesPerView={4}
-          loop={true}
-          autoplay={true}
-          navigation={true}
+          loop
+          // autoplay={true}
+          autoplay={{
+            delay: 100,
+            disableOnInteraction: false,
+          }}
+          speed={2000}
+          navigation={false}
           breakpoints={{
             0: { slidesPerView: 2 },
             640: { slidesPerView: 3 },

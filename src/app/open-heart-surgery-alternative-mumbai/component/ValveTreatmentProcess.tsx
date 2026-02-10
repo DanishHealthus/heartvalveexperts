@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 interface StepItem {
@@ -50,16 +51,15 @@ const ValveTreatmentProcess: React.FC<ValveTreatmentProcessProps> = ({
                                         <span className="h-3 w-3 rounded-full bg-white" />
                                     </span>
                                     {index + 1 !== steps.length &&
-                                    (<div className="absolute left-[11px] top-3 -bottom-10 w-[2px] bg-blue-600" />)}
+                                        (<div className="absolute left-[11px] top-3 -bottom-10 w-[2px] bg-blue-600" />)}
                                     <div>
                                         <h3 className="text-lg md:text-xl font-semibold text-slate-900 mb-1">
                                             {step.title}
                                         </h3>
-
                                         <p
                                             className={`text-sm md:text-base ${step.highlight
-                                                    ? "text-blue-600 underline underline-offset-2"
-                                                    : "text-slate-600"
+                                                ? "text-blue-600 underline underline-offset-2"
+                                                : "text-slate-600"
                                                 }`}
                                         >
                                             {step.description}
@@ -75,18 +75,20 @@ const ValveTreatmentProcess: React.FC<ValveTreatmentProcessProps> = ({
                         <img
                             src={image.src}
                             alt={image.alt || ""}
-                            className="w-full max-w-md rounded-3xl object-cover"
+                            className="w-full rounded-4xl object-cover"
                         />
                     </div>
                 </div>
 
                 {/* CTA */}
                 <div className="mt-14 flex justify-center">
-                    <button
-                        className="rounded-full bg-gradient-to-r from-red-500 to-blue-600 px-6 py-3 text-sm md:text-base font-medium text-white hover:opacity-90 transition"
-                    >
-                        Start Your Valve Review
-                    </button>
+                    <Link href={"#book-appointment"}>
+                        <button
+                            className="rounded-full cursor-pointer bg-gradient-to-r from-red-500 to-blue-600 px-6 py-3 text-sm md:text-base font-medium text-white hover:opacity-90 transition"
+                        >
+                            Start Your Valve Review
+                        </button>
+                    </Link>
                 </div>
             </div>
         </section>

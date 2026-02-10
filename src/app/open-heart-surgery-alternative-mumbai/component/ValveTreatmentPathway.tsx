@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link";
 import React from "react";
 
 interface OptionCard {
@@ -41,7 +42,7 @@ const ValveTreatmentPathway: React.FC<ValveTreatmentPathwayProps> = ({
               className="rounded-3xl overflow-hidden bg-white/10 backdrop-blur-md border border-white/15"
             >
               {/* Image */}
-              <div className="relative h-48 md:h-56">
+              <div className="relative h-48 md:h-72">
                 <img
                   src={option.image}
                   alt={option.title}
@@ -54,7 +55,7 @@ const ValveTreatmentPathway: React.FC<ValveTreatmentPathwayProps> = ({
                 <h3 className="text-lg md:text-xl font-semibold text-white mb-1">
                   {option.title}
                 </h3>
-                <p className="text-sm text-white/90 mb-2">
+                <p className="text-base text-white/90 mb-2">
                   {option.subtitle}
                 </p>
                 <p className="text-sm text-white/70 leading-relaxed">
@@ -67,11 +68,13 @@ const ValveTreatmentPathway: React.FC<ValveTreatmentPathwayProps> = ({
 
         {/* CTA */}
         <div className="mt-12 flex justify-center">
+          <Link href={"#book-appointment"}>
           <button
-            className="rounded-full bg-white text-slate-900 px-6 py-3 text-sm md:text-base font-medium hover:bg-white/90 transition"
+            className="rounded-full cursor-pointer bg-white text-slate-900 px-6 py-3 text-sm md:text-base font-medium hover:bg-white/90 transition"
           >
             Find the Right Valve Treatment
           </button>
+          </Link>
         </div>
       </div>
     </section>
