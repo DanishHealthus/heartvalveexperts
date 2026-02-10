@@ -47,7 +47,7 @@ export default function FAQAccordion({
       </div>
 
       {/* Accordion */}
-      <div className="mt-12 max-w-3xl mx-auto space-y-3">
+      <div className="mt-12 max-w-6xl mx-auto space-y-3">
         {faqs?.map((faq) => (
           <div
             key={faq.id}

@@ -1,4 +1,6 @@
 @import url("https://use.typekit.net/rnh8ohv.css");
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=Geist:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 @import "tailwindcss";
 
 :root {
@@ -63,6 +65,13 @@ body {
   height: 100%;
   width: 100%;
   overflow: auto;
+  background-color: white;
+  color: black;
+}
+.landing-main-font {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 #smooth-wrapper {
@@ -110,6 +119,14 @@ body {
   animation: gradient-circle 15s ease-in-out infinite;
   filter: brightness(1.1) saturate(1.1);
 }
+
+.animate-gradient-circle-aalekh {
+  background: radial-gradient(circle at center, #3E4094, #97323b, #3E4094);
+  background-size: 250% 250%;
+  animation: gradient-circle 15s ease-in-out infinite;
+  filter: brightness(1.1) saturate(1.1);
+}
+
 
 .page-content {
   padding-top: 80px;

@@ -38,16 +38,17 @@ const TaviBenefits = ({
   sectionIconSrc,
 }: TaviBenefitsProps) => {
   return (
-    <section className="py-16 px-4 md:px-10 lg:px-24 xl:px-32 bg-white">
+    <section className="py-16 px-4 md:px-10 lg:px-24 xl:px-32 ">
       <div className="max-w-6xl mx-auto text-center">
         {/* Section Label */}
+        {sectionLabel &&
         <motion.p
           variants={fadeInVariant}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
           style={{ letterSpacing: "2px" }}
-          className="text-gray-600 text-base font-medium tracking-wide flex items-center justify-center gap-1 uppercase"
+          className="text-base font-medium tracking-wide flex items-center justify-center gap-1 uppercase"
         >
           <span className="w-6 h-6 rounded-full">
             {sectionIconSrc &&
@@ -55,7 +56,7 @@ const TaviBenefits = ({
 }
           </span>
           {sectionLabel}
-        </motion.p>
+        </motion.p>}
 
         {/* Heading */}
         <motion.h2
@@ -63,7 +64,7 @@ const TaviBenefits = ({
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
-          className="text-2xl md:text-3xl font-semibold text-gray-900 mt-3 mb-12"
+          className="text-2xl md:text-3xl font-semibold  mt-3 mb-12"
         >
           {heading}
         </motion.h2>
@@ -99,11 +100,11 @@ const TaviBenefits = ({
                   />
                 </div>
                <div className="-mt-1">
-                  <h3 className="font-normal text-gray-900 text-xl mb-2 leading-6">
+                  <h3 className="font-normal text-xl mb-2 leading-6">
                     {item.title}
                   </h3>
                   <p
-                    className="text-base opacity-80 text-black leading-relaxed"
+                    className="text-base opacity-80 leading-relaxed"
                     dangerouslySetInnerHTML={{ __html: item.desc }}
                   />
                 </div>

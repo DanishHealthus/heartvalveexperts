@@ -1,3 +1,9 @@
+export const metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 export default function MitraclipMyclip() {
   return (
     <div className="w-full h-screen">
