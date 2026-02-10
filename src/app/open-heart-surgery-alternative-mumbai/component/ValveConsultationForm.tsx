@@ -41,32 +41,38 @@ const ValveConsultationForm = () => {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!validate()) return;
+  e.preventDefault();
+  if (!validate()) return;
 
-    try {
-      setLoading(true);
-      setSuccess("");
+  try {
+    setLoading(true);
+    setSuccess("");
 
-      const res = await fetch("/api/landing-mail", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
+    const res = await fetch("/api/landing-mail", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    });
 
-      const data = await res.json();
+    const data: { message?: string } = await res.json();
 
-      if (!res.ok) throw new Error(data.message || "Something went wrong");
-      router.push("/thank-you");
-
-      setSuccess("Your request has been submitted successfully!");
-      setForm({ name: "", phone: "", city: "", help: "", notes: "" });
-    } catch (err: any) {
-      alert(err.message || "Failed to submit form");
-    } finally {
-      setLoading(false);
+    if (!res.ok) {
+      throw new Error(data.message || "Something went wrong");
     }
-  };
+
+    setForm({ name: "", phone: "", city: "", help: "", notes: "" });
+
+    router.push("/thank-you");
+  } catch (err: unknown) {
+    if (err instanceof Error) {
+      alert(err.message);
+    } else {
+      alert("Failed to submit form");
+    }
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <div className="bg-white/15 backdrop-blur-xl rounded-3xl p-6 md:p-8 max-w-lg w-full mx-auto">
