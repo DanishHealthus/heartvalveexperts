@@ -19,7 +19,8 @@ interface FAQAccordionProps {
 export default function FAQAccordion({
   faqs,
   sectionLabel = "FAQs",
-  heading = "Frequently Asked Questions About TAVI Procedure",
+  // heading = "Frequently Asked Questions About TAVI Procedure",
+  heading = "Frequently Asked Questions",
 }: FAQAccordionProps) {
   const [openId, setOpenId] = useState<number | null>(1);
 

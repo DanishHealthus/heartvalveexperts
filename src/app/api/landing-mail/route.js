@@ -11,6 +11,24 @@ export async function POST(req) {
       });
     }
 
+     // ✅ Google Sheet Call
+    await fetch(
+      "https://script.google.com/macros/s/AKfycbz7IFp-CwVRBFVssKgNG2RjJKggK7M7P6PoScztWF11ab7D34K78aVExwn4B-YJn4X5/exec",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email: "",
+          phone,
+          city,
+          help,
+          notes,
+        }),
+      }
+    );
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
       port: 587,

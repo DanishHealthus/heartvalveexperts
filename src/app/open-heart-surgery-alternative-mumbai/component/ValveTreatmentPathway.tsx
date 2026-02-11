@@ -29,7 +29,7 @@ const ValveTreatmentPathway: React.FC<ValveTreatmentPathwayProps> = ({
           <h2 className="text-2xl md:text-4xl font-semibold text-white mb-4">
             {title}
           </h2>
-          <p className="text-sm md:text-base text-white/80">
+          <p className="text-sm md:text-base whitespace-pre-line text-white/80">
             {subtitle}
           </p>
         </div>

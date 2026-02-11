@@ -13,6 +13,7 @@ import InfrastructureSection from './component/InfrastructureSection'
 import PatientExperience from './component/PatientExperience'
 import AppointmentCTALp from './component/AppointmentCTALp'
 import ClinicFooter from './component/ClinicFooter'
+import Script from 'next/script'
 
 const page = () => {
   const faqData = [
@@ -93,12 +94,79 @@ const page = () => {
     },
     {
       iconSrc: "/images/service/icon/b6.svg",
-      title: "Many patients mobilise earlier, depending on individual factors.",
+      title: "Better tolerated in selected patients",
       desc: "Often considered for elderly or medically complex patients.",
     },
   ];
   return (
     <>
+      <Script
+        src="https://www.googletagmanager.com/gtm.js?id=GTM-TVQ5P76L"
+        strategy="afterInteractive"
+      />
+
+      <Script id="google-ads-conversion-1" strategy="afterInteractive">
+        {`
+  function gtag_report_conversion_1(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17726300204/3fdyCKzQs9YbEKzAx4RC',
+      'value': 1.0,
+      'currency': 'INR',
+      'event_callback': callback
+    });
+    return false;
+  }
+`}
+      </Script>
+
+      <Script id="google-ads-conversion-2" strategy="afterInteractive">
+        {`
+  function gtag_report_conversion_2(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17726300204/7ABuCOSOidkbEKzAx4RC',
+      'value': 1.0,
+      'currency': 'INR',
+      'event_callback': callback
+    });
+    return false;
+  }
+`}
+      </Script>
+
+      <Script id="facebook-pixel" strategy="afterInteractive">
+        {`
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1594402638354912');
+  fbq('track', 'PageView');
+`}
+      </Script>
+
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-TVQ5P76L"
+          height="0"
+          width="0"
+          style={{ display: "none", visibility: "hidden" }}
+        ></iframe>
+      </noscript>
+
       <HeroValve />
       <WhoIsThisTreatmentFor
         title="Who Is This Treatment For?"
@@ -127,7 +195,9 @@ const page = () => {
         />
         <ValveTreatmentPathway
           title="Choosing the Right Valve Treatment Pathway"
-          subtitle="Heart valve symptoms can overlap. The first step is confirming which valve is affected and how severe the disease is, using tests such as echocardiography or CT. A specialist valve review helps determine the most appropriate treatment pathway."
+          subtitle={`Heart valve symptoms can overlap. The first step is confirming which valve is affected and how severe the disease is, using tests such as echocardiography or CT.
+A specialist valve review helps determine the most appropriate treatment pathway.`}
+
           options={[
             {
               id: 1,
@@ -174,7 +244,7 @@ const page = () => {
             id: 1,
             name: "Dr. Ankur U. Phatarpekar",
             qualifications:
-              "M.D., D.M. (Cardiology), FESC. Interventional Cardiologist, TAVI and Structural Heart Specialist",
+              "M.D., D.M. (Cardiology), FSCAI. Interventional Cardiologist, TAVI and Structural Heart Specialist",
             image: "/images/doctors/dr-ankur.png",
           },
           {
@@ -189,7 +259,7 @@ const page = () => {
             name: "Dr. Amit S. Gangwani",
             qualifications:
               "DNB (Medicine), DrNB (Cardiology), Interventional Cardiologist, Director, Heart Vascular Stroke Group of Hospitals",
-            image: "/images/doctors/3.png",
+            image: "/images/doctors/5.png",
           },
           {
             id: 4,
@@ -202,8 +272,8 @@ const page = () => {
             id: 5,
             name: "Dr. Kunal Ajay Patankar",
             qualifications:
-              "M.D. (Medicine), DrNB (Cardiology), Interventional Cardiologist, Advanced Cardiac Imaging & TAVR Specialist",
-            image: "/images/doctors/5.png",
+              "M.D. (Medicine), DrNB (Cardiology), Interventional Cardiologist, Advanced Cardiac Imaging and TAVR Specialist",
+            image: "/images/doctors/3.png",
           },
           {
             id: 6,
@@ -238,7 +308,7 @@ const page = () => {
       <HospitalCarousel />
       <ValveTreatmentProcess
         title="How Your Valve Treatment Is Planned and Performed"
-        subtitle="Looking for top cardiologists in Mumbai for valve disease evaluation? Here’s how Heart Valve Experts supports a clear, report-based decision."
+        subtitle=""
         steps={[
           {
             id: 1,
