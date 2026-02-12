@@ -100,6 +100,7 @@ const page = () => {
   ];
   return (
     <>
+    <head>
       <Script
         src="https://www.googletagmanager.com/gtm.js?id=GTM-TVQ5P76L"
         strategy="afterInteractive"
@@ -157,7 +158,7 @@ const page = () => {
   fbq('track', 'PageView');
 `}
       </Script>
-
+</head>
       <noscript>
         <iframe
           src="https://www.googletagmanager.com/ns.html?id=GTM-TVQ5P76L"
@@ -244,7 +245,7 @@ A specialist valve review helps determine the most appropriate treatment pathway
             id: 1,
             name: "Dr. Ankur U. Phatarpekar",
             qualifications:
-              "M.D., D.M. (Cardiology), FSCAI. Interventional Cardiologist, TAVI and Structural Heart Specialist",
+              "M.D., D.M. (Cardiology), FSCAI, Interventional Cardiologist, TAVI and Structural Heart Specialist",
             image: "/images/doctors/dr-ankur.png",
           },
           {
@@ -279,7 +280,7 @@ A specialist valve review helps determine the most appropriate treatment pathway
             id: 6,
             name: "Dr. Aniruddha Pawar",
             qualifications:
-              "M.D. (Internal Medicine), D.M. (Cardiology), FESC, Interventional Cardiologist, Expert in Complex Coronary & Structural Heart Interventions",
+              "M.D. (Internal Medicine), D.M. (Cardiology), FSCAI, Interventional Cardiologist, Expert in Complex Coronary and Structural Heart Interventions",
             image: "/images/doctors/6.png",
           },
         ]}
