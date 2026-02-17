@@ -65,6 +65,12 @@ const page = () => {
       answer:
         "Yes. The specialist team can review existing reports and test results to guide further evaluation and next steps",
     },
+    {
+      id: 9,
+      question: "Do you treat conditions beyond valve disease?",
+      answer:
+        "Yes. In addition to valve interventions, structural heart procedures such as LAAO and device closures for congenital heart defects are also performed following specialist evaluation.",
+    },
   ];
   const benefitsData2 = [
     {
@@ -203,7 +209,7 @@ A specialist valve review helps determine the most appropriate treatment pathway
             {
               id: 1,
               image: "/images/lp/1.webp",
-              title: "Option 1: TAVI / TAVR",
+              title: "TAVI / TAVR",
               subtitle: "For aortic valve disease (aortic stenosis)",
               description:
                 "Aortic stenosis (narrowed aortic valve). Often presents with breathlessness, chest pain, dizziness or fainting.",
@@ -211,7 +217,7 @@ A specialist valve review helps determine the most appropriate treatment pathway
             {
               id: 2,
               image: "/images/lp/2.webp",
-              title: "Option 2: MitraClip / TEER",
+              title: "MitraClip / TEER",
               subtitle: "For mitral valve leakage (mitral regurgitation)",
               description:
                 "May present with breathlessness, fatigue, swelling, or reduced exercise tolerance.",
@@ -219,7 +225,7 @@ A specialist valve review helps determine the most appropriate treatment pathway
             {
               id: 3,
               image: "/images/lp/3.webp",
-              title: "Option 3: TMVR",
+              title: "TMVR",
               subtitle: "For selected complex mitral valve conditions",
               description:
                 "Considered in specific situations when repair or conventional surgery may not be suitable.",
@@ -227,11 +233,47 @@ A specialist valve review helps determine the most appropriate treatment pathway
             {
               id: 4,
               image: "/images/lp/4.webp",
-              title: "Option 4: Device Closure",
+              title: "LAAO",
+              subtitle:
+                "For atrial fibrillation patients at risk of stroke",
+              description:
+                "May be considered when long-term blood thinners are not suitable.",
+            },
+            {
+              id: 5,
+              image: "/images/lp/5.webp",
+              title: "Device Closure",
               subtitle:
                 "For selected structural heart defects (ASD, PFO, VSD or PDA)",
               description:
                 "Considered for abnormal heart openings that can be closed using catheter-based devices.",
+            },
+            {
+              id: 6,
+              image: "/images/lp/6.webp",
+              title: "Balloon Valvuloplasty",
+              subtitle:
+                "For narrowed heart valves",
+              description:
+                "May improve valve opening in specific cases, depending on anatomy and condition.",
+            },
+            {
+              id: 7,
+              image: "/images/lp/7.webp",
+              title: "RSOV Device Closure",
+              subtitle:
+                "For ruptured sinus of Valsalva (RSOV)",
+              description:
+                "A structural defect that may be treated using catheter-based closure in selected patients.",
+            },
+            {
+              id: 8,
+              image: "/images/lp/8.webp",
+              title: "Tricuspid Valve Intervention",
+              subtitle:
+                "For tricuspid valve regurgitation",
+              description:
+                "Often associated with fluid retention, leg swelling, abdominal swelling, or fatigue.",
             },
           ]}
         />

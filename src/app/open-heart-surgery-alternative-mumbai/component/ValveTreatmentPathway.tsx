@@ -35,14 +35,14 @@ const ValveTreatmentPathway: React.FC<ValveTreatmentPathwayProps> = ({
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-          {options.map((option) => (
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 lg:gap-8">
+          {options.map((option,index) => (
             <div
               key={option.id}
               className="rounded-3xl overflow-hidden bg-white/10 backdrop-blur-md border border-white/15"
             >
               {/* Image */}
-              <div className="relative h-48 md:h-72">
+              <div className="relative h-48 md:h-52">
                 <img
                   src={option.image}
                   alt={option.title}
@@ -52,6 +52,9 @@ const ValveTreatmentPathway: React.FC<ValveTreatmentPathwayProps> = ({
 
               {/* Content */}
               <div className="p-5 md:p-6">
+                <p className="text-xs text-white/90 mb-2">
+                  Option {index + 1}
+                </p>
                 <h3 className="text-lg md:text-xl font-semibold text-white mb-1">
                   {option.title}
                 </h3>

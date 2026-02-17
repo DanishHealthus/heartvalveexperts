@@ -43,10 +43,12 @@ const HeroValve = () => {
                         {[
                             "Valve-only specialists",
                             "Interventional cardiologist-led care",
+                            "Advanced imaging support",
                             "TAVI | TMVR | MitraClip",
-                            "1000+ Successful TAVI Procedures",
                             "Pioneers of MyClip in India",
                             "Experience in high-risk patients",
+                            "1000+ Successful TAVI Procedures",
+                            "Tricuspid valve interventions",
                         ].map((item, index) => (
                             <div
                                 key={index}
