@@ -10,9 +10,9 @@ import AppointmentCTA from "@/component/AppointmentCTA";
 import PatientSuccessStories from "@/component/PatientSuccessStories";
 
 export const metadata = {
-  title: "TAVI/TAVR Surgery in Mumbai | TAVI Procedure Mumbai",
+  title: "TAVI in Mumbai | TAVI Procedure Mumbai",
   description:
-    "Discover TAVI/TAVR surgery in Mumbai at Heart Valve Experts. We offer minimally invasive valve replacement for high-risk patients with expert cardiac care.",
+    "Discover TAVI in Mumbai at Heart Valve Experts. We offer minimally invasive valve replacement for high-risk patients with expert cardiac care.",
   alternates: {
     canonical: "https://heartvalveexperts.com/tavi",
   },
