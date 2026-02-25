@@ -24,32 +24,32 @@ export default function ModalContactForm({
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const modalRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-  const modalData = localStorage.getItem("formModalShown");
+//   useEffect(() => {
+//   const modalData = localStorage.getItem("formModalShown");
 
-  if (modalData) {
-    const parsed = JSON.parse(modalData);
-    const now = Date.now();
+//   if (modalData) {
+//     const parsed = JSON.parse(modalData);
+//     const now = Date.now();
 
-    // 24 hours = 86400000 ms
-    if (now - parsed.timestamp > 86400000) {
-      localStorage.removeItem("formModalShown");
-    }
-  }
+//     // 24 hours = 86400000 ms
+//     if (now - parsed.timestamp > 86400000) {
+//       localStorage.removeItem("formModalShown");
+//     }
+//   }
 
-  const isShown = localStorage.getItem("formModalShown");
-  if (!isShown) {
-    const timer = setTimeout(() => {
-      setOpen(true);
-      localStorage.setItem(
-        "formModalShown",
-        JSON.stringify({ timestamp: Date.now() })
-      );
-    }, 15000);
+//   const isShown = localStorage.getItem("formModalShown");
+//   if (!isShown) {
+//     const timer = setTimeout(() => {
+//       setOpen(true);
+//       localStorage.setItem(
+//         "formModalShown",
+//         JSON.stringify({ timestamp: Date.now() })
+//       );
+//     }, 15000);
 
-    return () => clearTimeout(timer);
-  }
-}, []);
+//     return () => clearTimeout(timer);
+//   }
+// }, []);
 
 useEffect(() => {
   if (isOpen) {
