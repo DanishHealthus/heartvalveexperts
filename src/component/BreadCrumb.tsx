@@ -116,9 +116,7 @@ export default function Services({ title,subpage ,image}: ServicesProps) {
   return (
     <section className="relative h-[500px] lg:h-[400px] 2xl:h-[500px] w-full flex items-center justify-center bg-black text-white overflow-hidden">
       {/* Background */}
-      <div 
-      // ref={bgRef} 
-      className="absolute inset-0 will-change-transform">
+      <div ref={bgRef} className="absolute inset-0 will-change-transform">
         <Image
         width={1800}
         height={1000}
@@ -130,9 +128,7 @@ export default function Services({ title,subpage ,image}: ServicesProps) {
       </div>
 
       {/* Navbar */}
-      <div 
-      // ref={logoRef} 
-      className="absolute top-6 left-6 lg:left-10">
+      <div ref={logoRef} className="absolute top-6 left-6 lg:left-10">
         <button
           onClick={() => setMenuOpen(true)}
           className="px-4 group cursor-pointer flex gap-2 text-xl py-2 rounded-full border border-white hover:bg-white hover:text-black transition duration-500 ease-in-out"
@@ -142,9 +138,7 @@ export default function Services({ title,subpage ,image}: ServicesProps) {
         </button>
       </div>
 
-      <div 
-      // ref={logoRef}
-       className="absolute top-6 right-6 lg:right-10">
+      <div ref={logoRef} className="absolute top-6 right-6 lg:right-10">
         <Link
           href="tel:+91 9004506263"
           className="border text-xl flex items-center gap-3 border-white px-5 py-2 rounded-full hover:bg-white hover:text-black transition duration-500 ease-in-out"
@@ -156,9 +150,7 @@ export default function Services({ title,subpage ,image}: ServicesProps) {
       </div>
 
       {/* Logo */}
-       <div 
-      //  ref={logoRef}
-        className="absolute top-3 lg:top-6 left-1/2 -translate-x-1/2">
+       <div ref={logoRef} className="absolute top-3 lg:top-6 left-1/2 -translate-x-1/2">
         <Link href='/'>
           <Image src="/images/homeimages/logo.png" alt="Logo" width={180} height={100} className="h-20 lg:h-24" />
         </Link>
@@ -167,7 +159,7 @@ export default function Services({ title,subpage ,image}: ServicesProps) {
       {/* Hero content */}
       <div className="relative z-10 text-center max-w-4xl px-6">
         <h1
-          // ref={titleRef}
+          ref={titleRef}
           className="text-3xl md:text-5xl font-semibold leading-snug"
         >
          {he.decode(title)}
@@ -177,7 +169,7 @@ export default function Services({ title,subpage ,image}: ServicesProps) {
         <nav
           aria-label="breadcrumb"
           className="mt-6 text-sm text-gray-200"
-          // ref={scrollRef}
+          ref={scrollRef}
         >
           <ol className="flex items-center justify-center space-x-2">
             <li>
@@ -203,7 +195,7 @@ export default function Services({ title,subpage ,image}: ServicesProps) {
 
       {/* Overlay */}
       <div
-        // ref={overlayRef}
+        ref={overlayRef}
         onClick={() => setMenuOpen(false)}
         className={`fixed inset-0 bg-black/70 cursor-pointer z-40 transition-opacity duration-500 ${
           menuOpen

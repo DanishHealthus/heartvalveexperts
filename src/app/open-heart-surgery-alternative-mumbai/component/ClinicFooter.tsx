@@ -49,13 +49,13 @@ const ClinicFooter: React.FC<FooterProps> = ({
                             ))}
                         </div>
 
-                        <div className="mt-6 space-y-2 text-base lg:text-lg">
+                        {/* <div className="mt-6 space-y-2 text-base lg:text-lg">
                             <p>
                                 <span className="font-medium">Phone / WhatsApp:</span>{" "}
                                 {phone}
                             </p>
                             <p>{email}</p>
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* RIGHT */}
