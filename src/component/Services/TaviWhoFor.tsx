@@ -57,15 +57,15 @@ const TaviWhoFor = ({
       <div className=" grid grid-cols-1 lg:grid-cols-2 gap-12 items-start text-white">
         
         {/* Left: scrolling content */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
+        <div
+          // variants={containerVariants}
+          // initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
           className="flex flex-col justify-start space-y-6 px-4 md:px-6 xl:px-6 py-16"
         >
-          <motion.p
-            variants={fadeInVariant}
+          <p
+            // variants={fadeInVariant}
             style={{ letterSpacing: "2px" }}
             className="text-white text-base font-medium tracking-wide flex items-center gap-1 uppercase"
           >
@@ -73,20 +73,20 @@ const TaviWhoFor = ({
               <Image width={25} height={25} src="/images/icon/Ellipse 3.svg" alt="" />
             </span>{" "}
             {sectionTag}
-          </motion.p>
+          </p>
 
-          <motion.h2
-            variants={fadeInVariant}
+          <h2
+            // variants={fadeInVariant}
             className="text-2xl md:text-3xl font-semibold text-white"
           >
             {heading}
-          </motion.h2>
+          </h2>
 
-          <motion.ul variants={containerVariants} className="space-y-6 text-white pt-5">
+          <ul  className="space-y-6 text-white pt-5">
             {conditions.map((item, idx) => (
               <ConditionItem key={idx} {...item} />
             ))}
-          </motion.ul>
+          </ul>
 
           {/* <motion.button
             variants={fadeInVariant}
@@ -94,7 +94,7 @@ const TaviWhoFor = ({
           >
             {buttonText}
           </motion.button> */}
-        </motion.div>
+        </div>
 
         {/* Right: sticky image */}
         <div className="relative h-[500px] lg:h-[100vh] lg:sticky lg:top-0 overflow-hidden">
