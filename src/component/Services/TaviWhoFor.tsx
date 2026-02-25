@@ -60,8 +60,8 @@ const TaviWhoFor = ({
         <div
           // variants={containerVariants}
           // initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
+          // whileInView="show"
+          // viewport={{ once: true, amount: 0.3 }}
           className="flex flex-col justify-start space-y-6 px-4 md:px-6 xl:px-6 py-16"
         >
           <p
