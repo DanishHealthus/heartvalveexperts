@@ -80,9 +80,11 @@ export default function WhoWeAreHero() {
       className="relative flex items-center justify-center py-24 bg-white overflow-hidden"
     >
       {/* Watermark background */}
-      <div ref={containerRef}>
+      <div 
+      // ref={containerRef}
+      >
       <div
-        ref={bgRef}
+        // ref={bgRef}
         className="absolute inset-0 flex justify-center items-center pointer-events-none"
       >
         <div className="opacity-10 scale-125">

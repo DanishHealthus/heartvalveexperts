@@ -82,11 +82,11 @@ const handleSubmit = async (e: React.FormEvent) => {
     <section className="py-16 px-6 md:px-12 lg:px-20 bg-white">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Side - Contact Info */}
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+        <div
+          // initial={{ opacity: 0, x: -50 }}
+          // whileInView={{ opacity: 1, x: 0 }}
+          // transition={{ duration: 0.8 }}
+          // viewport={{ once: true }}
         >
           <p
             style={{ letterSpacing: "2px" }}
@@ -131,14 +131,14 @@ const handleSubmit = async (e: React.FormEvent) => {
               </p>
             </li>
           </ul>
-        </motion.div>
+        </div>
 
         {/* Right Side - Contact Form */}
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+        <div
+          // initial={{ opacity: 0, x: 50 }}
+          // whileInView={{ opacity: 1, x: 0 }}
+          // transition={{ duration: 0.8 }}
+          // viewport={{ once: true }}
           className="animate-gradient-circle p-6 py-10 lg:p-12 rounded-[50px] shadow-lg bg-gradient-to-r from-[#5E0B8A] to-[#E03C7C]"
         >
           <form onSubmit={handleSubmit} className="space-y-5">
@@ -203,7 +203,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               </button>
             </div>
           </form>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

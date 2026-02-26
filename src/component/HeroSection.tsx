@@ -158,7 +158,7 @@ export default function HomePage() {
 
       <div ref={logoRef} className="absolute top-3 lg:top-6 left-1/2 -translate-x-1/2">
         <Link href='/'>
-          <Image src="/images/homeimages/logo.png" alt="Logo" width={180} height={100} className="h-20 lg:h-24" />
+          <Image src="/images/homeimages/logo.png" alt="Logo" width={180} height={100} className="w-full h-20 lg:h-24" />
         </Link>
       </div>
 
@@ -335,7 +335,10 @@ export default function HomePage() {
                       </Link>                
                       {/* <Link href="/cardiologist-mumbai/dr-pravin-lovhale" className=" block text-lg hover:text-[#0074dd]">
                         Dr. Pravin Lovhale
-                      </Link> */}                            
+                      </Link> */} 
+                      <Link href="/cardiologist-mumbai/dr-aniruddha-mohanrao-pawar" className=" block text-lg hover:text-[#0074dd]">
+                        Dr. Aniruddha Mohanrao Pawar
+                      </Link>                             
                     </div>
                   )}
                 </div>

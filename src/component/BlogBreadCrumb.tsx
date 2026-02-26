@@ -102,7 +102,9 @@ export default function Services() {
   return (
     <section className=" relative h-[350px] lg:h-[400px] 2xl:h-[450px] w-full flex items-center justify-center bg-black text-white overflow-hidden">
       {/* Background */}
-      <div ref={bgRef} className="animate-gradient-circle absolute scale-105 inset-0 will-change-transform">
+      <div 
+      // ref={bgRef}
+       className="animate-gradient-circle absolute scale-105 inset-0 will-change-transform">
         {/* <Image
           src={image}
           alt="Background"
@@ -112,7 +114,9 @@ export default function Services() {
       </div>
 
       {/* Navbar */}
-      <div ref={logoRef} className="absolute top-6 left-6 lg:left-10">
+      <div 
+      // ref={logoRef} 
+      className="absolute top-6 left-6 lg:left-10">
         <button
           onClick={() => setMenuOpen(true)}
           className="px-4 group cursor-pointer flex gap-2 text-xl py-2 rounded-full border border-white hover:bg-white hover:text-black transition duration-500 ease-in-out"
@@ -122,7 +126,9 @@ export default function Services() {
         </button>
       </div>
 
-      <div ref={logoRef} className="absolute top-6 right-6 lg:right-10">
+      <div 
+      // ref={logoRef}
+       className="absolute top-6 right-6 lg:right-10">
         <Link
           href="tel:+91 9004506263"
           className="border text-xl flex items-center gap-3 border-white px-5 py-2 rounded-full hover:bg-white hover:text-black transition duration-500 ease-in-out"
@@ -134,9 +140,11 @@ export default function Services() {
       </div>
 
       {/* Logo */}
-       <div ref={logoRef} className="absolute top-3 lg:top-6 left-1/2 -translate-x-1/2">
+       <div 
+      //  ref={logoRef} 
+       className="absolute top-3 lg:top-6 left-1/2 -translate-x-1/2">
         <Link href='/'>
-          <Image src="/images/homeimages/logo.png" alt="Logo" width={180} height={100} className="h-20 lg:h-24" />
+          <Image src="/images/homeimages/logo.png" alt="Logo" width={180} height={100} className="w-full h-20 lg:h-24" />
         </Link>
       </div>
 
@@ -302,6 +310,9 @@ export default function Services() {
                       {/* <Link href="/cardiologist-mumbai/dr-pravin-lovhale" className=" block text-lg hover:text-[#0074dd]">
                         Dr. Pravin Lovhale
                       </Link> */}                            
+                      <Link href="/cardiologist-mumbai/dr-aniruddha-mohanrao-pawar" className=" block text-lg hover:text-[#0074dd]">
+                        Dr. Aniruddha Mohanrao Pawar
+                      </Link>  
                     </div>
                   )}
                 </div>

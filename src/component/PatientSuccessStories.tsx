@@ -90,13 +90,13 @@ export default function PatientSuccessStories() {
         </div>
 
         {/* Active testimonial */}
-        <AnimatePresence mode="wait">
-          <motion.div
+        {/* <AnimatePresence mode="wait"> */}
+          <div
             key={active}
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -40 }}
-            transition={{ duration: 0.6 }}
+            // initial={{ opacity: 0, y: 40 }}
+            // animate={{ opacity: 1, y: 0 }}
+            // exit={{ opacity: 0, y: -40 }}
+            // transition={{ duration: 0.6 }}
             className="lg:max-w-lg xl:max-w-2xl mt-0 text-white px-6"
           >
             <p className="text-xl xl:text-3xl leading-10 font-medium">
@@ -105,8 +105,8 @@ export default function PatientSuccessStories() {
             <p className="mt-6 uppercase tracking-widest text-xl font-medium text-white/80">
               {testimonials[active].name}
             </p>
-          </motion.div>
-        </AnimatePresence>
+          </div>
+        {/* </AnimatePresence> */}
       </div>
     </section>
   );

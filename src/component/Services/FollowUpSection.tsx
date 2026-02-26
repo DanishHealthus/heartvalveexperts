@@ -31,11 +31,11 @@ export default function FollowUpSection({
       <div className="grid grid-cols-1 lg:grid-cols-2 items-start gap-12 max-w-7xl mx-auto">
 
         {/* Left Content */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.8 }}
+        <div
+          // initial={{ opacity: 0, y: 40 }}
+          // whileInView={{ opacity: 1, y: 0 }}
+          // viewport={{ once: true, amount: 0.3 }}
+          // transition={{ duration: 0.8 }}
         >
           <p
             style={{ letterSpacing: "2px" }}
@@ -85,14 +85,14 @@ export default function FollowUpSection({
           {/* <button className="px-6 py-3 border border-white rounded-full hover:bg-white hover:text-purple-700 transition font-medium">
             {buttonText}
           </button> */}
-        </motion.div>
+        </div>
 
         {/* Right Image */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
+        <div
+          // initial={{ opacity: 0, y: 40 }}
+          // whileInView={{ opacity: 1, y: 0 }}
+          // viewport={{ once: true, amount: 0.3 }}
+          // transition={{ duration: 0.8, delay: 0.3 }}
           className="relative w-full h-[350px] md:h-[420px] lg:h-[520px] rounded-[70px] rounded-br-2xl overflow-hidden"
         >
           <Image
@@ -101,7 +101,7 @@ export default function FollowUpSection({
             fill
             className="object-cover"
           />
-        </motion.div>
+        </div>
 
       </div>
     </section>

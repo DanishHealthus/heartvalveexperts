@@ -126,6 +126,8 @@ const KnowledgeLibrary: React.FC = () => {
                   <Image
                     src={video.thumbnail}
                     alt={video.title}
+                    width={600}
+                    height={800}
                     className="w-full h-60 object-cover"
                   />
                   <button className="absolute inset-0 flex items-center justify-center bg-black/40 hover:bg-black/50 transition">

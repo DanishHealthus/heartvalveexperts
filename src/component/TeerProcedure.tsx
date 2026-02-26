@@ -9,12 +9,12 @@ export default function TeerProcedure() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-10">
         
         {/* Left: Image */}
-        <motion.div
+        <div
            className="relative w-full md:w-1/2 h-72 md:h-[520px] rounded-t-[100px] rounded-bl-[100px] rounded-br-2xl overflow-hidden shadow"
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          // initial={{ opacity: 0, x: -50 }}
+          // whileInView={{ opacity: 1, x: 0 }}
+          // viewport={{ once: true, amount: 0.3 }}
+          // transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <Image
             src="/images/service/TEER/1.webp"
@@ -23,15 +23,15 @@ export default function TeerProcedure() {
             height={1000}
             className="object-cover rounded-xl"
           />
-        </motion.div>
+        </div>
 
         {/* Right: Text */}
-        <motion.div
+        <div
           className="w-full md:w-1/2 space-y-6 text-gray-700"
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          // initial={{ opacity: 0, x: 50 }}
+          // whileInView={{ opacity: 1, x: 0 }}
+          // viewport={{ once: true, amount: 0.3 }}
+          // transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         >
            <p
             style={{ letterSpacing: "2px" }}
@@ -81,7 +81,7 @@ export default function TeerProcedure() {
           </div>
 
           
-        </motion.div>
+        </div>
       </div>
     </section>
   );

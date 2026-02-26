@@ -42,11 +42,11 @@ const TaviBenefits = ({
       <div className="max-w-6xl mx-auto text-center">
         {/* Section Label */}
         {sectionLabel &&
-        <motion.p
-          variants={fadeInVariant}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
+        <p
+          // variants={fadeInVariant}
+          // initial="hidden"
+          // whileInView="show"
+          // viewport={{ once: true, amount: 0.3 }}
           style={{ letterSpacing: "2px" }}
           className="text-base font-medium tracking-wide flex items-center justify-center gap-1 uppercase"
         >
@@ -56,25 +56,25 @@ const TaviBenefits = ({
 }
           </span>
           {sectionLabel}
-        </motion.p>}
+        </p>}
 
         {/* Heading */}
-        <motion.h2
-          variants={fadeInVariant}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
+        <h2
+          // variants={fadeInVariant}
+          // initial="hidden"
+          // whileInView="show"
+          // viewport={{ once: true, amount: 0.3 }}
           className="text-2xl md:text-3xl font-semibold  mt-3 mb-12"
         >
           {heading}
-        </motion.h2>
+        </h2>
 
         {/* Grid */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
+        <div
+          // variants={containerVariants}
+          // initial="hidden"
+          // whileInView="show"
+          // viewport={{ once: true, amount: 0.3 }}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 border-gray-200"
         >
           {benefits.map((item, idx) => {
@@ -82,9 +82,9 @@ const TaviBenefits = ({
             const isInLastRow = idx >= benefits.length - (benefits.length % 3 || 3);
 
             return (
-              <motion.div
+              <div
                 key={idx}
-                variants={fadeInVariant}
+                // variants={fadeInVariant}
                 className={`flex flex-row items-start gap-3 p-6 border-b border-gray-200 text-left
                   ${isFirstInRow ? "border-l-0" : "lg:border-l"}
                   ${isInLastRow ? "lg:border-b-0" : ""}
@@ -108,10 +108,10 @@ const TaviBenefits = ({
                     dangerouslySetInnerHTML={{ __html: item.desc }}
                   />
                 </div>
-              </motion.div>
+              </div>
             );
           })}
-        </motion.div>
+        </div>
       </div>
     </section>
   );
