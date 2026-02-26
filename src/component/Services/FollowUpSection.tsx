@@ -27,19 +27,14 @@ export default function FollowUpSection({
   imageAlt,
 }: FollowUpSectionProps) {
   return (
-    <section className="text-white py-16 px-6 md:px-12 lg:px-20">
-      <div className="grid grid-cols-1 lg:grid-cols-2 items-start gap-12 max-w-7xl mx-auto">
+    <section className=" py-16 px-6 md:px-12 lg:px-20">
+      <div className={`flex flex-col ${imageAlt === "reverse"? 'lg:flex-row-reverse' : 'lg:flex-row'} items-start gap-12 max-w-6xl mx-auto`}>
 
         {/* Left Content */}
-        <div
-          // initial={{ opacity: 0, y: 40 }}
-          // whileInView={{ opacity: 1, y: 0 }}
-          // viewport={{ once: true, amount: 0.3 }}
-          // transition={{ duration: 0.8 }}
-        >
+        <div className="w-full">
           <p
             style={{ letterSpacing: "2px" }}
-            className="text-[#fff] text-base mb-3 font-medium tracking-wide flex items-center justify-start gap-1 uppercase"
+            className=" text-base mb-3 font-medium tracking-wide flex items-center justify-start gap-1 uppercase"
           >
             <span className="w-6 h-6 rounded-full">
               <Image width={25} height={25} src="/images/icon/Ellipse 3.svg" alt="" />
@@ -48,14 +43,12 @@ export default function FollowUpSection({
           </p>
 
           {/* Heading */}
-          <h2 className="text-2xl md:text-3xl font-semibold text-white mb-5">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-5">
             {title}
           </h2>
-
           <p className="text-base font-light leading-relaxed mb-6 opacity-90">
             {intro}
           </p>
-
           <p className="text-base font-light leading-relaxed mb-6 opacity-90">
             {subIntro}
           </p>
@@ -76,23 +69,13 @@ export default function FollowUpSection({
               </li>
             ))}
           </ul>
-
           <p className="text-base font-light leading-relaxed mb-8 opacity-90">
             {conclusion}
           </p>
-
-          {/* Button */}
-          {/* <button className="px-6 py-3 border border-white rounded-full hover:bg-white hover:text-purple-700 transition font-medium">
-            {buttonText}
-          </button> */}
         </div>
 
         {/* Right Image */}
         <div
-          // initial={{ opacity: 0, y: 40 }}
-          // whileInView={{ opacity: 1, y: 0 }}
-          // viewport={{ once: true, amount: 0.3 }}
-          // transition={{ duration: 0.8, delay: 0.3 }}
           className="relative w-full h-[350px] md:h-[420px] lg:h-[520px] rounded-[70px] rounded-br-2xl overflow-hidden"
         >
           <Image

@@ -23,14 +23,14 @@ export default function TaviSection({
   return (
     <section className="bg-white py-12 md:py-20 px-6 md:px-12 lg:px-20 wht-bg-are">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
-        
+
         {/* Left: Image */}
         <div
           className="relative w-full md:w-1/2 h-72 md:h-[480px] rounded-t-[100px] rounded-bl-[100px] rounded-br-2xl overflow-hidden shadow"
-          // initial={{ opacity: 0, x: -50 }}
-          // whileInView={{ opacity: 1, x: 0 }}
-          // viewport={{ once: true, amount: 0.3 }}
-          // transition={{ duration: 0.8, ease: "easeOut" }}
+        // initial={{ opacity: 0, x: -50 }}
+        // whileInView={{ opacity: 1, x: 0 }}
+        // viewport={{ once: true, amount: 0.3 }}
+        // transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <Image
             src={imageSrc}
@@ -43,10 +43,10 @@ export default function TaviSection({
         {/* Right: Text */}
         <div
           className="w-full md:w-1/2 text-gray-700"
-          // initial={{ opacity: 0, x: 50 }}
-          // whileInView={{ opacity: 1, x: 0 }}
-          // viewport={{ once: true, amount: 0.3 }}
-          // transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+        // initial={{ opacity: 0, x: 50 }}
+        // whileInView={{ opacity: 1, x: 0 }}
+        // viewport={{ once: true, amount: 0.3 }}
+        // transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         >
           <p
             style={{ letterSpacing: "2px" }}
@@ -60,13 +60,15 @@ export default function TaviSection({
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mt-2">
             {title}
           </h2>
-          {description.map((text, index) => (
-            <p
-              key={index}
-              dangerouslySetInnerHTML={{ __html: text }}
-            />
-          ))}
+          <div className="space-y-3 mt-4">
+            {description.map((text, index) => (
+              <p
 
+                key={index}
+                dangerouslySetInnerHTML={{ __html: text }}
+              />
+            ))}
+          </div>
 
           {/* {buttonText && (
             <div className="pt-4 flex justify-start">

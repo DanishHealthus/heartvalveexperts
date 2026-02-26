@@ -58,7 +58,7 @@ export default function FAQAccordion({
           >
             <button
               onClick={() => toggleFAQ(faq.id)}
-              className="w-full flex items-center justify-between px-5 py-4 text-left text-gray-900"
+              className="w-full cursor-pointer flex items-center justify-between px-5 py-4 text-left text-gray-900"
             >
               <div className="flex items-center gap-4 select-text">
                 <span className="text-sm font-medium text-gray-500 w-6">
