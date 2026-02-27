@@ -6,66 +6,66 @@ import ProcedureTimeline from "@/component/Services/ProcedureTimeline";
 import FollowUpSection from "@/component/Services/FollowUpSection";
 import ProcedureDelayRisks from "@/component/Services/ProcedureDelayRisks";
 import FAQAccordion from "@/component/Services/FAQAccordion";
-import AppointmentCTA from "@/component/AppointmentCTA";
 import PatientSuccessStories from "@/component/PatientSuccessStories";
 import ASDClosureSection from "@/component/Services/ASDClosureSection";
 import Doctors from "@/component/Doctors";
 import TaviComparison from "@/component/TaviComparison";
 import TaviProMumbai from "@/component/TaviProMumbai";
 import ComparisonSection from "@/component/TaviComparison";
+import AppointmentCTAMumbai from "@/component/AppointmentCTAMumbai";
 
 export const metadata = {
-    title: "MitraClip in Mumbai – Advanced Minimally Invasive Mitral Valve Repair ",
+    title: "MitraClip in Mumbai | MitraClip Specialist in Mumbai",
     description:
-        "MitraClip in Mumbai offers a minimally invasive option for repairing a leaking mitral valve without the need for open-heart surgery. ",
+        "Looking for MitraClip in Mumbai? Get advanced MitraClip procedure in Mumbai by experienced specialists for mitral valve repair. Book consultation.",
     alternates: {
         canonical: "https://heartvalveexperts.com/mitraclip-in-mumbai",
     },
 };
 
 const faqData = [
-  {
-    id: 1,
-    question: "Is MitraClip available in Mumbai?",
-    answer:
-      "Yes, MitraClip in Mumbai is available at advanced cardiac centres with structural heart programmes.",
-  },
-  {
-    id: 2,
-    question: "How long does the MitraClip procedure take?",
-    answer:
-      "The procedure typically lasts 2–3 hours.",
-  },
-  {
-    id: 3,
-    question: "Who is the best MitraClip surgeon in Mumbai?",
-    answer:
-      "An experienced structural heart specialist trained in transcatheter mitral valve repair techniques with advanced imaging support.",
-  },
-  {
-    id: 4,
-    question: "What is the hospital stay after MitraClip surgery in Mumbai?",
-    answer:
-      "Most patients are discharged within 3–5 days depending on recovery.",
-  },
-  {
-    id: 5,
-    question: "Is MitraClip covered by insurance in Maharashtra?",
-    answer:
-      "Many insurance policies provide coverage. Confirmation depends on individual policy terms.",
-  },
-  {
-    id: 6,
-    question: "What are the risks of MitraClip?",
-    answer:
-      "Possible risks include bleeding, vascular complications, infection, or residual mitral regurgitation. Careful evaluation reduces these risks.",
-  },
-  {
-    id: 7,
-    question: "Can elderly patients undergo MitraClip?",
-    answer:
-      "Yes. MitraClip is commonly recommended for elderly patients who are at high risk for open-heart surgery.",
-  },
+    {
+        id: 1,
+        question: "Is MitraClip available in Mumbai?",
+        answer:
+            "Yes, MitraClip in Mumbai is available at advanced cardiac centres with structural heart programmes.",
+    },
+    {
+        id: 2,
+        question: "How long does the MitraClip procedure take?",
+        answer:
+            "The procedure typically lasts 2–3 hours.",
+    },
+    {
+        id: 3,
+        question: "Who is the best MitraClip surgeon in Mumbai?",
+        answer:
+            "An experienced structural heart specialist trained in transcatheter mitral valve repair techniques with advanced imaging support.",
+    },
+    {
+        id: 4,
+        question: "What is the hospital stay after MitraClip surgery in Mumbai?",
+        answer:
+            "Most patients are discharged within 3–5 days depending on recovery.",
+    },
+    {
+        id: 5,
+        question: "Is MitraClip covered by insurance in Maharashtra?",
+        answer:
+            "Many insurance policies provide coverage. Confirmation depends on individual policy terms.",
+    },
+    {
+        id: 6,
+        question: "What are the risks of MitraClip?",
+        answer:
+            "Possible risks include bleeding, vascular complications, infection, or residual mitral regurgitation. Careful evaluation reduces these risks.",
+    },
+    {
+        id: 7,
+        question: "Can elderly patients undergo MitraClip?",
+        answer:
+            "Yes. MitraClip is commonly recommended for elderly patients who are at high risk for open-heart surgery.",
+    },
 ];
 const serviceSchema = {
     "@context": "https://schema.org",
@@ -96,9 +96,44 @@ const faqSchema = {
         },
     })),
 };
+const medicalBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    name: "MitraClip in Mumbai",
+    image:
+        "https://heartvalveexperts.com/_next/image?url=%2Fimages%2Fservice%2FTMVR%2F1.webp&w=1920&q=75",
+    "@id": "https://heartvalveexperts.com/mitraclip-in-mumbai",
+    url: "https://heartvalveexperts.com/mitraclip-in-mumbai",
+    telephone: "+91 9004506263",
+    address: {
+        "@type": "PostalAddress",
+        streetAddress:
+            "Silver Apartments, A12, Shankar Ghanekar Rd, behind Siddhivinayak Mandir, Prabhadevi",
+        addressLocality: "Mumbai",
+        postalCode: "400025",
+        addressCountry: "IN",
+    },
+    geo: {
+        "@type": "GeoCoordinates",
+        latitude: 19.015727,
+        longitude: 72.8325404,
+    },
+    sameAs: [
+        "https://www.facebook.com/share/14NuEwMHDKK/",
+        "https://www.instagram.com/heartvalveexperts?igsh=ZmQ0dGZnMWd4dW45",
+        "https://www.linkedin.com/company/heart-valve-experts/",
+        "https://www.youtube.com/@HeartValveExperts",
+    ],
+};
 const servciepage = () => {
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(medicalBusinessSchema),
+                }}
+            />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
@@ -160,12 +195,12 @@ const servciepage = () => {
                         ]}
                         conclusion="All consultations are appointment-based, with guidance provided for scheduling and directions."
                         buttonText="Book Appointment Now"
-                        imageSrc="/images/service/RSOV/Rectangle 41.webp"
+                        imageSrc="/images/service/TMVR/Rectangle 33.webp"
                         imageAlt="reverse"
                     />
                 </div>
             </section>
-            <Doctors />
+            <Doctors title="Meet Our MitraClip Specialists in Mumbai"/>
             <TaviSection
                 imageSrc="/images/service/TMVR/1.webp"
                 imageAlt="What is MitraClip?"
@@ -180,81 +215,75 @@ const servciepage = () => {
             />
             <FollowUpSection
                 tag="Who it’s For"
-                title="Who is Eligible for TAVI Surgery in Mumbai?"
-                intro="TAVI surgery in Mumbai is typically recommended for patients with:"
+                title="Who is Eligible for MitraClip Surgery in Mumbai?"
+                intro="MitraClip surgery in Mumbai is generally recommended for patients with:"
                 subIntro=""
                 bulletPoints={[
-                    "Severe symptomatic aortic stenosis",
-                    "Breathlessness, chest pain, or fainting",
-                    "Advanced age with high surgical risk",
-                    "Previous cardiac surgery",
-                    "Chronic kidney or lung disease",
+                    "Severe symptomatic mitral regurgitation",
+                    "Heart failure symptoms such as fatigue and breathlessness",
+                    "High surgical risk due to age or medical conditions",
+                    "Reduced heart function",
+                    "Previous cardiac procedures",
                     "Multiple comorbidities"
                 ]}
-                conclusion="Patients undergo detailed imaging and heart team evaluation before being considered for the TAVI procedure in Maharashtra."
+                conclusion="Eligibility is determined through detailed imaging, including TEE and 3D echocardiography, along with heart team evaluation before proceeding with the MitraClip procedure in Maharashtra."
                 buttonText="Book Appointment Now"
-                imageSrc="/images/service/RSOV/Rectangle 43.webp"
-                imageAlt="Who is Eligible for TAVI Surgery in Mumbai?"
+                imageSrc="/images/service/BMV/Rectangle 38.webp"
+                imageAlt="Who is Eligible for MitraClip Surgery in Mumbai?"
             />
 
             <section className="animate-gradient-circle text-white relative overflow-hidden">
                 <div className="max-w-6xl mx-auto text-white text-center">
                     <TaviProMumbai
-                        heading="Advanced Solutions for Every Heart Valve Need"
+                        heading="TAVI Procedure in Mumbai – Step by Step"
                         procedures={[
                             {
                                 id: 1,
-                                title: "Comprehensive Evaluation",
+                                title: "Detailed Evaluation",
                                 description:
-                                    "Before proceeding with the TAVI procedure in Mumbai, patients undergo:",
-                                img: "/images/service/TAVI/mumbai/1.webp",
+                                    "Before undergoing the MitraClip procedure in Mumbai, patients undergo:",
+                                img: "/images/service/TAVI/mumbai/m1.webp",
                                 bulletPoints: [
                                     "Echocardiography",
-                                    "CT angiography for valve measurement",
-                                    "Blood investigations",
+                                    "Transoesophageal echocardiography (TEE)",
+                                    "Cardiac imaging assessment",
+                                    "Blood tests",
                                     "ECG",
-                                    "Coronary angiography if indicated",
                                 ],
                             },
                             {
                                 id: 2,
-                                title: "Valve Implantation",
-                                description: "During the TAVR procedure in Mumbai:",
-                                img: "/images/service/TAVI/mumbai/2.webp",
+                                title: "Clip Placement",
+                                description: "During the MitraClip procedure in Mumbai:",
+                                img: "/images/service/TAVI/mumbai/m2.webp",
                                 bulletPoints: [
-                                    "Local anaesthesia with sedation is used.",
-                                    "A catheter is inserted through the femoral artery.",
-                                    "The new valve is guided using real-time imaging.",
-                                    "The prosthetic valve expands and restores blood flow.",
-                                    "The procedure typically lasts 1–2 hours.",
+                                    "The procedure is performed under local anaesthesia.",
+                                    "A catheter is inserted through a vein in the groin.",
+                                    "The clip is guided to the mitral valve using real-time imaging.",
+                                    "The device grasps the valve leaflets to reduce regurgitation.",
                                 ],
                             },
                             {
                                 id: 3,
                                 title: "Monitoring and Hospital Stay",
-                                description: "After TAVR surgery in Mumbai:",
-                                img: "/images/service/TAVI/mumbai/3.webp",
+                                description: "After MitraClip surgery in Mumbai:",
+                                img: "/images/service/TAVI/mumbai/m3.webp",
                                 bulletPoints: [
                                     "ICU monitoring for 24–48 hours",
-                                    "Early mobilisation within 24 hours",
-                                    "Hospital discharge in 3–5 days in most cases",
+                                    "Early ambulation within 24 hours",
+                                    "Hospital discharge usually within 3–5 days",
                                 ],
                             },
                         ]}
                     />
                     <ComparisonSection
                         title="MitraClip vs Open Mitral Valve Surgery"
-                        subtitle="For many patients, TAVI in Mumbai offers a less invasive approach with a shorter recovery time."
+                        subtitle=""
                         rows={[
                             {
                                 feature: "Chest Opening",
                                 tavi: "No",
                                 surgery: "Yes",
-                            },
-                            {
-                                feature: "Anaesthesia",
-                                tavi: "Often Sedation",
-                                surgery: "General Anaesthesia",
                             },
                             {
                                 feature: "Hospital Stay",
@@ -288,12 +317,20 @@ const servciepage = () => {
                 ]}
                 conclusion="Insurance coverage and applicable government schemes in Maharashtra may provide financial support depending on policy terms."
                 buttonText="Book Appointment Now"
-                imageSrc="/images/service/TAVI/mumbai/tavi-cost.webp"
+                imageSrc="/images/service/TAVI/Rectangle 30.webp"
                 imageAlt="TAVI Cost in Mumbai"
             />
             <PatientSuccessStories />
             <FAQAccordion faqs={faqData} />
-            <AppointmentCTA />
+            <AppointmentCTAMumbai
+                imageSrc="/images/homeimages/cta-contact.webp"
+                imageAlt="Consultation"
+                heading="Schedule a Consultation for TAVI in Mumbai"
+                badgeText="If you or a loved one has severe aortic stenosis, early evaluation for TAVI in Mumbai is important."
+                paraText="Heart Valve Experts offer structured, medically guided assessments to determine whether TAVR in Mumbai is the most appropriate treatment option based on your clinical profile."
+                buttonText="Book Appointment Now"
+                buttonLink="/contact-us"
+            />
         </>
     );
 };

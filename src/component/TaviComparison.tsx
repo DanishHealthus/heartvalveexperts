@@ -35,9 +35,11 @@ export default function ComparisonSection({
         </h2>
 
         {/* Subtitle */}
+        {/* {subtitle && */}
         <p className="text-white/80 max-w-2xl mx-auto mb-10 md:mb-14 text-sm md:text-base">
           {subtitle}
         </p>
+        {/* } */}
 
         {/* Desktop Table */}
         <div className="hidden md:block bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl overflow-hidden">
@@ -45,7 +47,7 @@ export default function ComparisonSection({
           <div className="grid grid-cols-3 border-b border-white/20 text-left">
             <div className="p-6 text-center font-medium">Feature</div>
             <div className="p-6 text-center font-semibold bg-white/10">
-              TAVI / TAVR
+             {subtitle == ''? 'MitraClip' : 'TAVI / TAVR'} 
             </div>
             <div className="p-6 text-center font-medium">
               Open Surgery

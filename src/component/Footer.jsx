@@ -40,6 +40,11 @@ export default function Footer() {
   { name: "VSD", url: "/device-closure/ventricular-septal-defect " },
   { name: "PDA", url: "/device-closure/patent-ductus-arteriosus" },
 ];
+
+ const proceduresinmumbai = [
+  { name: "TAVI in Mumbai", url: "/tavi-in-mumbai" },
+  { name: "MitraClip in Mumbai", url: "/mitraclip-in-mumbai" },
+];
   return (
     <footer
       // ref={bgRef} // ✅ works fine now
@@ -47,7 +52,7 @@ export default function Footer() {
       
     >
       <div className="max-w-7xl mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {/* Left Column - Logo + Contact */}
         <div>
           <Image
@@ -70,27 +75,27 @@ export default function Footer() {
 
         {/* Middle Column - Quick Links */}
         <div className=" flex flex-col gap-10">
-        <div className="flex justify-between lg:justify-start lg:gap-48">
-        <div>
-          <p style={{letterSpacing:'2px'}} className="uppercase tracking-wide text-gray-400 mb-4 text-sm">
-            Quick Links
-          </p>
-          <ul className="space-y-5 text-lg font-thin">
-           {navLinks.map((link) => (
-            <li key={link.label}>
-              <Link
-                href={link.url}
-                className="hover:underline hover:text-gray-200 transition"
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        </div>
+        <div className="flex flex-wrap justify-between lg:justify-start gap-5 lg:gap-10 2xl:gap-12">
+              <div className="w-2/5 xl:w-1/4">
+                <p style={{ letterSpacing: '2px' }} className="uppercase tracking-wide text-gray-400 mb-4 text-sm">
+                  Quick Links
+                </p>
+                <ul className="space-y-5 text-lg font-thin">
+                  {navLinks.map((link) => (
+                    <li key={link.label}>
+                      <Link
+                        href={link.url}
+                        className="hover:underline hover:text-gray-200 transition"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
         {/* Right Column - Procedures */}
-        <div>
+        <div className="w-1/2 lg:w-2/5 xl:w-1/4">
           <p style={{letterSpacing:'2px'}} className="uppercase tracking-wide text-gray-400 mb-4 text-sm">
             Procedures
           </p>
@@ -105,6 +110,23 @@ export default function Footer() {
               </Link>
             ))}
           </div>
+        </div>
+         <div className="w-full xl:w-2/6">
+          <p style={{letterSpacing:'2px'}} className="uppercase tracking-wide text-gray-400 mb-4 text-sm">
+            Procedures in Mumbai
+          </p>
+          <ul className="space-y-5 text-lg font-thin">
+           {proceduresinmumbai.map((link) => (
+            <li key={link.name}>
+              <Link
+                href={link.url}
+                className="hover:underline hover:text-gray-200 transition"
+              >
+                {link.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
         </div>
         </div>
           <div>

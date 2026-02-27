@@ -16,7 +16,7 @@ interface Doctor {
   } | null;
 }
 
-export default function Doctors() {
+export default function Doctors({title}:{title:string}) {
   const [doctors, setDoctors] = useState<Doctor[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -53,7 +53,7 @@ export default function Doctors() {
         </p>
 
         <h2 className="text-2xl md:text-3xl font-medium text-gray-900 mb-12">
-          Meet Our Cardiologists
+          {title}
         </h2>
       </div>
 

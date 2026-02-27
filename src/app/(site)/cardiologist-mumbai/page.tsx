@@ -32,7 +32,7 @@ const cardiologistspage = () => {
         buttonText="Book Appointment Now"
       />
       <Mision />
-      <Doctors />
+      <Doctors title='Meet Our Cardiologists' />
       <section className="animate-gradient-circle text-white relative overflow-hidden">
         <FollowUpSection
           tag="What Sets us Apart"

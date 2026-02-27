@@ -6,18 +6,18 @@ import ProcedureTimeline from "@/component/Services/ProcedureTimeline";
 import FollowUpSection from "@/component/Services/FollowUpSection";
 import ProcedureDelayRisks from "@/component/Services/ProcedureDelayRisks";
 import FAQAccordion from "@/component/Services/FAQAccordion";
-import AppointmentCTA from "@/component/AppointmentCTA";
 import PatientSuccessStories from "@/component/PatientSuccessStories";
 import ASDClosureSection from "@/component/Services/ASDClosureSection";
 import Doctors from "@/component/Doctors";
 import TaviComparison from "@/component/TaviComparison";
 import TaviProMumbai from "@/component/TaviProMumbai";
 import ComparisonSection from "@/component/TaviComparison";
+import AppointmentCTAMumbai from "@/component/AppointmentCTAMumbai";
 
 export const metadata = {
-    title: "TAVI in Mumbai – Advanced Minimally Invasive Aortic Valve Replacement",
+    title: "TAVI in Mumbai | TAVI/TAVR Specialist in Mumbai",
     description:
-        "TAVI in Mumbai offers a minimally invasive alternative to traditional open-heart valve replacement surgery and is widely used for patients who are elderly or considered high surgical risk.",
+        "Looking for TAVI/TAVR in Mumbai? Heart Valve Experts offers advanced Transcatheter Aortic Valve Implantation in Mumbai by experienced specialists. Book a consultation today.",
     alternates: {
         canonical: "https://heartvalveexperts.com/tavi-in-mumbai",
     },
@@ -72,6 +72,12 @@ const faqData = [
         answer:
             "Yes. TAVI is commonly recommended for elderly patients with high surgical risk.",
     },
+    {
+        id: 9,
+        question: "How do I find a TAVI specialist near me?",
+        answer:
+            "Search for a centre with an experienced structural heart team, advanced imaging facilities, and a dedicated TAVI programme. Heart Valve Experts in Mumbai offer comprehensive evaluation and treatment for TAVI patients.",
+    },
 ];
 const serviceSchema = {
     "@context": "https://schema.org",
@@ -102,9 +108,44 @@ const faqSchema = {
         },
     })),
 };
+const medicalBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    name: "TAVI in Mumbai",
+    image:
+        "https://heartvalveexperts.com/_next/image?url=%2Fimages%2Fservice%2FTAVI%2F1.webp&w=1920&q=75",
+    "@id": "https://heartvalveexperts.com/tavi-in-mumbai",
+    url: "https://heartvalveexperts.com/tavi-in-mumbai",
+    telephone: "+91 9004506263",
+    address: {
+        "@type": "PostalAddress",
+        streetAddress:
+            "Silver Apartments, A12, Shankar Ghanekar Rd, behind Siddhivinayak Mandir, Prabhadevi",
+        addressLocality: "Mumbai",
+        postalCode: "400025",
+        addressCountry: "IN",
+    },
+    geo: {
+        "@type": "GeoCoordinates",
+        latitude: 19.015727,
+        longitude: 72.8325404,
+    },
+    sameAs: [
+        "https://www.facebook.com/share/14NuEwMHDKK/",
+        "https://www.instagram.com/heartvalveexperts?igsh=ZmQ0dGZnMWd4dW45",
+        "https://www.linkedin.com/company/heart-valve-experts/",
+        "https://www.youtube.com/@HeartValveExperts",
+    ],
+};
 const servciepage = () => {
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(medicalBusinessSchema),
+                }}
+            />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
@@ -140,7 +181,7 @@ const servciepage = () => {
                         intro="When evaluating options for the best TAVI surgeon in Mumbai, experience, infrastructure, and coordinated heart team assessment are critical."
                         subIntro="Heart Valve Experts offers:"
                         bulletPoints={[
-                            "1000+ transcatheter valve procedures performed",
+                            // "1000+ transcatheter valve procedures performed",
                             "Dedicated structural heart programme",
                             "Advanced cath lab with high-resolution imaging",
                             "3D echocardiography and CT-based valve sizing",
@@ -172,7 +213,7 @@ const servciepage = () => {
                     />
                 </div>
             </section>
-            <Doctors />
+            <Doctors title='Meet Our TAVI Specialists in Mumbai' />
             <TaviSection
                 imageSrc="/images/service/TAVI/1.webp"
                 imageAlt="TEER Surgery"
@@ -300,7 +341,15 @@ const servciepage = () => {
             />
             <PatientSuccessStories />
             <FAQAccordion faqs={faqData} />
-            <AppointmentCTA />
+            <AppointmentCTAMumbai
+                imageSrc="/images/homeimages/cta-contact.webp"
+                imageAlt="Consultation"
+                heading="Schedule a Consultation for TAVI in Mumbai"
+                badgeText="If you or a loved one has severe aortic stenosis, early evaluation for TAVI in Mumbai is important."
+                paraText="Heart Valve Experts offer structured, medically guided assessments to determine whether TAVR in Mumbai is the most appropriate treatment option based on your clinical profile."
+                buttonText="Book Appointment Now"
+                buttonLink="/contact-us"
+            />
         </>
     );
 };

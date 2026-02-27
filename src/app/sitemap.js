@@ -8,6 +8,8 @@ export default async function sitemap() {
     { url: `${siteUrl}/contact-us`, priority: 0.8 },
     { url: `${siteUrl}/cardiologist-mumbai`, priority: 0.8 },
     { url: `${siteUrl}/tavi`, priority: 0.8 },
+    { url: `${siteUrl}/tavi-in-mumbai`, priority: 0.8 },
+    { url: `${siteUrl}/mitraclip-in-mumbai`, priority: 0.8 },
     { url: `${siteUrl}/tmvr`, priority: 0.8 },
     { url: `${siteUrl}/teer`, priority: 0.8 },
     { url: `${siteUrl}/left-atrial-appendage-occlusion`, priority: 0.8 },

@@ -10,9 +10,9 @@ import AppointmentCTA from "@/component/AppointmentCTA";
 import PatientSuccessStories from "@/component/PatientSuccessStories";
 
 export const metadata = {
-  title: "TAVI in Mumbai | TAVI Procedure Mumbai",
+  title: "TAVI/TAVR Surgery | Procedure, Risks & Recovery Guide",
   description:
-    "Discover TAVI in Mumbai at Heart Valve Experts. We offer minimally invasive valve replacement for high-risk patients with expert cardiac care.",
+    "What is TAVI/TAVR surgery? A detailed guide explaining the minimally invasive procedure, step-by-step process, potential risks, and recovery.",
   alternates: {
     canonical: "https://heartvalveexperts.com/tavi",
   },
@@ -234,18 +234,19 @@ const serviceSchema = {
   "url": "https://heartvalveexperts.com/tavi",
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqData.map((faq) => ({
-    "@type": "Question",
-    name: faq.question,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: faq.answer,
-    },
-  })),
-};
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqData.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+ 
 const servciepage = () => {
   return (
     <div>
