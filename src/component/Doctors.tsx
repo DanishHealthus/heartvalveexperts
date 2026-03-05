@@ -7,7 +7,7 @@ import React, { useEffect, useState } from "react";
 interface Doctor {
   id: number;
   title: string;
-  slug:string;
+  slug: string;
   designation: string;
   cardiologist_description: string;
   featured_image: {
@@ -16,7 +16,7 @@ interface Doctor {
   } | null;
 }
 
-export default function Doctors({title}:{title:string}) {
+export default function Doctors({ title, des }: { title: string, des: string }) {
   const [doctors, setDoctors] = useState<Doctor[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -52,12 +52,14 @@ export default function Doctors({title}:{title:string}) {
           Who We Are
         </p>
 
-        <h2 className="text-2xl md:text-3xl font-medium text-gray-900 mb-12">
+        <h2 className="text-2xl md:text-3xl font-medium text-gray-900 mb-2">
           {title}
         </h2>
+        {des &&
+          <p className="">{des}</p>}
       </div>
 
-      <div className="group bg-white flex max-md:flex-col justify-center gap-2 px-5 2xl:w-[80%] mx-auto">
+      <div className="group bg-white flex max-md:flex-col justify-center gap-2 px-5 2xl:w-[80%] mx-auto mt-10">
         {doctors.map((doctor) => (
           <article
             key={doctor.id}
@@ -77,7 +79,7 @@ export default function Doctors({title}:{title:string}) {
             {doctor.featured_image?.url && (
               <Image
                 className="object-cover h-96 md:h-[450px] w-full"
-                src={doctor.featured_image.url === null ?  '/images/dummydoc.jpg' : doctor.featured_image.url}
+                src={doctor.featured_image.url === null ? '/images/dummydoc.jpg' : doctor.featured_image.url}
                 width={550}
                 height={500}
                 alt={doctor.featured_image.alt || doctor.title}

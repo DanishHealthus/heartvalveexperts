@@ -40,7 +40,7 @@ const faqData = [
         id: 3,
         question: "Who is the best MitraClip surgeon in Mumbai?",
         answer:
-            "An experienced structural heart specialist trained in transcatheter mitral valve repair techniques with advanced imaging support.",
+            `An experienced <a href="https://heartvalveexperts.com/cardiologist-mumbai" class="text-blue-600 underline"> structural heart specialist </a> trained in transcatheter mitral valve repair techniques with advanced imaging support.`,
     },
     {
         id: 4,
@@ -65,6 +65,12 @@ const faqData = [
         question: "Can elderly patients undergo MitraClip?",
         answer:
             "Yes. MitraClip is commonly recommended for elderly patients who are at high risk for open-heart surgery.",
+    },
+    {
+        id: 8,
+        question: "Where can I find a MitraClip procedure near me?",
+        answer:
+            `If you are searching for a MitraClip procedure near me, choose a centre with a dedicated interventional cardiologist team and advanced imaging support. <a href="https://heartvalveexperts.com" class="text-blue-600 underline">Heart Valve Experts</a> provides comprehensive MitraClip evaluation and treatment in Mumbai for eligible patients.`,
     },
 ];
 const serviceSchema = {
@@ -154,7 +160,7 @@ const servciepage = () => {
                 title="MitraClip in Mumbai – Advanced Minimally Invasive Mitral Valve Repair"
                 description={[
                     "If you or your loved one has received a diagnosis of severe mitral regurgitation, it is crucial to seek early treatment. MitraClip in Mumbai offers a minimally invasive option for repairing a leaking mitral valve without the need for open-heart surgery.",
-                    "A specialised team of interventional cardiologists, experienced in complex valve interventions, assesses patients at Heart Valve Experts. Our team has extensive experience in transcatheter procedures, including high-risk and elderly patients who may not be suitable for conventional surgery.",
+                    `A specialised team of <a href="https://heartvalveexperts.com/cardiologist-mumbai" class="text-blue-600 underline"> interventional cardiologists</a>, experienced in complex valve interventions, assesses patients at Heart Valve Experts. Our team has extensive experience in transcatheter procedures, including high-risk and elderly patients who may not be suitable for conventional surgery.`,
                     "We provide comprehensive consultation, procedural planning, and long-term follow-up for individuals seeking the MitraClip procedure in Mumbai and across India."
                 ]}
                 buttonText="Book Appointment Now"
@@ -200,15 +206,15 @@ const servciepage = () => {
                     />
                 </div>
             </section>
-            <Doctors title="Meet Our MitraClip Specialists in Mumbai"/>
+            <Doctors title="Meet Our MitraClip Specialists in Mumbai" des="MitraClip and structural heart interventions are performed by experienced interventional cardiologists and cardiac surgeons, including:" />
             <TaviSection
                 imageSrc="/images/service/TMVR/1.webp"
                 imageAlt="What is MitraClip?"
                 tag="About"
                 title="What is MitraClip?"
                 description={[
-                    "MitraClip is a minimally invasive device used to treat severe mitral regurgitation, a condition where the mitral valve does not close properly, allowing blood to leak backward in the heart.",
-                    "During the MitraClip procedure in Mumbai, a small clip is delivered to the mitral valve via a catheter inserted through a vein in the groin. The device helps the valve leaflets close more effectively, reducing leakage and improving symptoms.",
+                    `MitraClip is a minimally invasive device used to treat severe mitral regurgitationMitraClip is a minimally invasive device used to treat severe mitral regurgitation. It is a form of Transcatheter Edge-to-Edge Repair <a href="https://heartvalveexperts.com/teer" class="text-blue-600 underline"> (TEER)</a>, a catheter-based technique designed to reduce mitral valve leakage without open-heart surgery.`,
+                    `During the <a href="https://heartvalveexperts.com/blog/mitraclip-procedure" class="text-blue-600 underline"> MitraClip procedure </a> in Mumbai, a small clip is delivered to the mitral valve via a catheter inserted through a vein in the groin. The device helps the valve leaflets close more effectively, reducing leakage and improving symptoms.`,
                     "For patients considered high risk for open surgery, MitraClip surgery in Mumbai provides a safer alternative with a shorter recovery time."
                 ]}
                 buttonText="Book Appointment Now"
@@ -219,8 +225,8 @@ const servciepage = () => {
                 intro="MitraClip surgery in Mumbai is generally recommended for patients with:"
                 subIntro=""
                 bulletPoints={[
-                    "Severe symptomatic mitral regurgitation",
-                    "Heart failure symptoms such as fatigue and breathlessness",
+                    `Severe symptomatic <a href="https://heartvalveexperts.com/blog/mitral-valve-regurgitation-causes-symptoms-treatment" class="text-blue-600 underline"> mitral regurgitation </a>`,
+                    `<a href="https://heartvalveexperts.com/blog/what-are-the-symptoms-of-congestive-heart-failure" class="text-blue-600 underline">Heart failure symptoms </a> such as fatigue and breathlessness`,
                     "High surgical risk due to age or medical conditions",
                     "Reduced heart function",
                     "Previous cardiac procedures",
@@ -235,7 +241,7 @@ const servciepage = () => {
             <section className="animate-gradient-circle text-white relative overflow-hidden">
                 <div className="max-w-6xl mx-auto text-white text-center">
                     <TaviProMumbai
-                        heading="TAVI Procedure in Mumbai – Step by Step"
+                        heading="TEER Procedure in Mumbai – Step by Step"
                         procedures={[
                             {
                                 id: 1,
@@ -279,6 +285,7 @@ const servciepage = () => {
                     <ComparisonSection
                         title="MitraClip vs Open Mitral Valve Surgery"
                         subtitle=""
+                        badge="Why Choose MitraClip"
                         rows={[
                             {
                                 feature: "Chest Opening",
@@ -318,17 +325,17 @@ const servciepage = () => {
                 conclusion="Insurance coverage and applicable government schemes in Maharashtra may provide financial support depending on policy terms."
                 buttonText="Book Appointment Now"
                 imageSrc="/images/service/TAVI/Rectangle 30.webp"
-                imageAlt="TAVI Cost in Mumbai"
+                imageAlt="MitraClip Cost in Mumbai"
             />
             <PatientSuccessStories />
             <FAQAccordion faqs={faqData} />
             <AppointmentCTAMumbai
                 imageSrc="/images/homeimages/cta-contact.webp"
                 imageAlt="Consultation"
-                heading="Schedule a Consultation for TAVI in Mumbai"
-                badgeText="If you or a loved one has severe aortic stenosis, early evaluation for TAVI in Mumbai is important."
-                paraText="Heart Valve Experts offer structured, medically guided assessments to determine whether TAVR in Mumbai is the most appropriate treatment option based on your clinical profile."
-                buttonText="Book Appointment Now"
+                heading="Schedule a Consultation for MitraClip in Mumbai"
+                badgeText="If you or a loved one has severe mitral regurgitation, early evaluation is important."
+                paraText="Heart Valve Experts provides structured, medically guided assessments to determine whether MitraClip in Mumbai is the appropriate treatment option based on your clinical condition."
+                buttonText="Book a MitraClip Consultation"
                 buttonLink="/contact-us"
             />
         </>

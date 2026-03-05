@@ -28,57 +28,41 @@ export default function CardiacComparison({ blog }: CardiacComparisonProps) {
   const [toc, setToc] = useState<{ id: string; text: string; level: number }[]>([]);
   const [htmlContent, setHtmlContent] = useState("");
 
-  useEffect(() => {
-    if (!blog?.long_description) return;
+ useEffect(() => {
+  if (!blog?.long_description) return;
 
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(blog.long_description, "text/html");
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(blog.long_description, "text/html");
+  const headingNodes = Array.from(doc.querySelectorAll<HTMLElement>("h2"));
+  const tocItems: { id: string; text: string; level: number }[] = [];
 
-    // h2, h3 + strong inside p
-    const headingNodes = [
-      ...Array.from(doc.querySelectorAll<HTMLElement>("h2, h3")),
-      ...Array.from(doc.querySelectorAll<HTMLElement>("p > strong")),
-    ];
+  headingNodes.forEach((node) => {
+    const text = node.textContent?.trim();
+    if (!text) return;
 
-    const tocItems: { id: string; text: string; level: number }[] = [];
+    const id = text
+      .toLowerCase()
+      .replace(/\s+/g, "-")
+      .replace(/[^\w-]/g, "");
 
-    headingNodes.forEach((node) => {
-      const text = node.textContent?.trim();
-      if (!text) return;
+    node.setAttribute("id", id);
 
-      const id = text
-        .toLowerCase()
-        .replace(/\s+/g, "-")
-        .replace(/[^\w-]/g, "");
-
-      // If <strong>, attach id to parent <p>
-      if (node.tagName === "STRONG") {
-        node.parentElement?.setAttribute("id", id);
-        tocItems.push({
-          id,
-          text,
-          level: 2, // treat strong as h2
-        });
-      } else {
-        node.setAttribute("id", id);
-        tocItems.push({
-          id,
-          text,
-          level: node.tagName === "H3" ? 3 : 2,
-        });
-      }
+    tocItems.push({
+      id,
+      text,
+      level: 2,
     });
+  });
 
-    console.log("Detected TOC:", tocItems);
+  console.log("Detected TOC:", tocItems);
 
-    setToc(tocItems);
-    setHtmlContent(doc.body.innerHTML);
-  }, [blog?.long_description]);
-
+  setToc(tocItems);
+  setHtmlContent(doc.body.innerHTML);
+}, [blog?.long_description]);
 
   return (
     <section className="bg-white px-2 md:px-6 xl:px-10 py-10 [overflow-x:clip]">
-      <div className="max-w-7xl mx-auto relative -top-56 z-0">
+      <div className="max-w-7xl mx-auto relative ">
         {blog?.image && (
           <Image
             src={blog.image}
@@ -87,25 +71,21 @@ export default function CardiacComparison({ blog }: CardiacComparisonProps) {
             className="w-full h-auto mb-8 shadow-2xl"
           />
         )}
-        <div className="absolute w-full flex items-center justify-center gap-4">
+        <div className="pb-8 w-full flex items-center justify-center gap-4">
           <Link className="w-full" href="/contact-us">
-            <button className="animate-gradient-circle w-full cursor-pointer lg:text-xl px-6 py-3 lg:py-6 border border-white rounded-full hover:bg-white hover:scale-95 transition font-medium">
+            <button className="animate-gradient-circle w-full cursor-pointer lg:text-lg px-6 py-3 lg:py-4 border text-white border-white rounded-full hover:bg-white hover:scale-[98.5%] transition font-medium">
               Book Appointment Now
             </button>
           </Link>
         </div>
       </div>
       
-      <div className={`max-w-7xl mx-auto flex flex-col-reverse ${toc.length === 0 ? "lg:flex-col" : "lg:flex-row"}  justify-between gap-6 lg:-mt-20 -mt-36`}>
-
+      <div className={`max-w-7xl mx-auto flex flex-col-reverse ${toc.length === 0 ? "lg:flex-col" : "lg:flex-row"}  justify-between gap-6 px-3`}>
         <div className="w-full lg:w-[30%]">
           {toc.length > 0 && (
             <div className="sticky top-11 lg:top-8 xl:top-12">
               <div className="relative mb-10">
-                <div className="bg-white/80 backdrop-blur-xl border border-blue-200/40 
-                                shadow-lg shadow-blue-100/50 rounded-3xl p-6 lg:p-3 xl:p-6
-                                transition-all duration-300 hover:shadow-blue-200">
-
+                <div className="bg-white/80 backdrop-blur-xl border border-blue-200/40 shadow-lg shadow-blue-100/50 rounded-3xl p-6 lg:p-3 xl:p-6 transition-all duration-300 hover:shadow-blue-200">
                   <div className="pb-3 mb-4 border-b border-blue-100 flex items-center gap-2">
                     <div className="h-5 w-1 bg-blue-600 rounded-full"></div>
                     <h3 className="text-xl font-bold text-gray-800 tracking-wide">
@@ -142,7 +122,7 @@ export default function CardiacComparison({ blog }: CardiacComparisonProps) {
         </div>
 
         <div className={`${toc.length === 0 ? "lg:w-full" : "lg:w-2/3"} `}>
-        <h1 className="text-black text-3xl lg:text-4xl font-bold mb-5">{he.decode(blog?.title || "")}</h1>
+        {/* <h1 className="text-black text-3xl lg:text-4xl font-bold mb-5">{he.decode(blog?.title || "")}</h1> */}
           <div
             className="prose prose-blue max-w-none border-b pb-8 mb-8"
             dangerouslySetInnerHTML={{ __html: htmlContent }}

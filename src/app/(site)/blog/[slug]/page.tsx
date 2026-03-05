@@ -5,6 +5,7 @@ import CardiacComparison from "@/component/Blog/CardiacComparison";
 import { JSDOM } from "jsdom";
 import { getRelatedBLog } from "@/app/api/allapi";
 import { notFound } from "next/navigation";
+import AuthorCard from "@/component/Blog/AuthorCard";
 
 interface FAQItem {
   question: string;
@@ -26,7 +27,7 @@ interface BlogPost {
   updated_at?: string;
   faq_list?: FAQItem[];
 }
-  interface RelatedBlogItem {
+interface RelatedBlogItem {
   id?: number;
   slug: string;
   title: string;
@@ -173,7 +174,7 @@ export default async function SingleBlogPage({
       : null;
 
 
-const relatedPost = await getRelatedBLog()
+  const relatedPost = await getRelatedBLog()
   // const [relatedBlogs, setRelatedBlogs] = useState<RelatedBlogItem[]>([]);
   // useEffect(() => {
   //   const fetchRelated = async (): Promise<void> => {
@@ -207,9 +208,15 @@ const relatedPost = await getRelatedBLog()
         />
       )}
 
-      <BlogBreadCrumb />
+      <BlogBreadCrumb title={blog.title} subpage="true" />
       <CardiacComparison blog={blog} />
-      <RelatedBlog posts={relatedPost.posts}/>
+      <AuthorCard
+        name="Dr. Ankur U. Phatarpekar"
+        degrees="M.D., D.M., FSCAI"
+        image="/images/doctors/dr-ankur.png"
+        description="With over 15 years of expertise, Dr. Phatarpekar is recognised as a renowned interventional cardiologist in Mumbai, specialising in complex coronary interventions, structural heart procedures, and pioneering work in TAVI (Transcatheter Aortic Valve Implantation)."
+      />
+      <RelatedBlog posts={relatedPost.posts} />
     </>
   );
 }

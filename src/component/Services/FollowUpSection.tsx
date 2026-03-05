@@ -46,10 +46,10 @@ export default function FollowUpSection({
           <h2 className="text-2xl md:text-3xl font-semibold mb-5">
             {title}
           </h2>
-          <p className="text-base font-light leading-relaxed mb-6 opacity-90">
+          <p className="text-base font-medium leading-relaxed mb-6 opacity-90">
             {intro}
           </p>
-          <p className="text-base font-light leading-relaxed mb-6 opacity-90">
+          <p className="text-base font-medium leading-relaxed mb-6 opacity-90">
             {subIntro}
           </p>
 
@@ -65,11 +65,11 @@ export default function FollowUpSection({
                     className="w-full h-full object-contain"
                   />
                 </span>
-                <span className="flex-1 font-light text-lg">{point}</span>
+                <span className="flex-1 font-medium text-lg" dangerouslySetInnerHTML={{ __html: point }} />
               </li>
             ))}
           </ul>
-          <p className="text-base font-light leading-relaxed mb-8 opacity-90">
+          <p className="text-base font-medium leading-relaxed mb-8 opacity-90">
             {conclusion}
           </p>
         </div>

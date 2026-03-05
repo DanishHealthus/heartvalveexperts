@@ -14,7 +14,7 @@ interface ComparisonProps {
 export default function ComparisonSection({
   title,
   subtitle,
-  badge = "Why Choose TAVI",
+  badge,
   rows,
 }: ComparisonProps) {
   return (

@@ -23,7 +23,7 @@ export default function RelatedBlogClient({ posts }: { posts: BlogPost[] }) {
   return (
     <section className="py-12 px-4 lg:px-10 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between items-center mb-10">
+        <div className="flex justify-center text-center md:text-left md:justify-between items-center mb-10">
           <div>
             <p className="text-lg uppercase tracking-wide text-blue-600 font-semibold">
               ● Blogs
@@ -35,7 +35,7 @@ export default function RelatedBlogClient({ posts }: { posts: BlogPost[] }) {
 
           <button
             onClick={() => setShowModal(true)}
-            className="cursor-pointer flex items-center gap-2 px-5 py-2 border-2 border-gray-900 text-gray-900 rounded-full hover:bg-white hover:text-black"
+            className="cursor-pointer hidden md:flex items-center gap-2 px-5 py-2 border-2 border-gray-900 text-gray-900 rounded-full hover:bg-white hover:text-black"
           >
             Get in touch
             <FiArrowRightCircle className="text-3xl font-light" />

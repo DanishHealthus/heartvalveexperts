@@ -51,7 +51,7 @@ export default function Home() {
       <HeroSection />
       <WhoWeAreHero />
       <WhyChooseHVE />
-      <Doctors title='Meet Our Cardiologists' />
+      <Doctors title='Meet Our Cardiologists' des=""/>
       <InnovationCardiacCare />
       <PatientSuccessStories />
       <AppointmentCTA />

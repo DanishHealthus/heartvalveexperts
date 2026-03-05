@@ -75,12 +75,11 @@ export default function FAQAccordion({
 
             {/* Answer */}
             <div
-              className={`px-14 pb-4 text-gray-600 text-sm leading-relaxed transition-all duration-300 ${
+              className={`px-14 pb-4 text-gray-600 text-sm lg:text-base leading-relaxed transition-all duration-300 ${
                 openId === faq.id ? "block" : "hidden"
               }`}
-            >
-              {faq.answer}
-            </div>
+              dangerouslySetInnerHTML={{ __html: faq.answer }}
+            />
           </div>
         ))}
       </div>

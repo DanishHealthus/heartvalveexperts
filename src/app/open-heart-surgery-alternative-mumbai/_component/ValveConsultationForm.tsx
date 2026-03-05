@@ -98,17 +98,23 @@ const ValveConsultationForm = () => {
         {/* Phone */}
         <div>
           <label className="text-xs text-white/80">Phone / WhatsApp</label>
-          <input
-            name="phone"
-            value={form.phone}
-            onChange={handleChange}
-            className="w-full mt-1 rounded-xl bg-white/10 px-4 py-3 text-sm outline-none"
-          />
+          <div className="flex flex-wrap gap-3 items-center">
+            {/* <div className="w-[75%]"> */}
+            <input
+              name="phone"
+              value={form.phone}
+              onChange={handleChange}
+              className="w-full mt-1 rounded-xl bg-white/10 px-4 py-3 text-sm outline-none"
+            />
+            {/* </div>
+            <div className="w-[22%]">
+              <button className="cursor-pointer hover:scale-105 duration-500 px-3.5 bg-white text-black h-10 rounded-xl">Send OTP</button>
+            </div> */}
+          </div>
           {errors.phone && (
             <p className="text-red-400 text-xs mt-1">{errors.phone}</p>
           )}
         </div>
-
         {/* City */}
         <div>
           <label className="text-xs text-white/80">City</label>
