@@ -34,7 +34,7 @@ const faqData = [
         id: 3,
         question: "Who is the best MitraClip surgeon in Mumbai?",
         answer:
-            `An experienced <a href="https://heartvalveexperts.com/cardiologist-mumbai" class="text-blue-600 underline"> structural heart specialist </a> trained in transcatheter mitral valve repair techniques with advanced imaging support.`,
+            `An experienced <a target="_blank" href="https://heartvalveexperts.com/cardiologist-mumbai" class="text-blue-600 underline"> structural heart specialist </a> trained in transcatheter mitral valve repair techniques with advanced imaging support.`,
     },
     {
         id: 4,
@@ -64,7 +64,7 @@ const faqData = [
         id: 8,
         question: "Where can I find a MitraClip procedure near me?",
         answer:
-            `If you are searching for a MitraClip procedure near me, choose a centre with a dedicated interventional cardiologist team and advanced imaging support. <a href="https://heartvalveexperts.com" class="text-blue-600 underline">Heart Valve Experts</a> provides comprehensive MitraClip evaluation and treatment in Mumbai for eligible patients.`,
+            `If you are searching for a MitraClip procedure near me, choose a centre with a dedicated interventional cardiologist team and advanced imaging support. <a target="_blank" href="https://heartvalveexperts.com" class="text-blue-600 underline">Heart Valve Experts</a> provides comprehensive MitraClip evaluation and treatment in Mumbai for eligible patients.`,
     },
 ];
 const serviceSchema = {
@@ -154,7 +154,7 @@ const servciepage = () => {
                 title="MitraClip in Mumbai – Advanced Minimally Invasive Mitral Valve Repair"
                 description={[
                     "If you or your loved one has received a diagnosis of severe mitral regurgitation, it is crucial to seek early treatment. MitraClip in Mumbai offers a minimally invasive option for repairing a leaking mitral valve without the need for open-heart surgery.",
-                    `A specialised team of <a href="https://heartvalveexperts.com/cardiologist-mumbai" class="text-blue-600 underline"> interventional cardiologists</a>, experienced in complex valve interventions, assesses patients at Heart Valve Experts. Our team has extensive experience in transcatheter procedures, including high-risk and elderly patients who may not be suitable for conventional surgery.`,
+                    `A specialised team of <a target="_blank" href="https://heartvalveexperts.com/cardiologist-mumbai" class="text-blue-600 underline"> interventional cardiologists</a>, experienced in complex valve interventions, assesses patients at Heart Valve Experts. Our team has extensive experience in transcatheter procedures, including high-risk and elderly patients who may not be suitable for conventional surgery.`,
                     "We provide comprehensive consultation, procedural planning, and long-term follow-up for individuals seeking the MitraClip procedure in Mumbai and across India."
                 ]}
                 buttonText="Book Appointment Now"
@@ -207,8 +207,8 @@ const servciepage = () => {
                 tag="About"
                 title="What is MitraClip?"
                 description={[
-                    `MitraClip is a minimally invasive device used to treat severe mitral regurgitationMitraClip is a minimally invasive device used to treat severe mitral regurgitation. It is a form of Transcatheter Edge-to-Edge Repair <a href="https://heartvalveexperts.com/teer" class="text-blue-600 underline"> (TEER)</a>, a catheter-based technique designed to reduce mitral valve leakage without open-heart surgery.`,
-                    `During the <a href="https://heartvalveexperts.com/blog/mitraclip-procedure" class="text-blue-600 underline"> MitraClip procedure </a> in Mumbai, a small clip is delivered to the mitral valve via a catheter inserted through a vein in the groin. The device helps the valve leaflets close more effectively, reducing leakage and improving symptoms.`,
+                    `MitraClip is a minimally invasive device used to treat severe mitral regurgitationMitraClip is a minimally invasive device used to treat severe mitral regurgitation. It is a form of Transcatheter Edge-to-Edge Repair <a target="_blank" href="https://heartvalveexperts.com/teer" class="text-blue-600 underline"> (TEER)</a>, a catheter-based technique designed to reduce mitral valve leakage without open-heart surgery.`,
+                    `During the <a target="_blank" href="https://heartvalveexperts.com/blog/mitraclip-procedure" class="text-blue-600 underline"> MitraClip procedure </a> in Mumbai, a small clip is delivered to the mitral valve via a catheter inserted through a vein in the groin. The device helps the valve leaflets close more effectively, reducing leakage and improving symptoms.`,
                     "For patients considered high risk for open surgery, MitraClip surgery in Mumbai provides a safer alternative with a shorter recovery time."
                 ]}
                 buttonText="Book Appointment Now"
@@ -219,8 +219,8 @@ const servciepage = () => {
                 intro="MitraClip surgery in Mumbai is generally recommended for patients with:"
                 subIntro=""
                 bulletPoints={[
-                    `Severe symptomatic <a href="https://heartvalveexperts.com/blog/mitral-valve-regurgitation-causes-symptoms-treatment" class="text-blue-600 underline"> mitral regurgitation </a>`,
-                    `<a href="https://heartvalveexperts.com/blog/what-are-the-symptoms-of-congestive-heart-failure" class="text-blue-600 underline">Heart failure symptoms </a> such as fatigue and breathlessness`,
+                    `Severe symptomatic <a target="_blank" href="https://heartvalveexperts.com/blog/mitral-valve-regurgitation-causes-symptoms-treatment" class="text-blue-600 underline"> mitral regurgitation </a>`,
+                    `<a target="_blank" href="https://heartvalveexperts.com/blog/what-are-the-symptoms-of-congestive-heart-failure" class="text-blue-600 underline">Heart failure symptoms </a> such as fatigue and breathlessness`,
                     "High surgical risk due to age or medical conditions",
                     "Reduced heart function",
                     "Previous cardiac procedures",
