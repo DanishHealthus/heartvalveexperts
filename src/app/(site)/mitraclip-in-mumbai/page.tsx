@@ -242,7 +242,7 @@ const servciepage = () => {
                                 title: "Detailed Evaluation",
                                 description:
                                     "Before undergoing the MitraClip procedure in Mumbai, patients undergo:",
-                                img: "/images/service/TAVI/mumbai/m1.webp",
+                                img: "/images/service/mitra3.webp",
                                 bulletPoints: [
                                     "Echocardiography",
                                     "Transoesophageal echocardiography (TEE)",
