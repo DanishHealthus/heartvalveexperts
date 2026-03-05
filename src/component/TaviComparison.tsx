@@ -83,7 +83,7 @@ export default function ComparisonSection({
               </h4>
 
               <div className="flex justify-between border-b border-white/10 pb-2 mb-2">
-                <span className="text-white/70 text-sm">TAVI / TAVR</span>
+                <span className="text-white/70 text-sm"> {subtitle == ''? 'MitraClip' : 'TAVI / TAVR'}</span>
                 <span className="font-medium">{row.tavi}</span>
               </div>
 
