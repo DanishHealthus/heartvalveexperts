@@ -5,7 +5,6 @@ import FollowUpSection from "@/component/Services/FollowUpSection";
 import ProcedureDelayRisks from "@/component/Services/ProcedureDelayRisks";
 import FAQAccordion from "@/component/Services/FAQAccordion";
 import PatientSuccessStories from "@/component/PatientSuccessStories";
-import ASDClosureSection from "@/component/Services/ASDClosureSection";
 import Doctors from "@/component/Doctors";
 import TaviProMumbai from "@/component/TaviProMumbai";
 import ComparisonSection from "@/component/TaviComparison";
