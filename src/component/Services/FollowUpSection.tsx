@@ -28,7 +28,7 @@ export default function FollowUpSection({
 }: FollowUpSectionProps) {
   return (
     <section className=" py-16 px-6 md:px-12 lg:px-20">
-      <div className={`flex flex-col ${imageAlt === "reverse"? 'lg:flex-row-reverse' : 'lg:flex-row'} items-start gap-12 max-w-6xl mx-auto`}>
+      <div className={`flex flex-col ${imageAlt === "reverse" ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-start gap-12 max-w-6xl mx-auto`}>
 
         {/* Left Content */}
         <div className="w-full">

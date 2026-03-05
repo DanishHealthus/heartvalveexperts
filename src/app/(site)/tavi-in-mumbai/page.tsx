@@ -209,7 +209,7 @@ const servciepage = () => {
                         ]}
                         conclusion="Location details, appointment scheduling, and directions are available at the time of consultation booking."
                         buttonText="Book Appointment Now"
-                        imageSrc="/images/service/RSOV/Rectangle 41.webp"
+                        imageSrc="/images/service/TMVR/Rectangle 33.webp"
                         imageAlt="reverse"
                     />
                 </div>
@@ -242,7 +242,7 @@ const servciepage = () => {
                 ]}
                 conclusion="Patients undergo detailed imaging and heart team evaluation before being considered for the TAVI procedure in Maharashtra."
                 buttonText="Book Appointment Now"
-                imageSrc="/images/service/RSOV/Rectangle 43.webp"
+                imageSrc="/images/service/tavi1.webp"
                 imageAlt="Who is Eligible for TAVI Surgery in Mumbai?"
             />
             <section className="animate-gradient-circle text-white relative overflow-hidden">
@@ -255,7 +255,7 @@ const servciepage = () => {
                                 title: "Comprehensive Evaluation",
                                 description:
                                     "Before proceeding with the TAVI procedure in Mumbai, patients undergo:",
-                                img: "/images/service/TAVI/mumbai/1.webp",
+                                img: "/images/service/tavi2.webp",
                                 bulletPoints: [
                                     "Echocardiography",
                                     "CT angiography for valve measurement",
@@ -337,7 +337,7 @@ const servciepage = () => {
                 ]}
                 conclusion="Insurance coverage and government schemes in Maharashtra may apply based on individual policy terms."
                 buttonText="Book Appointment Now"
-                imageSrc="/images/service/TAVI/mumbai/tavi-cost.webp"
+                imageSrc="/images/service/tavi3.webp"
                 imageAlt="TAVI Cost in Mumbai"
             />
             <PatientSuccessStories />

@@ -16,7 +16,6 @@ export const metadata = {
         canonical: "https://heartvalveexperts.com/mitraclip-in-mumbai",
     },
 };
-
 const faqData = [
     {
         id: 1,
@@ -178,7 +177,7 @@ const servciepage = () => {
                         ]}
                         conclusion="Each patient is carefully evaluated before proceeding with MitraClip surgery in Mumbai to ensure clinical suitability and optimal outcomes."
                         buttonText="Book Appointment Now"
-                        imageSrc="/images/service/TMVR/Rectangle 31.webp"
+                        imageSrc="/images/service/mitra4.webp"
                         imageAlt="Doctor Consultation"
                     />
                     <FollowUpSection
@@ -195,7 +194,7 @@ const servciepage = () => {
                         ]}
                         conclusion="All consultations are appointment-based, with guidance provided for scheduling and directions."
                         buttonText="Book Appointment Now"
-                        imageSrc="/images/service/TMVR/Rectangle 33.webp"
+                        imageSrc="/images/service/mitra5.webp"
                         imageAlt="reverse"
                     />
                 </div>
@@ -267,7 +266,7 @@ const servciepage = () => {
                                 id: 3,
                                 title: "Monitoring and Hospital Stay",
                                 description: "After MitraClip surgery in Mumbai:",
-                                img: "/images/service/TAVI/mumbai/m3.webp",
+                                img: "/images/service/mitra6.webp",
                                 bulletPoints: [
                                     "ICU monitoring for 24–48 hours",
                                     "Early ambulation within 24 hours",
@@ -318,7 +317,7 @@ const servciepage = () => {
                 ]}
                 conclusion="Insurance coverage and applicable government schemes in Maharashtra may provide financial support depending on policy terms."
                 buttonText="Book Appointment Now"
-                imageSrc="/images/service/TAVI/Rectangle 30.webp"
+                imageSrc="/images/service/mitra7.webp"
                 imageAlt="MitraClip Cost in Mumbai"
             />
             <PatientSuccessStories />
