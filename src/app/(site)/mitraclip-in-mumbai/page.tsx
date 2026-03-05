@@ -7,7 +7,6 @@ import FAQAccordion from "@/component/Services/FAQAccordion";
 import PatientSuccessStories from "@/component/PatientSuccessStories";
 import ASDClosureSection from "@/component/Services/ASDClosureSection";
 import Doctors from "@/component/Doctors";
-import TaviComparison from "@/component/TaviComparison";
 import TaviProMumbai from "@/component/TaviProMumbai";
 import ComparisonSection from "@/component/TaviComparison";
 import AppointmentCTAMumbai from "@/component/AppointmentCTAMumbai";
