@@ -154,7 +154,7 @@ const servciepage = () => {
                 image="/images/service/TMVR/bread.webp"
             />
             <TaviSection
-                imageSrc="/images/service/TMVR/1.webp"
+                imageSrc="/images/service/mitra1.webp"
                 imageAlt="MitraClip in Mumbai – Advanced Minimally Invasive Mitral Valve Repair"
                 tag="About"
                 title="MitraClip in Mumbai – Advanced Minimally Invasive Mitral Valve Repair"
@@ -208,7 +208,7 @@ const servciepage = () => {
             </section>
             <Doctors title="Meet Our MitraClip Specialists in Mumbai" des="MitraClip and structural heart interventions are performed by experienced interventional cardiologists and cardiac surgeons, including:" />
             <TaviSection
-                imageSrc="/images/service/TMVR/1.webp"
+                imageSrc="/images/service/mitra2.webp"
                 imageAlt="What is MitraClip?"
                 tag="About"
                 title="What is MitraClip?"
