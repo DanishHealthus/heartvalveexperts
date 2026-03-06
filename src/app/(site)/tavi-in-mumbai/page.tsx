@@ -182,8 +182,8 @@ const servciepage = () => {
                         intro="When evaluating options for the best TAVI surgeon in Mumbai, experience, infrastructure, and coordinated heart team assessment are critical."
                         subIntro="Heart Valve Experts offers:"
                         bulletPoints={[
-                            // "1000+ transcatheter valve procedures performed",
-                            "Dedicated structural heart programme",
+                            "Experience of 1000+ TAVI procedures",
+                            "Doctors with highest numbers of TAVI procedures in Mumbai",
                             "Advanced cath lab with high-resolution imaging",
                             "3D echocardiography and CT-based valve sizing",
                             "Multidisciplinary heart team review before every case",
