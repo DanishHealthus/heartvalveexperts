@@ -146,11 +146,11 @@ const nextConfig: NextConfig = {
         destination: "https://heartvalveexperts.com/cardiologist-mumbai",
         permanent: true,
       },
-      // {
-      //   source: "/tavi",
-      //   destination: "https://heartvalveexperts.com/tavi",
-      //   permanent: true,
-      // },
+      {
+        source: "/blog/dr-ankur-phatarpekar",
+        destination: "https://heartvalveexperts.com/cardiologist-mumbai/dr-ankur-u-phatarpekar",
+        permanent: true,
+      },
       // {
       //   source: "/tmvr",
       //   destination: "https://heartvalveexperts.com/tmvr",

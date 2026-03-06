@@ -153,7 +153,7 @@ const servciepage = () => {
                 title="MitraClip in Mumbai – Advanced Minimally Invasive Mitral Valve Repair"
                 description={[
                     "If you or your loved one has received a diagnosis of severe mitral regurgitation, it is crucial to seek early treatment. MitraClip in Mumbai offers a minimally invasive option for repairing a leaking mitral valve without the need for open-heart surgery.",
-                    `A specialised team of <a target="_blank" href="https://heartvalveexperts.com/cardiologist-mumbai" class="text-blue-600 underline"> interventional cardiologists</a>, experienced in complex valve interventions, assesses patients at Heart Valve Experts. Our team has extensive experience in transcatheter procedures, including high-risk and elderly patients who may not be suitable for conventional surgery.`,
+                    `A specialised team of <a target="_blank" href="https://heartvalveexperts.com/cardiologist-mumbai" class="text-blue-600 underline"> interventional cardiologists</a>, experienced in complex valve interventions, assesses patients at Heart Valve Experts. Collectively, the team has performed 200+ MitraClip (mTEER) procedures, making it one of the highest-volume Clip device procedures in Mumbai.`,
                     "We provide comprehensive consultation, procedural planning, and long-term follow-up for individuals seeking the MitraClip procedure in Mumbai and across India."
                 ]}
                 buttonText="Book Appointment Now"
@@ -168,11 +168,12 @@ const servciepage = () => {
                         intro="When searching for the best MitraClip surgeon in Mumbai, expertise in structural heart interventions and access to advanced imaging facilities are essential."
                         subIntro="Heart Valve Experts provides:"
                         bulletPoints={[
-                            "Dedicated structural heart programme",
-                            "Advanced cardiac catheterisation laboratory",
+                            "Experience of 200+ mTEER procedures",
+                            "Doctors with highest numbers of MitraClip procedures in Mumbai",
+                            "First human MyClip trial performed in India",
+                            "Advanced cath lab with high-resolution imaging",
                             "Real-time 3D transoesophageal echocardiography (TEE)",
                             "Multidisciplinary heart team evaluation",
-                            "Experience managing high-risk and elderly patients",
                             "Comprehensive ICU and cardiac monitoring support"
                         ]}
                         conclusion="Each patient is carefully evaluated before proceeding with MitraClip surgery in Mumbai to ensure clinical suitability and optimal outcomes."
@@ -206,7 +207,7 @@ const servciepage = () => {
                 tag="About"
                 title="What is MitraClip?"
                 description={[
-                    `MitraClip is a minimally invasive device used to treat severe mitral regurgitationMitraClip is a minimally invasive device used to treat severe mitral regurgitation. It is a form of Transcatheter Edge-to-Edge Repair <a target="_blank" href="https://heartvalveexperts.com/teer" class="text-blue-600 underline"> (TEER)</a>, a catheter-based technique designed to reduce mitral valve leakage without open-heart surgery.`,
+                    `MitraClip is a minimally invasive device used to treat severe mitral regurgitation. It is a form of Transcatheter Edge-to-Edge Repair <a target="_blank" href="https://heartvalveexperts.com/teer" class="text-blue-600 underline"> (TEER)</a>, a catheter-based technique designed to reduce mitral valve leakage without open-heart surgery.`,
                     `During the <a target="_blank" href="https://heartvalveexperts.com/blog/mitraclip-procedure" class="text-blue-600 underline"> MitraClip procedure </a> in Mumbai, a small clip is delivered to the mitral valve via a catheter inserted through a vein in the groin. The device helps the valve leaflets close more effectively, reducing leakage and improving symptoms.`,
                     "For patients considered high risk for open surgery, MitraClip surgery in Mumbai provides a safer alternative with a shorter recovery time."
                 ]}
