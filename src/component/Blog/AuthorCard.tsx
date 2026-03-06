@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface AuthorCardProps {
   name: string;
@@ -20,6 +21,7 @@ export default function AuthorCard({
           
           {/* Author Image */}
           <div className="flex-shrink-0">
+            <Link className="hover:text-blue-500 group" href="/cardiologist-mumbai/dr-ankur-u-phatarpekar">
             <div className="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden bg-gray-200">
               <Image
                 src={image}
@@ -29,6 +31,7 @@ export default function AuthorCard({
                 className="object-cover w-full h-full"
               />
             </div>
+            </Link>
           </div>
 
           {/* Content */}
@@ -43,10 +46,12 @@ export default function AuthorCard({
             </div>
 
             {/* Name */}
-            <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mb-2">
+              <Link className="hover:text-blue-500 group" href="/cardiologist-mumbai/dr-ankur-u-phatarpekar">
+            <h3 className="text-xl md:text-2xl font-semibold group-hover:text-blue-500 text-gray-900 mb-2">
               {name}{" "}
-              <span className="font-normal text-gray-700">{degrees}</span>
+              <span className="font-normal text-gray-700 group-hover:text-blue-500">{degrees}</span>
             </h3>
+              </Link>
 
             {/* Description */}
             <p className="text-gray-600 text-sm md:text-base leading-relaxed max-w-2xl">
