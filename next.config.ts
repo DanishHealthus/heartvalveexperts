@@ -140,7 +140,96 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
 
-      // New redirects you added earlier
+      {
+        source: "/blog/heart-valve-disease-symptom-tracker",
+        destination: "https://heartvalveexperts.com/blog/heart-valve-disease-symptoms-causes-treatment",
+        permanent: true,
+      },
+      {
+        source: "/blog/what-is-a-tmvr-procedure-in-india",
+        destination: "https://heartvalveexperts.com/blog/tmvr-what-is-it",
+        permanent: true,
+      },
+      {
+        source: "/blog/what-is-tavi-surgery",
+        destination: "https://heartvalveexperts.com/tavi",
+        permanent: true,
+      },
+      {
+        source: "/blog/revolutionizing-heart-care",
+        destination: "https://heartvalveexperts.com/cardiologist-mumbai/dr-ankur-u-phatarpekar",
+        permanent: true,
+      },
+      {
+        source: "/blog/challenging-tavi-surgery-overcoming-artery-access-obstacles",
+        destination: "https://heartvalveexperts.com/tavi",
+        permanent: true,
+      },
+      {
+        source: "/blog/mitraclip-procedure-explained",
+        destination: "https://heartvalveexperts.com/blog/mitraclip-procedure",
+        permanent: true,
+      },
+      {
+        source: "/blog/the-power-of-a-team-in-tavi-dr-ankur-phatarpekar",
+        destination: "https://heartvalveexperts.com/knowledge-library",
+        permanent: true,
+      },
+      {
+        source: "/blog/a-milestone-in-interventional-cardiology",
+        destination: "https://heartvalveexperts.com/knowledge-library",
+        permanent: true,
+      },
+      {
+        source: "/blog/tvc-the-best-team-for-tavi-in-mumbai",
+        destination: "https://heartvalveexperts.com/tavi-in-mumbai",
+        permanent: true,
+      },
+      {
+        source: "/blog/aortic-valve-implantation-tvc",
+        destination: "https://heartvalveexperts.com/blog/aortic-stenosis-anatomy-diagnosis-treatment",
+        permanent: true,
+      },
+      {
+        source: "/blog/tavi-surgery-of-63-year-old-by-team-valve-clinic-tvc",
+        destination: "https://heartvalveexperts.com/knowledge-library",
+        permanent: true,
+      },
+      {
+        source: "/blog/gender-differences-in-aortic-stenosis",
+        destination: "https://heartvalveexperts.com/blog/aortic-stenosis-anatomy-diagnosis-treatment",
+        permanent: true,
+      },
+      {
+        source: "/blog/team-achievements",
+        destination: "https://heartvalveexperts.com/knowledge-library",
+        permanent: true,
+      },
+      {
+        source: "/blog/tavi-testimonial-mrs-dulcina-diaz",
+        destination: "https://heartvalveexperts.com/knowledge-library",
+        permanent: true,
+      },
+      {
+        source: "/blog/tavi-a-boon-to-elderly-patients",
+        destination: "https://heartvalveexperts.com/knowledge-library",
+        permanent: true,
+      },
+      {
+        source: "/blog/tavi-tavr-specialists-in-mumbai-india",
+        destination: "https://heartvalveexperts.com/tavi-in-mumbai",
+        permanent: true,
+      },
+      {
+        source: "/blog/tavi-an-alternative-to-open-heart-surgery-in-india",
+        destination: "https://heartvalveexperts.com/tavi",
+        permanent: true,
+      },
+      {
+        source: "/blog/heart-murmur-heart-valve-disease",
+        destination: "https://heartvalveexperts.com/blog/heart-murmur",
+        permanent: true,
+      },
       {
         source: "/team-hvc",
         destination: "https://heartvalveexperts.com/cardiologist-mumbai",
