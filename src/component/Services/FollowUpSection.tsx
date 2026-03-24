@@ -28,7 +28,7 @@ export default function FollowUpSection({
 }: FollowUpSectionProps) {
   return (
     <section className=" py-16 px-6 md:px-12 lg:px-20">
-      <div className={`flex flex-col ${imageAlt === "reverse" ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-start gap-12 max-w-6xl mx-auto`}>
+      <div className={`flex flex-col ${imageAlt === "reverse" ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-start gap-12 max-w-6xl h-full mx-auto`}>
 
         {/* Left Content */}
         <div className="w-full">
@@ -76,13 +76,14 @@ export default function FollowUpSection({
 
         {/* Right Image */}
         <div
-          className="relative w-full h-[350px] md:h-[420px] lg:h-[520px] rounded-[70px] rounded-br-2xl overflow-hidden"
+          className="relative w-full h-[350px] md:h-[420px] lg:h-[520px] 2xl:h-full rounded-[70px] rounded-br-2xl overflow-hidden"
         >
           <Image
             src={imageSrc}
             alt={imageAlt}
-            fill
-            className="object-cover"
+            width={900}
+            height={900}
+            className="object-cover w-full h-full"
           />
         </div>
 
