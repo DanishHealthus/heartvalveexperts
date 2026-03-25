@@ -34,7 +34,7 @@ export default function TaviProMumbai({
         <div className="text-center mb-12">
           <p
             style={{ letterSpacing: "2px" }}
-            className="text-white mb-6 text-lg uppercase font-light tracking-wide flex items-center justify-center gap-2"
+            className="mb-6 text-lg uppercase font-light tracking-wide flex items-center justify-center gap-2"
           >
             <span className="w-6 h-6">
               <Image
@@ -74,11 +74,11 @@ export default function TaviProMumbai({
                 className={`cursor-pointer p-4 border-b transition-all duration-300 
                 ${
                   activeId === item.id
-                    ? "bg-white/10 border-gray-400 rounded-xl"
+                    ? "bg-gray-300/60 border-gray-400 rounded-xl "
                     : "hover:bg-white/5 hover:rounded-xl"
                 }`}
               >
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between ">
                   <div className="flex gap-3 items-center">
                     <span className="text-xl opacity-70 w-6 font-thin">
                       {item.id.toString().padStart(2, "0")}
@@ -94,7 +94,7 @@ export default function TaviProMumbai({
                 </div>
 
                 {activeId === item.id && (
-                  <div className="mt-4 text-left text-gray-300">
+                  <div className="mt-4 text-left ">
                     <p className="text-lg font-light mb-4">
                       {item.description}
                     </p>
@@ -105,7 +105,7 @@ export default function TaviProMumbai({
                           key={idx}
                           className="flex items-start gap-2 text-lg font-light"
                         >
-                          <span className="mt-2 h-2 w-2 rounded-full bg-white"></span>
+                          <span className="mt-2 h-2 w-2 rounded-full bg-gray-600 shrink-0"></span>
                           <span>{point}</span>
                         </li>
                       ))}

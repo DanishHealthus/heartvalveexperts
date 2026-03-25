@@ -16,7 +16,7 @@ import AppointmentCTAMumbai from "@/component/AppointmentCTAMumbai";
 import Link from "next/link";
 
 export const metadata = {
-    title: "TAVI in Mumbai | TAVI/TAVR Specialist in Mumbai",
+    title: "TAVI (Transcatheter Aortic Valve Implantation) in Mumbai | Heart Valve Experts",
     description:
         "Looking for TAVI/TAVR in Mumbai? Heart Valve Experts offers advanced Transcatheter Aortic Valve Implantation in Mumbai by experienced specialists. Book a consultation today.",
     alternates: {

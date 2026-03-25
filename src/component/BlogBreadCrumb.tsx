@@ -270,7 +270,9 @@ export default function Services({ title, subpage }: ServicesProps) {
 
               className="flex items-center text-xl justify-between w-full hover:text-[#0074dd] transition pr-4"
             >
-              Device Closures {aboutOpen ? <FiChevronUp /> : <FiChevronDown />}
+               <Link href="/device-closure" className=" block text-lg hover:text-[#0074dd]">
+                Device Closures
+              </Link><div onClick={() => setAboutOpen(!aboutOpen)}>{aboutOpen ? <FiChevronUp /> : <FiChevronDown />}</div>
             </button>
             {aboutOpen && (
               <div className="border-l border-gray-400 pl-4 mt-5 space-y-4 text-sm text-gray-900">
