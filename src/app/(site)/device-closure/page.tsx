@@ -4,6 +4,15 @@ import TaviSection from "@/component/Services/TaviSection";
 import FollowUpSection from '@/component/Services/FollowUpSection';
 import AppointmentCTAMumbai from '@/component/AppointmentCTAMumbai';
 import FAQAccordion from '@/component/Services/FAQAccordion';
+
+export const metadata = {
+  title: "Device Closure Procedure for Congenital Heart Defect | Heart Valve Experts",
+  description:
+    "Learn about device closure for congenital heart defects. A safe, minimally invasive treatment for ASD & VSD with faster recovery and effective results.",
+  alternates: {
+    canonical: "https://heartvalveexperts.com/device-closure",
+  },
+};
 const faqData = [
   {
     id: 1,

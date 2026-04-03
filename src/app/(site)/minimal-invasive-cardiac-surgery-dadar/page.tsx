@@ -5,6 +5,14 @@ import FollowUpSection from '@/component/Services/FollowUpSection';
 import AppointmentCTAMumbai from '@/component/AppointmentCTAMumbai';
 import FAQAccordion from '@/component/Services/FAQAccordion';
 import TaviProMumbai from '@/component/TaviProMumbai';
+export const metadata = {
+  title: "Minimally Invasive Cardiac Surgery in Dadar| Heart Valve Experts",
+  description:
+    "Looking for minimally invasive cardiac surgery in Dadar? Our expert interventional cardiologists offer safe procedures, faster recovery, and personalized care.",
+  alternates: {
+    canonical: "https://heartvalveexperts.com/minimal-invasive-cardiac-surgery-dadar",
+  },
+};
 const faqData = [
   {
     id: 1,

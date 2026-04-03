@@ -6,6 +6,14 @@ import AppointmentCTAMumbai from '@/component/AppointmentCTAMumbai';
 import FAQAccordion from '@/component/Services/FAQAccordion';
 import PatientSuccessStories from '@/component/PatientSuccessStories';
 import Doctors from '@/component/Doctors';
+export const metadata = {
+  title: "Best Heart Specialist in Mumbai | Heart Specialist Doctor Mumbai",
+  description:
+    "Looking for heart specialists in Mumbai? Heart Valve Experts offers advanced cardiac care, valve treatments, and expert consultation with leading heart doctors mumbai.",
+  alternates: {
+    canonical: "https://heartvalveexperts.com/heart-specialists-in-mumbai",
+  },
+};
 const faqData = [
   {
     id: 1,

@@ -10,6 +10,7 @@ import {
   FaLinkedinIn,
   FaWhatsapp,
 } from "react-icons/fa";
+import CallbackForm from "../CallbackForm";
 
 interface BlogData {
   image?: string;
@@ -66,7 +67,7 @@ export default function CardiacComparison({ blog }: CardiacComparisonProps) {
         {blog?.image && (
           <Image
             src={blog.image}
-            width={1000} height={1000}
+            width={3000} height={1000}
             alt={blog?.title || "Heart Valve Experts"}
             className="w-full h-auto mb-8 shadow-2xl"
           />
@@ -117,6 +118,7 @@ export default function CardiacComparison({ blog }: CardiacComparisonProps) {
                                 via-white/0 to-transparent blur-2xl opacity-70"></div>
 
               </div>
+              <CallbackForm/>
             </div>
           )}
         </div>

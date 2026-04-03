@@ -5,6 +5,14 @@ import FollowUpSection from '@/component/Services/FollowUpSection';
 import AppointmentCTAMumbai from '@/component/AppointmentCTAMumbai';
 import FAQAccordion from '@/component/Services/FAQAccordion';
 import PatientSuccessStories from '@/component/PatientSuccessStories';
+export const metadata = {
+  title: "Expert Opinion for Heart Surgery | Heart Valve Experts",
+  description:
+    "Consult leading cardiac specialists for expert opinion on heart surgery, valve replacement, and treatment options. Make informed decisions with trusted medical advice.",
+  alternates: {
+    canonical: "https://heartvalveexperts.com/expert-opinion-for-heart-surgery",
+  },
+};
 const faqData = [
   {
     id: 1,

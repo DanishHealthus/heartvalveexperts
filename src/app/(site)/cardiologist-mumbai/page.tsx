@@ -9,9 +9,9 @@ import ASDClosureSection from '@/component/Services/ASDClosureSection'
 import HeartValveExpertsComponent from '@/component/HeartValveExpertsComponent'
 
 export const metadata = {
-  title: "Best Cardiologist in Mumbai | Heart Specialist in Mumbai",
+  title: "Best Cardiologist in Mumbai | Cardiac Surgeon in Mumbai",
   description:
-    "Consult Best Cardiologist in Mumbai for expert heart care, advanced cardiac treatment, and surgery. Book your appointment with heart specialists today!",
+    "Consult Best Cardiologist in Mumbai for expert heart care, advanced cardiac treatment, and surgery. Book your appointment with cardiac surgeon today!",
   alternates: {
     canonical: "https://heartvalveexperts.com/cardiologist-mumbai",
   },

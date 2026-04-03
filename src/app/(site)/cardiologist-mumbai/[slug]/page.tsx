@@ -185,7 +185,7 @@ const staticDoctorSchema: Record<string, PhysicianSchema> = {
 };
 
 export default async function DoctorPage({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+  const { slug } = await params;
 
   const res = await fetch(
     `https://backend.heartvalveexperts.com/wp-json/custom-api/v1/cardiologists?slug=${slug}`,

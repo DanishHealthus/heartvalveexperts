@@ -5,6 +5,14 @@ import FollowUpSection from '@/component/Services/FollowUpSection';
 import AppointmentCTAMumbai from '@/component/AppointmentCTAMumbai';
 import FAQAccordion from '@/component/Services/FAQAccordion';
 import TaviProMumbai from '@/component/TaviProMumbai';
+export const metadata = {
+  title: "Minimally Invasive Cardiac Surgery in India | Heart Valve Experts",
+  description:
+    "Heart Valve Experts offer minimally invasive cardiac surgery in India with advanced technology and expert cardiologists. Experience faster recovery, less pain, and safer options.",
+  alternates: {
+    canonical: "https://heartvalveexperts.com/minimal-invasive-cardiac-surgery-india",
+  },
+};
 const faqData = [
   {
     id: 1,
