@@ -85,8 +85,8 @@ export default function CardiacComparison({ blog }: CardiacComparisonProps) {
         <div className="w-full lg:w-[30%]">
           {toc.length > 0 && (
             <div className="sticky top-11 lg:top-8 xl:top-12">
-              <div className="relative mb-10">
-                <div className="bg-white/80 backdrop-blur-xl border border-blue-200/40 shadow-lg shadow-blue-100/50 rounded-3xl p-6 lg:p-3 xl:p-6 transition-all duration-300 hover:shadow-blue-200">
+              <div className="relative h-72 mb-10">
+                <div className="bg-white/80 h-72 overflow-hidden backdrop-blur-xl border border-blue-200/40 shadow-lg shadow-blue-100/50 rounded-3xl p-6 lg:p-3 xl:p-6 transition-all duration-300 hover:shadow-blue-200">
                   <div className="pb-3 mb-4 border-b border-blue-100 flex items-center gap-2">
                     <div className="h-5 w-1 bg-blue-600 rounded-full"></div>
                     <h3 className="text-xl font-bold text-gray-800 tracking-wide">
@@ -94,7 +94,7 @@ export default function CardiacComparison({ blog }: CardiacComparisonProps) {
                     </h3>
                   </div>
 
-                  <ul className="">
+                  <ul className="h-full overflow-x-auto pb-12">
                     {toc.map((item, index) => (
                       <li key={index} className="group">
                         <a

@@ -24,6 +24,7 @@ export default function Footer() {
   { label: "Blogs", url: "/blog" },
   { label: "Case Studies", url: "/case-studies" },
   { label: "Get In Touch", url: "/contact-us" },
+  { label: "Expert Opinion", url: "/expert-opinion-for-heart-surgery" },
   { label: "Privacy Policy", url: "/privacy-policy" },
 ];
 
@@ -44,6 +45,10 @@ export default function Footer() {
  const proceduresinmumbai = [
   { name: "TAVI in Mumbai", url: "/tavi-in-mumbai" },
   { name: "MitraClip in Mumbai", url: "/mitraclip-in-mumbai" },
+   { name: "Minimally Invasive in Dadar", url: "/minimal-invasive-cardiac-surgery-dadar" },
+   { name: "Minimally Invasive in Mumbai", url: "/minimal-invasive-cardiac-surgery-mumbai" },
+   { name: "Minimally Invasive in India", url: "/minimal-invasive-cardiac-surgery-india" },
+  { name: "Heart Specialists in Mumbai", url: "/heart-specialists-in-mumbai" },
 ];
   return (
     <footer
