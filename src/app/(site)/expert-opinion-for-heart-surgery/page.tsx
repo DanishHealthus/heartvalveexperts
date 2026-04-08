@@ -57,9 +57,80 @@ const faqData = [
       "You can proceed with treatment, monitoring, or further discussion based on the guidance provided.",
   },
 ];
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalProcedure",
+  name: metadata.title,
+  description: metadata.description,
+  procedureType: "TherapeuticProcedure",
+  bodyLocation: "Aortic root – Sinus of Valsalva",
+  // howPerformed:
+  //   "Surgical repair is done via open-heart surgery using a patch or suture closure, often under cardiopulmonary bypass. In some cases, a minimally invasive or catheter-based closure is possible.",
+  // preparation:
+  //   "Before the procedure, patients undergo echocardiogram, cardiac catheterisation, and other imaging to assess the rupture site and plan the repair. Blood tests and preoperative cardiac evaluation are also done.",
+  // followup:
+  //   "After the repair, patients are monitored in ICU, then transferred to a ward. Long-term follow-up includes echocardiograms to check for residual shunts, valve function, and annual cardiology visits.",
+  url: metadata.alternates.canonical,
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqData.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+};
+const medicalBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  name: metadata.title,
+  image:
+    "https://heartvalveexperts.com/_next/image?url=%2Fimages%2Fservice%2FTMVR%2F1.webp&w=1920&q=75",
+  "@id": "https://heartvalveexperts.com/mitraclip-in-mumbai",
+  url: "https://heartvalveexperts.com/mitraclip-in-mumbai",
+  telephone: "+91 9004506263",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress:
+      "Silver Apartments, A12, Shankar Ghanekar Rd, behind Siddhivinayak Mandir, Prabhadevi",
+    addressLocality: "Mumbai",
+    postalCode: "400025",
+    addressCountry: "IN",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 19.015727,
+    longitude: 72.8325404,
+  },
+  sameAs: [
+    "https://www.facebook.com/share/14NuEwMHDKK/",
+    "https://www.instagram.com/heartvalveexperts?igsh=ZmQ0dGZnMWd4dW45",
+    "https://www.linkedin.com/company/heart-valve-experts/",
+    "https://www.youtube.com/@HeartValveExperts",
+  ],
+};
 const page = () => {
   return (
-    <div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(medicalBusinessSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <BreadCrumb
         title="Expert Opinion For Heart Surgery"
         subpage="false"
@@ -173,7 +244,7 @@ const page = () => {
         buttonText="Book a TAVI Consultation"
         buttonLink="/contact-us"
       />
-    </div>
+    </>
   )
 }
 

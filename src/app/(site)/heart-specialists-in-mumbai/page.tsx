@@ -46,27 +46,99 @@ const faqData = [
       "Appointments can be scheduled by contacting the team at Heart Valve Experts through the website, phone, or email to arrange a consultation with a heart specialist in Mumbai.",
   },
 ];
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalProcedure",
+  name: metadata.title,
+  description: metadata.description,
+  procedureType: "TherapeuticProcedure",
+  bodyLocation: "Aortic root – Sinus of Valsalva",
+  // howPerformed:
+  //   "Surgical repair is done via open-heart surgery using a patch or suture closure, often under cardiopulmonary bypass. In some cases, a minimally invasive or catheter-based closure is possible.",
+  // preparation:
+  //   "Before the procedure, patients undergo echocardiogram, cardiac catheterisation, and other imaging to assess the rupture site and plan the repair. Blood tests and preoperative cardiac evaluation are also done.",
+  // followup:
+  //   "After the repair, patients are monitored in ICU, then transferred to a ward. Long-term follow-up includes echocardiograms to check for residual shunts, valve function, and annual cardiology visits.",
+  url: metadata.alternates.canonical,
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqData.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+};
+const medicalBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  name: metadata.title,
+  image:
+    "https://heartvalveexperts.com/_next/image?url=%2Fimages%2Fservice%2FTMVR%2F1.webp&w=1920&q=75",
+  "@id": "https://heartvalveexperts.com/mitraclip-in-mumbai",
+  url: "https://heartvalveexperts.com/mitraclip-in-mumbai",
+  telephone: "+91 9004506263",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress:
+      "Silver Apartments, A12, Shankar Ghanekar Rd, behind Siddhivinayak Mandir, Prabhadevi",
+    addressLocality: "Mumbai",
+    postalCode: "400025",
+    addressCountry: "IN",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 19.015727,
+    longitude: 72.8325404,
+  },
+  sameAs: [
+    "https://www.facebook.com/share/14NuEwMHDKK/",
+    "https://www.instagram.com/heartvalveexperts?igsh=ZmQ0dGZnMWd4dW45",
+    "https://www.linkedin.com/company/heart-valve-experts/",
+    "https://www.youtube.com/@HeartValveExperts",
+  ],
+};
 const page = () => {
   return (
-    <div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(medicalBusinessSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <BreadCrumb
         title="Heart Specialists in Mumbai"
         subpage="false"
         image="/images/contact.webp"
       />
       <TaviSection
-              imageSrc="/images/newservices/heart/1.webp"
-              imageAlt="Device Closure"
-              tag="About"
-              title="Expert Heart Specialists For Accurate Diagnosis And Confident Treatment Decisions"
-              description={[
-                `When you search for a heart specialist in Mumbai, you are usually looking for clarity, experience, and trustworthy guidance. The right specialist can significantly impact your outcomes and peace of mind, regardless of whether you are experiencing symptoms or have already received treatment advice.`,
-                "At Heart Valve Experts, patients have access to experienced specialists in Mumbai who focus on careful evaluations, evidence-based recommendations, and patient-centered cardiac care."
-              ]}
-      
-              buttonText="Book Appointment Now"
-            />
-    
+        imageSrc="/images/newservices/heart/1.webp"
+        imageAlt="Device Closure"
+        tag="About"
+        title="Expert Heart Specialists For Accurate Diagnosis And Confident Treatment Decisions"
+        description={[
+          `When you search for a heart specialist in Mumbai, you are usually looking for clarity, experience, and trustworthy guidance. The right specialist can significantly impact your outcomes and peace of mind, regardless of whether you are experiencing symptoms or have already received treatment advice.`,
+          "At Heart Valve Experts, patients have access to experienced specialists in Mumbai who focus on careful evaluations, evidence-based recommendations, and patient-centered cardiac care."
+        ]}
+
+        buttonText="Book Appointment Now"
+      />
+
       <section
         className="text-white relative animate-gradient-circle overflow-hidden"
       >
@@ -74,7 +146,7 @@ const page = () => {
           <FollowUpSection
             tag="Who it’s for?"
             title="Who is a Heart Specialist?"
-            intro="A heart specialist, also known as a cardiologist, is a doctor trained to diagnose and manage conditions affecting the heart and blood vessels. This includes evaluating symptoms, interpreting cardiac tests, and recommending appropriate treatment options."
+            intro={`A heart specialist, also known as a <a target="_blank" href="https://heartvalveexperts.com/cardiologist-mumbai" class="text-blue-600 underline"></div>cardiologist</a>, is a doctor trained to diagnose and manage conditions affecting the heart and blood vessels. This includes evaluating symptoms, interpreting cardiac tests, and recommending appropriate treatment options.`}
             subIntro="Heart specialists play an essential role in:"
             bulletPoints={["Early detection of heart disease.",
               "Managing chronic and complex cardiac conditions.",
@@ -94,7 +166,7 @@ const page = () => {
               "Chest discomfort, breathlessness, or unexplained fatigue.",
               "Palpitations or irregular heartbeat.",
               "Leg swelling along with sudden weight gain.",
-              "Known heart valve disease or congenital heart conditions.",
+              `Known <a target="_blank" href="https://heartvalveexperts.com/blog/heart-valve-disease-symptoms-causes-treatment" class="text-blue-600 underline">heart valve disease</a> or <a target="_blank" href="https://heartvalveexperts.com/blog/congenital-heart-disease-and-their-treatments" class="text-blue-600 underline">congenital heart conditions.</a>`,
               "Chest discomfort, breathlessness, or unexplained fatigue."
             ]}
             conclusion="Timely assessment can help prevent complications and unnecessary progression."
@@ -111,9 +183,9 @@ const page = () => {
         intro="Heart specialists manage a wide range of cardiac conditions, including:"
         subIntro=""
         bulletPoints={[
-          `Heart valve disease`,
+          `<a target="_blank" href="https://heartvalveexperts.com/blog/heart-valve-disease-symptoms-causes-treatment" class="text-blue-600 underline">Heart valve disease</a>`,
           "Coronary artery disease",
-          "Congenital heart disease",
+          `<a target="_blank" href="https://heartvalveexperts.com/blog/congenital-heart-disease-and-their-treatments" class="text-blue-600 underline">Congenital heart conditions.</a>`,
           "Heart rhythm disorders",
           "Heart failure and structural heart problems"
         ]}
@@ -126,7 +198,7 @@ const page = () => {
         tag="About"
         title="How a Heart Specialist Evaluation Works"
         intro="A consultation with a heart specialist typically begins with a detailed discussion of symptoms, medical history, and risk factors, followed by a review of investigations such as ECGs, echocardiography, CT scans, or angiography."
-        subIntro="At Heart Valve Experts, patients are evaluated by a multidisciplinary heart team consisting of interventional cardiologists who specialise in structural heart disease, cardiothoracic surgeons, cardiac anaesthetists, and cardiac imagers to recommend the most appropriate treatment approach for each patient."
+        subIntro={`At Heart Valve Experts, patients are evaluated by a multidisciplinary heart team consisting of <a target="_blank" href="https://heartvalveexperts.com/cardiologist-mumbai" class="text-blue-600 underline">interventional cardiologists</a> who specialise in structural heart disease, cardiothoracic surgeons, cardiac anaesthetists, and cardiac imagers to recommend the most appropriate treatment approach for each patient.`}
         bulletPoints={[
           "Explains the diagnosis clearly",
           "Discusses treatment or monitoring options",
@@ -137,16 +209,16 @@ const page = () => {
         imageSrc="/images/newservices/heart/5.webp"
         imageAlt="reverse"
       />
-       <Doctors title="Meet Our Heart Specialist at Heart Valve Experts, Located in Mumbai" 
-       des="Patients often want to know who will be treating them before booking an appointment." />
-       <section
+      <Doctors title="Meet Our Heart Specialist at Heart Valve Experts, Located in Mumbai"
+        des="Patients often want to know who will be treating them before booking an appointment." />
+      <section
         className="text-white relative animate-gradient-circle overflow-hidden"
       >
         <div className="max-w-7xl mx-auto text-white py-14 overflow-hidden">
           <FollowUpSection
             tag="Who it’s for?"
             title="Export Opinions and Advanced Cardiac Decisions"
-            intro="Many patients consult a heart specialist for a second opinion before making major decisions such as heart surgery or device-based procedures."
+            intro={`Many patients consult a heart specialist for a <a target="_blank" href="https://heartvalveexperts.com/expert-opinion-for-heart-surgery" class="text-blue-600 underline">second opinion</a> before making major decisions such as heart surgery or device-based procedures.`}
             subIntro="A specialist-led review helps:"
             bulletPoints={["Confirm or clarify the diagnosis",
               "Assess the necessity and timing of intervention",
@@ -187,7 +259,7 @@ const page = () => {
         buttonText="Book a TAVI Consultation"
         buttonLink="/contact-us"
       />
-    </div>
+    </>
   )
 }
 

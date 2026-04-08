@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { FiCornerDownRight } from "react-icons/fi";
-import { motion } from "framer-motion";
 
 interface Step {
   text: React.ReactNode;

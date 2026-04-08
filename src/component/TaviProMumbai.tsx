@@ -106,7 +106,7 @@ export default function TaviProMumbai({
                           className="flex items-start gap-2 text-lg font-light"
                         >
                           <span className="mt-2 h-2 w-2 rounded-full bg-gray-600 shrink-0"></span>
-                          <span>{point}</span>
+                          <span dangerouslySetInnerHTML={{ __html: point }} />
                         </li>
                       ))}
                     </ul>

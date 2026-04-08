@@ -58,8 +58,8 @@ export default function WhyChooseHVE() {
               key={index}
               className="border border-white/30 rounded-2xl p-6 bg-white/5 hover:bg-white/10 transition-all"
             >
-              <div className="w-12 h-12 mb-3">
-                <Image width={25} height={25} className="object-none" src={feature.icon} alt="" />
+              <div className="w-12 h-12 mb-3 shrink-0">
+                <Image width={25} height={25} className="object-none rounded-full shrink-0" src={feature.icon} alt="" />
               </div>
               <h3
                 style={{ fontWeight: "300" }}

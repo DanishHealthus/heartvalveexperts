@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
 import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
 import Swal from "sweetalert2";
 import { useRouter } from "next/navigation";

@@ -81,9 +81,81 @@ const faqData = [
       "Heart Valve Experts offers consultations for patients across dadar and India. Contact the team to arrange an evaluation and discuss your treatment options.",
   },
 ];
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalProcedure",
+  name: metadata.title,
+  description: metadata.description,
+  procedureType: "TherapeuticProcedure",
+  bodyLocation: "Aortic root – Sinus of Valsalva",
+  // howPerformed:
+  //   "Surgical repair is done via open-heart surgery using a patch or suture closure, often under cardiopulmonary bypass. In some cases, a minimally invasive or catheter-based closure is possible.",
+  // preparation:
+  //   "Before the procedure, patients undergo echocardiogram, cardiac catheterisation, and other imaging to assess the rupture site and plan the repair. Blood tests and preoperative cardiac evaluation are also done.",
+  // followup:
+  //   "After the repair, patients are monitored in ICU, then transferred to a ward. Long-term follow-up includes echocardiograms to check for residual shunts, valve function, and annual cardiology visits.",
+  url: metadata.alternates.canonical,
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqData.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+};
+const medicalBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  name: metadata.title,
+  image:
+    "https://heartvalveexperts.com/_next/image?url=%2Fimages%2Fservice%2FTMVR%2F1.webp&w=1920&q=75",
+  "@id": "https://heartvalveexperts.com/mitraclip-in-mumbai",
+  url: "https://heartvalveexperts.com/mitraclip-in-mumbai",
+  telephone: "+91 9004506263",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress:
+      "Silver Apartments, A12, Shankar Ghanekar Rd, behind Siddhivinayak Mandir, Prabhadevi",
+    addressLocality: "Mumbai",
+    postalCode: "400025",
+    addressCountry: "IN",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 19.015727,
+    longitude: 72.8325404,
+  },
+  sameAs: [
+    "https://www.facebook.com/share/14NuEwMHDKK/",
+    "https://www.instagram.com/heartvalveexperts?igsh=ZmQ0dGZnMWd4dW45",
+    "https://www.linkedin.com/company/heart-valve-experts/",
+    "https://www.youtube.com/@HeartValveExperts",
+  ],
+};
 const page = () => {
   return (
-    <div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(medicalBusinessSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <BreadCrumb
         title="Minimally Invasive Heart Valve Treatment Dadar"
         subpage="false"
@@ -98,7 +170,7 @@ const page = () => {
           `Advanced interventional and transcatheter procedures for heart valve disease`,
           "If you or a loved one has been advised to consider heart valve surgery, it is natural to worry about the complications of open-heart surgery and the long recovery time.",
           "Today, many heart valve conditions can be treated using minimally invasive, catheter-based procedures that repair or replace the valve without opening the chest.",
-          "At Heart Valve Experts in dadar, our care focuses exclusively on advanced interventional treatments designed to treat heart valve disease while minimising physical trauma and supporting faster recovery."
+          `At <a target="_blank" href="https://heartvalveexperts.com/" class="text-blue-600 underline">Heart Valve Experts</a> in dadar, our care focuses exclusively on advanced interventional treatments designed to treat heart valve disease while minimising physical trauma and supporting faster recovery.`
         ]}
 
         buttonText="Book Appointment Now"
@@ -150,9 +222,9 @@ const page = () => {
               "",
             img: "/images/newservices/minimal/4.webp",
             bulletPoints: [
-              "TAVI (Transcatheter Aortic Valve Implantation) : Treatment for severe aortic valve narrowing.",
-              "TMVR (Transcatheter Mitral Valve Replacement) : A minimally invasive option for certain mitral valve conditions.",
-              "TEER (MitraClip & TriClip) : Used to treat mitral or tricuspid valve regurgitation.",
+              `<a target="_blank" href="https://heartvalveexperts.com/tavi" class="text-blue-600 underline">TAVI (Transcatheter Aortic Valve Implantation)</a> : Treatment for severe aortic valve narrowing.`,
+              `<a target="_blank" href="https://heartvalveexperts.com/tmvr" class="text-blue-600 underline">TMVR (Transcatheter Mitral Valve Replacement) </a>: A minimally invasive option for certain <a target="_blank" href="https://heartvalveexperts.com/blog/mitral-valve-regurgitation-causes-symptoms-treatment" class="text-blue-600 underline">mitral valve conditions.</a>`,
+              `<a target="_blank" href="https://heartvalveexperts.com/teer" class="text-blue-600 underline">TEER (MitraClip & TriClip) </a>: Used to treat <a target="_blank" href="https://heartvalveexperts.com/blog/tricuspid-regurgitation-a-broken-heart" class="text-blue-600 underline">mitral or tricuspid valve regurgitation.</a>`,
             ],
           },
           {
@@ -161,7 +233,7 @@ const page = () => {
             description: "",
             img: "/images/newservices/minimal/5.webp",
             bulletPoints: [
-              "LAAO (Left Atrial Appendage Occlusion) : Performed to reduce stroke risk in certain patients with atrial fibrillation.",
+              `<a target="_blank" href="https://heartvalveexperts.com/left-atrial-appendage-occlusion" class="text-blue-600 underline">LAAO (Left Atrial Appendage Occlusion) </a>: Performed to reduce stroke risk in certain patients with atrial fibrillation.`,
             ],
           },
           {
@@ -170,10 +242,10 @@ const page = () => {
             description: "Certain congenital heart defects can also be treated using catheter-based closure techniques:",
             img: "/images/newservices/minimal/6.webp",
             bulletPoints: [
-              "ASD Closure",
-              "PFO Closure",
-              "VSD Closure",
-              "PDA Closure"
+              `<a target="_blank" href="https://heartvalveexperts.com/device-closure/atrial-septal-defect" class="text-blue-600 underline">ASD Closure</a>`,
+              `<a target="_blank" href="https://heartvalveexperts.com/device-closure/patent-foramen-ovale" class="text-blue-600 underline">PFO Closure</a>`,
+              `<a target="_blank" href="https://heartvalveexperts.com/device-closure/ventricular-septal-defect" class="text-blue-600 underline">VSD Closure</a>`,
+              `<a target="_blank" href="https://heartvalveexperts.com/device-closure/patent-ductus-arteriosus" class="text-blue-600 underline">PDA Closure</a>`
             ],
           },
           {
@@ -182,9 +254,9 @@ const page = () => {
             description: "Additional structural heart procedures may include:",
             img: "/images/newservices/minimal/7.webp",
             bulletPoints: [
-              "Balloon Mitral Valvotomy (BMV)",
-              "RSOV Closure",
-              "Tricuspid valve interventions"
+              `<a target="_blank" href="https://heartvalveexperts.com/balloon-mitral-valvotomy" class="text-blue-600 underline">Balloon Mitral Valvotomy (BMV)</a>`,
+              `<a target="_blank" href="https://heartvalveexperts.com/ruptured-sinus-of-valsalva" class="text-blue-600 underline">RSOV Closure</a>`,
+              `<a target="_blank" href="https://heartvalveexperts.com/tric-valve" class="text-blue-600 underline">Tricuspid valve interventions</a>`
             ],
           },
         ]}
@@ -253,7 +325,7 @@ const page = () => {
         buttonText="Book a TAVI Consultation"
         buttonLink="/contact-us"
       />
-    </div>
+    </>
   )
 }
 

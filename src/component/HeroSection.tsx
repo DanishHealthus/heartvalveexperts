@@ -113,7 +113,7 @@ export default function HomePage() {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <section className="relative h-[55vh] lg:h-screen w-full flex items-center justify-center bg-black text-white overflow-hidden">
+    <section className="relative h-120 sm:h-150 lg:h-screen w-full flex items-center justify-center bg-black text-white overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 will-change-transform">
         <Image

@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 interface FollowUpSectionProps {
   tag: string;
@@ -46,13 +45,12 @@ export default function FollowUpSection({
           <h2 className="text-2xl md:text-3xl font-semibold mb-5">
             {title}
           </h2>
-          <p className="text-base font-medium leading-relaxed mb-6 opacity-90">
-            {intro}
-          </p>
-          <p className="text-base font-medium leading-relaxed mb-6 opacity-90">
-            {subIntro}
-          </p>
-
+          <p className="text-base font-medium leading-relaxed mb-6 opacity-90"
+            dangerouslySetInnerHTML={{ __html: intro }}
+          />
+          <p className="text-base font-medium leading-relaxed mb-6 opacity-90"
+            dangerouslySetInnerHTML={{ __html: subIntro }}
+          />
           {/* Bullet Points */}
           <ul className="space-y-5 mb-6">
             {bulletPoints.map((point, idx) => (
@@ -69,9 +67,9 @@ export default function FollowUpSection({
               </li>
             ))}
           </ul>
-          <p className="text-base font-medium leading-relaxed mb-8 opacity-90">
-            {conclusion}
-          </p>
+          <p className="text-base font-medium leading-relaxed mb-8 opacity-90"
+            dangerouslySetInnerHTML={{ __html: conclusion }}
+          />
         </div>
 
         {/* Right Image */}
