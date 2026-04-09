@@ -150,7 +150,7 @@ const page = () => {
           <FollowUpSection
             tag="Who it’s for?"
             title="What Is Device Closure for a Hole in the Heart?"
-            intro="Device closure is a minimally invasive procedure used to close abnormal openings in the heart that are present from birth. These openings cause the blood to flow abnormally between heart chambers, placing strain on the heart and lungs over time."
+            intro={`Device closure is a minimally invasive procedure used to close abnormal openings in the heart that are present from birth. These openings cause the blood to flow abnormally between <a target="_blank" href="https://heartvalveexperts.com/blog/four-chambered-heart-structure-function-benefits" class="text-blue-600 underline">heart chambers</a>, placing strain on the heart and lungs over time.`}
             subIntro="Instead of surgery, a specialised closure device is guided to the heart through a blood vessel, usually a leg. Once positioned correctly, the device seals the defect and remains permanently in place."
             bulletPoints={[]}
             conclusion=""
@@ -164,10 +164,10 @@ const page = () => {
             intro="Not all heart defects require surgery. Device closure is commonly used for specific types of congenital heart disease, including:"
             subIntro=""
             bulletPoints={[
-              "Atrial Septal Defect (ASD) Device Closure : A specialised device is placed across the opening between the upper heart chambers to stop abnormal blood flow and reduce strain on the heart and lungs.",
-              "Patent Foramen Ovale (PFO) Device Closure : A small closure device seals the flap-like opening between the atria that did not close after birth, helping lower the risk of stroke in selected patients.",
-              "Selected Ventricular Septal Defects (VSD) Device Closure : In some cases, a device is used to close the hole between the lower heart chambers without having to do open-heart surgery. This depends on the size and location of the defect.",
-              "Patent Ductus Arteriosus (PDA) Device Closure : A catheter-delivered device is used to close the abnormal blood vessel connection between major arteries, preventing excess blood flow to the lungs."
+              `<a target="_blank" href="https://heartvalveexperts.com/device-closure/atrial-septal-defect" class="text-blue-600 underline">Atrial Septal Defect (ASD) Device Closure</a> : A specialised device is placed across the opening between the upper heart chambers to stop abnormal blood flow and reduce strain on the heart and lungs.`,
+              `<a target="_blank" href="https://heartvalveexperts.com/device-closure/patent-foramen-ovale" class="text-blue-600 underline">Patent Foramen Ovale (PFO) Device Closure</a> : A small closure device seals the flap-like opening between the atria that did not close after birth, helping lower the risk of stroke in selected patients.`,
+              `<a target="_blank" href="https://heartvalveexperts.com/device-closure/ventricular-septal-defect" class="text-blue-600 underline">Selected Ventricular Septal Defects (VSD) Device Closure</a> : In some cases, a device is used to close the hole between the lower heart chambers without having to do open-heart surgery. This depends on the size and location of the defect.`,
+              `<a target="_blank" href="https://heartvalveexperts.com/device-closure/patent-ductus-arteriosus" class="text-blue-600 underline">Patent Ductus Arteriosus (PDA) Device Closure</a> : A catheter-delivered device is used to close the abnormal blood vessel connection between major arteries, preventing excess blood flow to the lungs.`
             ]}
             conclusion=""
             buttonText="Book Appointment Now"
@@ -242,7 +242,7 @@ const page = () => {
           <FollowUpSection
             tag="What Sets us Apart"
             title="Why Choose Heart Valve Experts?"
-            intro="At Heart Valve Experts, congenital heart conditions are evaluated with a multidisciplinary approach. Specialists review imaging, heart function, and patient symptoms together before recommending device-based or surgical treatment."
+            intro={`At Heart Valve Experts, <a target="_blank" href="https://heartvalveexperts.com/blog/congenital-heart-disease-and-their-treatments" class="text-blue-600 underline"></div>congenital heart conditions</a> are evaluated with a multidisciplinary approach. Specialists review imaging, heart function, and patient symptoms together before recommending device-based or surgical treatment.`}
             subIntro="This ensures decisions are guided by precision, experience, and patient safety."
             bulletPoints={[]}
             conclusion=""

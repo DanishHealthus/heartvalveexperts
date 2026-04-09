@@ -154,7 +154,7 @@ const page = () => {
         subIntro="At Heart Valve Experts, our expert valve review provides specialised expertise to clarify the requirements, timing, and safest approach to interventions. This service helps patients and families feel confident before making important decisions about heart valve treatment."
         bulletPoints={[
           "1,000+ heart valve and surgery cases reviewed",
-          "Specialist second opinions for complex valve disease",
+          `Specialist second opinions for complex <a target="_blank" href="https://heartvalveexperts.com/blog/heart-valve-disease-symptoms-causes-treatment" class="text-blue-600 underline">valve disease</a>`,
           "Trusted centre for heart valve decisions"
         ]}
         conclusion=""
@@ -172,7 +172,7 @@ const page = () => {
             intro="Our approach reflects how complex heart valve decisions are made in expert practice. Each stage is focused on accuracy, safety, and patient understanding."
             subIntro=""
             bulletPoints={["You share your medical history, echocardiograms, scans, and current recommendations.",
-              "Your case is reviewed by an expert team of cardiologists with extensive experience in valve disease and structural heart conditions.",
+              `Your case is reviewed by an expert team of <a target="_blank" href="https://heartvalveexperts.com/cardiologist-mumbai" class="text-blue-600 underline">cardiologists</a> with extensive experience in valve disease and structural heart conditions.`,
               "An appointment is scheduled to discuss your case in detail with an interventional specialist.",
               "You receive a clear expert opinion outlining the diagnosis, treatment options, and recommended next steps."
             ]}
@@ -184,7 +184,7 @@ const page = () => {
           <FollowUpSection
             tag="What Sets us Apart"
             title="Why Seek Expert Opinions from Heart Valve Experts?"
-            intro="Heart valve diseases are rarely straightforward. Severity, progression, symptoms, age, and overall health all influence whether intervention is required and which approach is safest."
+            intro={`<a target="_blank" href="https://heartvalveexperts.com/blog/causes-of-valvular-heart-disease" class="text-blue-600 underline"></div>Heart valve diseases</a> are rarely straightforward. Severity, progression, symptoms, age, and overall health all influence whether intervention is required and which approach is safest.`}
             subIntro="Heart Valve Experts is structured around these complexities. Patients often seek additional expert guidance when they want clarity before proceeding with a major heart valve intervention."
             bulletPoints={[
               "Assess whether surgery is truly required at this stage",
@@ -203,7 +203,7 @@ const page = () => {
       <FollowUpSection
         tag="About"
         title="Why Expert Review Matters in Valve Diseases"
-        intro="Valve conditions often progress gradually. Many patients are advised surgery while symptoms remain mild or imaging findings are borderline."
+        intro={`<a target="_blank" href="https://heartvalveexperts.com/blog/heart-valve-problems-symptoms" class="text-blue-600 underline">Valve conditions</a> often progress gradually. Many patients are advised surgery while symptoms remain mild or imaging findings are borderline.`}
         subIntro="A specialist second opinion can help clarify:"
         bulletPoints={[
           `Whether current findings justify surgery`,
@@ -225,7 +225,7 @@ const page = () => {
           "You have been advised to have valve surgery but are currently under monitoring.",
           "Your symptoms feel less severe than suggested by your reports.",
           "Surgery was recommended mainly based on imaging findings.",
-          "An elderly parent or family member with multiple health conditions has been advised to have valve surgery.",
+          `An <a target="_blank" href="https://heartvalveexperts.com/blog/tavi-in-low-surgical-risk-patients" class="text-blue-600 underline">elderly parent or family member</a> with multiple health conditions has been advised to have valve surgery.`,
           "You were given multiple treatment options without clear direction."
         ]}
         conclusion="These are common situations where specialist review helps clarify whether intervention is needed now, later, or not at all."
