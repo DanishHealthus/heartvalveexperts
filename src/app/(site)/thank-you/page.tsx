@@ -17,15 +17,6 @@ const ThankYouPage = () => {
 
   return (
     <>
-    <Script id="google-ads-conversion">
-        {`
-          gtag('event', 'conversion', {
-            'send_to': 'AW-17726300204/uavVCL6B8MUbEKzAx4RC',
-            'value': 1.0,
-            'currency': 'INR'
-          });
-        `}
-      </Script>
       <div className="min-h-screen animate-gradient-circle flex items-center justify-center p-6 overflow-hidden">
         <div className="bg-white rounded-3xl shadow-2xl max-w-xl w-full p-10 text-center">
           <FiCheckCircle className="w-20 h-20 mx-auto text-blue-500 mb-6 animate-bounce" />
