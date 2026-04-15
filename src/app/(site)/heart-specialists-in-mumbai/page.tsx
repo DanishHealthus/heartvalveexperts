@@ -83,7 +83,7 @@ const medicalBusinessSchema = {
     "https://heartvalveexperts.com/_next/image?url=%2Fimages%2Fservice%2FTMVR%2F1.webp&w=1920&q=75",
   "@id": "https://heartvalveexperts.com/mitraclip-in-mumbai",
   url: "https://heartvalveexperts.com/mitraclip-in-mumbai",
-  telephone: "+91 9004506263",
+  telephone: "+91 8828228266",
   address: {
     "@type": "PostalAddress",
     streetAddress:

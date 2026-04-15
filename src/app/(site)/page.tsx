@@ -25,7 +25,7 @@ const clinicSchema = {
   url: "https://heartvalveexperts.com/",
   description:
     "Heart Valve Experts is a leading cardiac clinic specialising in structural heart disease, valve interventions, and minimally invasive heart procedures.",
-  telephone: "+91 9004506263",
+  telephone: "+91 8828228266",
   address: {
     "@type": "PostalAddress",
     streetAddress:

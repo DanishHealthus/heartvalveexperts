@@ -87,7 +87,7 @@ const staticDoctorSchema: Record<string, PhysicianSchema> = {
       postalCode: "400025",
       addressCountry: "IN",
     },
-    telephone: "+91 9004506263",
+    telephone: "+91 8828228266",
     email: "heartvalveexperts@gmail.com",
   },
 
@@ -110,7 +110,7 @@ const staticDoctorSchema: Record<string, PhysicianSchema> = {
       postalCode: "400025",
       addressCountry: "IN",
     },
-    telephone: "+91 9004506263",
+    telephone: "+91 8828228266",
     email: "heartvalveexperts@gmail.com",
   },
 
@@ -133,7 +133,7 @@ const staticDoctorSchema: Record<string, PhysicianSchema> = {
       postalCode: "400025",
       addressCountry: "IN",
     },
-    telephone: "+91 9004506263",
+    telephone: "+91 8828228266",
     email: "heartvalveexperts@gmail.com",
   },
 
@@ -156,7 +156,7 @@ const staticDoctorSchema: Record<string, PhysicianSchema> = {
       postalCode: "400025",
       addressCountry: "IN",
     },
-    telephone: "+91 9004506263",
+    telephone: "+91 8828228266",
     email: "heartvalveexperts@gmail.com",
   },
 
@@ -179,7 +179,7 @@ const staticDoctorSchema: Record<string, PhysicianSchema> = {
       postalCode: "400025",
       addressCountry: "IN",
     },
-    telephone: "+91 9004506263",
+    telephone: "+91 8828228266",
     email: "heartvalveexperts@gmail.com",
   },
 };

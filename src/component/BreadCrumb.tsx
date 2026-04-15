@@ -146,7 +146,7 @@ export default function Services({ title, subpage, image }: ServicesProps) {
         //  ref={logoRef}
         className="absolute top-6 right-6 lg:right-10">
         <Link
-          href="tel:+91 9004506263"
+          href="tel:+91 8828228266"
           className="border text-xl flex items-center gap-3 border-white px-5 py-2 rounded-full hover:bg-white hover:text-black transition duration-500 ease-in-out"
         >
           <span className="hidden lg:block">Get in touch </span>
