@@ -323,14 +323,14 @@ export default function HomePage() {
                   Dr. Amit S. Gangwani
                 </Link>
                 <Link href="/cardiologist-mumbai/dr-harshad-sagar-uttamrao" className=" block text-lg hover:text-[#0074dd]">
-                  Dr. Harshad Sagar Uttamrao
+                  Dr. Harshad Uttamrao Sagar 
                 </Link>
                 {/* <Link href="/cardiologist-mumbai/dr-aniruddha-mohanrao-pawar" className=" block text-lg hover:text-[#0074dd]">
                         Dr. Aniruddha Mohanrao Pawar
-                      </Link>
-                      <Link href="/cardiologist-mumbai/dr-gourish-shinde" className=" block text-lg hover:text-[#0074dd]">
-                        Dr. Gourish Shinde
-                      </Link>   */}
+                      </Link>  */}
+                <Link href="/cardiologist-mumbai/dr-gourish-shinde" className=" block text-lg hover:text-[#0074dd]">
+                  Dr. Gourish Shinde
+                </Link>
                 <Link href="/cardiologist-mumbai/dr-kunal-ajay-patankar" className=" block text-lg hover:text-[#0074dd]">
                   Dr. Kunal Ajay Patankar
                 </Link>
