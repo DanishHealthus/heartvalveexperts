@@ -30,7 +30,6 @@ export default function AppointmentCTA({
           reverse ? "lg:flex-row-reverse" : "lg:flex-row"
         } items-center rounded-2xl overflow-hidden shadow-lg`}
       >
-        {/* Image */}
         <div className="relative w-full lg:w-[45%] h-[320px] md:h-[400px]">
           <Image
             src={image}
