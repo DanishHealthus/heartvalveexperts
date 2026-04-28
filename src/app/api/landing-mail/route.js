@@ -40,7 +40,7 @@ export async function POST(req) {
     });
     await transporter.sendMail({
       from: "ithealthus@gmail.com",
-      to: "heartvalveexperts@gmail.com, sahil@healthus.ai, shwetha@healthus.ai, mohit@healthus.ai,info@healthus.ai ,drankurmd@gmail.com, customerservicemanager@hvshospitals.in, sachin@healthus.ai",
+      to: "heartvalveexperts@gmail.com, shwetha@healthus.ai, mohit@healthus.ai,info@healthus.ai ,drankurmd@gmail.com, customerservicemanager@hvshospitals.in, sachin@healthus.ai",
       subject: "New Consultation Request",
       html: `
         <p><b>Name:</b> ${name}</p>
