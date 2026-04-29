@@ -24,11 +24,11 @@ const faqData = [
     id: 2,
     question: "Is minimally invasive heart surgery safer than open-heart surgery?",
     answer:
-      "For some patients, minimally invasive procedures may involve lower surgical risk and faster recovery. However, the safest option depends on the patient’s heart condition and overall health.",
+      "For some patients, minimally invasive procedures may involve lower surgical risk and faster recovery. However, the safest option depends on the patient's heart condition and overall health.",
   },
   {
     id: 3,
-    question: "Who is eligible for minimally invasive heart valve procedures?",
+    question: "Who is eligible for minimally invasive heart valve procedures in India?",
     answer:
       "Eligibility depends on the type of valve disease, heart anatomy, and overall health. A detailed evaluation is required to determine whether this approach is suitable.",
   },
@@ -46,40 +46,28 @@ const faqData = [
   },
   {
     id: 6,
-    question: "Will my chest be opened during a minimally invasive procedure?",
+    question: "Will my chest be opened during a minimally invasive heart procedure?",
     answer:
       "Many minimally invasive procedures do not require opening the chest bone. Some are performed through small incisions or through blood vessels using catheter-based techniques.",
   },
   {
     id: 7,
-    question: "Can a heart valve be treated without open-heart surgery?",
-    answer:
-      "Yes, in many cases. Catheter-based procedures such as TAVI, TEER, or Balloon Mitral Valvotomy can treat valve disease without open-heart surgery, depending on the condition and its severity.",
-  },
-  {
-    id: 8,
-    question: "What is the best hospital for heart valve surgery?",
-    answer:
-      "The best centre is one with a dedicated multidisciplinary heart team, advanced imaging, and specialised expertise in both interventional and surgical valve procedures.",
-  },
-  {
-    id: 9,
-    question: "What is minimally invasive heart valve surgery?",
-    answer:
-      "It involves treating valve disease through small incisions or catheter-based approaches, avoiding the need to open the full chest.",
-  },
-  {
-    id: 10,
-    question: "What is the treatment for a slightly leaky heart valve?",
-    answer:
-      "Mild regurgitation is usually managed with regular monitoring, medication, and lifestyle changes. Intervention is considered only if the condition progresses or symptoms develop.",
-  },
-  {
-    id: 11,
-    question: "Where can I find minimally invasive heart valve treatment near me?",
+    question: "Where can I find minimally invasive heart valve treatment near me in India?",
     answer:
       "Heart Valve Experts offers consultations for patients across India. Contact the team to arrange an evaluation and discuss your treatment options.",
   },
+  {
+    id: 8,
+    question: "Is there a minimally invasive heart valve specialist near me?",
+    answer:
+      "Heart Valve Experts provides specialist consultations with access to advanced catheter-based treatments and a dedicated multidisciplinary heart team, serving patients across India.",
+  },
+  {
+    id: 9,
+    question: "Can I get a TAVI or MitraClip procedure near me in India?",
+    answer:
+      "Heart Valve Experts evaluates patients for advanced procedures including TAVI, TEER, and TMVR at specialised cardiac facilities in Mumbai and Pune. An initial consultation is the first step to determining suitability.",
+  } 
 ];
 
 const serviceSchema = {
