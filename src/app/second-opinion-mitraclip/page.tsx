@@ -15,36 +15,36 @@ const page = () => {
   const faqData = [
     {
       id: 1,
-      question: "Is TAVI suitable for everyone who has been advised valve surgery?",
+      question: "Is a second opinion appropriate for every patient advised valve surgery?",
       answer:
-        "Not for every patient. Candidacy depends on your specific anatomy, age, valve condition, and overall health. That is precisely why we evaluate every patient individually using advanced imaging before making any recommendation.",
+        "Not for every patient but for a significant number, yes. Whether a transcatheter option is suitable depends on your specific anatomy, symptoms, age, surgical risk, and overall health. A specialist evaluation is the only way to determine this accurately. We review each case individually using advanced imaging before making any recommendation.",
     },
     {
       id: 2,
-      question: "What is the difference between TAVI and open-heart surgery?",
+      question: "What is the difference between a second opinion and a consultation at HVE?",
       answer:
-        "In TAVI, the new valve is delivered through a catheter — typically via the groin — without opening the chest. Open-heart surgery requires a sternotomy (cutting through the breastbone) and cardiopulmonary bypass. For suitable patients, TAVI typically means a shorter hospital stay and faster recovery",
+        "At HVE, we treat every first visit as a thorough evaluation not a quick second opinion. We review your imaging, reports, symptoms, and risk profile in detail before the appointment, so the consultation itself is focused and productive. You receive a clear clinical recommendation, not just an opinion.",
     },
     {
       id: 3,
-      question: "How do I know if I am a candidate for a catheter-based procedure?",
+      question: "How do I know if I am suitable for a minimally invasive valve procedure?",
       answer:
-        "You will need a detailed evaluation including echocardiography, CT imaging, and a multidisciplinary case review. Book a consultation or share your existing reports with us — our team will review them and advise accordingly.",
+        "Suitability depends on multiple factors including valve anatomy, severity of disease, cardiac function, and your overall health profile. This cannot be determined without a proper clinical evaluation and advanced imaging. The purpose of our evaluation is precisely to answer this question for you.",
     },
     {
       id: 4,
       question: "What happens after I upload my reports?",
       answer:
-        "Our team reviews your documents and a patient coordinator will call you within 24 hours to schedule a consultation with Dr. Ankur at a time convenient for you.",
+        "Our team will review what you have shared and contact you within one working day. We will confirm your consultation appointment and advise whether any additional imaging or investigations are required before you attend. There is no obligation at this stage.",
     },
     {
       id: 5,
       question: "Can I get a second opinion at Heart Valve Experts if I have already been advised surgery elsewhere?",
       answer:
-        "Absolutely. A second specialist opinion is always appropriate for a major cardiac decision. We evaluate your case independently and explain all available options without any pressure.",
-    },  
+        "Absolutely. Patients who have received a surgical recommendation elsewhere are among the most common referrals we see. We approach every case independently, without bias toward any particular treatment. If surgery is genuinely the right option, we will say so. If a transcatheter alternative is appropriate, we will explain that clearly.",
+    },
   ];
- 
+
   const data = {
     subtitle: "Consultation Process",
     title: "Three Simple Steps to Clarity",
@@ -54,29 +54,29 @@ const page = () => {
         step: "01",
         title: "Share your reports",
         description:
-          "Upload your existing cardiac reports, echo, or CT imaging through our secure form.",
+          "Upload your existing cardiac reports, echo or CT imaging through our secure form. Our team reviews every document before your consultation so no time is wasted at the appointment.",
       },
       {
         step: "02",
         title: "Team review",
         description:
-          "Dr. Ankur and the team review your case. A coordinator will contact you within 24 hours.",
+          "Dr Ankur and the team review your case. A coordinator will contact you within 24 hours to confirm your appointment and advise if any additional imaging is needed beforehand.",
       },
       {
         step: "03",
         title: "Understand your options",
         description:
-          "At your consultation, we explain every suitable path clearly, gently, and without pressure.",
+          "At your consultation, we explain every suitable path clearly, gently, and without pressure. You leave knowing exactly where you stand and what your realistic options are.",
       },
     ],
   };
-  
+
   const ctaData = {
     title: "Get Your Reports Reviewed by a Specialist",
     description1:
-      "If you or someone in your family has been advised heart valve surgery, the most important step right now is clarity not commitment. Share your reports with us and we will help you understand exactly what is possible.",
+      "If you or a family member has been advised heart valve surgery, the most important first step is an independent specialist evaluation. Conditions such as significant mitral regurgitation or aortic stenosis may now be treated without open-heart surgery but this can only be confirmed after a proper review.",
     description2:
-      "No pressure. No obligation. Just a clear, specialist evaluation.",
+      "No obligation. Evidence-based. Patient-first.",
     buttonText: "Book a Consultation",
     buttonLink: "#book-appointment",
     image: "/images/lp/newlp/5.webp",
@@ -110,26 +110,26 @@ const page = () => {
 
         <HeroValve />
         <WhoIsThisTreatmentFor
-          title=" Why TAVI"
-          subtitle="Open-Heart Surgery Is Not Always the Only Option"
+          title=" Why a Second Opinion"
+          subtitle="A Second Opinion Can Change Everything"
           image={{
             src: "/images/lp/newlp/1.webp",
             alt: "Doctor holding heart model",
           }}
-          considerationTitle="These options are not suitable for every patient which is why a detailed specialist evaluation is essential before any decision is made."
+          considerationTitle="A second opinion does not mean rejecting your doctor's advice. It means ensuring every option has been properly considered before a decision is made."
           bullets={[
-            { id: 1, text: "Faster recovery" },
-            { id: 2, text: "Shorter hospital stay" },
-            { id: 3, text: "Less physical trauma" },
-            { id: 4, text: "No large chest incision" },
+            { id: 1, text: "Independent review of all existing reports and imaging" },
+            { id: 2, text: "Advanced 3D echo and CT analysis if required" },
+            { id: 3, text: "Honest assessment surgery recommended only when truly necessary" },
+            { id: 4, text: "Clear explanation of all available options" },
           ]}
-          whyTitle="What is a catheter-based valve procedure?"
-          whyDescription="Procedures like TAVI (Transcatheter Aortic Valve Implantation) and MitraClip allow specialist teams to treat the valve through a small entry point typically through the groin — without a large incision. For the right patient, this can mean:"
+          whyTitle="What does a specialist second opinion involve?"
+          whyDescription="Our dedicated Heart Valve and Structural Heart specialists review every case from scratch using advanced imaging and international clinical protocols to determine whether a transcatheter option may be appropriate for you."
         />
         <section className="animate-gradient-circle-aalekh text-white relative overflow-hidden">
           <HeartValveSpecialists
             title="A Dedicated Valve Team. Structured Evaluation. Patient-First Care."
-            subtitle="Heart Valve Experts is a focused structural heart and valve practice in Mumbai, led by Dr. Ankur. Unlike a general cardiology department, every case we see is a valve case, which means our protocols, imaging capabilities, and team experience are built around one thing: getting the right outcome for each individual patient."
+            subtitle="Heart Valve Experts is a focused structural heart and valve practice in Mumbai, led by Dr Ankur Umbre, a globally trained cardiologist. Every case we see is reviewed with the same rigour: advanced imaging, multi-disciplinary discussion, and an outcome-focused plan for each individual patient."
             specialists={[
               {
                 id: 1,
@@ -185,38 +185,56 @@ const page = () => {
             }}
             considerationTitle=""
             bullets={[
-              { id: 1, text: "Review of your existing cardiac reports and imaging" },
-              { id: 2, text: "Advanced 3D echo and CT imaging if required" },
-              { id: 3, text: "Multidisciplinary team case discussion" },
-              { id: 4, text: "Clear explanation of all suitable treatment options" },
-              { id: 5, text: "Recommendation with full reasoning at your consultation" },
+              {
+                id: 1,
+                text: "Review of your existing reports and imaging",
+                description:
+                  "We begin by carefully reviewing all existing echocardiography, CT scans, clinical letters, and discharge summaries you share with us.",
+              },
+              {
+                id: 2,
+                text: "Advanced 3D echo and CT imaging if required",
+                description:
+                  "Where existing imaging is insufficient, we arrange high-resolution 3D cardiac imaging to assess valve anatomy, severity, and suitability for transcatheter options.",
+              },
+              {
+                id: 3,
+                text: "Multi-disciplinary team case discussion",
+                description:
+                  "Every case is reviewed in a structured MDT meeting with interventional cardiologists, imaging specialists, and cardiac anaesthetists before any recommendation is made.",
+              },
+              {
+                id: 4,
+                text: "Recommendation with full meeting at your consultation",
+                description:
+                  "You receive a clear, personalised recommendation — whether that is a transcatheter procedure, surgical referral, or continued monitoring — explained in plain language.",
+              },
             ]}
             whyTitle="Our Evaluation Process"
-            whyDescription="We begin with a thorough assessment — not a procedure recommendation. Using advanced 3D cardiac imaging, symptom review, anatomical analysis, and international clinical protocols, we determine the safest and most suitable path for each patient specifically."
+            whyDescription="We begin with a thorough assessment and not a procedure recommendation. Using advanced 3D cardiac imaging, symptom review, anatomical analysis, and international clinical protocols, we determine the safest and most suitable path for each patient."
           />
 
         </section>
         <WhoIsThisTreatmentFor2
-          title=" Minimally Invasive Valve Procedures at Heart Valve Experts"
-          subtitle="Not every patient is a candidate for a catheter-based procedure. That determination is made only after a structured evaluation, which is exactly what your consultation provides."
+          title="Minimally Invasive Valve Procedures at Heart Valve Experts"
+          subtitle="Not every patient is a candidate for a catheter-based procedure. That determination is made only after a structured evaluation, which is exactly what our evaluation appointment provides."
           image={{
-            src: "/images/lp/newlp/3.webp",
-            alt: "TAVI",
+            src: "/images/lp/newlp/3a.webp",
+            alt: "TEER / MitraClip",
           }}
-           videoUrl="https://www.youtube.com/watch?v=kc8s6CCKBwc"
-          considerationTitle="TAVI"
+          videoUrl="https://www.youtube.com/watch?v=tA5I5_sHG30"
+          considerationTitle="TEER / MitraClip"
           bullets={[
-            { id: 1, text: "Severe aortic stenosis" },
-            { id: 2, text: "High or intermediate surgical risk patients" },
-            { id: 3, text: "Older patients" },
-            { id: 4, text: "Patients who have been declined for open surgery" },
+            { id: 1, text: "Significant mitral regurgitation" },
+            { id: 2, text: "High or intermediate surgical risk" },
+            { id: 3, text: "Previously declined for surgery" },
           ]}
-          whyTitle="Transcatheter Aortic Valve Implantation"
-          whyDescription="TAVI replaces a diseased aortic valve through a catheter, most often via the femoral artery in the groin — without opening the chest. It is particularly recommended for patients with moderate to high surgical risk, and for older patients where traditional surgery carries greater complications."
+          whyTitle="Transcatheter Mitral Valve Edge-to-Edge Repair"
+          whyDescription="MV TEER allows our specialist team to repair a leaking mitral valve using a catheter without opening the chest. It is particularly recommended for patients with significant mitral regurgitation who are at elevated surgical risk or prefer to avoid open surgery."
         />
         <ConsultationProcess {...data} />
         <FAQAccordion faqs={faqData} />
-        <AppointmentCTA {...ctaData}/>
+        <AppointmentCTA {...ctaData} />
         <ClinicFooter
           logoSrc="/images/homeimages/logo.png"
           clinicTitle="Clinic Location (Mumbai)"

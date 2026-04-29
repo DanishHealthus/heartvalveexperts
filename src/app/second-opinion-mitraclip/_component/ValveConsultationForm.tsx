@@ -62,7 +62,7 @@ const ValveConsultationForm = () => {
 
       setForm({ name: "", phone: "", city: "", help: "", notes: "" });
 
-      router.push("/open-heart-surgery-tavi/thank-you");
+      router.push("/second-opinion-mitraclip/thank-you");
     } catch (err: unknown) {
       if (err instanceof Error) {
         alert(err.message);
