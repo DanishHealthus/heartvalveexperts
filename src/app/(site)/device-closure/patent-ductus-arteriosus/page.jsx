@@ -233,6 +233,7 @@ const servciepage = () => {
       <TaviSection
         imageSrc="/images/service/PDA Closure/1.webp"
         imageAlt="TEER Surgery"
+        imageTitle=""
         tag="About"
         title="What is PDA Closure Procedure?"
         description={[

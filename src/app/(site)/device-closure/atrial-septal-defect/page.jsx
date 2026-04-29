@@ -231,6 +231,7 @@ const servciepage = () => {
       <TaviSection
         imageSrc="/images/service/ASD Closure/1.webp"
         imageAlt="TEER Surgery"
+        imageTitle=""
         tag="About"
         title="What is the ASD Closure Procedure?"
         description={[

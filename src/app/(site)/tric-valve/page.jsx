@@ -243,6 +243,7 @@ const servciepage = () => {
       <TaviSection
         imageSrc="/images/service/TricValve/1.webp"
         imageAlt="TEER Surgery"
+        imageTitle=""
         tag="About"
         title="What is the TricValve Procedure?"
         description={[

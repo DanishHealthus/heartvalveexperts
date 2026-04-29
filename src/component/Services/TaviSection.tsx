@@ -5,6 +5,7 @@ import Image from "next/image";
 interface TaviSectionProps {
   imageSrc: string;
   imageAlt: string;
+  imageTitle: string;
   tag: string;
   title: string;
   description: string[];
@@ -14,6 +15,7 @@ interface TaviSectionProps {
 export default function TaviSection({
   imageSrc,
   imageAlt,
+  imageTitle,
   tag,
   title,
   description,
@@ -34,6 +36,7 @@ export default function TaviSection({
           <Image
             src={imageSrc}
             alt={imageAlt}
+            title={imageTitle}
             fill
             className="object-cover"
           />

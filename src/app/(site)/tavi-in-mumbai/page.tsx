@@ -18,7 +18,7 @@ import Link from "next/link";
 export const metadata = {
     title: "TAVI (Transcatheter Aortic Valve Implantation) in Mumbai | Heart Valve Experts",
     description:
-        "Looking for TAVI/TAVR in Mumbai? Heart Valve Experts offers advanced Transcatheter Aortic Valve Implantation in Mumbai by experienced specialists. Book a consultation today.",
+        "Need TAVI/TAVR in Mumbai? Get minimally invasive valve replacement at Heart Valve Experts. 10,000+ procedures by experts, faster recovery. Call us for details.",
     alternates: {
         canonical: "https://heartvalveexperts.com/tavi-in-mumbai",
     },
@@ -162,7 +162,8 @@ const servciepage = () => {
             />
             <TaviSection
                 imageSrc="/images/service/TAVI/1.webp"
-                imageAlt="TEER Surgery"
+                imageAlt="TAVI (Transcatheter aortic valve implantation) in Mumbai at Heart Valve Experts"
+                imageTitle="TAVI (Transcatheter aortic valve implantation) in Mumbai"
                 tag="About"
                 title="TAVI in Mumbai – Advanced Minimally Invasive Aortic Valve Replacement"
                 description={[
@@ -193,7 +194,7 @@ const servciepage = () => {
                         conclusion="Each patient undergoes structured evaluation before proceeding with TAVR(Transcatheter Aortic Valve Replacement) surgery in Mumbai to ensure clinical suitability and procedural safety."
                         buttonText="Book Appointment Now"
                         imageSrc="/images/service/TAVI/Rectangle 27.webp"
-                        imageAlt="Doctor Consultation"
+                        imageAlt="Heart Valve Surgery in Mumbai by Heart Valve Experts"
                     />
                     <FollowUpSection
                         tag="Evaluation"
@@ -210,14 +211,15 @@ const servciepage = () => {
                         conclusion="Location details, appointment scheduling, and directions are available at the time of consultation booking."
                         buttonText="Book Appointment Now"
                         imageSrc="/images/service/TMVR/Rectangle 33.webp"
-                        imageAlt="reverse"
+                        imageAlt="Heart Valve Hospital in Mumbai by Heart Valve Experts"
                     />
                 </div>
             </section>
             <Doctors title='Meet Our TAVI Specialists in Mumbai' des="TAVI and structural heart procedures are performed by experienced interventional cardiologists and cardiac specialists, including:" />
             <TaviSection
                 imageSrc="/images/service/TAVI/1.webp"
-                imageAlt="TEER Surgery"
+                imageAlt="TAVI/TAVI in Mumbai by Heart Valve Experts"
+                imageTitle="What is TAVI or TAVR?"
                 tag="About"
                 title="What is TAVI or TAVR?"
                 description={[
@@ -243,7 +245,7 @@ const servciepage = () => {
                 conclusion="Patients undergo detailed imaging and heart team evaluation before being considered for the TAVI procedure in Maharashtra."
                 buttonText="Book Appointment Now"
                 imageSrc="/images/service/tavi1.webp"
-                imageAlt="Who is Eligible for TAVI Surgery in Mumbai?"
+                imageAlt="TAV or TAVR Treatment in Mumbai by Heart Valve Experts"
             />
             <section className="animate-gradient-circle text-white relative overflow-hidden">
                 <div className="max-w-6xl mx-auto text-white text-center">

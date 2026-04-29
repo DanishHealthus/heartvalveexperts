@@ -245,6 +245,7 @@ const servciepage = () => {
       <TaviSection
         imageSrc="/images/service/TMVR/1.webp"
         imageAlt="TEER Surgery"
+        imageTitle=""
         tag="About"
         title="What is TMVR Surgery/Procedure?"
         description={[

@@ -9,7 +9,7 @@ import Doctors from '@/component/Doctors';
 export const metadata = {
   title: "Best Heart Specialist in Mumbai | Heart Specialist Doctor Mumbai",
   description:
-    "Looking for heart specialists in Mumbai? Heart Valve Experts offers advanced cardiac care, valve treatments, and expert consultation with leading heart doctors mumbai.",
+    "Heart Valve Experts are experienced heart specialists in Mumbai offering advanced cardiac care & valve treatments. Trusted experts. Book your consultation today.",
   alternates: {
     canonical: "https://heartvalveexperts.com/heart-specialists-in-mumbai",
   },
@@ -129,6 +129,7 @@ const page = () => {
       <TaviSection
         imageSrc="/images/newservices/heart/1.webp"
         imageAlt="Device Closure"
+        imageTitle=""
         tag="About"
         title="Expert Heart Specialists For Accurate Diagnosis And Confident Treatment Decisions"
         description={[

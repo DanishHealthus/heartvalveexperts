@@ -149,6 +149,7 @@ const servciepage = () => {
             <TaviSection
                 imageSrc="/images/service/mitra1.webp"
                 imageAlt="MitraClip in Mumbai – Advanced Minimally Invasive Mitral Valve Repair"
+                imageTitle=""
                 tag="About"
                 title="MitraClip in Mumbai – Advanced Minimally Invasive Mitral Valve Repair"
                 description={[
@@ -204,6 +205,7 @@ const servciepage = () => {
             <TaviSection
                 imageSrc="/images/service/mitra2.webp"
                 imageAlt="What is MitraClip?"
+                imageTitle=""
                 tag="About"
                 title="What is MitraClip?"
                 description={[

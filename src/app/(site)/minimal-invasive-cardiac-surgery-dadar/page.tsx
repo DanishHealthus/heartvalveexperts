@@ -164,6 +164,7 @@ const page = () => {
       <TaviSection
         imageSrc="/images/newservices/minimal/1.webp"
         imageAlt="Device Closure"
+        imageTitle=""
         tag="About"
         title="Advanced interventional and transcatheter procedures for heart valve disease"
         description={[

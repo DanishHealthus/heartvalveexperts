@@ -266,6 +266,7 @@ const servciepage = () => {
       <TaviSection
         imageSrc="/images/service/TAVI/1.webp"
         imageAlt="TAVI Surgery"
+        imageTitle=""
         tag="About"
         title="What is TAVI Surgery/Procedure?"
         description={[

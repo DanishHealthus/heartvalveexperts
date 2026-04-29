@@ -135,6 +135,7 @@ const page = () => {
       <TaviSection
         imageSrc="/images/newservices/1.webp"
         imageAlt="Device Closure"
+        imageTitle=""
         tag="About"
         title="Congenital Heart Defects"
         description={[
@@ -196,6 +197,7 @@ const page = () => {
       <TaviSection
         imageSrc="/images/service/ASD Closure/1.webp"
         imageAlt="TEER Surgery"
+        imageTitle=""
         tag="About"
         title="How Device Closure Is Performed"
         description={[

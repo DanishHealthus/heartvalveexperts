@@ -24,6 +24,7 @@ const cardiologistspage = () => {
       <TaviSection
         imageSrc="/images/doctors.webp"
         imageAlt="TAVI Surgery"
+        imageTitle=""
         tag="About"
         title="Leading Cardiologists in Mumbai for Advanced Heart Care"
         description={[

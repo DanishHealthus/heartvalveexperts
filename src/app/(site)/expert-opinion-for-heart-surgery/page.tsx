@@ -139,6 +139,7 @@ const page = () => {
       {/* <TaviSection
               imageSrc="/images/newservices/expert/1.webp"
               imageAlt="Device Closure"
+        imageTitle=""
               tag="About"
               title="Congenital Heart Defects"
               description={[

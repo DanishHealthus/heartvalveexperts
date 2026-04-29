@@ -129,6 +129,7 @@ const page = () => {
             <TaviSection
                 imageSrc="/images/newservices/heart/1.webp"
                 imageAlt="Device Closure"
+        imageTitle=""
                 tag="About"
                 title="Expert Heart Specialists For Accurate Diagnosis And Confident Treatment Decisions"
                 description={[

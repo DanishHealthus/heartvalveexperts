@@ -236,6 +236,7 @@ const servciepage = () => {
       <TaviSection
         imageSrc="/images/service/LAAO/1.webp"
         imageAlt="TEER Surgery"
+        imageTitle=""
         tag="About"
         title="What is Left Atrial Appendage Occlusion Surgery/Procedure?"
         description={[
