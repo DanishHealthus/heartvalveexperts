@@ -48,8 +48,10 @@ export default function Footer() {
     { name: "Minimally Invasive in Dadar", url: "/minimal-invasive-cardiac-surgery-dadar" },
     { name: "Minimally Invasive in Mumbai", url: "/minimal-invasive-cardiac-surgery-mumbai" },
     { name: "Minimally Invasive in India", url: "/minimal-invasive-cardiac-surgery-india" },
+    { name: "Minimally Invasive Heart Valve Surgery", url: "/minimal-invasive-heart-valve-surgery" },
     { name: "Heart Specialists in Mumbai", url: "/heart-specialists-in-mumbai" },
     { name: "Heart Specialists in India", url: "/heart-specialists-in-india" },
+    { name: "Balloon Mitral Valvotomy in Mumbai", url: "/balloon-mitral-valvotomy-in-mumbai" },
   ];
   return (
     <footer

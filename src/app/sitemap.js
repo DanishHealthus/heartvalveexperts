@@ -13,6 +13,8 @@ export default async function sitemap() {
     { url: `${siteUrl}/minimal-invasive-cardiac-surgery-dadar`, priority: 0.8 },
     { url: `${siteUrl}/minimal-invasive-cardiac-surgery-mumbai`, priority: 0.8 },
     { url: `${siteUrl}/minimal-invasive-cardiac-surgery-india`, priority: 0.8 },
+    { url: `${siteUrl}/minimal-invasive-heart-valve-surgery`, priority: 0.8 },
+    { url: `${siteUrl}/balloon-mitral-valvotomy-in-mumbai`, priority: 0.8 },
     { url: `${siteUrl}/heart-specialists-in-mumbai`, priority: 0.8 },
     { url: `${siteUrl}/heart-specialists-in-india`, priority: 0.8 },
     { url: `${siteUrl}/expert-opinion-for-heart-surgery`, priority: 0.8 },
