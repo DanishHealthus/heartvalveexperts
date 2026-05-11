@@ -249,7 +249,7 @@ const servciepage = () => {
         title="What Is BMV Surgery/Procedure?"
         description={[
           "Balloon Mitral Valvotomy (BMV) is a non-surgical procedure to treat narrowed mitral valves. A balloon-tipped catheter is guided through the femoral vein into the heart, crossing from the right atrium to the left via a transseptal puncture. Once positioned across the narrowed mitral valve, the balloon is inflated to widen the opening and improve blood flow between the left atrium and ventricle.",
-          `This <a href="https://heartvalveexperts.com/blog/balloon-mitral-valvuloplasty-bmv-procedure" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">Balloon Mitral Valvotomy Treatment</a> in Mumbai is ideal for patients with rheumatic mitral stenosis who are not candidates for open-heart surgery.`
+          `This <a href="https://heartvalveexperts.com/blog/balloon-mitral-valvuloplasty-bmv-procedure" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">Balloon Mitral Valvotomy Treatment</a> is ideal for patients with rheumatic mitral stenosis who are not candidates for open-heart surgery.`
         ]}
 
         buttonText="Book Appointment Now"
