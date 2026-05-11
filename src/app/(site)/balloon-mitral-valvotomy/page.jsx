@@ -9,9 +9,9 @@ import AppointmentCTA from "@/component/AppointmentCTA";
 import PatientSuccessStories from "@/component/PatientSuccessStories";
 
 export const metadata = {
-  title: "Balloon Mitral Valvotomy (BMV) Procedure in Mumbai | Heart Valve Experts",
+  title: "What is Balloon Mitral Valvotomy ? Benefits, Procedure & Recovery",
   description:
-    "Looking for Balloon Mitral Valvotomy Procedure (BMV) in Mumbai? Heart Valve Experts provides trusted care, faster recovery, and advanced cardiac treatments.",
+    "Learn about Balloon Mitral Valvotomy surgery, including its benefits, procedure, recovery timeline, risks, and how it helps treat mitral valve stenosis effectively.",
   alternates: {
     canonical: "https://heartvalveexperts.com/balloon-mitral-valvotomy",
   },
