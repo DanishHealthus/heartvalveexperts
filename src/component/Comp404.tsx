@@ -149,7 +149,7 @@ export default function Services() {
       {/* Logo */}
        <div ref={logoRef} className="absolute top-3 lg:top-6 left-1/2 -translate-x-1/2">
         <Link href='/'>
-          <Image src="/images/homeimages/logo.png" alt="Logo" width={180} height={100} className="h-20 lg:h-24" />
+          <Image src="/images/homeimages/logo.png" alt="Logo" width={180} height={100} className="w-full h-20 lg:h-24" />
         </Link>
       </div>
 
@@ -286,34 +286,40 @@ export default function Services() {
                   >
                   HVE Cardiac Team {cardiacOpen ? <FiChevronUp /> : <FiChevronDown />}
                   </button>
-                  {cardiacOpen && (
-                    <div className="border-l-2 border-gray-400 pl-4 mt-5 space-y-4 text-sm text-gray-900">
-                      <Link href="/cardiologist-mumbai/dr-ankur-u-phatarpekar" className=" block text-lg hover:text-[#0074dd]">
-                        Dr. Ankur U. Phatarpekar
-                      </Link>
-                      <Link href="/cardiologist-mumbai/dr-meghav-manoj-shah" className=" block text-lg hover:text-[#0074dd]">
-                        Dr. Meghav Manoj Shah
-                      </Link>
-                      <Link href="/cardiologist-mumbai/dr-amit-s-gangwani" className=" block text-lg hover:text-[#0074dd]">
-                        Dr. Amit S. Gangwani
-                      </Link>
-                      <Link href="/cardiologist-mumbai/dr-harshad-sagar-uttamrao" className=" block text-lg hover:text-[#0074dd]">
-                        Dr. Harshad Sagar Uttamrao 
-                      </Link>   
-                      {/* <Link href="/cardiologist-mumbai/dr-aniruddha-mohanrao-pawar" className=" block text-lg hover:text-[#0074dd]">
+                    {cardiacOpen && (
+              <div className="border-l-2 border-gray-400 pl-4 mt-5 space-y-4 text-sm text-gray-900">
+                <Link href="/cardiologist-mumbai/dr-ankur-u-phatarpekar" className=" block text-lg hover:text-[#0074dd]">
+                  Dr. Ankur U. Phatarpekar
+                </Link>
+                <Link href="/cardiologist-mumbai/dr-meghav-manoj-shah" className=" block text-lg hover:text-[#0074dd]">
+                  Dr. Meghav Manoj Shah
+                </Link>
+                <Link href="/cardiologist-mumbai/dr-amit-s-gangwani" className=" block text-lg hover:text-[#0074dd]">
+                  Dr. Amit S. Gangwani
+                </Link>
+                <Link href="/cardiologist-mumbai/dr-harshad-sagar-uttamrao" className=" block text-lg hover:text-[#0074dd]">
+                  Dr. Harshad Uttamrao Sagar 
+                </Link>
+                {/* <Link href="/cardiologist-mumbai/dr-aniruddha-mohanrao-pawar" className=" block text-lg hover:text-[#0074dd]">
                         Dr. Aniruddha Mohanrao Pawar
-                      </Link>
-                      <Link href="/cardiologist-mumbai/dr-gourish-shinde" className=" block text-lg hover:text-[#0074dd]">
-                        Dr. Gourish Shinde
-                      </Link>   */}
-                      <Link href="/cardiologist-mumbai/dr-kunal-ajay-patankar" className=" block text-lg hover:text-[#0074dd]">
-                      Dr. Kunal Ajay Patankar
-                      </Link>                
-                      {/* <Link href="/cardiologist-mumbai/dr-pravin-lovhale" className=" block text-lg hover:text-[#0074dd]">
+                      </Link>  */}
+                <Link href="/cardiologist-mumbai/dr-gourish-shinde" className=" block text-lg hover:text-[#0074dd]">
+                  Dr. Gourish Shinde
+                </Link>
+                <Link href="/cardiologist-mumbai/dr-kunal-ajay-patankar" className=" block text-lg hover:text-[#0074dd]">
+                  Dr. Kunal Ajay Patankar
+                </Link>
+                {/* <Link href="/cardiologist-mumbai/dr-pravin-lovhale" className=" block text-lg hover:text-[#0074dd]">
                         Dr. Pravin Lovhale
-                      </Link> */}                            
-                    </div>
-                  )}
+                      </Link> */}
+                <Link href="/cardiologist-mumbai/dr-aniruddha-mohanrao-pawar" className=" block text-lg hover:text-[#0074dd]">
+                  Dr. Aniruddha Mohanrao Pawar
+                </Link>
+                <Link href="/cardiologist-mumbai/dr-amruta-limaye" className=" block text-lg hover:text-[#0074dd]">
+                  Dr. Amruta Limaye
+                </Link>
+              </div>
+            )}
                 </div>
                 <Link
                   href="/knowledge-library"

@@ -270,7 +270,7 @@ export default function Services({ title, subpage }: ServicesProps) {
 
               className="flex items-center text-xl justify-between w-full hover:text-[#0074dd] transition pr-4"
             >
-               <Link href="/device-closure" className=" block text-lg hover:text-[#0074dd]">
+              <Link href="/device-closure" className=" block text-lg hover:text-[#0074dd]">
                 Device Closures
               </Link><div onClick={() => setAboutOpen(!aboutOpen)}>{aboutOpen ? <FiChevronUp /> : <FiChevronDown />}</div>
             </button>
@@ -335,7 +335,7 @@ export default function Services({ title, subpage }: ServicesProps) {
                   Dr. Amit S. Gangwani
                 </Link>
                 <Link href="/cardiologist-mumbai/dr-harshad-sagar-uttamrao" className=" block text-lg hover:text-[#0074dd]">
-                  Dr. Harshad Uttamrao Sagar 
+                  Dr. Harshad Uttamrao Sagar
                 </Link>
                 {/* <Link href="/cardiologist-mumbai/dr-aniruddha-mohanrao-pawar" className=" block text-lg hover:text-[#0074dd]">
                         Dr. Aniruddha Mohanrao Pawar
@@ -346,11 +346,12 @@ export default function Services({ title, subpage }: ServicesProps) {
                 <Link href="/cardiologist-mumbai/dr-kunal-ajay-patankar" className=" block text-lg hover:text-[#0074dd]">
                   Dr. Kunal Ajay Patankar
                 </Link>
-                {/* <Link href="/cardiologist-mumbai/dr-pravin-lovhale" className=" block text-lg hover:text-[#0074dd]">
-                        Dr. Pravin Lovhale
-                      </Link> */}
+
                 <Link href="/cardiologist-mumbai/dr-aniruddha-mohanrao-pawar" className=" block text-lg hover:text-[#0074dd]">
                   Dr. Aniruddha Mohanrao Pawar
+                </Link>
+                <Link href="/cardiologist-mumbai/dr-amruta-limaye" className=" block text-lg hover:text-[#0074dd]">
+                  Dr. Amruta Limaye
                 </Link>
               </div>
             )}

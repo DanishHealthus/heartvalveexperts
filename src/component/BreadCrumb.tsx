@@ -361,6 +361,9 @@ export default function Services({ title, subpage, image }: ServicesProps) {
                 <Link href="/cardiologist-mumbai/dr-aniruddha-mohanrao-pawar" className=" block text-lg hover:text-[#0074dd]">
                   Dr. Aniruddha Mohanrao Pawar
                 </Link>
+                <Link href="/cardiologist-mumbai/dr-amruta-limaye" className=" block text-lg hover:text-[#0074dd]">
+                  Dr. Amruta Limaye
+                </Link>
               </div>
             )}
           </div>
