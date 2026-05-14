@@ -93,11 +93,10 @@ const KnowledgeLibrary: React.FC = () => {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-4 border-2 py-2 sm:px-8 sm:py-2 cursor-pointer rounded-full text-[13px] sm:text-lg font-medium transition-all duration-200 ${
-                activeTab === tab
+              className={`px-4 border-2 py-2 sm:px-8 sm:py-2 cursor-pointer rounded-full text-[13px] sm:text-lg font-medium transition-all duration-200 ${activeTab === tab
                   ? "bg-gradient-to-tl animate-gradient-circle from-[#0074dd] border-2 border-[#0074dd] to-[#8d0f19]  text-white"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-              }`}
+                }`}
             >
               {tab}
             </button>
@@ -164,54 +163,54 @@ const KnowledgeLibrary: React.FC = () => {
         </div>
 
         {/* Video Modal */}
-       {selectedVideo && (
-  <div
-    className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm"
-    onClick={() => setSelectedVideo(null)} // ✅ Click outside closes modal
-  >
-    <div
-      className="bg-white rounded-xl shadow-xl w-[90%] max-w-3xl relative"
-      onClick={(e) => e.stopPropagation()} // ❌ Prevent closing when clicking inside modal
-    >
-      {/* Close Button */}
-      <button
-        onClick={() => setSelectedVideo(null)}
-        className="absolute top-3 cursor-pointer right-1 text-white hover:text-white/90"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={2}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
+        {selectedVideo && (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm"
+            onClick={() => setSelectedVideo(null)} // ✅ Click outside closes modal
+          >
+            <div
+              className="bg-white rounded-xl shadow-xl w-[90%] max-w-3xl relative"
+              onClick={(e) => e.stopPropagation()} // ❌ Prevent closing when clicking inside modal
+            >
+              {/* Close Button */}
+              <button
+                onClick={() => setSelectedVideo(null)}
+                className="absolute top-3 cursor-pointer right-1 text-white hover:text-white/90"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
 
-      {/* YouTube Video */}
-      <div className="aspect-video w-full rounded-b-xl overflow-hidden">
-        <iframe
-          width="100%"
-          height="100%"
-          src={selectedVideo.youtube}
-          title={selectedVideo.title}
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </div>
+              {/* YouTube Video */}
+              <div className="aspect-video w-full rounded-b-xl overflow-hidden">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src={selectedVideo.youtube}
+                  title={selectedVideo.title}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
 
-      {/* Title */}
-      <div className="p-4 text-center">
-        <h2 className="text-lg font-semibold text-gray-800">
-          {selectedVideo.title}
-        </h2>
-      </div>
-    </div>
-  </div>
-)}
+              {/* Title */}
+              <div className="p-4 text-center">
+                <h2 className="text-lg font-semibold text-gray-800">
+                  {selectedVideo.title}
+                </h2>
+              </div>
+            </div>
+          </div>
+        )}
 
       </div>
     </section>

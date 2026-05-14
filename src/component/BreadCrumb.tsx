@@ -374,6 +374,13 @@ export default function Services({ title, subpage, image }: ServicesProps) {
           >
             Knowledge Library
           </Link>
+          <Link
+            href="/a-legacy-of-leadership"
+
+            className="block hover:text-[#0074dd] text-xl transition"
+          >
+            A Legacy of Leadership
+          </Link>
         </nav>
 
 

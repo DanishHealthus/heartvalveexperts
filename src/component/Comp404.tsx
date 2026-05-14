@@ -56,7 +56,7 @@ export default function Services() {
     // Background zoom-out effect
     gsap.fromTo(
       bgRef.current,
-      { scale: 1.3},
+      { scale: 1.3 },
       { scale: 1.2, duration: 2.2, ease: "power3.out" }
     );
 
@@ -130,8 +130,8 @@ export default function Services() {
           onClick={() => setMenuOpen(true)}
           className="px-4 group cursor-pointer flex gap-2 text-xl py-2 rounded-full border border-white hover:bg-white hover:text-black transition duration-500 ease-in-out"
         >
-         <Image className="transition duration-300 group-hover:brightness-0" width={25} height={25} src="/images/icon/menu.svg" alt="" /> 
-         <span className="hidden lg:block">Menu</span>
+          <Image className="transition duration-300 group-hover:brightness-0" width={25} height={25} src="/images/icon/menu.svg" alt="" />
+          <span className="hidden lg:block">Menu</span>
         </button>
       </div>
 
@@ -147,23 +147,22 @@ export default function Services() {
       </div>
 
       {/* Logo */}
-       <div ref={logoRef} className="absolute top-3 lg:top-6 left-1/2 -translate-x-1/2">
+      <div ref={logoRef} className="absolute top-3 lg:top-6 left-1/2 -translate-x-1/2">
         <Link href='/'>
           <Image src="/images/homeimages/logo.png" alt="Logo" width={180} height={100} className="w-full h-20 lg:h-24" />
         </Link>
       </div>
 
-      
+
 
       {/* Overlay */}
       <div
         ref={overlayRef}
         onClick={() => setMenuOpen(false)}
-        className={`fixed inset-0 bg-black/70 cursor-pointer z-40 transition-opacity duration-500 ${
-          menuOpen
+        className={`fixed inset-0 bg-black/70 cursor-pointer z-40 transition-opacity duration-500 ${menuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
-        }`}
+          }`}
       />
 
       {/* Drawer */}
@@ -179,114 +178,114 @@ export default function Services() {
           onClick={() => setMenuOpen(false)}
           className="flex cursor-pointer items-center gap-2 text-lg font-semibold text-black hover:text-gray-700 px-8 pt-8"
         >
-          <Image src="/images/icon/closemenu.svg" alt="close" width={25} height={25}  /> Close
+          <Image src="/images/icon/closemenu.svg" alt="close" width={25} height={25} /> Close
         </button>
 
         {/* Nav Links (scrollable area) */}
         {/* Nav Links (scrollable area) */}
-      <nav className="mt-6 space-y-6 text-lg px-8 pr-4 flex-1 overflow-y-auto pb-5">
-                <Link
-                  href="/"
-                
-                  className="block hover:text-[#0074dd] text-xl transition"
-                >
-                  Home
-                </Link>
-                <Link
-                  href="/cardiologist-mumbai"
-                
-                  className="block hover:text-[#0074dd] text-xl transition"
-                >
-                  Our Cardiologists
-                </Link>
-                <Link
-                  href="/tavi"
-                
-                  className="block hover:text-[#0074dd] text-xl transition"
-                >
-                  TAVI
-                </Link>
-                <Link
-                  href="/tmvr"
-                
-                  className="block hover:text-[#0074dd] text-xl transition"
-                >
-                  TMVR
-                </Link>
-                <Link
-                  href="/teer"
-                
-                  className="block hover:text-[#0074dd] text-xl transition"
-                >
-                  TEER (Mitraclip & Myclip)
-                </Link>
-                <Link
-                  href="/left-atrial-appendage-occlusion"
-                
-                  className="block hover:text-[#0074dd] text-xl transition"
-                >
-                  LAAO
-                </Link>
+        <nav className="mt-6 space-y-6 text-lg px-8 pr-4 flex-1 overflow-y-auto pb-5">
+          <Link
+            href="/"
 
-                {/* About with toggle */}
-                <div>
-                  <button
-                    onClick={() => setAboutOpen(!aboutOpen)}
-                
-                    className="flex items-center text-xl justify-between w-full hover:text-[#0074dd] transition pr-4"
-                  >
-                    Device Closures {aboutOpen ? <FiChevronUp /> : <FiChevronDown />}
-                  </button>
-                  {aboutOpen && (
-                    <div className="border-l border-gray-400 pl-4 mt-5 space-y-4 text-sm text-gray-900">
-                      <Link href="/device-closure/atrial-septal-defect" className=" block text-lg hover:text-[#0074dd]">
-                        ASD
-                      </Link>
-                      <Link href="/device-closure/patent-foramen-ovale" className=" block text-lg hover:text-[#0074dd]">
-                        PFO
-                      </Link>
-                      <Link href="/device-closure/ventricular-septal-defect" className=" block text-lg hover:text-[#0074dd]">
-                        VSD
-                      </Link>
-                      <Link href="/device-closure/patent-ductus-arteriosus" className=" block text-lg hover:text-[#0074dd]">
-                        PDA
-                      </Link>
-                    </div>
-                  )}
-                </div>
+            className="block hover:text-[#0074dd] text-xl transition"
+          >
+            Home
+          </Link>
+          <Link
+            href="/cardiologist-mumbai"
 
-                {/* Procedures with toggle */}
-                <div>
-                  <button
-                    onClick={() => setProceduresOpen(!proceduresOpen)}
-                  
-                    className="flex items-center text-xl justify-between w-full hover:text-[#0074dd] transition pr-4"
-                  >
-                  Other Proceduress {proceduresOpen ? <FiChevronUp /> : <FiChevronDown />}
-                  </button>
-                  {proceduresOpen && (
-                    <div className="border-l-2 border-gray-400 pl-4 mt-5 space-y-4 text-sm text-gray-900">
-                      <Link href="/balloon-mitral-valvotomy" className=" block text-lg hover:text-[#0074dd]">
-                        BMV
-                      </Link>
-                      <Link href="/ruptured-sinus-of-valsalva" className=" block text-lg hover:text-[#0074dd]">
-                        RSOV
-                      </Link>
-                      <Link href="/tric-valve" className=" block text-lg hover:text-[#0074dd]">
-                        Tric Valve
-                      </Link>               
-                    </div>
-                  )}
-                </div>
-                <div>
-                  <button
-                    onClick={() => setCardiacOpen(!cardiacOpen)}
-                  
-                    className="flex items-center text-xl justify-between w-full hover:text-[#0074dd] transition pr-4"
-                  >
-                  HVE Cardiac Team {cardiacOpen ? <FiChevronUp /> : <FiChevronDown />}
-                  </button>
-                    {cardiacOpen && (
+            className="block hover:text-[#0074dd] text-xl transition"
+          >
+            Our Cardiologists
+          </Link>
+          <Link
+            href="/tavi"
+
+            className="block hover:text-[#0074dd] text-xl transition"
+          >
+            TAVI
+          </Link>
+          <Link
+            href="/tmvr"
+
+            className="block hover:text-[#0074dd] text-xl transition"
+          >
+            TMVR
+          </Link>
+          <Link
+            href="/teer"
+
+            className="block hover:text-[#0074dd] text-xl transition"
+          >
+            TEER (Mitraclip & Myclip)
+          </Link>
+          <Link
+            href="/left-atrial-appendage-occlusion"
+
+            className="block hover:text-[#0074dd] text-xl transition"
+          >
+            LAAO
+          </Link>
+
+          {/* About with toggle */}
+          <div>
+            <button
+              onClick={() => setAboutOpen(!aboutOpen)}
+
+              className="flex items-center text-xl justify-between w-full hover:text-[#0074dd] transition pr-4"
+            >
+              Device Closures {aboutOpen ? <FiChevronUp /> : <FiChevronDown />}
+            </button>
+            {aboutOpen && (
+              <div className="border-l border-gray-400 pl-4 mt-5 space-y-4 text-sm text-gray-900">
+                <Link href="/device-closure/atrial-septal-defect" className=" block text-lg hover:text-[#0074dd]">
+                  ASD
+                </Link>
+                <Link href="/device-closure/patent-foramen-ovale" className=" block text-lg hover:text-[#0074dd]">
+                  PFO
+                </Link>
+                <Link href="/device-closure/ventricular-septal-defect" className=" block text-lg hover:text-[#0074dd]">
+                  VSD
+                </Link>
+                <Link href="/device-closure/patent-ductus-arteriosus" className=" block text-lg hover:text-[#0074dd]">
+                  PDA
+                </Link>
+              </div>
+            )}
+          </div>
+
+          {/* Procedures with toggle */}
+          <div>
+            <button
+              onClick={() => setProceduresOpen(!proceduresOpen)}
+
+              className="flex items-center text-xl justify-between w-full hover:text-[#0074dd] transition pr-4"
+            >
+              Other Proceduress {proceduresOpen ? <FiChevronUp /> : <FiChevronDown />}
+            </button>
+            {proceduresOpen && (
+              <div className="border-l-2 border-gray-400 pl-4 mt-5 space-y-4 text-sm text-gray-900">
+                <Link href="/balloon-mitral-valvotomy" className=" block text-lg hover:text-[#0074dd]">
+                  BMV
+                </Link>
+                <Link href="/ruptured-sinus-of-valsalva" className=" block text-lg hover:text-[#0074dd]">
+                  RSOV
+                </Link>
+                <Link href="/tric-valve" className=" block text-lg hover:text-[#0074dd]">
+                  Tric Valve
+                </Link>
+              </div>
+            )}
+          </div>
+          <div>
+            <button
+              onClick={() => setCardiacOpen(!cardiacOpen)}
+
+              className="flex items-center text-xl justify-between w-full hover:text-[#0074dd] transition pr-4"
+            >
+              HVE Cardiac Team {cardiacOpen ? <FiChevronUp /> : <FiChevronDown />}
+            </button>
+            {cardiacOpen && (
               <div className="border-l-2 border-gray-400 pl-4 mt-5 space-y-4 text-sm text-gray-900">
                 <Link href="/cardiologist-mumbai/dr-ankur-u-phatarpekar" className=" block text-lg hover:text-[#0074dd]">
                   Dr. Ankur U. Phatarpekar
@@ -298,7 +297,7 @@ export default function Services() {
                   Dr. Amit S. Gangwani
                 </Link>
                 <Link href="/cardiologist-mumbai/dr-harshad-sagar-uttamrao" className=" block text-lg hover:text-[#0074dd]">
-                  Dr. Harshad Uttamrao Sagar 
+                  Dr. Harshad Uttamrao Sagar
                 </Link>
                 {/* <Link href="/cardiologist-mumbai/dr-aniruddha-mohanrao-pawar" className=" block text-lg hover:text-[#0074dd]">
                         Dr. Aniruddha Mohanrao Pawar
@@ -320,15 +319,22 @@ export default function Services() {
                 </Link>
               </div>
             )}
-                </div>
-                <Link
-                  href="/knowledge-library"
-                
-                  className="block hover:text-[#0074dd] text-xl transition"
-                >
-                  Knowledge Library
-                </Link>              
-              </nav>
+          </div>
+          <Link
+            href="/knowledge-library"
+
+            className="block hover:text-[#0074dd] text-xl transition"
+          >
+            Knowledge Library
+          </Link>
+          <Link
+            href="/a-legacy-of-leadership"
+
+            className="block hover:text-[#0074dd] text-xl transition"
+          >
+            A Legacy of Leadership
+          </Link>
+        </nav>
 
 
         {/* Fixed Footer */}
