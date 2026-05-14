@@ -3,11 +3,11 @@ import BreadCrumb from "@/component/BreadCrumb";
 import AppointmentCTA from '@/component/AppointmentCTA';
 import LegacyLeadership from '@/component/LegacyLeadership';
 export const metadata = {
-    title: "Heart Valve Knowledge Library | TAVI, TMVR & Patient Stories",
+    title: "A Legacy of Leadership in Heart Valve Care | Heart Valve Experts",
     description:
-        "Read real patient stories, procedure insights, and expert heart valve education from Mumbai's leading cardiologists. Learn about TAVI, TMVR, TEER & more.",
+        "Discover the legacy of leadership at Heart Valve Experts, highlighting innovation, expertise, and excellence in advanced heart valve treatment and patient care.",
     alternates: {
-        canonical: "https://heartvalveexperts.com/knowledge-library",
+        canonical: "https://heartvalveexperts.com/a-legacy-of-leadership",
     },
 };
 const page = () => {

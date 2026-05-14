@@ -27,6 +27,7 @@ export default async function sitemap() {
     { url: `${siteUrl}/ruptured-sinus-of-valsalva`, priority: 0.8 },
     { url: `${siteUrl}/tric-valve`, priority: 0.8 },
     { url: `${siteUrl}/knowledge-library`, priority: 0.8 },
+    { url: `${siteUrl}/a-legacy-of-leadership`, priority: 0.64 },
     { url: `${siteUrl}/device-closure`, priority: 0.8 },
     { url: `${siteUrl}/device-closure/atrial-septal-defect`, priority: 0.8 },
     { url: `${siteUrl}/device-closure/patent-foramen-ovale`, priority: 0.8 },
