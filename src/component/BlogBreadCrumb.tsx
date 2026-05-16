@@ -372,7 +372,6 @@ export default function Services({ title, subpage }: ServicesProps) {
           </Link>
         </nav>
 
-
         {/* Fixed Footer */}
         <div className="bg-[#cccccd] backdrop-blur-xl lg:rounded-b-4xl px-8 py-5">
           <p className="text-xs tracking-widest text-gray-600 mb-4">STAY CONNECTED</p>
