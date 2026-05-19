@@ -80,12 +80,12 @@ export default function CardiacComparison({ blog }: CardiacComparisonProps) {
         </div>
       </div>
       
-      <div className={`max-w-7xl mx-auto flex flex-col-reverse ${toc.length === 0 ? "lg:flex-col" : "lg:flex-row"}  justify-between gap-6 px-3`}>
+      <div className={`max-w-7xl mx-auto flex flex-col ${toc.length === 0 ? "lg:flex-col" : "lg:flex-row"}  justify-between gap-6 px-3`}>
         <div className="w-full lg:w-[30%]">
           {toc.length > 0 && (
             <div className="sticky top-11 lg:top-8 xl:top-12">
-              <div className="relative h-72 mb-10">
-                <div className="bg-white/80 h-72 overflow-hidden backdrop-blur-xl border border-blue-200/40 shadow-lg shadow-blue-100/50 rounded-3xl p-6 lg:p-3 xl:p-6 transition-all duration-300 hover:shadow-blue-200">
+              <div className="relative h-full lg:h-60 2xl:h-75 mb-5">
+                <div className="bg-white/80 h-full lg:h-60 2xl:h-75 overflow-hidden backdrop-blur-xl border border-blue-200/40 shadow-lg shadow-blue-100/50 rounded-3xl p-6 lg:p-3 xl:p-6 transition-all duration-300 hover:shadow-blue-200">
                   <div className="pb-3 mb-4 border-b border-blue-100 flex items-center gap-2">
                     <div className="h-5 w-1 bg-blue-600 rounded-full"></div>
                     <h3 className="text-xl font-bold text-gray-800 tracking-wide">

@@ -85,7 +85,7 @@ export default function CallbackForm() {
                         setName(e.target.value);
                         setError("");
                     }}
-                    className="mb-2 mt-4 w-full rounded-full border-2 border-white/40 px-5 py-4 outline-none text-white placeholder:text-white text-base"
+                    className="mb-1 mt-2 w-full rounded-full border-2 border-white/40 px-4 py-2 outline-none text-white placeholder:text-white text-base"
                 />
                 {error && <span className="text-sm text-red-200">{error}</span>}
 
@@ -94,7 +94,7 @@ export default function CallbackForm() {
                     placeholder="Mobile Number *"
                     value={phone}
                     maxLength={10}
-                    className="mb-2 mt-4 w-full rounded-full border-2 border-white/40 px-5 py-4 outline-none text-white placeholder:text-white text-base"
+                    className="mb-1 mt-2 w-full rounded-full border-2 border-white/40 px-4 py-2 outline-none text-white placeholder:text-white text-base"
                     onChange={handlePhoneChange}
                 />
                 {error2 && <span className="text-sm text-red-200">{error2}</span>}
@@ -106,7 +106,7 @@ export default function CallbackForm() {
                 <button
                     type="submit"
                     disabled={loading}
-                    className="w-full mt-4 rounded-full bg-white capitalize text-black py-3 cursor-pointer font-normal hover:scale-[1.02] duration-500"
+                    className="w-full mt-4 rounded-full bg-white capitalize text-black py-2 cursor-pointer font-normal hover:scale-[1.02] duration-500"
                 >
                     {loading ? "Sending..." : "Request Call Back"}
                 </button>
