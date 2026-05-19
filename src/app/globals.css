@@ -287,3 +287,40 @@ body {
   color: #6b7280;
   text-align: center;
 }
+
+.hve-blog-cta {
+  background: radial-gradient(circle at center, #0074dd, #97323b, #0074dd);
+  background-size: 250% 250%;
+  animation: gradient-circle 15s ease-in-out infinite;
+  filter: brightness(1.1) saturate(1.1);
+  color: white;
+  padding: 20px 20px 45px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.hve-blog-cta h3{
+  font-size: 1.5rem !important;
+ color: white !important;
+  font-weight: 400;
+  margin-bottom: 10px !important;
+  margin-top: 0;
+  line-height: 1.4;
+}
+.hve-blog-cta p{
+ color: white !important;
+  font-weight: 400;
+  padding-bottom: 15px;
+  margin-top: 0;
+  line-height: 1.4;
+}
+
+.hve-blog-cta a {
+  color: black !important;
+  font-weight: 500;
+  /* text-decoration: underline; */
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  /* text-transform: uppercase; */
+}

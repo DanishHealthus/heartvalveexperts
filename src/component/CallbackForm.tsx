@@ -106,9 +106,9 @@ export default function CallbackForm() {
                 <button
                     type="submit"
                     disabled={loading}
-                    className="w-full mt-4 rounded-full bg-white text-black py-3 cursor-pointer font-normal hover:scale-[1.02] duration-500"
+                    className="w-full mt-4 rounded-full bg-white capitalize text-black py-3 cursor-pointer font-normal hover:scale-[1.02] duration-500"
                 >
-                    {loading ? "Sending..." : "REQUEST CALL BACK"}
+                    {loading ? "Sending..." : "Request Call Back"}
                 </button>
             </form>
         </div>
