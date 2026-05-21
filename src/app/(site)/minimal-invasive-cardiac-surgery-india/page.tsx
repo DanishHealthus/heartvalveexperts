@@ -5,6 +5,7 @@ import FollowUpSection from '@/component/Services/FollowUpSection';
 import AppointmentCTAMumbai from '@/component/AppointmentCTAMumbai';
 import FAQAccordion from '@/component/Services/FAQAccordion';
 import TaviProMumbai from '@/component/TaviProMumbai';
+import TaviSectionAll from '@/component/Services/TaviSectionAll';
 export const metadata = {
   title: "Minimally Invasive Cardiac Surgery in India | Heart Valve Experts",
   description:
@@ -75,7 +76,7 @@ const serviceSchema = {
   "@type": "MedicalProcedure",
   name: metadata.title,
   description: metadata.description,
-  procedureType: "TherapeuticProcedure",
+  procedureType: "http://schema.org/PercutaneousProcedure",
   bodyLocation: "Aortic root – Sinus of Valsalva",
   // howPerformed:
   //   "Surgical repair is done via open-heart surgery using a patch or suture closure, often under cardiopulmonary bypass. In some cases, a minimally invasive or catheter-based closure is possible.",
@@ -149,7 +150,7 @@ const page = () => {
         subpage="false"
         image="/images/newservices/minimal/bread.webp"
       />
-      <TaviSection
+      <TaviSectionAll
         imageSrc="/images/newservices/minimal/1.webp"
         imageAlt="Device Closure"
         imageTitle=""
@@ -161,8 +162,7 @@ const page = () => {
           "Today, many heart valve conditions can be treated using minimally invasive, catheter-based procedures that repair or replace the valve without opening the chest.",
           `At <a target="_blank" href="https://heartvalveexperts.com/" class="text-blue-600 underline">Heart Valve Experts</a> in india, our care focuses exclusively on advanced interventional treatments designed to treat heart valve disease while minimising physical trauma and supporting faster recovery.`
         ]}
-
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
       />
       <section
         className="text-white relative animate-gradient-circle overflow-hidden"
@@ -179,7 +179,7 @@ const page = () => {
               "Shorter hospital stay for suitable patients",
               "Faster return to daily activities"]}
             conclusion="These procedures are recommended only after careful evaluation of the patient’s heart valve condition, anatomy, and overall health."
-            buttonText="Book Appointment Now"
+            buttonText="Request a Consultation"
             imageSrc="/images/newservices/minimal/2.webp"
             imageAlt="Doctor Consultation"
           />
@@ -194,7 +194,7 @@ const page = () => {
               "Patients seeking alternatives to traditional open-heart surgery"
             ]}
             conclusion="Each case is evaluated individually to determine the most appropriate treatment strategy."
-            buttonText="Book Appointment Now"
+            buttonText="Request a Consultation"
             imageSrc="/images/newservices/minimal/3.webp"
             imageAlt="reverse"
           />
@@ -263,7 +263,7 @@ const page = () => {
           "You want to explore less invasive treatment options."
         ]}
         conclusion="A comprehensive heart valve evaluation is required before deciding on the most appropriate treatment."
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
         imageSrc="/images/service/BMV/Rectangle 38.webp"
         imageAlt="Who is Eligible for TAVI Surgery in india?"
       />
@@ -283,7 +283,7 @@ const page = () => {
               "Gradual improvement in breathing and stamina"
             ]}
             conclusion="Your care team will guide you through recovery and follow-ups."
-            buttonText="Book Appointment Now"
+            buttonText="Request a Consultation"
             imageSrc="/images/newservices/minimal/8s.webp"
             imageAlt="reverse"
           />
@@ -298,7 +298,7 @@ const page = () => {
               "Care Close to Home in india"
             ]}
             conclusion=""
-            buttonText="Book Appointment Now"
+            buttonText="Request a Consultation"
             imageSrc="/images/newservices/expert/3.webp"
             imageAlt="What Sets us Apart"
           />

@@ -8,6 +8,7 @@ import ProcedureDelayRisks from "@/component/Services/ProcedureDelayRisks";
 import FAQAccordion from "@/component/Services/FAQAccordion";
 import AppointmentCTA from "@/component/AppointmentCTA";
 import PatientSuccessStories from "@/component/PatientSuccessStories";
+import TaviSectionAll from "@/component/Services/TaviSectionAll"; 
 
 export const metadata = {
   title: "Ruptured Sinus of Valsalva  (RSOV) Surgery in Mumbai ",
@@ -148,7 +149,7 @@ const serviceSchema = {
   name: "Repair of Ruptured Sinus of Valsalva (RSOV)",
   description:
     "RSOV is a condition where one of the sinuses of Valsalva in the aortic root ruptures, causing abnormal blood flow into a heart chamber. Repair involves closing the rupture surgically or via a minimally invasive approach.",
-  procedureType: "TherapeuticProcedure",
+  procedureType: "http://schema.org/PercutaneousProcedure",
   bodyLocation: "Aortic root – Sinus of Valsalva",
   howPerformed:
     "Surgical repair is done via open-heart surgery using a patch or suture closure, often under cardiopulmonary bypass. In some cases, a minimally invasive or catheter-based closure is possible.",
@@ -187,7 +188,7 @@ const servciepage = () => {
         subpage="false"
         image="/images/service/RSOV/bread.webp"
       />
-      <TaviSection
+      <TaviSectionAll
         imageSrc="/images/service/RSOV/1.webp"
         imageAlt="TEER Surgery"
         imageTitle=""
@@ -197,7 +198,7 @@ const servciepage = () => {
           "RSOV stands for Ruptured Sinus of Valsalva, a rare but potentially life-threatening heart condition that involves a tear in one of the sinuses of Valsalva. These sinuses are small, balloon-like pouches located in the aortic root, just above the aortic valve. They help the aortic valve open and close smoothly and assist in directing blood flow from the aorta into the coronary arteries. A rupture results in an abnormal connection between the aorta and a nearby heart chamber, most commonly the right atrium or right ventricle.",
           "This condition causes blood to leak directly into the heart chambers, leading to sudden volume overload, shortness of breath, and, if left untreated, eventual heart failure. RSOV occurs more frequently in young to middle-aged individuals, particularly when congenital, and often presents suddenly after physical exertion or rising blood pressure.",
         ]}
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
       />
       <section
         className="text-white relative animate-gradient-circle overflow-hidden"
@@ -215,7 +216,7 @@ const servciepage = () => {
               "There is involvement of the aortic valve or nearby heart structures",
               "Your cardiologist or cardiac surgeon in Mumbai recommends surgery based on risk"
             ]}
-            buttonText="Book Appointment Now"
+            buttonText="Request a Consultation"
             imageSrc="/images/service/RSOV/Rectangle 41.webp"
             imageAlt="Doctor Consultation"
           />
@@ -228,7 +229,7 @@ const servciepage = () => {
         desc="Delaying treatment for a ruptured sinus of Valsalva can lead to serious and life-threatening complications. The rupture causes abnormal blood flow between the aorta and heart chambers, which can quickly escalate if not addressed. Some of the key risks include:"
         risks={risksData}
         imageSrc="/images/service/RSOV/Rectangle 43.webp"
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
       />
       <section className="animate-gradient-circle text-white relative overflow-hidden">
         <ProcedureTimeline

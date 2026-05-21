@@ -64,9 +64,9 @@ export default function InnovationCardiacCare() {
   return (
     <section
       ref={sectionRef}
-      className="py-16 px-6 md:px-12 bg-gray-200 wht-bg-are"
+      className="py-16 px-6 md:px-10 2xl:px-12 bg-white wht-bg-are"
     >
-      <div className="max-w-7xl mx-auto text-center">
+      <div className="container mx-auto text-center">
         {/* Section Label */}
         
         <p style={{letterSpacing :'2px'}} className="text-[#000] mb-6 text-lg uppercase font-light tracking-wide flex items-center justify-center gap-1">

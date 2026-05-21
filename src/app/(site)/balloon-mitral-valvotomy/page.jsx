@@ -1,4 +1,4 @@
-import TaviSection from "@/component/Services/TaviSection";
+import TaviSectionAll from "@/component/Services/TaviSectionAll";
 import TaviWhoFor from "@/component/Services/TaviWhoFor";
 import BreadCrumb from "@/component/BreadCrumb";
 import TaviBenefits from "@/component/Services/TaviBenefits";
@@ -202,7 +202,7 @@ const serviceSchema = {
   name: "Balloon Mitral Valvotomy / Valvuloplasty (BMV)",
   description:
     "Balloon mitral valvotomy (also called balloon mitral valvuloplasty) is a minimally invasive procedure used to treat mitral stenosis by using a balloon catheter to widen the narrowed mitral valve.",
-  procedureType: "TherapeuticProcedure",
+  procedureType: "http://schema.org/PercutaneousProcedure",
   bodyLocation: "Heart – Mitral Valve",
   howPerformed:
     "A catheter is inserted into a blood vessel, typically through the groin, and guided to the mitral valve. Once positioned, a balloon is inflated within the valve to stretch the narrowed leaflets and improve blood flow.",
@@ -241,7 +241,7 @@ const servciepage = () => {
         subpage="false"
         image="/images/service/BMV/bread.webp"
       />
-      <TaviSection
+      <TaviSectionAll
         imageSrc="/images/service/BMV/2.webp"
         imageAlt="TEER Surgery"
         imageTitle=""
@@ -251,13 +251,12 @@ const servciepage = () => {
           "Balloon Mitral Valvotomy (BMV) is a non-surgical procedure to treat narrowed mitral valves. A balloon-tipped catheter is guided through the femoral vein into the heart, crossing from the right atrium to the left via a transseptal puncture. Once positioned across the narrowed mitral valve, the balloon is inflated to widen the opening and improve blood flow between the left atrium and ventricle.",
           `This <a href="https://heartvalveexperts.com/blog/balloon-mitral-valvuloplasty-bmv-procedure" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">Balloon Mitral Valvotomy Treatment</a> is ideal for patients with rheumatic mitral stenosis who are not candidates for open-heart surgery.`
         ]}
-
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
       />
       <TaviWhoFor
         sectionTag="Who It’s For?"
         heading="Who Needs BMV Surgery/Procedure?"
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
         conditions={conditionsData}
         imageSrc="/images/service/BMV/Rectangle 38.webp"
         imageAlt="Patient"
@@ -273,7 +272,7 @@ const servciepage = () => {
         subtitle="Outcomes of Procedure Delay"
         risks={risksData}
         imageSrc="/images/service/BMV/Rectangle 40.webp"
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
       />
       <section className="animate-gradient-circle text-white relative overflow-hidden">
         <ProcedureTimeline

@@ -8,6 +8,7 @@ import ProcedureDelayRisks2 from "@/component/Services/ProcedureDelayRisks2";
 import FAQAccordion from "@/component/Services/FAQAccordion";
 import AppointmentCTA from "@/component/AppointmentCTA";
 import PatientSuccessStories from "@/component/PatientSuccessStories";
+import TaviSectionAll from "@/component/Services/TaviSectionAll";   
 
 export const metadata = {
   title: "TMVR Surgery in Mumbai | TMVR Procedure Mumbai",
@@ -203,7 +204,7 @@ const serviceSchema = {
   name: "Transcatheter Mitral Valve Replacement (TMVR)",
   description:
     "TMVR is a minimally invasive procedure that replaces a diseased mitral valve via catheter, without open-heart surgery.",
-  procedureType: "TherapeuticProcedure",
+  procedureType: "http://schema.org/PercutaneousProcedure",
   bodyLocation: "Heart – Mitral Valve",
   howPerformed:
     "A catheter is inserted through a blood vessel, typically via the groin, guided into the heart, and a replacement valve is deployed inside the diseased mitral valve under imaging guidance.",
@@ -242,7 +243,7 @@ const servciepage = () => {
         subpage="false"
         image="/images/service/TMVR/bread.webp"
       />
-      <TaviSection
+      <TaviSectionAll
         imageSrc="/images/service/TMVR/1.webp"
         imageAlt="TEER Surgery"
         imageTitle=""
@@ -252,12 +253,12 @@ const servciepage = () => {
           `TMVR or Transcatheter Mitral Valve Replacement is a minimally invasive procedure for patients with a severely damaged <a href="https://heartvalveexperts.com/blog/mitraclip-procedure" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;"> mitral valve</a> or mitral regurgitation, a condition where the mitral valve doesn't close properly, causing blood to leak backward into the heart. The <a href="https://heartvalveexperts.com/blog/tmvr-procedure-cost-india" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">TMVR procedure</a> in Mumbai involves delivering a new valve through a catheter, usually via the femoral vein in the thigh, and implanting it within the existing mitral valve without the need to open the chest.`,
           `Sometimes, a less invasive alternative known as the <a href="https://heartvalveexperts.com/blog/mitraclip-procedure" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">MitraClip</a> procedure may be used for patients unsuitable for full valve replacement. TMVR in Mumbai is ideal for high-risk patients such as the elderly, those with prior heart surgeries, or individuals with multiple medical conditions. It improves heart function, reduces symptoms like breathlessness or fatigue, and shortens hospital recovery time.`,
         ]}
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
       />
       <TaviWhoFor
         sectionTag="Who It’s For?"
         heading="Who Needs TMVR Surgery/Procedure?"
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
         conditions={conditionsData}
         imageSrc="/images/service/TMVR/Rectangle 31.webp"
         imageAlt="Patient"
@@ -287,7 +288,7 @@ const servciepage = () => {
             "Tearing or loosening of valve tissue leading to regurgitation ",
           ]}
           conclusion=""
-          buttonText="Book Appointment Now"
+          buttonText="Request a Consultation"
           imageSrc="/images/service/TMVR/5.webp"
           imageAlt="Doctor Consultation"
         />

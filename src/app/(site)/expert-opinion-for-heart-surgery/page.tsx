@@ -62,7 +62,7 @@ const serviceSchema = {
   "@type": "MedicalProcedure",
   name: metadata.title,
   description: metadata.description,
-  procedureType: "TherapeuticProcedure",
+  procedureType: "http://schema.org/PercutaneousProcedure",
   bodyLocation: "Aortic root – Sinus of Valsalva",
   // howPerformed:
   //   "Surgical repair is done via open-heart surgery using a patch or suture closure, often under cardiopulmonary bypass. In some cases, a minimally invasive or catheter-based closure is possible.",

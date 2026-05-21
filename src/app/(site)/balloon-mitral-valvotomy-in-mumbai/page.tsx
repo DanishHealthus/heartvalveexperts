@@ -1,13 +1,9 @@
-import TaviSection from "@/component/Services/TaviSection";
 import BreadCrumb from "@/component/BreadCrumb";
 import FollowUpSection from "@/component/Services/FollowUpSection";
 import FAQAccordion from "@/component/Services/FAQAccordion";
-import PatientSuccessStories from "@/component/PatientSuccessStories";
-import Doctors from "@/component/Doctors";
-import TaviProMumbai from "@/component/TaviProMumbai";
-import ComparisonSection from "@/component/TaviComparison";
 import AppointmentCTAMumbai from "@/component/AppointmentCTAMumbai";
 import TaviWhoFor from "@/component/Services/TaviWhoFor";
+import TaviSectionAll from "@/component/Services/TaviSectionAll";
 
 export const metadata = {
     title: "Balloon Mitral Valvotomy (BMV) in Mumbai | BMV Treatment",
@@ -73,7 +69,7 @@ const serviceSchema = {
     "@type": "MedicalProcedure",
     name: metadata.title,
     description: metadata.description,
-    procedureType: "TherapeuticProcedure",
+    procedureType: "http://schema.org/PercutaneousProcedure",
     bodyLocation: "Aortic root – Sinus of Valsalva",
     // howPerformed:
     //   "Surgical repair is done via open-heart surgery using a patch or suture closure, often under cardiopulmonary bypass. In some cases, a minimally invasive or catheter-based closure is possible.",
@@ -147,7 +143,7 @@ const servciepage = () => {
                 subpage="false"
                 image="/images/service/BMV/bread.webp"
             />
-            <TaviSection
+            <TaviSectionAll
                 imageSrc="/images/lp/bmv/1.webp"
                 imageAlt="Balloon Mitral Valvotomy (BMV) in Mumbai"
                 imageTitle="Balloon Mitral Valvotomy (BMV) in Mumbai"
@@ -175,7 +171,7 @@ const servciepage = () => {
                             "No open-heart surgery or bypass machine is needed"
                         ]}
                         conclusion=""
-                        buttonText="Book Appointment Now"
+                        buttonText="Request a Consultation"
                         imageSrc="/images/lp/bmv/2.webp"
                         imageAlt="Heart Valve Surgery in Mumbai by Heart Valve Experts"
                     />
@@ -191,7 +187,7 @@ const servciepage = () => {
                             "Reduced exercise tolerance"
                         ]}
                         conclusion="It is one of the more frequently seen valve conditions in India and tends to worsen without treatment."
-                        buttonText="Book Appointment Now"
+                        buttonText="Request a Consultation"
                         imageSrc="/images/lp/bmv/3.webp"
                         imageAlt="reverse"
                     />
@@ -210,7 +206,7 @@ const servciepage = () => {
                     "You have a higher surgical risk due to age or other medical conditions"
                 ]}
                 conclusion="A detailed evaluation is required to confirm whether BMV is appropriate for your situation."
-                buttonText="Book Appointment Now"
+                buttonText="Request a Consultation"
                 imageSrc="/images/lp/bmv/4.webp"
                 imageAlt="TAV or TAVR Treatment in Mumbai by Heart Valve Experts"
             />
@@ -226,14 +222,14 @@ const servciepage = () => {
                     "Return to daily activities within a few weeks"
                 ]}
                 conclusion="Our care team will guide you through recovery and arrange follow-up assessments to monitor your valve."
-                buttonText="Book Appointment Now"
+                buttonText="Request a Consultation"
                 imageSrc="/images/lp/bmv/5.webp"
                 imageAlt="reverse"
             />
             <TaviWhoFor
                     sectionTag="Who It’s For?"
                     heading="Why Choose Heart Valve Experts for BMV in Mumbai?"
-                    buttonText="Book Appointment Now"
+                    buttonText="Request a Consultation"
                     conditions={conditionsData}
                     imageSrc="/images/lp/bmv/6.webp"
                     imageAlt="Patient"

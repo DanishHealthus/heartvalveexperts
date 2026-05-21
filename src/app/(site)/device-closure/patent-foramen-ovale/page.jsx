@@ -8,6 +8,7 @@ import FAQAccordion from "@/component/Services/FAQAccordion";
 import AppointmentCTA from "@/component/AppointmentCTA";
 import PatientSuccessStories from "@/component/PatientSuccessStories";
 import ASDClosureSection from "@/component/Services/ASDClosureSection";
+import TaviSectionAll from "@/component/Services/TaviSectionAll";
 
 export const metadata = {
   title: "PFO Closure Surgery in Mumbai | Heart Valve Experts",
@@ -191,7 +192,7 @@ const serviceSchema = {
   name: "Patent Foramen Ovale (PFO) Closure",
   description:
     "PFO closure is a catheter-based procedure to close a small opening in the heart between the atria, reducing risk of stroke in certain patients.",
-  procedureType: "TherapeuticProcedure",
+  procedureType: "http://schema.org/PercutaneousProcedure",
   bodyLocation: "Heart - Atrial Septum",
   howPerformed:
     "A catheter is inserted via a vein in the groin and guided into the heart. A closure device (occluder) is delivered across the PFO opening and deployed to permanently seal it. Imaging such as intracardiac echocardiography and fluoroscopy assist in proper positioning.",
@@ -230,7 +231,7 @@ const servciepage = () => {
         subpage="false"
         image="/images/service/PFO Closure/bread.webp"
       />
-      <TaviSection
+      <TaviSectionAll
         imageSrc="/images/service/PFO Closure/1.webp"
         imageAlt="TEER Surgery"
         tag="About"
@@ -238,7 +239,7 @@ const servciepage = () => {
         description={[
           "A Patent Foramen Ovale (PFO) is a small, congenital opening between the heart’s upper chambers (atria) that can allow blood clots to bypass the lungs and potentially cause strokes. The PFO closure procedure is a minimally invasive technique in which a closure device is delivered through a catheter inserted via the femoral vein in the groin to seal this opening. This PFO closure procedure in Mumbai offers a safe, effective alternative to lifelong medication and significantly reduces the risk of repeat strokes in patients where no clear cause of stroke has been found.",
         ]}
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
       />
       <ASDClosureSection
         tag="How It's Done"
@@ -313,7 +314,7 @@ const servciepage = () => {
 
           ]}
           conclusion=""
-          buttonText="Book Appointment Now"
+          buttonText="Request a Consultation"
           imageSrc="/images/service/PFO Closure/Rectangle 53.webp"
           imageAlt="Doctor Consultation"
         />
@@ -329,7 +330,7 @@ const servciepage = () => {
         subtitle="Outcomes of Procedure Delay"
         risks={risksData}
         imageSrc="/images/service/PFO Closure/Rectangle 55.webp"
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
         imagePosition="left"
       />
       <section className="animate-gradient-circle text-white relative overflow-hidden">

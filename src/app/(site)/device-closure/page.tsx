@@ -4,6 +4,7 @@ import TaviSection from "@/component/Services/TaviSection";
 import FollowUpSection from '@/component/Services/FollowUpSection';
 import AppointmentCTAMumbai from '@/component/AppointmentCTAMumbai';
 import FAQAccordion from '@/component/Services/FAQAccordion';
+import TaviSectionAll from '@/component/Services/TaviSectionAll';
 
 export const metadata = {
   title: "Device Closure Procedure for Congenital Heart Defect | Heart Valve Experts",
@@ -57,7 +58,7 @@ const serviceSchema = {
   "@type": "MedicalProcedure",
   name: metadata.title,
   description: metadata.description,
-  procedureType: "TherapeuticProcedure",
+  procedureType: "http://schema.org/PercutaneousProcedure",
   bodyLocation: "Aortic root – Sinus of Valsalva",
   // howPerformed:
   //   "Surgical repair is done via open-heart surgery using a patch or suture closure, often under cardiopulmonary bypass. In some cases, a minimally invasive or catheter-based closure is possible.",
@@ -132,7 +133,7 @@ const page = () => {
         subpage="false"
         image="/images/service/ASD Closure/bread.webp"
       />
-      <TaviSection
+      <TaviSectionAll
         imageSrc="/images/newservices/1.webp"
         imageAlt="Device Closure"
         imageTitle=""
@@ -142,7 +143,7 @@ const page = () => {
           `Certain congenital heart defects, often referred to as “hole in the heart”, can be treated using device-based techniques. Device closure allows some patients to have the defect closed without open-heart surgery, using a catheter-based approach.`,
         ]}
 
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
       />
       <section
         className="text-white relative animate-gradient-circle overflow-hidden"
@@ -155,7 +156,7 @@ const page = () => {
             subIntro="Instead of surgery, a specialised closure device is guided to the heart through a blood vessel, usually a leg. Once positioned correctly, the device seals the defect and remains permanently in place."
             bulletPoints={[]}
             conclusion=""
-            buttonText="Book Appointment Now"
+            buttonText="Request a Consultation"
             imageSrc="/images/newservices/2.webp"
             imageAlt="Doctor Consultation"
           />
@@ -171,7 +172,7 @@ const page = () => {
               `<a target="_blank" href="https://heartvalveexperts.com/device-closure/patent-ductus-arteriosus" class="text-blue-600 underline">Patent Ductus Arteriosus (PDA) Device Closure</a> : A catheter-delivered device is used to close the abnormal blood vessel connection between major arteries, preventing excess blood flow to the lungs.`
             ]}
             conclusion=""
-            buttonText="Book Appointment Now"
+            buttonText="Request a Consultation"
             imageSrc="/images/newservices/3.webp"
             imageAlt="reverse"
           />
@@ -190,7 +191,7 @@ const page = () => {
           "Open surgery can be safely avoided."
         ]}
         conclusion="Each case is reviewed individually to prioritise safety and long-term outcomes."
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
         imageSrc="/images/newservices/4.webp"
         imageAlt="Who is Eligible for TAVI Surgery in Mumbai?"
       />
@@ -204,7 +205,7 @@ const page = () => {
           `The procedure is performed in a cardiac catheterisation laboratory. A thin, flexible tube is guided through a blood vessel to the heart under imaging guidance.`,
           "Once the device is positioned across the defect, it is carefully released to seal the opening. The heart tissue gradually grows around the device, securing it in place. The procedure typically does not require opening the chest."
         ]}
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
       />
 
       <FollowUpSection
@@ -221,7 +222,7 @@ const page = () => {
           "Reduced physical trauma"
         ]}
         conclusion="Benefits depend on correct patient selection and procedural expertise."
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
         imageSrc="/images/newservices/6.webp"
         imageAlt="Who is Eligible for TAVI Surgery in Mumbai?"
       />
@@ -237,7 +238,7 @@ const page = () => {
             subIntro="The decision between device closure and surgery is based on detailed imaging, clinical findings, and long-term safety considerations. The focus is always on choosing the most appropriate treatment, not the least invasive one."
             bulletPoints={[]}
             conclusion=""
-            buttonText="Book Appointment Now"
+            buttonText="Request a Consultation"
             imageSrc="/images/newservices/7.webp"
             imageAlt="reverse"
           />
@@ -248,7 +249,7 @@ const page = () => {
             subIntro="This ensures decisions are guided by precision, experience, and patient safety."
             bulletPoints={[]}
             conclusion=""
-            buttonText="Book Appointment Now"
+            buttonText="Request a Consultation"
             imageSrc="/images/service/TMVR/Rectangle 33.webp"
             imageAlt="What Sets us Apart"
           />

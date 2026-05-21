@@ -5,6 +5,7 @@ import FollowUpSection from '@/component/Services/FollowUpSection';
 import AppointmentCTAMumbai from '@/component/AppointmentCTAMumbai';
 import FAQAccordion from '@/component/Services/FAQAccordion';
 import TaviProMumbai from '@/component/TaviProMumbai';
+import TaviSectionAll from '@/component/Services/TaviSectionAll';
 export const metadata = {
     title: "Minimally Invasive Heart Valve Surgery | Advanced Valve Treatment",
     description:
@@ -45,7 +46,7 @@ const serviceSchema = {
     "@type": "MedicalProcedure",
     name: metadata.title,
     description: metadata.description,
-    procedureType: "TherapeuticProcedure",
+    procedureType: "http://schema.org/PercutaneousProcedure",
     bodyLocation: "Aortic root – Sinus of Valsalva",
     // howPerformed:
     //   "Surgical repair is done via open-heart surgery using a patch or suture closure, often under cardiopulmonary bypass. In some cases, a minimally invasive or catheter-based closure is possible.",
@@ -119,7 +120,7 @@ const page = () => {
                 subpage="false"
                 image="/images/newservices/minimal/bread.webp"
             />
-            <TaviSection
+            <TaviSectionAll
                 imageSrc="/images/newservices/minimal/1.webp"
                 imageAlt="Device Closure"
                 imageTitle=""
@@ -131,7 +132,7 @@ const page = () => {
                     `Minimally invasive heart valve surgery is a proven alternative to open heart surgery, achieving the same results through smaller incisions, less disruption to surrounding tissue, and a significantly faster return to everyday life.`
                 ]}
 
-                buttonText="Book Appointment Now"
+                buttonText="Request a Consultation"
             />
             <section
                 className="text-white relative animate-gradient-circle overflow-hidden"
@@ -148,7 +149,7 @@ const page = () => {
                             "Shorter hospital stay for suitable patients",
                             "Faster return to daily activities"]}
                         conclusion={`These procedures are recommended only after careful evaluation of the patient’s <a target="_blank" href="https://heartvalveexperts.com/blog/heart-valve-disease-symptoms-causes-treatment" class="text-blue-600 underline"></div>heart valve condition</a>, anatomy, and overall health.`}
-                        buttonText="Book Appointment Now"
+                        buttonText="Request a Consultation"
                         imageSrc="/images/newservices/minimal/2.webp"
                         imageAlt="Doctor Consultation"
                     />
@@ -163,7 +164,7 @@ const page = () => {
                             "Patients seeking alternatives to traditional open-heart surgery"
                         ]}
                         conclusion="Each case is evaluated individually to determine the most appropriate treatment strategy."
-                        buttonText="Book Appointment Now"
+                        buttonText="Request a Consultation"
                         imageSrc="/images/newservices/minimal/3.webp"
                         imageAlt="reverse"
                     />
@@ -231,7 +232,7 @@ const page = () => {
                     "Patients seeking alternatives to traditional open-heart surgery"
                 ]}
                 conclusion="A comprehensive heart valve evaluation is required before deciding on the most appropriate treatment."
-                buttonText="Book Appointment Now"
+                buttonText="Request a Consultation"
                 imageSrc="/images/service/BMV/Rectangle 38.webp"
                 imageAlt="Who is Eligible for TAVI Surgery in Mumbai?"
             />
@@ -251,7 +252,7 @@ const page = () => {
                             "Gradual improvement in general condition"
                         ]}
                         conclusion="Your care team will guide you through recovery and follow-ups."
-                        buttonText="Book Appointment Now"
+                        buttonText="Request a Consultation"
                         imageSrc="/images/newservices/minimal/8s.webp"
                         imageAlt="reverse"
                     />
@@ -266,7 +267,7 @@ const page = () => {
                             "Care Close to Home in India"
                         ]}
                         conclusion="Consultations, treatment planning, and follow-up care can be coordinated, which is particularly helpful for elderly patients and those requiring long-term monitoring."
-                        buttonText="Book Appointment Now"
+                        buttonText="Request a Consultation"
                         imageSrc="/images/newservices/expert/3.webp"
                         imageAlt="What Sets us Apart"
                     />

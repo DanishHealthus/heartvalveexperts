@@ -8,6 +8,7 @@ import FAQAccordion from "@/component/Services/FAQAccordion";
 import AppointmentCTA from "@/component/AppointmentCTA";
 import PatientSuccessStories from "@/component/PatientSuccessStories";
 import ASDClosureSection from "@/component/Services/ASDClosureSection";
+import TaviSectionAll from "@/component/Services/TaviSectionAll";
 
 export const metadata = {
   title: "Ventricular Septal Defect Surgery in Mumbai | VSD Closure",
@@ -186,7 +187,7 @@ const serviceSchema = {
   "@type": "MedicalProcedure",
   "name": "Ventricular Septal Defect (VSD) Device Closure",
   "description": "VSD device closure is a minimally invasive catheter-based procedure to close a hole in the ventricular septum and prevent abnormal blood flow between the heart’s ventricles.",
-  "procedureType": "TherapeuticProcedure",
+  "procedureType": "http://schema.org/PercutaneousProcedure",
   "bodyLocation": "Heart - Ventricular Septum",
   "howPerformed": "A catheter is inserted via a blood vessel (usually in the groin) and guided to the heart with imaging. A specialized occluder device is then deployed across the defect to seal the hole.",
   "preparation": "Before the procedure, patients undergo diagnostic imaging such as echocardiogram or transesophageal echo to measure the defect. Blood tests and a hemodynamic assessment are performed to choose the appropriate device.",
@@ -222,7 +223,7 @@ const servciepage = () => {
         subpage="false"
         image="/images/service/VSD Closure/bread.webp"
       />
-      <TaviSection
+      <TaviSectionAll
         imageSrc="/images/service/VSD Closure/1.webp"
         imageAlt="TEER Surgery"
         tag="About"
@@ -230,7 +231,7 @@ const servciepage = () => {
         description={[
           "A Ventricular Septal Defect (VSD) is a hole in the wall (septum) separating the two lower chambers of the heart (ventricles). This allows oxygen-rich blood to mix with oxygen-poor blood, forcing the heart and lungs to work harder. The VSD closure procedure is a minimally invasive or surgical method used to close this defect using a specialized device or patch. For eligible patients, VSD Closure surgery/procedure in Mumbai offers a safe and effective way to prevent complications like heart failure, pulmonary hypertension, and poor growth in children.",
         ]}
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
       />
       <ASDClosureSection
         tag="How It's Done"
@@ -300,7 +301,7 @@ const servciepage = () => {
             "Desire to avoid future complications with a one-time VSD closure surgery procedure"
           ]}
           conclusion=""
-          buttonText="Book Appointment Now"
+          buttonText="Request a Consultation"
           imageSrc="/images/service/VSD Closure/Rectangle 56.webp"
           imageAlt="Doctor Consultation"
         />
@@ -316,7 +317,7 @@ const servciepage = () => {
         subtitle="Outcomes of Procedure Delay"
         risks={risksData}
         imageSrc="/images/service/VSD Closure/Rectangle 58.webp"
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
         imagePosition="left"
       />
       <section className="animate-gradient-circle text-white relative overflow-hidden">

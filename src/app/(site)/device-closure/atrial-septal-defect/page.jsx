@@ -8,6 +8,7 @@ import FAQAccordion from "@/component/Services/FAQAccordion";
 import AppointmentCTA from "@/component/AppointmentCTA";
 import PatientSuccessStories from "@/component/PatientSuccessStories";
 import ASDClosureSection from "@/component/Services/ASDClosureSection";
+import TaviSectionAll from "@/component/Services/TaviSectionAll";
 
 export const metadata = {
   title: "Atrial Septum Defect (ASD) Closure Procedure in Mumbai ",
@@ -189,7 +190,7 @@ const serviceSchema = {
   name: "Atrial Septal Defect (ASD) Device Closure",
   description:
     "ASD device closure is a minimally invasive, catheter-based procedure used to close an opening in the atrial septum (the wall between the two upper heart chambers) to prevent abnormal blood flow and reduce right-heart overload.",
-  procedureType: "TherapeuticProcedure",
+  procedureType: "http://schema.org/PercutaneousProcedure",
   bodyLocation: "Heart – Atrial Septum",
   howPerformed:
     "A catheter is inserted, typically via a vein in the groin, and guided to the heart under imaging. A closure device (occluder) is deployed across the defect in the atrial septum, where it expands and seals the opening.",
@@ -228,7 +229,7 @@ const servciepage = () => {
         subpage="false"
         image="/images/service/ASD Closure/bread.webp"
       />
-      <TaviSection
+      <TaviSectionAll
         imageSrc="/images/service/ASD Closure/1.webp"
         imageAlt="TEER Surgery"
         imageTitle=""
@@ -239,7 +240,7 @@ const servciepage = () => {
           "The ASD closure procedure is a minimally invasive treatment where a specially designed device is inserted via a catheter to seal the opening. This ASD Closure procedure in Mumbai offers a safe and effective alternative to open-heart ASD surgery, helping prevent complications like pulmonary hypertension, arrhythmia, and heart failure.",
         ]}
 
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
       />
       <ASDClosureSection
         tag="How It's Done"
@@ -318,7 +319,7 @@ const servciepage = () => {
             "Desire to avoid open-heart surgery with a minimally invasive approach"
           ]}
           conclusion=""
-          buttonText="Book Appointment Now"
+          buttonText="Request a Consultation"
           imageSrc="/images/service/ASD Closure/Rectangle 50.webp"
           imageAlt="Doctor Consultation"
         />
@@ -335,7 +336,7 @@ const servciepage = () => {
         subtitle="Outcomes of Procedure Delay"
         risks={risksData}
         imageSrc="/images/service/ASD Closure/Rectangle 52.webp"
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
         imagePosition="left"
       />
       <section className="animate-gradient-circle text-white relative overflow-hidden">

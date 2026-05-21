@@ -8,6 +8,7 @@ import FAQAccordion from "@/component/Services/FAQAccordion";
 import AppointmentCTA from "@/component/AppointmentCTA";
 import PatientSuccessStories from "@/component/PatientSuccessStories";
 import ASDClosureSection from "@/component/Services/ASDClosureSection";
+import TaviSectionAll from "@/component/Services/TaviSectionAll";
 
 export const metadata = {
   title: "Patent Ductus Arteriosus Surgery in Mumbai | PDA Closure",
@@ -191,7 +192,7 @@ const serviceSchema = {
   name: "Patent Ductus Arteriosus (PDA) Device Closure",
   description:
     "PDA device closure is a minimally invasive procedure that closes a persistent opening between the aorta and pulmonary artery to prevent abnormal blood flow and reduce cardiac strain.",
-  procedureType: "TherapeuticProcedure",
+  procedureType: "http://schema.org/PercutaneousProcedure",
   bodyLocation: "Heart - Ductus Arteriosus",
   howPerformed:
     "Using a catheter inserted via the femoral vein, a closure device is advanced under imaging guidance such as echocardiography and fluoroscopy. The device is deployed across the ductus arteriosus to seal the abnormal opening.",
@@ -230,7 +231,7 @@ const servciepage = () => {
         subpage="false"
         image="/images/service/PDA Closure/bread.webp"
       />
-      <TaviSection
+      <TaviSectionAll
         imageSrc="/images/service/PDA Closure/1.webp"
         imageAlt="TEER Surgery"
         imageTitle=""
@@ -240,7 +241,7 @@ const servciepage = () => {
           "Patent Ductus Arteriosus (PDA) is a heart condition where a blood vessel called the ductus arteriosus remains open after birth. This creates an abnormal connection between the aorta and the pulmonary artery, allowing extra blood to flow into the lungs. Over time, this can strain the heart, raise lung pressure, and lead to symptoms like fast breathing, poor weight gain, or even heart failure.",
           "PDA closure is a medical procedure that seals this opening to restore normal blood circulation. Today, most PDA closure procedures are performed using a catheter-based technique, where a small device is delivered through a vein in the groin to close the PDA. This PDA closure procedure in Mumbai is minimally invasive, safe, and allows for a quicker recovery compared to traditional surgery.",
         ]}
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
       />
       <ASDClosureSection
         tag="How It's Done"
@@ -311,7 +312,7 @@ const servciepage = () => {
             "Anyone advised closure after PDA is confirmed on echocardiogram",
           ]}
           conclusion=""
-          buttonText="Book Appointment Now"
+          buttonText="Request a Consultation"
           imageSrc="/images/service/PDA Closure/3.webp"
           imageAlt="Doctor Consultation"
         />
@@ -327,7 +328,7 @@ const servciepage = () => {
         subtitle="Outcomes of Procedure Delay"
         risks={risksData}
         imageSrc="/images/service/PDA Closure/Rectangle 61.webp"
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
         imagePosition="left"
       />
       <section className="animate-gradient-circle text-white relative overflow-hidden">

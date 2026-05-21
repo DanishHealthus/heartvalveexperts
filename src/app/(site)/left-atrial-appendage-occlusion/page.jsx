@@ -7,6 +7,7 @@ import ProcedureDelayRisks from "@/component/Services/ProcedureDelayRisks";
 import FAQAccordion from "@/component/Services/FAQAccordion";
 import AppointmentCTA from "@/component/AppointmentCTA";
 import PatientSuccessStories from "@/component/PatientSuccessStories";
+import TaviSectionAll from "@/component/Services/TaviSectionAll";
 
 export const metadata = {
   title: "Left Atrial Appendage Occlusion (LAAO) Device Surgery Mumbai ",
@@ -194,7 +195,7 @@ const serviceSchema = {
   name: "Left Atrial Appendage Occlusion (LAAO)",
   description:
     "LAAO is a minimally invasive procedure that closes off the left atrial appendage to prevent blood clots and reduce stroke risk in atrial fibrillation patients who cannot take long-term blood thinners.",
-  procedureType: "TherapeuticProcedure",
+  procedureType: "http://schema.org/PercutaneousProcedure",
   bodyLocation: "Heart – Left Atrial Appendage",
   howPerformed:
     "A catheter is inserted through a vein, usually in the groin, and guided to the heart. A closure device such as the WATCHMAN™ is deployed at the opening of the left atrial appendage to seal it.",
@@ -233,7 +234,7 @@ const servciepage = () => {
         subpage="false"
         image="/images/service/LAAO/bread.webp"
       />
-      <TaviSection
+      <TaviSectionAll
         imageSrc="/images/service/LAAO/1.webp"
         imageAlt="TEER Surgery"
         imageTitle=""
@@ -243,12 +244,12 @@ const servciepage = () => {
           `Left Atrial Appendage Occlusion (LAAO) is a <a href="https://heartvalveexperts.com/blog/sternotomy-vs-minimally-invasive-heart-surgery" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">minimally invasive heart procedure</a> designed to prevent strokes in patients with atrial fibrillation (AF) who are at high risk of bleeding and cannot take long-term blood thinners. The procedure involves closing off the small pouch in the left atrium (called the left atrial appendage) where blood settles and forms clots in AF patients.`,
           "Using a small device called the Left Atrial Appendage Occlusion Device, the opening is sealed so clots can’t escape and cause a stroke. The procedure is typically done via a catheter through the groin and avoids open-heart surgery, making it safer for elderly patients or those with other medical conditions.",
         ]}
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
       />
       <TaviWhoFor
         sectionTag="Who It’s For?"
         heading="Who Needs LAAO Surgery/Procedure?"
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
         conditions={conditionsData}
         imageSrc="/images/service/LAAO/Rectangle 47.webp"
         imageAlt="Patient"
@@ -264,7 +265,7 @@ const servciepage = () => {
         subtitle="Outcomes of Procedure Delay"
         risks={risksData}
         imageSrc="/images/service/LAAO/Rectangle 49.webp"
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
       />
       <section className="animate-gradient-circle text-white relative overflow-hidden">
         <ProcedureTimeline

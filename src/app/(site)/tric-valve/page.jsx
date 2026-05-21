@@ -7,6 +7,7 @@ import ProcedureDelayRisks from "@/component/Services/ProcedureDelayRisks";
 import FAQAccordion from "@/component/Services/FAQAccordion";
 import AppointmentCTA from "@/component/AppointmentCTA";
 import PatientSuccessStories from "@/component/PatientSuccessStories";
+import TaviSectionAll from "@/component/Services/TaviSectionAll";
 
 export const metadata = {
   title: "TricValve Surgery/Procedure in Mumbai | Heart Valve Experts",
@@ -200,7 +201,7 @@ const serviceSchema = {
   name: "TricValve Transcatheter Bicaval Valve System",
   description:
     "TricValve is a minimally invasive, catheter-based procedure that places two biological valves in the superior and inferior vena cava to treat severe tricuspid regurgitation and reduce venous backflow.",
-  procedureType: "TherapeuticProcedure",
+  procedureType: "http://schema.org/PercutaneousProcedure",
   bodyLocation:
     "Heart – Superior vena cava (SVC), Inferior vena cava (IVC), Tricuspid valve region",
   howPerformed:
@@ -240,7 +241,7 @@ const servciepage = () => {
         subpage="false"
         image="/images/service/TricValve/bread.webp"
       />
-      <TaviSection
+      <TaviSectionAll
         imageSrc="/images/service/TricValve/1.webp"
         imageAlt="TEER Surgery"
         imageTitle=""
@@ -250,12 +251,12 @@ const servciepage = () => {
           "TricValve is a minimally invasive, catheter-based procedure designed for patients with severe tricuspid valve regurgitation who are not suitable candidates for open-heart surgery. Also called the transcatheter bicaval valve system, it implants two biological valves into the superior and inferior vena cava to manage the abnormal flow caused by a leaky tricuspid valve, reducing symptoms like leg swelling, liver congestion, and breathlessness.",
           "Unlike conventional tricuspid valve repair surgery/procedure in Mumbai, this method avoids opening the chest or manipulating the native valve. The implanted valves reroute venous return, lowering stress on the heart and organs. For those seeking alternatives to tricuspid valve replacement surgery, TricValve offers a safer, faster-recovery option guided by expert heart surgeons in Mumbai.",
         ]}
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
       />
       <TaviWhoFor
         sectionTag="Who It’s For?"
         heading="Who Needs TricValve Surgery/Procedure?"
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
         conditions={conditionsData}
         imageSrc="/images/service/TricValve/Rectangle 44.webp"
         imageAlt="Patient"
@@ -271,7 +272,7 @@ const servciepage = () => {
         subtitle="Outcomes of Procedure Delay"
         risks={risksData}
         imageSrc="/images/service/TricValve/Rectangle 46.webp"
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
       />
       <section className="animate-gradient-circle text-white relative overflow-hidden">
         <ProcedureTimeline

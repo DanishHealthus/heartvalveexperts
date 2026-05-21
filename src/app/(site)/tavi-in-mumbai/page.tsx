@@ -14,6 +14,7 @@ import TaviProMumbai from "@/component/TaviProMumbai";
 import ComparisonSection from "@/component/TaviComparison";
 import AppointmentCTAMumbai from "@/component/AppointmentCTAMumbai";
 import Link from "next/link";
+import TaviSectionAll from "@/component/Services/TaviSectionAll";
 
 export const metadata = {
     title: "TAVI (Transcatheter Aortic Valve Implantation) in Mumbai | Heart Valve Experts",
@@ -86,7 +87,7 @@ const serviceSchema = {
     name: "TAVI in Mumbai – Advanced Minimally Invasive Aortic Valve Replacement",
     description:
         "TAVI in Mumbai offers a minimally invasive alternative to traditional open-heart valve replacement surgery and is widely used for patients who are elderly or considered high surgical risk.",
-    procedureType: "TherapeuticProcedure",
+    procedureType: "http://schema.org/PercutaneousProcedure",
     bodyLocation: "Aortic root – Sinus of Valsalva",
     howPerformed:
         "Surgical repair is done via open-heart surgery using a patch or suture closure, often under cardiopulmonary bypass. In some cases, a minimally invasive or catheter-based closure is possible.",
@@ -160,7 +161,7 @@ const servciepage = () => {
                 subpage="false"
                 image="/images/service/TAVI/bread.webp"
             />
-            <TaviSection
+            <TaviSectionAll
                 imageSrc="/images/service/TAVI/1.webp"
                 imageAlt="TAVI (Transcatheter aortic valve implantation) in Mumbai at Heart Valve Experts"
                 imageTitle="TAVI (Transcatheter aortic valve implantation) in Mumbai"
@@ -171,7 +172,7 @@ const servciepage = () => {
                     "At Heart Valve Experts, patients are evaluated by a dedicated structural heart team with extensive experience in transcatheter valve therapies. Collectively, the team has performed close to 1000 TAVI procedures, making it one of the highest-volume TAVI programmes in Mumbai.",
                     `We provide comprehensive consultation, procedural planning, and follow-up care for patients seeking the <a target="_blank" href="https://heartvalveexperts.com/tavi" class="text-blue-600 underline">TAVI procedure</a> in Mumbai and across Maharashtra.`
                 ]}
-                buttonText="Book Appointment Now"
+                buttonText="Request a Consultation"
             />
             <section
                 className="text-white relative animate-gradient-circle overflow-hidden"
@@ -192,7 +193,7 @@ const servciepage = () => {
                             "Comprehensive ICU and post-procedure cardiac monitoring"
                         ]}
                         conclusion="Each patient undergoes structured evaluation before proceeding with TAVR(Transcatheter Aortic Valve Replacement) surgery in Mumbai to ensure clinical suitability and procedural safety."
-                        buttonText="Book Appointment Now"
+                        buttonText="Request a Consultation"
                         imageSrc="/images/service/TAVI/Rectangle 27.webp"
                         imageAlt="Heart Valve Surgery in Mumbai by Heart Valve Experts"
                     />
@@ -209,7 +210,7 @@ const servciepage = () => {
                             "Structured pre-procedure evaluation workflow"
                         ]}
                         conclusion="Location details, appointment scheduling, and directions are available at the time of consultation booking."
-                        buttonText="Book Appointment Now"
+                        buttonText="Request a Consultation"
                         imageSrc="/images/service/TMVR/Rectangle 33.webp"
                         imageAlt="Heart Valve Hospital in Mumbai by Heart Valve Experts"
                     />
@@ -227,7 +228,7 @@ const servciepage = () => {
                     "During the TAVR procedure in Mumbai, a new bioprosthetic valve is delivered through a catheter, most commonly via the femoral artery. The valve expands within the diseased valve and restores blood flow immediately.",
                     "For many patients, TAVI surgery in Mumbai provides an effective alternative to open surgical valve replacement."
                 ]}
-                buttonText="Book Appointment Now"
+                buttonText="Request a Consultation"
             />
             <FollowUpSection
                 tag="Who it’s For"
@@ -243,7 +244,7 @@ const servciepage = () => {
                     "Multiple comorbidities"
                 ]}
                 conclusion="Patients undergo detailed imaging and heart team evaluation before being considered for the TAVI procedure in Maharashtra."
-                buttonText="Book Appointment Now"
+                buttonText="Request a Consultation"
                 imageSrc="/images/service/tavi1.webp"
                 imageAlt="TAV or TAVR Treatment in Mumbai by Heart Valve Experts"
             />
@@ -338,7 +339,7 @@ const servciepage = () => {
                     "Overall health condition"
                 ]}
                 conclusion="Insurance coverage and government schemes in Maharashtra may apply based on individual policy terms."
-                buttonText="Book Appointment Now"
+                buttonText="Request a Consultation"
                 imageSrc="/images/service/tavi3.webp"
                 imageAlt="TAVI Cost in Mumbai"
             />

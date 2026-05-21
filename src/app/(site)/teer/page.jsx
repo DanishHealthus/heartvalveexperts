@@ -208,7 +208,7 @@ const serviceSchema = {
   name: "Transcatheter Edge-to-Edge Repair (TEER)",
   description:
     "TEER is a minimally invasive procedure that treats mitral valve regurgitation by using a clip device to repair the leaking valve leaflets via a catheter.",
-  procedureType: "TherapeuticProcedure",
+  procedureType: "http://schema.org/PercutaneousProcedure",
   bodyLocation: "Heart – Mitral Valve",
   howPerformed:
     "A catheter is inserted, typically via the femoral vein, guided to the mitral valve. A clip device (such as MitraClip or MyClip) grasps and approximates the valve leaflets to reduce backflow of blood.",
@@ -251,7 +251,7 @@ const servciepage = () => {
       <TaviWhoFor
         sectionTag="Who It’s For?"
         heading="Who Needs TEER Surgery/Procedure?"
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
         conditions={conditionsData}
         imageSrc="/images/service/TEER/Rectangle 35.webp"
         imageAlt="Patient"
@@ -267,7 +267,7 @@ const servciepage = () => {
         subtitle="Outcomes of Procedure Delay"
         risks={risksData}
         imageSrc="/images/service/TEER/Rectangle 37.webp"
-        buttonText="Book Appointment Now"
+        buttonText="Request a Consultation"
       />
       <section className="animate-gradient-circle text-white relative overflow-hidden">
         <ProcedureTimeline

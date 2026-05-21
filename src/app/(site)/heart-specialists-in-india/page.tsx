@@ -6,6 +6,7 @@ import AppointmentCTAMumbai from '@/component/AppointmentCTAMumbai';
 import FAQAccordion from '@/component/Services/FAQAccordion';
 import PatientSuccessStories from '@/component/PatientSuccessStories';
 import Doctors from '@/component/Doctors';
+import TaviSectionAll from '@/component/Services/TaviSectionAll';
 export const metadata = {
     title: "Best Heart Specialist in India | Heart Specialist Doctor India",
     description:
@@ -52,7 +53,7 @@ const serviceSchema = {
     "@type": "MedicalProcedure",
     name: metadata.title,
     description: metadata.description,
-    procedureType: "TherapeuticProcedure",
+    procedureType: "http://schema.org/PercutaneousProcedure",
     bodyLocation: "Aortic root – Sinus of Valsalva",
     // howPerformed:
     //   "Surgical repair is done via open-heart surgery using a patch or suture closure, often under cardiopulmonary bypass. In some cases, a minimally invasive or catheter-based closure is possible.",
@@ -126,10 +127,10 @@ const page = () => {
                 subpage="false"
                 image="/images/contact.webp"
             />
-            <TaviSection
+            <TaviSectionAll
                 imageSrc="/images/newservices/heart/1.webp"
                 imageAlt="Device Closure"
-        imageTitle=""
+                imageTitle=""
                 tag="About"
                 title="Expert Heart Specialists For Accurate Diagnosis And Confident Treatment Decisions"
                 description={[
@@ -137,7 +138,7 @@ const page = () => {
                     "At Heart Valve Experts, patients have access to experienced specialists in India who focus on careful evaluations, evidence-based recommendations, and patient-centered cardiac care."
                 ]}
 
-                buttonText="Book Appointment Now"
+                buttonText="Request a Consultation"
             />
 
             <section
@@ -154,7 +155,7 @@ const page = () => {
                             "Guiding decisions around medication, procedures, or surgery."
                         ]}
                         conclusion="Their role is to ensure patients receive timely, accurate, and appropriate care."
-                        buttonText="Book Appointment Now"
+                        buttonText="Request a Consultation"
                         imageSrc="/images/newservices/heart/2.webp"
                         imageAlt="Doctor Consultation"
                     />
@@ -171,7 +172,7 @@ const page = () => {
                             "A previous recommendation for heart surgery."
                         ]}
                         conclusion="Timely assessment can help prevent complications and unnecessary progression."
-                        buttonText="Book Appointment Now"
+                        buttonText="Request a Consultation"
                         imageSrc="/images/newservices/heart/3.webp"
                         imageAlt="reverse"
                     />
@@ -191,7 +192,7 @@ const page = () => {
                     "Heart failure and structural heart problems"
                 ]}
                 conclusion="Each condition requires individual assessment and a tailored care approach."
-                buttonText="Book Appointment Now"
+                buttonText="Request a Consultation"
                 imageSrc="/images/newservices/heart/4.webp"
                 imageAlt="Who is Eligible for TAVI Surgery in India?"
             />
@@ -206,7 +207,7 @@ const page = () => {
                     "Recommends next steps such as medical therapy, further testing, or intervention when required"
                 ]}
                 conclusion="Patients are encouraged to ask questions and fully understand their care plan."
-                buttonText="Book Appointment Now"
+                buttonText="Request a Consultation"
                 imageSrc="/images/newservices/heart/5.webp"
                 imageAlt="reverse"
             />
@@ -229,7 +230,7 @@ const page = () => {
                             "Reduce uncertainty before proceeding"
                         ]}
                         conclusion="Reduce uncertainty before proceeding"
-                        buttonText="Book Appointment Now"
+                        buttonText="Request a Consultation"
                         imageSrc="/images/newservices/heart/6.webp"
                         imageAlt="Doctor Consultation"
                     />
@@ -245,7 +246,7 @@ const page = () => {
                             "Experience in managing high-risk patients or those who are advised surgery"
                         ]}
                         conclusion="Recommendations are based on what is most appropriate for the individual patient."
-                        buttonText="Book Appointment Now"
+                        buttonText="Request a Consultation"
                         imageSrc="/images/newservices/heart/7.webp"
                         imageAlt="reverse"
                     />

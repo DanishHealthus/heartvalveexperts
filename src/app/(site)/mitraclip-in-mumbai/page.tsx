@@ -7,6 +7,7 @@ import Doctors from "@/component/Doctors";
 import TaviProMumbai from "@/component/TaviProMumbai";
 import ComparisonSection from "@/component/TaviComparison";
 import AppointmentCTAMumbai from "@/component/AppointmentCTAMumbai";
+import TaviSectionAll from "@/component/Services/TaviSectionAll";
 
 export const metadata = {
     title: "MitraClip in Mumbai | MitraClip Specialist in Mumbai",
@@ -72,7 +73,7 @@ const serviceSchema = {
     name: "MitraClip in Mumbai – Advanced Minimally Invasive Mitral Valve Repair",
     description:
         "MitraClip in Mumbai offers a minimally invasive option for repairing a leaking mitral valve without the need for open-heart surgery.",
-    procedureType: "TherapeuticProcedure",
+    procedureType: "http://schema.org/PercutaneousProcedure",
     bodyLocation: "Aortic root – Sinus of Valsalva",
     howPerformed:
         "Surgical repair is done via open-heart surgery using a patch or suture closure, often under cardiopulmonary bypass. In some cases, a minimally invasive or catheter-based closure is possible.",
@@ -146,7 +147,7 @@ const servciepage = () => {
                 subpage="false"
                 image="/images/service/TMVR/bread.webp"
             />
-            <TaviSection
+            <TaviSectionAll
                 imageSrc="/images/service/mitra1.webp"
                 imageAlt="MitraClip in Mumbai – Advanced Minimally Invasive Mitral Valve Repair"
                 imageTitle=""
@@ -157,7 +158,7 @@ const servciepage = () => {
                     `A specialised team of <a target="_blank" href="https://heartvalveexperts.com/cardiologist-mumbai" class="text-blue-600 underline"> interventional cardiologists</a>, experienced in complex valve interventions, assesses patients at Heart Valve Experts. Collectively, the team has performed 200+ MitraClip (mTEER) procedures, making it one of the highest-volume Clip device procedures in Mumbai.`,
                     "We provide comprehensive consultation, procedural planning, and long-term follow-up for individuals seeking the MitraClip procedure in Mumbai and across India."
                 ]}
-                buttonText="Book Appointment Now"
+                buttonText="Request a Consultation"
             />
             <section
                 className="text-white relative animate-gradient-circle overflow-hidden"
@@ -178,7 +179,7 @@ const servciepage = () => {
                             "Comprehensive ICU and cardiac monitoring support"
                         ]}
                         conclusion="Each patient is carefully evaluated before proceeding with MitraClip surgery in Mumbai to ensure clinical suitability and optimal outcomes."
-                        buttonText="Book Appointment Now"
+                        buttonText="Request a Consultation"
                         imageSrc="/images/service/mitra4.webp"
                         imageAlt="Doctor Consultation"
                     />
@@ -195,7 +196,7 @@ const servciepage = () => {
                             "Post-procedure monitoring and rehabilitation support"
                         ]}
                         conclusion="All consultations are appointment-based, with guidance provided for scheduling and directions."
-                        buttonText="Book Appointment Now"
+                        buttonText="Request a Consultation"
                         imageSrc="/images/service/mitra5.webp"
                         imageAlt="reverse"
                     />
@@ -213,7 +214,7 @@ const servciepage = () => {
                     `During the <a target="_blank" href="https://heartvalveexperts.com/blog/mitraclip-procedure" class="text-blue-600 underline"> MitraClip procedure </a> in Mumbai, a small clip is delivered to the mitral valve via a catheter inserted through a vein in the groin. The device helps the valve leaflets close more effectively, reducing leakage and improving symptoms.`,
                     "For patients considered high risk for open surgery, MitraClip surgery in Mumbai provides a safer alternative with a shorter recovery time."
                 ]}
-                buttonText="Book Appointment Now"
+                buttonText="Request a Consultation"
             />
             <FollowUpSection
                 tag="Who it’s For"
@@ -229,7 +230,7 @@ const servciepage = () => {
                     "Multiple comorbidities"
                 ]}
                 conclusion="Eligibility is determined through detailed imaging, including TEE and 3D echocardiography, along with heart team evaluation before proceeding with the MitraClip procedure in Maharashtra."
-                buttonText="Book Appointment Now"
+                buttonText="Request a Consultation"
                 imageSrc="/images/service/BMV/Rectangle 38.webp"
                 imageAlt="Who is Eligible for MitraClip Surgery in Mumbai?"
             />
@@ -319,7 +320,7 @@ const servciepage = () => {
                     "Overall patient condition"
                 ]}
                 conclusion="Insurance coverage and applicable government schemes in Maharashtra may provide financial support depending on policy terms."
-                buttonText="Book Appointment Now"
+                buttonText="Request a Consultation"
                 imageSrc="/images/service/mitra7.webp"
                 imageAlt="MitraClip Cost in Mumbai"
             />
