@@ -21,7 +21,7 @@ const HeroValve = () => {
                 </Link>
             </header>
             <div className="grid grid-cols-1 lg:grid-cols-[53%_45%] gap-10 2xl:gap-12 px-6 md:px-12 lg:px-10 xl:px-12 2xl:px-24 py-10 items-center">
-                <div className="order-2 lg:order-1">
+                <div className="order-1">
                     <h1 className="text-3xl md:text-4xl xl:text-5xl font-semibold leading-tight mb-6">
                         Advised Open Heart <br /> Surgery for Valve Disease?
                     </h1>
@@ -61,7 +61,7 @@ const HeroValve = () => {
                     </div>
                 </div>
                 {/* Right Form */}
-                <div className="order-1 lg:order-2">
+                <div className="order-2">
                     <ValveConsultationForm />
                 </div>
             </div>
