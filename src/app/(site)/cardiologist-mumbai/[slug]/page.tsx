@@ -76,7 +76,7 @@ const staticDoctorSchema: Record<string, PhysicianSchema> = {
     image: "https://backend.heartvalveexperts.com/wp-content/uploads/2025/09/Dr.webp",
     description:
       "Dr. Ankur U. Phatarpekar is a leading Interventional and Structural Cardiologist in Mumbai with expertise in TAVI, TMVR, TEER, device closure procedures, and advanced coronary interventions.",
-    medicalSpecialty: "Interventional Cardiology",
+    medicalSpecialty: "http://schema.org/Cardiovascular",
     url: "https://heartvalveexperts.com/cardiologist-mumbai/dr-ankur-u-phatarpekar",
     address: {
       "@type": "PostalAddress",
@@ -99,7 +99,7 @@ const staticDoctorSchema: Record<string, PhysicianSchema> = {
       "https://backend.heartvalveexperts.com/wp-content/uploads/2025/09/Rectangle-29.webp",
     description:
       "Dr. Meghav Manoj Shah is a structural and interventional cardiologist in Mumbai with expertise in TAVI, Mitral TEER, device closure procedures, and complex coronary interventions.",
-    medicalSpecialty: "Interventional Cardiology",
+    medicalSpecialty: "http://schema.org/Cardiovascular",
     url: "https://heartvalveexperts.com/cardiologist-mumbai/dr-meghav-manoj-shah",
     address: {
       "@type": "PostalAddress",
@@ -122,7 +122,7 @@ const staticDoctorSchema: Record<string, PhysicianSchema> = {
       "https://backend.heartvalveexperts.com/wp-content/uploads/2025/09/Rectangle-32.webp",
     description:
       "Dr. Amit S. Gangwani is a structural and interventional cardiologist based in Mumbai, specialising in TAVI, mitral and tricuspid valve interventions, and congenital heart disease treatments.",
-    medicalSpecialty: "Interventional Cardiology",
+    medicalSpecialty: "http://schema.org/Cardiovascular",
     url: "https://heartvalveexperts.com/cardiologist-mumbai/dr-amit-s-gangwani",
     address: {
       "@type": "PostalAddress",
@@ -145,7 +145,7 @@ const staticDoctorSchema: Record<string, PhysicianSchema> = {
       "https://backend.heartvalveexperts.com/wp-content/uploads/2025/09/Rectangle-31.webp",
     description:
       "Dr. Harshad Sagar Uttamrao is a structural and interventional cardiologist based in Mumbai, with advanced training in intravascular imaging (OCT) and intravascular lithotripsy.",
-    medicalSpecialty: "Interventional Cardiology",
+    medicalSpecialty: "http://schema.org/Cardiovascular",
     url: "https://heartvalveexperts.com/cardiologist-mumbai/dr-harshad-sagar-uttamrao",
     address: {
       "@type": "PostalAddress",
@@ -168,7 +168,7 @@ const staticDoctorSchema: Record<string, PhysicianSchema> = {
       "https://backend.heartvalveexperts.com/wp-content/uploads/2025/09/Rectangle-30.webp",
     description:
       "Dr. Kunal A. Patankar is an experienced interventional and structural cardiologist based in Mumbai, with expertise in cardiovascular diagnostics, minimally invasive interventions, and comprehensive heart failure management.",
-    medicalSpecialty: "Interventional Cardiology",
+    medicalSpecialty: "http://schema.org/Cardiovascular",
     url: "https://heartvalveexperts.com/cardiologist-mumbai/dr-kunal-ajay-patankar",
     address: {
       "@type": "PostalAddress",
@@ -211,7 +211,7 @@ export default async function DoctorPage({ params }: { params: { slug: string } 
       name: doctor.title,
       image: doctor.featured_image?.url,
       description: doctor.cardiologist_description,
-      medicalSpecialty: "Interventional Cardiology",
+      medicalSpecialty: "http://schema.org/Cardiovascular",
       url: `https://heartvalveexperts.com/cardiologist-mumbai/${doctor.slug}`,
     };
 
