@@ -106,32 +106,32 @@ const nextConfig: NextConfig = {
       // Page-specific redirects
       {
         source: "/articles",
-        destination: "http://heartvalveexperts.com/blog",
+        destination: "https://heartvalveexperts.com/blog",
         permanent: true,
       },
       {
         source: "/bmv-balloon-mitral-valvotomy",
-        destination: "http://heartvalveexperts.com/balloon-mitral-valvotomy",
+        destination: "https://heartvalveexperts.com/balloon-mitral-valvotomy",
         permanent: true,
       },
       {
         source: "/case-study-carotid-artery-an2",
-        destination: "http://heartvalveexperts.com/case-studies",
+        destination: "https://heartvalveexperts.com/case-studies",
         permanent: true,
       },
       {
         source: "/mitra-clip-procedure",
-        destination: "http://heartvalveexperts.com/blog/mitraclip-procedure",
+        destination: "https://heartvalveexperts.com/blog/mitraclip-procedure",
         permanent: true,
       },
       {
         source: "/pfo-closure",
-        destination: "http://heartvalveexperts.com/device-closure/patent-foramen-ovale",
+        destination: "https://heartvalveexperts.com/device-closure/patent-foramen-ovale",
         permanent: true,
       },
       {
         source: "/rsov",
-        destination: "http://heartvalveexperts.com/ruptured-sinus-of-valsalva",
+        destination: "https://heartvalveexperts.com/ruptured-sinus-of-valsalva",
         permanent: true,
       },
       {

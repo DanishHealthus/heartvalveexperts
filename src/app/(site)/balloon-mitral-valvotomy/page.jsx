@@ -118,7 +118,7 @@ const benefitsData2 = [
   {
     iconSrc: "/images/service/icon/b1.svg",
     title: "Mumbai’s Trusted BMV Specialist Team",
-    desc: `Our BMV doctors in Mumbai have successfully treated hundreds of patients with <a href="https://heartvalveexperts.com/blog/treatment-modalities-available-for-severe-mitral-stenosis?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">mitral valve stenosis</a> using the latest balloon dilation techniques.`,
+    desc: `Our BMV doctors in Mumbai have successfully treated hundreds of patients with <a href="https://heartvalveexperts.com/blog/treatment-modalities-available-for-severe-mitral-stenosis" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">mitral valve stenosis</a> using the latest balloon dilation techniques.`,
   },
   {
     iconSrc: "/images/service/icon/b2.svg",

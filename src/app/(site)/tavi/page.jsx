@@ -141,7 +141,7 @@ const benefitsData2 = [
   {
     iconSrc: "/images/service/icon/b4.svg",
     title: "Alternative Access Expertise",
-    desc: `Our team has extensive experience performing the TAVI surgery in Mumbai through <a href="https://heartvalveexperts.com/blog/alternative-routes-for-tavi?utm" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">alternative access routes</a> when standard options are not viable.`,
+    desc: `Our team has extensive experience performing the TAVI surgery in Mumbai through <a href="https://heartvalveexperts.com/blog/alternative-routes-for-tavi" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">alternative access routes</a> when standard options are not viable.`,
   },
   {
     iconSrc: "/images/service/icon/b5.svg",
@@ -271,7 +271,7 @@ const servciepage = () => {
         tag="About"
         title="What is TAVI Surgery/Procedure?"
         description={[
-          `TAVI, or Transcatheter Aortic Valve Implantation, is a minimally invasive procedure used to treat a narrowed aortic valve, also known as <a class="text-blue-500 hover:text-red-500" style="text-decoration: none;" href="https://heartvalveexperts.com/blog/aortic-stenosis-symptoms-risks-treatments?utm" target="_blank" rel="noopener noreferrer">aortic stenosis</a>. It is also referred to as TAVR surgery/procedure, which stands for Transcatheter Aortic Valve Replacement. Instead of opening the chest as in traditional surgery, the TAVI surgery in Mumbai is a suture-less procedure.`,
+          `TAVI, or Transcatheter Aortic Valve Implantation, is a minimally invasive procedure used to treat a narrowed aortic valve, also known as <a class="text-blue-500 hover:text-red-500" style="text-decoration: none;" href="https://heartvalveexperts.com/blog/aortic-stenosis-symptoms-risks-treatments" target="_blank" rel="noopener noreferrer">aortic stenosis</a>. It is also referred to as TAVR surgery/procedure, which stands for Transcatheter Aortic Valve Replacement. Instead of opening the chest as in traditional surgery, the TAVI surgery in Mumbai is a suture-less procedure.`,
           `It involves inserting a new valve through a catheter, usually via the femoral artery in the thigh, and positioning it inside the damaged valve. The <a class="text-blue-500 hover:text-red-500" style="text-decoration: none;" href="https://heartvalveexperts.com/blog/tavi-procedure-cost-in-india" target="_blank" rel="noopener noreferrer">TAVI procedure</a> in Mumbai is especially recommended for patients who are at high risk for open-heart surgery due to advanced age or other underlying health conditions.`,
         ]}
         buttonText="Request a Consultation"
