@@ -3,7 +3,11 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import Swal from "sweetalert2";
 
-export default function CallbackForm({ url }: any) {
+interface data{
+    url:string
+}
+
+export default function CallbackForm({ url }: data) {
     const router = useRouter();
     const [form, setForm] = useState({
         name: "",
