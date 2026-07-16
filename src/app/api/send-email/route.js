@@ -38,8 +38,8 @@ export async function POST(req) {
       port: 587,
       secure: false,
       auth: {
-        user: "ithealthus@gmail.com",
-        pass: "mtxz gqin ddhz zfqk",
+        user: "danish@healthus.ai",
+        pass: "odcp rsng jnfu dsys",
       },
     });
 

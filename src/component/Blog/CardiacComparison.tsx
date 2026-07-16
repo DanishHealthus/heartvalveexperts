@@ -14,6 +14,7 @@ import CallbackForm from "../CallbackForm";
 interface BlogData {
   image?: string;
   title?: string;
+  slug?:string;
   long_description?: string;
 }
 
@@ -22,7 +23,7 @@ interface CardiacComparisonProps {
 }
 
 export default function CardiacComparison({ blog }: CardiacComparisonProps) {
-  // console.log(blog,"tra danish");
+  console.log(blog,"tra danish");
   const pathname = usePathname();
   const currentUrl = `${process.env.NEXT_PUBLIC_SITE_URL || "https://heartvalveexperts.com"}${pathname}`;
   const [toc, setToc] = useState<{ id: string; text: string; level: number }[]>([]);
@@ -117,7 +118,7 @@ export default function CardiacComparison({ blog }: CardiacComparisonProps) {
                                 via-white/0 to-transparent blur-2xl opacity-70"></div>
 
               </div>
-              <CallbackForm/>
+              <CallbackForm url={`https://heartvalveexperts.com/blog/${blog.slug}`}/>
             </div>
           )}
         </div>
