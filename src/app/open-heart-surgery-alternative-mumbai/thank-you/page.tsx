@@ -19,6 +19,13 @@ const ThankYouPage = () => {
             `,
           }}
         />
+         <Script id="google-conversion-event" strategy="afterInteractive">
+        {`
+          gtag('event', 'conversion', {
+            'send_to': 'AW-17726300204/7ABuCOSOidkbEKzAx4RC'
+          });
+        `}
+      </Script>
       </head>
       <body>
         <noscript>
