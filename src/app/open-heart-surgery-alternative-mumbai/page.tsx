@@ -108,6 +108,20 @@ const page = () => {
     <>
       <head>
         <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17726300204"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-17726300204');
+          `}
+        </Script>
+        {/* <Script
           id="gtm-script"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -128,7 +142,7 @@ const page = () => {
                 y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
             })(window, document, "clarity", "script", "xemf3uhpg7");
           `}
-        </Script>
+        </Script> */}
       </head>
       <body>
         <noscript>
