@@ -6,13 +6,6 @@ const ThankYouPage = () => {
   return (
     <>
       <head>
-        <Script id="hve-conversion">
-          {`
-          gtag('event', 'conversion', {
-            'send_to': 'AW-17726300204/7ABuCOSOidkbEKzAx4RC'
-          });
-        `}
-        </Script>
         <Script
           id="gtm-script"
           strategy="afterInteractive"
@@ -26,7 +19,7 @@ const ThankYouPage = () => {
             `,
           }}
         />
-        <Script id="google-conversion-event" strategy="afterInteractive">
+       <Script id="hve-conversion">
           {`
           gtag('event', 'conversion', {
             'send_to': 'AW-17726300204/7ABuCOSOidkbEKzAx4RC'
