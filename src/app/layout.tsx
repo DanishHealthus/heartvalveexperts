@@ -12,10 +12,40 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">      
-      {/* <body> */}
+    <html lang="en">
+      <head>
+        <script id="google-ads">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-17726300204');
+          `}
+        </script>
+        <Script id="hve-conversion">
+          {`
+          gtag('event', 'conversion', {
+            'send_to': 'AW-17726300204/7ABuCOSOidkbEKzAx4RC'
+          });
+        `}
+        </Script>
+      </head>
+      <body>
+        {/* <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TVQ5P76L"
+            height="0"
+            width="0"
+            style={{
+              display: "none",
+              visibility: "hidden",
+            }}
+          />
+        </noscript> */}
+
         {children}
-      {/* </body> */}
+      </body>
     </html>
   );
 }
