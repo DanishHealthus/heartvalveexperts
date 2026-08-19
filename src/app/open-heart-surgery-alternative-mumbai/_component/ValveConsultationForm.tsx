@@ -40,39 +40,50 @@ const ValveConsultationForm = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!validate()) return;
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
 
-    try {
-      setLoading(true);
-      setSuccess("");
+  if (!validate()) return;
 
-      const res = await fetch("/api/landing-mail", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
+  try {
+    setLoading(true);
+    setSuccess("");
 
-      // const data: { message?: string } = await res.json();
+    const res = await fetch("/api/landing-mail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
+    });
 
-      // if (!res.ok) {
-      //   throw new Error(data.message || "Something went wrong");
-      // }
-
-      setForm({ name: "", phone: "", city: "", help: "", notes: "" });
-
-      router.push("/open-heart-surgery-alternative-mumbai/thank-you");
-    } catch (err: unknown) {
-      if (err instanceof Error) {
-        alert(err.message);
-      } else {
-        alert("Failed to submit form");
-      }
-    } finally {
-      setLoading(false);
+    if (!res.ok) {
+      throw new Error("Failed to submit form");
     }
-  };
+
+    // Clear form
+    setForm({
+      name: "",
+      phone: "",
+      city: "",
+      help: "",
+      notes: "",
+    });
+
+    // Immediately redirect
+    router.push("/open-heart-surgery-alternative-mumbai/thank-you");
+  } catch (err) {
+    console.error(err);
+
+    alert(
+      err instanceof Error
+        ? err.message
+        : "Failed to submit form"
+    );
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <div className="bg-white/15 backdrop-blur-xl rounded-3xl p-6 md:p-8 max-w-lg w-full mx-auto">
