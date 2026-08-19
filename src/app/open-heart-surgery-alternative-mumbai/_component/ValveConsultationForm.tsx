@@ -54,11 +54,11 @@ const ValveConsultationForm = () => {
         body: JSON.stringify(form),
       });
 
-      const data: { message?: string } = await res.json();
+      // const data: { message?: string } = await res.json();
 
-      if (!res.ok) {
-        throw new Error(data.message || "Something went wrong");
-      }
+      // if (!res.ok) {
+      //   throw new Error(data.message || "Something went wrong");
+      // }
 
       setForm({ name: "", phone: "", city: "", help: "", notes: "" });
 
