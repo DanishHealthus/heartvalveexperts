@@ -68,6 +68,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </noscript> */}
 
         {children}
+        <Script
+          src="https://india.kenyt.ai/botapp/ChatbotUI/dist/js/bot-loader.js"
+          strategy="afterInteractive"
+          data-bot="51349922"
+        />
       </body>
     </html>
   );

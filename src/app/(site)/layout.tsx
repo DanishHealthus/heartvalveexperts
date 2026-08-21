@@ -70,12 +70,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <Footer />
         {/* Kenyt Chatbot */}        
-        <script
+        {/* <script
           defer
           src="https://india.kenyt.ai/botapp/ChatbotUI/dist/js/bot-loader.js"
           type="text/javascript"
           data-bot="51349922"
-        ></script>
+        ></script> */}
       </body>
     </>
   );
