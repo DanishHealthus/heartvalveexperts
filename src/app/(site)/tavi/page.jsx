@@ -42,7 +42,7 @@ const conditionsData = [
   },
   {
     title: "Multiple comorbidities",
-    desc: "Patients with combined health issues such as diabetes, hypertension, or prior stroke are often better suited for minimally invasive options like the TAVI surgery in Mumbai.",
+    desc: "Patients with combined health issues such as diabetes, hypertension, or prior stroke are often better suited for minimally invasive options like TAVI.",
   },
 ];
 
@@ -126,7 +126,7 @@ const benefitsData2 = [
   {
     iconSrc: "/images/service/icon/b1.svg",
     title: "City’s Leading TAVI Team",
-    desc: "Our specialists have performed the highest number of TAVI surgeries in Mumbai, including complex and high-risk cases.",
+    desc: "Our specialists have performed the highest number of TAVI surgeries, including complex and high-risk cases.",
   },
   {
     iconSrc: "/images/service/icon/b2.svg",
@@ -136,12 +136,12 @@ const benefitsData2 = [
   {
     iconSrc: "/images/service/icon/b3.svg",
     title: "Trusted by Patients Nationwide",
-    desc: "Patients across India seek us out for our outcomes and the reputation of having the best TAVI surgeon/operator in Mumbai.",
+    desc: "Patients across India seek us out for our outcomes and the reputation of having the best TAVI surgeon/operator.",
   },
   {
     iconSrc: "/images/service/icon/b4.svg",
     title: "Alternative Access Expertise",
-    desc: `Our team has extensive experience performing the TAVI surgery in Mumbai through <a href="https://heartvalveexperts.com/blog/alternative-routes-for-tavi" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">alternative access routes</a> when standard options are not viable.`,
+    desc: `Our team has extensive experience performing TAVI through <a href="https://heartvalveexperts.com/blog/alternative-routes-for-tavi" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">alternative access routes</a> when standard options are not viable.`,
   },
   {
     iconSrc: "/images/service/icon/b5.svg",
@@ -225,7 +225,7 @@ const serviceSchema = {
   "description":
     "TAVI is a minimally invasive procedure in which a new aortic valve is implanted via a catheter, without the need for open-heart surgery.",
   "procedureType": "http://schema.org/PercutaneousProcedure",
-  "bodyLocation": "Heart – Aortic Valve",
+  "bodyLocation": "Heart - Aortic Valve",
   "howPerformed":
     "A catheter is inserted into an artery, typically in the groin or chest, and guided to the aortic valve. A collapsible replacement valve is delivered through the catheter and expanded inside the diseased valve.",
   "preparation":
@@ -235,19 +235,19 @@ const serviceSchema = {
   "url": "https://heartvalveexperts.com/tavi",
 };
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqData.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
-  };
- 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqData.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+};
+
 const servciepage = () => {
   return (
     <div>
@@ -271,8 +271,9 @@ const servciepage = () => {
         tag="About"
         title="What is TAVI Surgery/Procedure?"
         description={[
-          `TAVI, or Transcatheter Aortic Valve Implantation, is a minimally invasive procedure used to treat a narrowed aortic valve, also known as <a class="text-blue-500 hover:text-red-500" style="text-decoration: none;" href="https://heartvalveexperts.com/blog/aortic-stenosis-symptoms-risks-treatments" target="_blank" rel="noopener noreferrer">aortic stenosis</a>. It is also referred to as TAVR surgery/procedure, which stands for Transcatheter Aortic Valve Replacement. Instead of opening the chest as in traditional surgery, the TAVI surgery in Mumbai is a suture-less procedure.`,
-          `It involves inserting a new valve through a catheter, usually via the femoral artery in the thigh, and positioning it inside the damaged valve. The <a class="text-blue-500 hover:text-red-500" style="text-decoration: none;" href="https://heartvalveexperts.com/blog/tavi-procedure-cost-in-india" target="_blank" rel="noopener noreferrer">TAVI procedure</a> in Mumbai is especially recommended for patients who are at high risk for open-heart surgery due to advanced age or other underlying health conditions.`,
+          `TAVI, or Transcatheter Aortic Valve Implantation, is a minimally invasive procedure used to treat a narrowed aortic valve, also known as <a class="text-blue-500 hover:text-red-500" style="text-decoration: none;" href="https://heartvalveexperts.com/blog/aortic-stenosis-symptoms-risks-treatments" target="_blank" rel="noopener noreferrer">aortic stenosis</a>. It is also referred to as TAVR surgery/procedure, which stands for Transcatheter Aortic Valve Replacement. Instead of opening the chest as in traditional surgery, TAVI surgery is a suture-less procedure.`,
+          `It involves inserting a new valve through a catheter, usually via the femoral artery in the thigh, and positioning it inside the damaged valve. The <a class="text-blue-500 hover:text-red-500" style="text-decoration: none;" href="https://heartvalveexperts.com/blog/tavi-procedure-cost-in-india" target="_blank" rel="noopener noreferrer">TAVI procedure</a> is especially recommended for patients who are at high risk for open-heart surgery due to advanced age or other underlying health conditions.`,
+          `Patients looking for specialist evaluation can learn more about our <a class="text-blue-500 hover:text-red-500" style="text-decoration: none;" href="https://heartvalveexperts.com/tavi-in-mumbai" target="_blank" rel="noopener noreferrer">TAVI treatment in Mumbai.</a>`
         ]}
         buttonText="Request a Consultation"
       />

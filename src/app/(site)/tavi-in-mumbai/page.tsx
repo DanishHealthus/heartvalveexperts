@@ -170,7 +170,7 @@ const servciepage = () => {
                 description={[
                     "Timely treatment is essential if you or your loved one has been diagnosed with severe aortic stenosis. TAVI (Transcatheter aortic valve implantation) in Mumbai offers a minimally invasive alternative to traditional open-heart valve replacement surgery and is widely used for patients who are elderly or considered high surgical risk.",
                     "At Heart Valve Experts, patients are evaluated by a dedicated structural heart team with extensive experience in transcatheter valve therapies. Collectively, the team has performed close to 1000 TAVI procedures, making it one of the highest-volume TAVI programmes in Mumbai.",
-                    `We provide comprehensive consultation, procedural planning, and follow-up care for patients seeking the <a target="_blank" href="https://heartvalveexperts.com/tavi" class="text-blue-600 underline">TAVI procedure</a> in Mumbai and across Maharashtra.`
+                    `We provide comprehensive consultation, procedural planning, and follow-up care for patients seeking the TAVI procedure in Mumbai and across Maharashtra.`
                 ]}
                 buttonText="Request a Consultation"
             />
