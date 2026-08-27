@@ -84,7 +84,11 @@ const handleSubmit = async (e: React.FormEvent) => {
     setLoading(false);
   }
 };
-
+const isFormValid =
+  form.name.trim() !== "" &&
+  /^\d{10}$/.test(form.phone) &&
+  form.city.trim() !== "" &&
+  form.help.trim() !== "";
   return (
     <div className="bg-white/15 backdrop-blur-xl rounded-3xl p-6 md:p-8 max-w-lg w-full mx-auto">
       <h3 className="text-lg md:text-xl xl:text-2xl font-semibold mb-6">
@@ -195,12 +199,16 @@ const handleSubmit = async (e: React.FormEvent) => {
 
         {/* Submit */}
         <button
-          type="submit"
-          disabled={loading}
-          className="w-full bg-white cursor-pointer text-black font-medium py-3 rounded-full hover:bg-white/90 transition disabled:opacity-60"
-        >
-          {loading ? "Submitting..." : "Book Consultation"}
-        </button>
+  type="submit"
+  disabled={loading || !isFormValid}
+  className={`w-full font-medium py-3 rounded-full transition ${
+    loading || !isFormValid
+      ? "bg-white/50 text-black/50 cursor-not-allowed"
+      : "bg-white text-black cursor-pointer hover:bg-white/90"
+  }`}
+>
+  {loading ? "Submitting..." : "Book Consultation"}
+</button>
 
         {success && (
           <p className="text-green-400 text-sm text-center mt-2">
