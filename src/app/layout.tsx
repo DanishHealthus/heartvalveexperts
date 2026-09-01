@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
-        <script id="google-ads">
+        {/* <script id="google-ads">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             'send_to': 'AW-17726300204/7ABuCOSOidkbEKzAx4RC'
           });
         `}
-        </Script>
+        </Script> */}
          {/* Microsoft Clarity */}
         <Script
           id="microsoft-clarity"
