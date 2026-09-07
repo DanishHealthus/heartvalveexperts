@@ -116,7 +116,7 @@ export default function WhoWeAreHero() {
           }}
           className="text-xl md:text-3xl text-gray-800 leading-10"
         >
-          Specializing in advanced non/minimally invasive procedures for complex valve and structural heart conditions, Heart Valve Experts (HVE) is recognized as Mumbai’s leading valve clinic, dedicated to delivering world-class heart care with precision, compassion, and safety.
+          At the Forefront of Structural Heart Care : Heart Valve Experts brings together specialists in advanced, minimally invasive treatments for complex valve and structural heart conditions, helping every patient understand their options and find the right way forward.
         </p>
 
         <div

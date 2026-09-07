@@ -21,25 +21,25 @@ export default function Footer() {
   const navLinks = [
     { label: "Home", url: "/" },
     { label: "Cardiologists", url: "/cardiologist-mumbai" },
-    { label: "Blogs", url: "/blog" },
+    { label: "Expert Opinion", url: "/expert-opinion-for-heart-surgery" },
     { label: "Case Studies", url: "/case-studies" },
     { label: "Get In Touch", url: "/contact-us" },
-    { label: "Expert Opinion", url: "/expert-opinion-for-heart-surgery" },
+    { label: "Blogs", url: "/blog" },
     { label: "Privacy Policy", url: "/privacy-policy" },
   ];
 
   const procedures = [
-    { name: "TAVI", url: "/tavi" },
-    { name: "TMVR", url: "/tmvr" },
-    { name: "TEER", url: "/teer" },
-    { name: "BMV", url: "/balloon-mitral-valvotomy" },
-    { name: "RSOV", url: "/ruptured-sinus-of-valsalva" },
-    { name: "TricValve", url: "/tric-valve" },
-    { name: "LAAO", url: "/left-atrial-appendage-occlusion" },
-    { name: "ASD", url: "/device-closure/atrial-septal-defect" },
-    { name: "PFO", url: "/device-closure/patent-foramen-ovale" },
-    { name: "VSD", url: "/device-closure/ventricular-septal-defect " },
-    { name: "PDA", url: "/device-closure/patent-ductus-arteriosus" },
+    { name: "Transcatheter Aortic Valve Implantation", url: "/tavi" },
+    { name: "Transcatheter Mitral Valve Repair", url: "/tmvr" },
+    { name: "Transcatheter Edge-to-Edge Repair", url: "/teer" },
+    { name: "Balloon Mitral Valvotomy", url: "/balloon-mitral-valvotomy" },
+    { name: "Ruptured Sinus of Valsalva", url: "/ruptured-sinus-of-valsalva" },
+    { name: "Tricuspid Valve Repair", url: "/tric-valve" },
+    { name: "Left Atrial Appendage Occlusion", url: "/left-atrial-appendage-occlusion" },
+    { name: "Atrial Septal Defect", url: "/device-closure/atrial-septal-defect" },
+    { name: "Patent Foramen Ovale", url: "/device-closure/patent-foramen-ovale" },
+    { name: "Ventricular Septal Defect", url: "/device-closure/ventricular-septal-defect " },
+    { name: "Patent Ductus Arteriosus", url: "/device-closure/patent-ductus-arteriosus" },
   ];
 
   const proceduresinmumbai = [
@@ -49,18 +49,18 @@ export default function Footer() {
     { name: "Minimally Invasive in Mumbai", url: "/minimal-invasive-cardiac-surgery-mumbai" },
     { name: "Minimally Invasive in India", url: "/minimal-invasive-cardiac-surgery-india" },
     { name: "Minimally Invasive Heart Valve Surgery", url: "/minimal-invasive-heart-valve-surgery" },
+    { name: "Balloon Mitral Valvotomy in Mumbai", url: "/balloon-mitral-valvotomy-in-mumbai" },
     { name: "Heart Specialists in Mumbai", url: "/heart-specialists-in-mumbai" },
     { name: "Heart Specialists in India", url: "/heart-specialists-in-india" },
-    { name: "Balloon Mitral Valvotomy in Mumbai", url: "/balloon-mitral-valvotomy-in-mumbai" },
   ];
   return (
     <footer
       className="relative animate-gradient-circle text-white px-6 md:px-16 lg:px-20 py-12"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-[30%_70%] gap-5 lg:gap-0">
           {/* Left Column - Logo + Contact */}
-          <div>
+          <div className="">
             <Image
               width={220} height={100}
               src="/images/homeimages/logo.png"
@@ -72,17 +72,37 @@ export default function Footer() {
               <p className="text-lg">heartvalveexperts@gmail.com</p>
               <p className="text-lg">+91 8828228266</p>
               <p className="text-lg">
-                Silver Apartments, A12, Shankar Ghanekar Rd, <br />
-                behind Siddhivinayak Mandir, Prabhadevi, <br />
-                Mumbai, Maharashtra 400025
+                2nd Floor, Sane Guruji Premises, 386, <br />
+                Swatantryaveer Savarkar Rd, <br />
+                opp. Siddhivinayak Temple, Dadar West,  <br />
+                Prabhadevi, Mumbai, Maharashtra 400025
               </p>
+            </div>
+            <div>
+              <p style={{ letterSpacing: '2px' }} className="uppercase tracking-wide text-gray-400 my-4 text-sm">
+                Stay Connected
+              </p>
+              <div className="flex items-center gap-6">
+                <Link target="_blank" href="https://www.facebook.com/share/14NuEwMHDKK/" className="hover:text-white text-3xl">
+                  <FaFacebookF />
+                </Link>
+                <Link target="_blank" href="https://www.instagram.com/heartvalveexperts?igsh=ZmQ0dGZnMWd4dW45" className="hover:text-white text-3xl">
+                  <FaInstagram />
+                </Link>
+                <Link target="_blank" href="https://www.linkedin.com/company/heart-valve-experts/" className="hover:text-white text-3xl">
+                  <FaLinkedinIn />
+                </Link>
+                <Link target="_blank" href="https://www.youtube.com/@HeartValveExperts" className="hover:text-white text-3xl">
+                  <FaYoutube />
+                </Link>
+              </div>
             </div>
           </div>
 
           {/* Middle Column - Quick Links */}
           <div className=" flex flex-col gap-10">
             <div className="flex flex-wrap justify-between lg:justify-start gap-5 lg:gap-10 2xl:gap-10">
-              <div className="w-2/5 xl:w-1/4">
+              <div className="w-2/5 xl:w-[20%]">
                 <p style={{ letterSpacing: '2px' }} className="uppercase tracking-wide text-gray-400 mb-4 text-sm">
                   Quick Links
                 </p>
@@ -101,11 +121,11 @@ export default function Footer() {
               </div>
 
               {/* Right Column - Procedures */}
-              <div className="w-1/2 lg:w-2/5 xl:w-1/5 lg:-ml-10">
+              <div className="w-full lg:w-2/5 xl:w-[40%] lg:-ml-10">
                 <p style={{ letterSpacing: '2px' }} className="uppercase tracking-wide text-gray-400 mb-4 text-sm">
                   Procedures
                 </p>
-                <div className="grid grid-cols-2 gap-5 text-lg font-thin">
+                <div className="grid md:grid-cols-2 gap-5 text-lg font-thin">
                   {procedures.map((proc) => (
                     <Link
                       key={proc.name}
@@ -117,7 +137,7 @@ export default function Footer() {
                   ))}
                 </div>
               </div>
-              <div className="w-full xl:w-[45%] lg:ml-3">
+              <div className="w-full xl:w-[25%] lg:ml-3">
                 <p style={{ letterSpacing: '2px' }} className="uppercase tracking-wide text-gray-400 mb-4 text-sm">
                   Procedures in Mumbai
                 </p>
@@ -135,25 +155,7 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
-            <div>
-              <p style={{ letterSpacing: '2px' }} className="uppercase tracking-wide text-gray-400 mb-4 text-sm">
-                Stay Connected
-              </p>
-              <div className="flex items-center gap-6">
-                <Link target="_blank" href="https://www.facebook.com/share/14NuEwMHDKK/" className="hover:text-white text-3xl">
-                  <FaFacebookF />
-                </Link>
-                <Link target="_blank" href="https://www.instagram.com/heartvalveexperts?igsh=ZmQ0dGZnMWd4dW45" className="hover:text-white text-3xl">
-                  <FaInstagram />
-                </Link>
-                <Link target="_blank" href="https://www.linkedin.com/company/heart-valve-experts/" className="hover:text-white text-3xl">
-                  <FaLinkedinIn />
-                </Link>
-                <Link target="_blank" href="https://www.youtube.com/@HeartValveExperts" className="hover:text-white text-3xl">
-                  <FaYoutube />
-                </Link>
-              </div>
-            </div>
+            
           </div>
         </div>
 

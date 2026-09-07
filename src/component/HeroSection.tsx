@@ -164,9 +164,9 @@ export default function HomePage() {
 
       <div className="relative z-10 text-center max-w-3xl px-6">
         <h1 ref={titleRef} className="text-2xl md:text-5xl font-medium leading-snug">
-          Trusted Heart Specialists in <br />
-          Mumbai Offering Advanced, <br />
-          Gentle Cardiac Treatments
+          India’s Trusted Heart <br />
+          Specialist’s  for Advanced <br />
+          and Complex Cardiac Care
         </h1>
         <div className="pt-10 flex justify-center" ref={buttonRef}>
           <div className="cursor-pointer" onClick={() => setShowModal(true)}>
