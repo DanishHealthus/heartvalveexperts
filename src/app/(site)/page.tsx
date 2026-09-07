@@ -49,13 +49,13 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(clinicSchema) }}
       />
       <HeroSection />
-      <AppointmentCTA />
-      <WhyChooseHVE />
+      <HospitalCarousel />
       <WhoWeAreHero />
+      <WhyChooseHVE />
       <Doctors title='Meet Our Cardiologists' des=""/>
       <InnovationCardiacCare />
       <PatientSuccessStories />
-      <HospitalCarousel />
+      <AppointmentCTA />
     </>
   );
 }

@@ -24,8 +24,8 @@ export default function Footer() {
     { label: "Expert Opinion", url: "/expert-opinion-for-heart-surgery" },
     { label: "Case Studies", url: "/case-studies" },
     { label: "Get In Touch", url: "/contact-us" },
-    { label: "Blogs", url: "/blog" },
     { label: "Privacy Policy", url: "/privacy-policy" },
+    { label: "Blogs", url: "/blog" },
   ];
 
   const procedures = [
