@@ -106,7 +106,6 @@ const page = () => {
   ];
   return (
     <>
-      <head>
         {/* <Script id="google-ads">
           {`
             window.dataLayer = window.dataLayer || [];
@@ -143,8 +142,6 @@ const page = () => {
           strategy="afterInteractive"
           data-bot="51349922"
         />
-      </head>
-      <body>
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-TVQ5P76L"
@@ -423,7 +420,6 @@ A specialist valve review helps determine the most appropriate treatment pathway
           copyrightText="© Heart Valve Experts 2024. All rights reserved"
           poweredByText="Powered by healthus.ai"
         />
-      </body>
     </>
   )
 }

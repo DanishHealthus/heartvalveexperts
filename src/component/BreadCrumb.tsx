@@ -388,16 +388,16 @@ export default function Services({ title, subpage, image }: ServicesProps) {
         <div className="bg-[#cccccd] backdrop-blur-xl lg:rounded-b-4xl px-8 py-5">
           <p className="text-xs tracking-widest text-gray-600 mb-4">STAY CONNECTED</p>
           <div className="flex items-center gap-6 text-2xl">
-            <Link target="_blank" href="https://facebook.com">
+            <Link target="_blank" href="https://www.facebook.com/share/14NuEwMHDKK/">
               <FaFacebookF className="hover:text-blue-600" />
             </Link>
-            <Link target="_blank" href="https://instagram.com">
+            <Link target="_blank" href="https://www.instagram.com/heartvalveexperts?igsh=ZmQ0dGZnMWd4dW45">
               <FaInstagram className="hover:text-pink-500" />
             </Link>
-            <Link target="_blank" href="https://linkedin.com">
+            <Link target="_blank" href="https://www.linkedin.com/company/heart-valve-experts/">
               <FaLinkedinIn className="hover:text-blue-700" />
             </Link>
-            <Link target="_blank" href="https://youtube.com">
+            <Link target="_blank" href="https://www.youtube.com/@HeartValveExperts">
               <FaYoutube className="hover:text-red-600" />
             </Link>
           </div>

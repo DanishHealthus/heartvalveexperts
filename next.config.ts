@@ -195,11 +195,11 @@ const nextConfig: NextConfig = {
         destination: "https://heartvalveexperts.com/blog/aortic-stenosis-anatomy-diagnosis-treatment",
         permanent: true,
       },
-      {
-        source: "/heart-specialists-in-India",
-        destination: "https://heartvalveexperts.com/heart-specialists-in-india",
-        permanent: true,
-      },
+      // {
+      //   source: "/heart-specialists-in-India",
+      //   destination: "https://heartvalveexperts.com/heart-specialists-in-india",
+      //   permanent: true,
+      // },
       {
         source: "/blog/gender-differences-in-aortic-stenosis",
         destination: "https://heartvalveexperts.com/blog/aortic-stenosis-anatomy-diagnosis-treatment",
