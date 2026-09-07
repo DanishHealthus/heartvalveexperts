@@ -1,4 +1,5 @@
 import ClientModalWrapper from "@/component/ClientModalWrapper";
+import FloatingButtonSite from "@/component/FloatingButtonSite";
 import Footer from "@/component/Footer";
 import Script from "next/script";
 
@@ -65,6 +66,7 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
       {/* <CustomCursor /> */}
       <ClientModalWrapper />
       {children}
+      <FloatingButtonSite />
       <Footer />
       {/* Kenyt Chatbot */}
       <Script
