@@ -1,6 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Render <title>/<meta> as blocking metadata (inside <head>) for every user
+  // agent instead of streaming them into <body>. Next 15 streams metadata by
+  // default and only blocks for its built-in HTML-limited bot list.
+  htmlLimitedBots: /.*/,
+
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "**" },
@@ -195,11 +200,10 @@ const nextConfig: NextConfig = {
         destination: "https://heartvalveexperts.com/blog/aortic-stenosis-anatomy-diagnosis-treatment",
         permanent: true,
       },
-      // {
-      //   source: "/heart-specialists-in-India",
-      //   destination: "https://heartvalveexperts.com/heart-specialists-in-india",
-      //   permanent: true,
-      // },
+      // NOTE: "/heart-specialists-in-India" -> "/heart-specialists-in-india"
+      // cannot live here. Next matches `source` case-insensitively, so the rule
+      // also matches its own destination and loops (ERR_TOO_MANY_REDIRECTS).
+      // It is handled case-sensitively in src/middleware.ts instead.
       {
         source: "/blog/gender-differences-in-aortic-stenosis",
         destination: "https://heartvalveexperts.com/blog/aortic-stenosis-anatomy-diagnosis-treatment",
