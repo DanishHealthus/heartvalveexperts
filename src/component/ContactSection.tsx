@@ -118,7 +118,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             <li className="flex items-center gap-3">
               <FiPhone className="text-black text-4xl mt-1 border p-2 rounded-full" />
               <a href="tel:+918828228266" className="hover:text-blue-600">
-                +91 900 450 6263
+                +91 8828228266
               </a>
             </li>
             <li className="flex items-start gap-3">
