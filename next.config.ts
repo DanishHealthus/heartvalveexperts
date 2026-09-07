@@ -191,8 +191,13 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/blog/tavi-surgery-of-63-year-old-by-team-valve-clinic-tvc",
-        destination: "https://heartvalveexperts.com/knowledge-library",
+        source: "/blog/aortic-valve-implantation-tvc",
+        destination: "https://heartvalveexperts.com/blog/aortic-stenosis-anatomy-diagnosis-treatment",
+        permanent: true,
+      },
+      {
+        source: "/heart-specialists-in-India",
+        destination: "https://heartvalveexperts.com/heart-specialists-in-india",
         permanent: true,
       },
       {
