@@ -12,7 +12,7 @@ export const metadata = {
     description:
         "Looking for heart specialists in India? Heart Valve Experts offers advanced cardiac care, valve treatments, and expert consultation with leading heart doctors india.",
     alternates: {
-        canonical: "https://heartvalveexperts.com/heart-specialists-in-India",
+        canonical: "https://heartvalveexperts.com/heart-specialists-in-india",
     },
 };
 const faqData = [
