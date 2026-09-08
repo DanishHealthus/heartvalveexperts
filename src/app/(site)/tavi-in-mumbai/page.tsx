@@ -118,7 +118,7 @@ const medicalBusinessSchema = {
         "https://heartvalveexperts.com/_next/image?url=%2Fimages%2Fservice%2FTAVI%2F1.webp&w=1920&q=75",
     "@id": "https://heartvalveexperts.com/tavi-in-mumbai",
     url: "https://heartvalveexperts.com/tavi-in-mumbai",
-    telephone: "+91 8828228266",
+    telephone: "+91 8828473147",
     address: {
         "@type": "PostalAddress",
         streetAddress:

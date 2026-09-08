@@ -70,7 +70,7 @@ export default function Footer() {
             <div className="space-y-3 text-sm leading-relaxed">
               <p style={{ letterSpacing: '2px' }} className="uppercase tracking-wide text-gray-400">Contact Us</p>
               <p className="text-lg">heartvalveexperts@gmail.com</p>
-              <p className="text-lg">+91 8828228266</p>
+              <p className="text-lg">+91 8828473147</p>
               <p className="text-lg">
                 2nd Floor, Sane Guruji Premises, 386, <br />
                 Swatantryaveer Savarkar Rd, <br />

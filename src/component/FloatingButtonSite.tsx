@@ -29,7 +29,7 @@ const FloatingButtonSite = () => {
     label: "Mail",
   },
   {
-    href: "tel:+918828228266",
+    href: "tel:+918828473147",
     img: MdCall,
     alt: "Call Us",
     label: "Call Us",
@@ -53,7 +53,7 @@ const FloatingButtonSite = () => {
       </Link>
       <Link
         target="_blank"
-        href={"tel:+918828228266"}
+        href={"tel:+918828473147"}
         className="absolute rounded-full transition-all cursor-pointer bg-green-600 hover:bg-green-700 duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-16  flex  p-2.5 hover:p-3 bg-dark hover:bg-primary  text-white"
       >
         <MdCall className="text-2xl" />
