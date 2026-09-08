@@ -6,9 +6,11 @@ import { CgMail } from "react-icons/cg";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdCall } from "react-icons/md";
 import { FaUserDoctor } from "react-icons/fa6";
+import { usePathname } from "next/navigation";
 
 
 const FloatingButtonSite = () => {
+  const pathname = usePathname();
   const buttons = [
   {
     href: "/contact-us",
@@ -38,7 +40,7 @@ const FloatingButtonSite = () => {
 
   return (
     <>
-    <div className="group z-50 drop-shadow-xl fixed bottom-22 right-3 p-2 hidden lg:flex items-end justify-end w-24 h-24 ">
+    <div className="group z-50 drop-shadow-xl fixed bottom-3 right-3 p-2 hidden lg:flex items-end justify-end w-24 h-24 ">
       <div className="text-white shadow-xl flex items-center cursor-pointer bg-[#284599] hover:bg-[#284599]/80 justify-center p-3 xl:p-4 rounded-full bg-gradient-to-r from-primary to-secondary z-50 absolute  ">
         <MessageCircle color="white" size={25} />
       </div>
@@ -66,20 +68,56 @@ const FloatingButtonSite = () => {
         <CgMail className="text-2xl" />
       </Link>
     </div>
-    <div className="lg:hidden fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 z-50 flex justify-around items-center py-2 shadow-md">
-        {buttons.map((btn, index) => (
+  <div className="lg:hidden fixed bottom-2 left-3 right-3 z-50">
+  <div className="flex items-center justify-around rounded-[22px] border border-white/70 bg-white/95 px-2 py-2 shadow-[0_10px_35px_rgba(55,0,37,0.18)] backdrop-blur-xl">
+
+    {buttons.map((btn, index) => {
+      const isActive = pathname === btn.href;
+
+      return (
+        <React.Fragment key={index}>
           <Link
-            key={index}
             href={btn.href}
-            className="flex flex-col items-center justify-center text-xs text-[#370025] font-medium"
+            className={`
+              relative flex min-w-[64px] flex-col items-center
+              justify-center rounded-2xl px-3 py-1
+              transition-all duration-300 active:scale-95
+              ${
+                isActive
+                  ? "bg-[#370025] text-white shadow-[0_5px_16px_rgba(55,0,37,0.28)]"
+                  : "text-[#6b5264] hover:bg-[#370025]/5"
+              }
+            `}
           >
-            <btn.img             
-              className="h-6 w-6 object-contain mb-1"
-            />
-            {btn.label}
+            <div
+              className={`
+                mb-1 flex h-7 w-7 items-center justify-center rounded-lg pb-2
+                ${isActive ? "bg-white/10" : ""}
+              `}
+            >
+              <btn.img
+                className={`
+                  h-6 w-6 object-contain
+                  ${isActive ? "brightness-0 invert" : ""}
+                `}
+              />
+            </div>
+
+            <span className="text-sm font-semibold leading-none">
+              {btn.label}
+            </span>
           </Link>
-        ))}
-      </div>
+
+          {/* Separator */}
+          {index < buttons.length - 1 && (
+            <span className="h-8 w-px bg-[#370025]/10" />
+          )}
+        </React.Fragment>
+      );
+    })}
+
+  </div>
+</div>
       </>
   );
 };

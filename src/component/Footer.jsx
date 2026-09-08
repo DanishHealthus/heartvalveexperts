@@ -4,6 +4,7 @@ import { gsap } from "gsap";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function Footer() {
   const bgRef = useRef(null); // ✅ no <HTMLDivElement>
@@ -68,15 +69,35 @@ export default function Footer() {
               className="h-36 mb-6 lg:mx-0 mx-auto"
             />
             <div className="space-y-3 text-sm leading-relaxed">
-              <p style={{ letterSpacing: '2px' }} className="uppercase tracking-wide text-gray-400">Contact Us</p>
-              <p className="text-lg">heartvalveexperts@gmail.com</p>
-              <p className="text-lg">+91 8828473147</p>
-              <p className="text-lg">
-                2nd Floor, Sane Guruji Premises, 386, <br />
-                Swatantryaveer Savarkar Rd, <br />
-                opp. Siddhivinayak Temple, Dadar West,  <br />
-                Prabhadevi, Mumbai, Maharashtra 400025
+              <p
+                style={{ letterSpacing: "2px" }}
+                className="uppercase tracking-wide text-gray-400"
+              >
+                Contact Us
               </p>
+
+              <div className="flex items-start gap-3">
+                <Mail className="mt-1 h-5 w-5 shrink-0 text-white" />
+                <p className="text-lg">heartvalveexperts@gmail.com</p>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <Phone className="mt-1 h-5 w-5 shrink-0 text-white" />
+                <p className="text-lg">+91 8828473147</p>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <MapPin className="mt-1 h-5 w-5 shrink-0 text-white" />
+                <p className="text-lg leading-relaxed">
+                  2nd Floor, Sane Guruji Premises, 386,
+                  <br />
+                  Swatantryaveer Savarkar Rd,
+                  <br />
+                  opp. Siddhivinayak Temple, Dadar West,
+                  <br />
+                  Prabhadevi, Mumbai, Maharashtra 400025
+                </p>
+              </div>
             </div>
             <div>
               <p style={{ letterSpacing: '2px' }} className="uppercase tracking-wide text-gray-400 my-4 text-sm">
@@ -155,7 +176,7 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
-            
+
           </div>
         </div>
 

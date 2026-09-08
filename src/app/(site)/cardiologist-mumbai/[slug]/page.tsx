@@ -23,6 +23,7 @@ interface DoctorData {
   };
   designation: string;
   cardiologist_description: string;
+  linkedin_url?: string;
   cardiologist_long_details?: SectionData[];
   meta_title: string;
   meta_description: string;
@@ -232,7 +233,8 @@ export default async function DoctorPage({ params }: { params: { slug: string } 
         tag={doctor.designation}
         title={doctor.title}
         description={doctor.cardiologist_description}
-        buttonText="Book Appointment Now"
+        buttonText="View LinkedIn Profile"
+        buttonLink={doctor.linkedin_url || "/contact-us"}
       />
       <DoctorProfile
         sections={doctor.cardiologist_long_details?.map((item) => ({

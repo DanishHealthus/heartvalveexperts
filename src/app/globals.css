@@ -324,3 +324,17 @@ body {
   border-radius: 50px;
   /* text-transform: uppercase; */
 }
+
+#kenytChatBubble.style1 {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 100px !important;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    transition: background-color .7s ease-in-out, box-shadow .5s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    right: 0;
+    margin-right: 20px;
+}

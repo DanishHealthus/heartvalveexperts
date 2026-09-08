@@ -2,6 +2,7 @@
 import he from "he";
 import Image from "next/image";
 import Link from "next/link";
+import { FaLinkedin } from "react-icons/fa";
 
 interface DoctorProps {
   image: string;
@@ -66,9 +67,9 @@ export default function Doctor({
           {/* CTA Button */}
           <Link
             href={buttonLink}
-            className="inline-block mt-6 px-6 py-3 border border-blue-600 text-blue-600 rounded-full font-medium hover:bg-blue-600 hover:text-white transition"
+            className="flex w-fit items-center gap-2 mt-6 px-6 py-3 border border-blue-600 text-blue-600 rounded-full font-medium hover:bg-blue-600 hover:text-white transition"
           >
-            {buttonText}
+           <FaLinkedin  className="text-xl"/> {buttonText}
           </Link>
         </div>
       </div>
