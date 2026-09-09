@@ -31,7 +31,8 @@ const conditionsData = [
     desc: "TEER repairs the existing valve without replacing it, making it preferable for patients where native valve function should be maintained.",
   },
   {
-    title: "Not suitable for TAVI  surgery or TMVR surgery",
+    title:
+      "Not suitable for Transcatheter Aortic Valve Implantation (TAVI)  surgery or TMVR surgery",
     desc: "TEER treats leaky valves, not narrowed ones like in TAVI, and avoids full replacement like TMVR.",
   },
   {
@@ -148,8 +149,7 @@ const benefitsData2 = [
     iconSrc: "/images/service/icon/b6.svg",
     title: "Trusted TEER Center in Mumbai",
     desc: `Led by experienced <a href="https://heartvalveexperts.com/cardiologist-mumbai" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">cardiologists</a> in Mumbai, our center is known for successful outcomes and patient-first transcatheter valve repair.`,
-  }
-
+  },
 ];
 
 const faqData = [

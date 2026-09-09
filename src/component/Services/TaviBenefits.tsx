@@ -11,7 +11,7 @@ interface Benefit {
 interface TaviBenefitsProps {
   benefits: Benefit[];
   sectionLabel?: string; // e.g., "Benefits of TAVI"
-  heading?: string;      // e.g., "What are the Benefits of TAVI Surgery/Procedure?"
+  heading?: string; // e.g., "What are the Benefits of Transcatheter Aortic Valve Implantation (TAVI) Surgery/Procedure?"
   sectionIconSrc?: string; // icon for the section label
 }
 
@@ -40,22 +40,29 @@ const TaviBenefits = ({
     <section className="py-16 px-4 md:px-10 lg:px-24 xl:px-32 ">
       <div className="max-w-6xl mx-auto text-center">
         {/* Section Label */}
-        {sectionLabel &&
-        <p
-          // variants={fadeInVariant}
-          // initial="hidden"
-          // whileInView="show"
-          // viewport={{ once: true, amount: 0.3 }}
-          style={{ letterSpacing: "2px" }}
-          className="text-base font-medium tracking-wide flex items-center justify-center gap-1 uppercase"
-        >
-          <span className="w-6 h-6 rounded-full">
-            {sectionIconSrc &&
-            <Image width={1000} height={1000} src={sectionIconSrc} alt="" className="w-full h-full object-contain" />
-}
-          </span>
-          {sectionLabel}
-        </p>}
+        {sectionLabel && (
+          <p
+            // variants={fadeInVariant}
+            // initial="hidden"
+            // whileInView="show"
+            // viewport={{ once: true, amount: 0.3 }}
+            style={{ letterSpacing: "2px" }}
+            className="text-base font-medium tracking-wide flex items-center justify-center gap-1 uppercase"
+          >
+            <span className="w-6 h-6 rounded-full">
+              {sectionIconSrc && (
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={sectionIconSrc}
+                  alt=""
+                  className="w-full h-full object-contain"
+                />
+              )}
+            </span>
+            {sectionLabel}
+          </p>
+        )}
 
         {/* Heading */}
         <h2
@@ -78,7 +85,8 @@ const TaviBenefits = ({
         >
           {benefits.map((item, idx) => {
             const isFirstInRow = idx % 3 === 0;
-            const isInLastRow = idx >= benefits.length - (benefits.length % 3 || 3);
+            const isInLastRow =
+              idx >= benefits.length - (benefits.length % 3 || 3);
 
             return (
               <div
@@ -91,14 +99,14 @@ const TaviBenefits = ({
               >
                 <div className="w-6 h-6 flex-shrink-0">
                   <Image
-                  width={1000}
-                  height={1000}
+                    width={1000}
+                    height={1000}
                     src={item.iconSrc}
                     alt={item.title}
                     className="w-full h-full -mt-1 object-contain"
                   />
                 </div>
-               <div className="-mt-1">
+                <div className="-mt-1">
                   <h3 className="font-normal text-xl mb-2 leading-6">
                     {item.title}
                   </h3>

@@ -6,7 +6,7 @@ import Image from "next/image";
 const testimonials = [
   {
     quote:
-      "Doctors performed my father’s TAVI procedure successfully and explained everything with great care. Truly grateful for his expertise and compassionate team.",
+      "Doctors performed my father’s Transcatheter Aortic Valve Implantation (TAVI) procedure successfully and explained everything with great care. Truly grateful for his expertise and compassionate team.",
     name: "MRS. PREETI MANOHARAN",
   },
   {
@@ -45,7 +45,12 @@ export default function PatientSuccessStories() {
           className="text-white text-base font-medium tracking-wide flex items-center justify-start gap-1 uppercase"
         >
           <span className="w-6 h-6 rounded-full">
-            <Image width={25} height={25} src="/images/icon/Ellipse 3.svg" alt="" />
+            <Image
+              width={25}
+              height={25}
+              src="/images/icon/Ellipse 3.svg"
+              alt=""
+            />
           </span>
           Patient Success Stories
         </p>
@@ -90,21 +95,21 @@ export default function PatientSuccessStories() {
 
         {/* Active testimonial */}
         {/* <AnimatePresence mode="wait"> */}
-          <div
-            key={active}
-            // initial={{ opacity: 0, y: 40 }}
-            // animate={{ opacity: 1, y: 0 }}
-            // exit={{ opacity: 0, y: -40 }}
-            // transition={{ duration: 0.6 }}
-            className="lg:max-w-lg xl:max-w-2xl mt-0 text-white px-6"
-          >
-            <p className="text-xl xl:text-3xl leading-10 font-medium">
-              “{testimonials[active].quote}”
-            </p>
-            <p className="mt-6 uppercase tracking-widest text-xl font-medium text-white/80">
-              {testimonials[active].name}
-            </p>
-          </div>
+        <div
+          key={active}
+          // initial={{ opacity: 0, y: 40 }}
+          // animate={{ opacity: 1, y: 0 }}
+          // exit={{ opacity: 0, y: -40 }}
+          // transition={{ duration: 0.6 }}
+          className="lg:max-w-lg xl:max-w-2xl mt-0 text-white px-6"
+        >
+          <p className="text-xl xl:text-3xl leading-10 font-medium">
+            “{testimonials[active].quote}”
+          </p>
+          <p className="mt-6 uppercase tracking-widest text-xl font-medium text-white/80">
+            {testimonials[active].name}
+          </p>
+        </div>
         {/* </AnimatePresence> */}
       </div>
     </section>

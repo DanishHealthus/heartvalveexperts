@@ -5,7 +5,12 @@ import { gsap } from "gsap";
 import { FiChevronDown, FiChevronUp, FiArrowRightCircle } from "react-icons/fi";
 import { VscCallOutgoing } from "react-icons/vsc";
 import Link from "next/link";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
+} from "react-icons/fa";
 import ModalContactForm from "./ModalContactForm";
 import Image from "next/image";
 
@@ -16,7 +21,6 @@ export default function HomePage() {
   const logoRef = useRef<HTMLDivElement>(null);
   const bgRef = useRef<HTMLImageElement>(null);
 
-
   const overlayRef = useRef<HTMLDivElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
   const linksRef = useRef<Array<HTMLAnchorElement | HTMLButtonElement>>([]);
@@ -26,7 +30,6 @@ export default function HomePage() {
   const [proceduresOpen, setProceduresOpen] = useState(false);
   const [cardiacOpen, setCardiacOpen] = useState(false);
 
-
   // Hero intro animations + parallax
   useEffect(() => {
     const tl = gsap.timeline({ delay: 0.5 });
@@ -34,30 +37,30 @@ export default function HomePage() {
     tl.fromTo(
       logoRef.current,
       { y: -60, opacity: 0, scale: 0.85 },
-      { y: 0, opacity: 1, scale: 1, duration: 1.4, ease: "expo.out" }
+      { y: 0, opacity: 1, scale: 1, duration: 1.4, ease: "expo.out" },
     )
       .fromTo(
         titleRef.current,
         { y: 60, opacity: 0 },
         { y: 0, opacity: 1, duration: 1.6, ease: "power4.out" },
-        "-=0.9"
+        "-=0.9",
       )
       .fromTo(
         buttonRef.current,
         { y: 40, opacity: 0 },
         { y: 0, opacity: 1, duration: 1.2, ease: "expo.out" },
-        "-=0.8"
+        "-=0.8",
       )
       .fromTo(
         scrollRef.current,
         { opacity: 0 },
         { opacity: 1, duration: 1.4, ease: "power2.out" },
-        "-=0.6"
+        "-=0.6",
       );
     gsap.fromTo(
       bgRef.current,
       { scale: 1.4 },
-      { scale: 1.1, duration: 2.2, ease: "power3.out" }
+      { scale: 1.1, duration: 2.2, ease: "power3.out" },
     );
     const handleMouseMove = (e: MouseEvent) => {
       const { innerWidth, innerHeight } = window;
@@ -85,13 +88,13 @@ export default function HomePage() {
       gsap.fromTo(
         menuRef.current,
         { x: "-100%", scale: 0.95, opacity: 0 },
-        { x: "0%", scale: 1, opacity: 1, duration: 1, ease: "expo.out" }
+        { x: "0%", scale: 1, opacity: 1, duration: 1, ease: "expo.out" },
       );
 
       gsap.fromTo(
         linksRef.current,
         { y: 40, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.7, stagger: 0.18, ease: "expo.out" }
+        { y: 0, opacity: 1, duration: 0.7, stagger: 0.18, ease: "expo.out" },
       );
     } else {
       gsap.to(overlayRef.current, {
@@ -127,9 +130,9 @@ export default function HomePage() {
           ref={bgRef}
           width={2500}
           height={1500}
-          src="/images/homeimages/Foreground_Layer.webp"
+          src="/images/homeimages/hero-banner03.webp"
           alt="Background"
-          className="w-full h-full object-cover fixed opacity-80"
+          className="w-full  top-[120px]  md:top-[0] h-full object-contain md:object-cover fixed opacity-80"
         />
         <div className="absolute inset-0 bg-black/30 " />
       </div>
@@ -140,7 +143,13 @@ export default function HomePage() {
           onClick={() => setMenuOpen(true)}
           className="px-4 group cursor-pointer flex gap-2 text-xl py-2 rounded-full border border-white hover:bg-white hover:text-black transition duration-500 ease-in-out"
         >
-          <Image className="transition duration-300 group-hover:brightness-0" width={25} height={25} src="/images/icon/menu.svg" alt="" />
+          <Image
+            className="transition duration-300 group-hover:brightness-0"
+            width={25}
+            height={25}
+            src="/images/icon/menu.svg"
+            alt=""
+          />
           <span className="hidden lg:block">Menu</span>
         </button>
       </div>
@@ -152,21 +161,31 @@ export default function HomePage() {
         >
           <span className="hidden lg:block">Get in touch </span>
           <VscCallOutgoing />
-
         </Link>
       </div>
 
-      <div ref={logoRef} className="absolute top-3 lg:top-6 left-1/2 -translate-x-1/2">
-        <Link href='/'>
-          <Image src="/images/homeimages/logo.png" alt="Logo" width={180} height={100} className="w-full h-20 lg:h-24" />
+      <div
+        ref={logoRef}
+        className="absolute top-3 lg:top-6 left-1/2 -translate-x-1/2"
+      >
+        <Link href="/">
+          <Image
+            src="/images/homeimages/logo.png"
+            alt="Logo"
+            width={180}
+            height={100}
+            className="w-full h-20 lg:h-24"
+          />
         </Link>
       </div>
 
-      <div className="relative z-10 text-center max-w-3xl px-6">
-        <h1 ref={titleRef} className="text-2xl md:text-5xl font-medium leading-snug">
-          India’s Trusted Heart <br />
-          Specialist’s  for Advanced <br />
-          and Complex Cardiac Care
+      <div className="relative z-10 text-center md:bottom-[110px] max-w-6xl px-6">
+        <h1
+          ref={titleRef}
+          className="text-2xl md:text-5xl font-medium leading-snug"
+        >
+          India’s Trusted Heart Specialist’s for Advanced and Complex Cardiac
+          Care
         </h1>
         <div className="pt-10 flex justify-center" ref={buttonRef}>
           <div className="cursor-pointer" onClick={() => setShowModal(true)}>
@@ -185,8 +204,11 @@ export default function HomePage() {
       <div
         ref={overlayRef}
         onClick={() => setMenuOpen(false)}
-        className={`fixed inset-0 bg-black/70 z-40 cursor-pointer transition-opacity duration-500 ${menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-          }`}
+        className={`fixed inset-0 bg-black/70 z-40 cursor-pointer transition-opacity duration-500 ${
+          menuOpen
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
+        }`}
       />
 
       {/* Drawer */}
@@ -202,7 +224,13 @@ export default function HomePage() {
           onClick={() => setMenuOpen(false)}
           className="flex cursor-pointer items-center gap-2 text-lg font-semibold text-black hover:text-gray-700 px-8 pt-8"
         >
-          <Image src="/images/icon/closemenu.svg" width={25} height={25} alt="close" /> Close
+          <Image
+            src="/images/icon/closemenu.svg"
+            width={25}
+            height={25}
+            alt="close"
+          />{" "}
+          Close
         </button>
 
         {/* Nav Links (scrollable area) */}
@@ -210,42 +238,36 @@ export default function HomePage() {
         <nav className="mt-6 space-y-6 text-lg px-8 pr-4 flex-1 overflow-y-auto pb-5">
           <Link
             href="/"
-
             className="block hover:text-[#0074dd] text-xl transition"
           >
             Home
           </Link>
           <Link
             href="/cardiologist-mumbai"
-
             className="block hover:text-[#0074dd] text-xl transition"
           >
             Our Cardiologists
           </Link>
           <Link
             href="/tavi"
-
             className="block hover:text-[#0074dd] text-xl transition"
           >
-            TAVI
+            Transcatheter Aortic Valve Implantation (TAVI)
           </Link>
           <Link
             href="/tmvr"
-
             className="block hover:text-[#0074dd] text-xl transition"
           >
             TMVR
           </Link>
           <Link
             href="/teer"
-
             className="block hover:text-[#0074dd] text-xl transition"
           >
             TEER (MitraClip & TriClip)
           </Link>
           <Link
             href="/left-atrial-appendage-occlusion"
-
             className="block hover:text-[#0074dd] text-xl transition"
           >
             LAAO
@@ -253,27 +275,41 @@ export default function HomePage() {
 
           {/* About with toggle */}
           <div>
-            <button
-
-
-              className="flex items-center text-xl justify-between w-full hover:text-[#0074dd] transition pr-4"
-            >
-              <Link href="/device-closure" className=" block text-lg hover:text-[#0074dd]">
+            <button className="flex items-center text-xl justify-between w-full hover:text-[#0074dd] transition pr-4">
+              <Link
+                href="/device-closure"
+                className=" block text-lg hover:text-[#0074dd]"
+              >
                 Device Closures
-              </Link><div onClick={() => setAboutOpen(!aboutOpen)}>{aboutOpen ? <FiChevronUp /> : <FiChevronDown />}</div>
+              </Link>
+              <div onClick={() => setAboutOpen(!aboutOpen)}>
+                {aboutOpen ? <FiChevronUp /> : <FiChevronDown />}
+              </div>
             </button>
             {aboutOpen && (
               <div className="border-l border-gray-400 pl-4 mt-5 space-y-4 text-sm text-gray-900">
-                <Link href="/device-closure/atrial-septal-defect" className=" block text-lg hover:text-[#0074dd]">
+                <Link
+                  href="/device-closure/atrial-septal-defect"
+                  className=" block text-lg hover:text-[#0074dd]"
+                >
                   ASD
                 </Link>
-                <Link href="/device-closure/patent-foramen-ovale" className=" block text-lg hover:text-[#0074dd]">
+                <Link
+                  href="/device-closure/patent-foramen-ovale"
+                  className=" block text-lg hover:text-[#0074dd]"
+                >
                   PFO
                 </Link>
-                <Link href="/device-closure/ventricular-septal-defect" className=" block text-lg hover:text-[#0074dd]">
+                <Link
+                  href="/device-closure/ventricular-septal-defect"
+                  className=" block text-lg hover:text-[#0074dd]"
+                >
                   VSD
                 </Link>
-                <Link href="/device-closure/patent-ductus-arteriosus" className=" block text-lg hover:text-[#0074dd]">
+                <Link
+                  href="/device-closure/patent-ductus-arteriosus"
+                  className=" block text-lg hover:text-[#0074dd]"
+                >
                   PDA
                 </Link>
               </div>
@@ -284,20 +320,29 @@ export default function HomePage() {
           <div>
             <button
               onClick={() => setProceduresOpen(!proceduresOpen)}
-
               className="flex items-center text-xl justify-between w-full hover:text-[#0074dd] transition pr-4"
             >
-              Other Procedures {proceduresOpen ? <FiChevronUp /> : <FiChevronDown />}
+              Other Procedures{" "}
+              {proceduresOpen ? <FiChevronUp /> : <FiChevronDown />}
             </button>
             {proceduresOpen && (
               <div className="border-l-2 border-gray-400 pl-4 mt-5 space-y-4 text-sm text-gray-900">
-                <Link href="/balloon-mitral-valvotomy" className=" block text-lg hover:text-[#0074dd]">
+                <Link
+                  href="/balloon-mitral-valvotomy"
+                  className=" block text-lg hover:text-[#0074dd]"
+                >
                   BMV
                 </Link>
-                <Link href="/ruptured-sinus-of-valsalva" className=" block text-lg hover:text-[#0074dd]">
+                <Link
+                  href="/ruptured-sinus-of-valsalva"
+                  className=" block text-lg hover:text-[#0074dd]"
+                >
                   RSOV
                 </Link>
-                <Link href="/tric-valve" className=" block text-lg hover:text-[#0074dd]">
+                <Link
+                  href="/tric-valve"
+                  className=" block text-lg hover:text-[#0074dd]"
+                >
                   Tric Valve
                 </Link>
               </div>
@@ -306,41 +351,65 @@ export default function HomePage() {
           <div>
             <button
               onClick={() => setCardiacOpen(!cardiacOpen)}
-
               className="flex items-center text-xl justify-between w-full hover:text-[#0074dd] transition pr-4"
             >
-              HVE Cardiac Team {cardiacOpen ? <FiChevronUp /> : <FiChevronDown />}
+              HVE Cardiac Team{" "}
+              {cardiacOpen ? <FiChevronUp /> : <FiChevronDown />}
             </button>
             {cardiacOpen && (
               <div className="border-l-2 border-gray-400 pl-4 mt-5 space-y-4 text-sm text-gray-900">
-                <Link href="/cardiologist-mumbai/dr-ankur-u-phatarpekar" className=" block text-lg hover:text-[#0074dd]">
+                <Link
+                  href="/cardiologist-mumbai/dr-ankur-u-phatarpekar"
+                  className=" block text-lg hover:text-[#0074dd]"
+                >
                   Dr. Ankur U. Phatarpekar
                 </Link>
-                <Link href="/cardiologist-mumbai/dr-meghav-manoj-shah" className=" block text-lg hover:text-[#0074dd]">
+                <Link
+                  href="/cardiologist-mumbai/dr-meghav-manoj-shah"
+                  className=" block text-lg hover:text-[#0074dd]"
+                >
                   Dr. Meghav Manoj Shah
                 </Link>
-                <Link href="/cardiologist-mumbai/dr-amit-s-gangwani" className=" block text-lg hover:text-[#0074dd]">
+                <Link
+                  href="/cardiologist-mumbai/dr-amit-s-gangwani"
+                  className=" block text-lg hover:text-[#0074dd]"
+                >
                   Dr. Amit S. Gangwani
                 </Link>
-                <Link href="/cardiologist-mumbai/dr-harshad-sagar-uttamrao" className=" block text-lg hover:text-[#0074dd]">
-                  Dr. Harshad Uttamrao Sagar 
+                <Link
+                  href="/cardiologist-mumbai/dr-harshad-sagar-uttamrao"
+                  className=" block text-lg hover:text-[#0074dd]"
+                >
+                  Dr. Harshad Uttamrao Sagar
                 </Link>
                 {/* <Link href="/cardiologist-mumbai/dr-aniruddha-mohanrao-pawar" className=" block text-lg hover:text-[#0074dd]">
                         Dr. Aniruddha Mohanrao Pawar
                       </Link>  */}
-                <Link href="/cardiologist-mumbai/dr-gourish-shinde" className=" block text-lg hover:text-[#0074dd]">
+                <Link
+                  href="/cardiologist-mumbai/dr-gourish-shinde"
+                  className=" block text-lg hover:text-[#0074dd]"
+                >
                   Dr. Gourish Shinde
                 </Link>
-                <Link href="/cardiologist-mumbai/dr-kunal-ajay-patankar" className=" block text-lg hover:text-[#0074dd]">
+                <Link
+                  href="/cardiologist-mumbai/dr-kunal-ajay-patankar"
+                  className=" block text-lg hover:text-[#0074dd]"
+                >
                   Dr. Kunal Ajay Patankar
                 </Link>
                 {/* <Link href="/cardiologist-mumbai/dr-pravin-lovhale" className=" block text-lg hover:text-[#0074dd]">
                         Dr. Pravin Lovhale
                       </Link> */}
-                <Link href="/cardiologist-mumbai/dr-aniruddha-mohanrao-pawar" className=" block text-lg hover:text-[#0074dd]">
+                <Link
+                  href="/cardiologist-mumbai/dr-aniruddha-mohanrao-pawar"
+                  className=" block text-lg hover:text-[#0074dd]"
+                >
                   Dr. Aniruddha Mohanrao Pawar
                 </Link>
-                <Link href="/cardiologist-mumbai/dr-amruta-limaye" className=" block text-lg hover:text-[#0074dd]">
+                <Link
+                  href="/cardiologist-mumbai/dr-amruta-limaye"
+                  className=" block text-lg hover:text-[#0074dd]"
+                >
                   Dr. Amruta Limaye
                 </Link>
               </div>
@@ -348,35 +417,46 @@ export default function HomePage() {
           </div>
           <Link
             href="/knowledge-library"
-
             className="block hover:text-[#0074dd] text-xl transition"
           >
             Knowledge Library
           </Link>
           <Link
             href="/a-legacy-of-leadership"
-
             className="block hover:text-[#0074dd] text-xl transition"
           >
             A Legacy of Leadership
           </Link>
         </nav>
 
-
         {/* Fixed Footer */}
         <div className="bg-[#cccccd] backdrop-blur-xl lg:rounded-b-4xl px-8 py-5">
-          <p className="text-xs tracking-widest text-gray-600 mb-4">STAY CONNECTED</p>
+          <p className="text-xs tracking-widest text-gray-600 mb-4">
+            STAY CONNECTED
+          </p>
           <div className="flex items-center gap-6 text-2xl">
-            <Link target="_blank" href="https://www.facebook.com/share/14NuEwMHDKK/">
+            <Link
+              target="_blank"
+              href="https://www.facebook.com/share/14NuEwMHDKK/"
+            >
               <FaFacebookF className="hover:text-blue-600" />
             </Link>
-            <Link target="_blank" href="https://www.instagram.com/heartvalveexperts?igsh=ZmQ0dGZnMWd4dW45">
+            <Link
+              target="_blank"
+              href="https://www.instagram.com/heartvalveexperts?igsh=ZmQ0dGZnMWd4dW45"
+            >
               <FaInstagram className="hover:text-pink-500" />
             </Link>
-            <Link target="_blank" href="https://www.linkedin.com/company/heart-valve-experts/">
+            <Link
+              target="_blank"
+              href="https://www.linkedin.com/company/heart-valve-experts/"
+            >
               <FaLinkedinIn className="hover:text-blue-700" />
             </Link>
-            <Link target="_blank" href="https://www.youtube.com/@HeartValveExperts">
+            <Link
+              target="_blank"
+              href="https://www.youtube.com/@HeartValveExperts"
+            >
               <FaYoutube className="hover:text-red-600" />
             </Link>
           </div>

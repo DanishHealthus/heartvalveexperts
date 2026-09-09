@@ -8,7 +8,7 @@ import ProcedureDelayRisks2 from "@/component/Services/ProcedureDelayRisks2";
 import FAQAccordion from "@/component/Services/FAQAccordion";
 import AppointmentCTA from "@/component/AppointmentCTA";
 import PatientSuccessStories from "@/component/PatientSuccessStories";
-import TaviSectionAll from "@/component/Services/TaviSectionAll";   
+import TaviSectionAll from "@/component/Services/TaviSectionAll";
 
 export const metadata = {
   title: "TMVR Surgery in Mumbai | TMVR Procedure Mumbai",
@@ -43,13 +43,40 @@ const delayRiskData = {
   heading: "Outcomes of Procedure Delay",
   title: "Risks of Delay of TMVR Surgery/Procedure",
   risks: [
-    { title: "Pulmonary hypertension", description: "Long-term mitral regurgitation can cause permanent high pressure in the lungs." },
-    { title: "Atrial fibrillation (AFib)", description: "Ongoing regurgitation increases the risk of developing irregular heart rhythms." },
-    { title: "Left atrial enlargement", description: "Delayed treatment causes the upper heart chamber to enlarge and function poorly." },
-    { title: "Progressive valve deterioration", description: "Leakage worsens over time, making the valve harder to replace." },
-    { title: "Reduced candidacy for TMVR", description: "Anatomical changes may make minimally invasive TMVR surgery/procedure no longer viable." },
-    { title: "Increased risk of blood clots", description: "Abnormal blood flow raises the chance of stroke-causing clots." },
-    { title: "Higher likelihood of heart failure", description: "The heart weakens over time due to persistent backflow." },
+    {
+      title: "Pulmonary hypertension",
+      description:
+        "Long-term mitral regurgitation can cause permanent high pressure in the lungs.",
+    },
+    {
+      title: "Atrial fibrillation (AFib)",
+      description:
+        "Ongoing regurgitation increases the risk of developing irregular heart rhythms.",
+    },
+    {
+      title: "Left atrial enlargement",
+      description:
+        "Delayed treatment causes the upper heart chamber to enlarge and function poorly.",
+    },
+    {
+      title: "Progressive valve deterioration",
+      description:
+        "Leakage worsens over time, making the valve harder to replace.",
+    },
+    {
+      title: "Reduced candidacy for TMVR",
+      description:
+        "Anatomical changes may make minimally invasive TMVR surgery/procedure no longer viable.",
+    },
+    {
+      title: "Increased risk of blood clots",
+      description:
+        "Abnormal blood flow raises the chance of stroke-causing clots.",
+    },
+    {
+      title: "Higher likelihood of heart failure",
+      description: "The heart weakens over time due to persistent backflow.",
+    },
   ],
   imageSrc: "/images/service/TMVR/Rectangle 33.webp",
   imagePosition: "right",
@@ -274,7 +301,7 @@ const servciepage = () => {
         <ProcedureTimeline
           timeline={timelineData}
           sectionTitle="Procedure Timeline"
-          heading="TAVI Procedure Timeline & Recovery"
+          heading="Transcatheter Mitral Valve Replacement (TMVR) Procedure Timeline & Recovery"
           leftImageSrc="/images/service/TMVR/Rectangle 32.webp"
         />
         <FollowUpSection

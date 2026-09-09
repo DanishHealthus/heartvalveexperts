@@ -30,11 +30,11 @@ const conditionsData = [
   },
   {
     title: "Previous cardiac surgery",
-    desc: "Repeat open-heart surgery carries higher risks due to scar tissue and bleeding. TAVI provides a safer, less invasive option.",
+    desc: "Repeat open-heart surgery carries higher risks due to scar tissue and bleeding. Transcatheter Aortic Valve Implantation (TAVI) provides a safer, less invasive option.",
   },
   {
     title: "Chronic kidney disease",
-    desc: "Traditional surgery increases kidney complications. TAVI reduces this risk and speeds up recovery.",
+    desc: "Traditional surgery increases kidney complications. Transcatheter Aortic Valve Implantation (TAVI) reduces this risk and speeds up recovery.",
   },
   {
     title: "Chronic lung conditions",
@@ -97,7 +97,7 @@ const timelineData = [
   },
   {
     title: "Day 2",
-    desc: ` <a href="https://heartvalveexperts.com/blog/tavi-tavr-procedure-risks-benefits-cost-and-recovery" target="_blank" rel="noopener noreferrer" class="font-bold hover:text-blue-500" style="text-decoration: none;">TAVI procedure</a> performed using a catheter-based approach, usually under conscious sedation.`,
+    desc: ` <a href="https://heartvalveexperts.com/blog/tavi-tavr-procedure-risks-benefits-cost-and-recovery" target="_blank" rel="noopener noreferrer" class="font-bold hover:text-blue-500" style="text-decoration: none;">Transcatheter Aortic Valve Implantation (TAVI) procedure</a> performed using a catheter-based approach, usually under conscious sedation.`,
     iconSrc: "/images/service/icon/heart.svg",
   },
   {
@@ -107,7 +107,7 @@ const timelineData = [
   },
   {
     title: "Week 1–2",
-    desc: "Rest at home with light activity, monitor the catheter site, take prescribed medications, and attend the first follow-up with your TAVI specialist",
+    desc: "Rest at home with light activity, monitor the catheter site, take prescribed medications, and attend the first follow-up with your Transcatheter Aortic Valve Implantation (TAVI) specialist",
     iconSrc: "/images/service/icon/home.svg",
   },
   {
@@ -125,8 +125,8 @@ const timelineData = [
 const benefitsData2 = [
   {
     iconSrc: "/images/service/icon/b1.svg",
-    title: "City’s Leading TAVI Team",
-    desc: "Our specialists have performed the highest number of TAVI surgeries, including complex and high-risk cases.",
+    title: "City’s Leading Transcatheter Aortic Valve Implantation (TAVI) Team",
+    desc: "Our specialists have performed the highest number of Transcatheter Aortic Valve Implantation (TAVI) surgeries, including complex and high-risk cases.",
   },
   {
     iconSrc: "/images/service/icon/b2.svg",
@@ -136,12 +136,12 @@ const benefitsData2 = [
   {
     iconSrc: "/images/service/icon/b3.svg",
     title: "Trusted by Patients Nationwide",
-    desc: "Patients across India seek us out for our outcomes and the reputation of having the best TAVI surgeon/operator.",
+    desc: "Patients across India seek us out for our outcomes and the reputation of having the best Transcatheter Aortic Valve Implantation (TAVI) surgeon/operator.",
   },
   {
     iconSrc: "/images/service/icon/b4.svg",
     title: "Alternative Access Expertise",
-    desc: `Our team has extensive experience performing TAVI through <a href="https://heartvalveexperts.com/blog/alternative-routes-for-tavi" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">alternative access routes</a> when standard options are not viable.`,
+    desc: `Our team has extensive experience performing Transcatheter Aortic Valve Implantation (TAVI) through <a href="https://heartvalveexperts.com/blog/alternative-routes-for-tavi" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">alternative access routes</a> when standard options are not viable.`,
   },
   {
     iconSrc: "/images/service/icon/b5.svg",
@@ -157,82 +157,90 @@ const benefitsData2 = [
 const faqData = [
   {
     id: 1,
-    question: "What is the difference between a stent and a TAVI?",
+    question:
+      "What is the difference between a stent and a Transcatheter Aortic Valve Implantation (TAVI)?",
     answer:
-      "A stent opens blocked arteries, while TAVI replaces a narrowed aortic valve. Both are minimally invasive but treat different heart conditions.",
+      "A stent opens blocked arteries, while Transcatheter Aortic Valve Implantation (TAVI) replaces a narrowed aortic valve. Both are minimally invasive but treat different heart conditions.",
   },
   {
     id: 2,
-    question: "Who is TAVI most suitable for and why?",
+    question:
+      "Who is Transcatheter Aortic Valve Implantation (TAVI) most suitable for and why?",
     answer:
-      "TAVI is ideal for patients who are high-risk for open-heart surgery due to age, aortic stenosis, or conditions like diabetes, kidney disease, COPD, or prior heart procedures.",
+      "Transcatheter Aortic Valve Implantation (TAVI) is ideal for patients who are high-risk for open-heart surgery due to age, aortic stenosis, or conditions like diabetes, kidney disease, COPD, or prior heart procedures.",
   },
   {
     id: 3,
-    question: "What preparations are required before a TAVI surgery/procedure?",
+    question:
+      "What preparations are required before a Transcatheter Aortic Valve Implantation (TAVI) surgery/procedure?",
     answer:
-      "Before the procedure, the team of doctors will assess your medical history and conduct diagnostic tests such as echocardiograms, blood work, and CT scans. These help your TAVI surgeon/operator determine your eligibility and customize the approach.",
+      "Before the procedure, the team of doctors will assess your medical history and conduct diagnostic tests such as echocardiograms, blood work, and CT scans. These help your Transcatheter Aortic Valve Implantation (TAVI) surgeon/operator determine your eligibility and customize the approach.",
   },
   {
     id: 4,
     question:
-      "What are the possible adverse effects of the TAVI surgery/procedure?",
+      "What are the possible adverse effects of the Transcatheter Aortic Valve Implantation (TAVI) surgery/procedure?",
     answer:
-      "TAVI is generally safe but may carry risks like heart attack, bleeding, stroke, kidney issues, or blood vessel damage. Choosing an experienced TAVI specialist helps minimise these risks.",
+      "Transcatheter Aortic Valve Implantation (TAVI) is generally safe but may carry risks like heart attack, bleeding, stroke, kidney issues, or blood vessel damage. Choosing an experienced Transcatheter Aortic Valve Implantation (TAVI) specialist helps minimise these risks.",
   },
   {
     id: 5,
     question:
-      "What should I do after a TAVI procedure to ensure good recovery?",
+      "What should I do after a Transcatheter Aortic Valve Implantation (TAVI) procedure to ensure good recovery?",
     answer:
-      "Follow up with your TAVI specialist, take medications as prescribed, keep the catheter site clean, start light activity gradually, and maintain a heart-healthy lifestyle.",
+      "Follow up with your Transcatheter Aortic Valve Implantation (TAVI) specialist, take medications as prescribed, keep the catheter site clean, start light activity gradually, and maintain a heart-healthy lifestyle.",
   },
   {
     id: 6,
-    question: "What is the cost of the TAVI surgery/procedure in India?",
+    question:
+      "What is the cost of the Transcatheter Aortic Valve Implantation (TAVI) surgery/procedure in India?",
     answer:
-      "The cost of TAVI in India typically ranges from ₹14 lakh to ₹28 lakh in private hospitals, depending on the valve type and patient condition.",
+      "The cost of Transcatheter Aortic Valve Implantation (TAVI) in India typically ranges from ₹14 lakh to ₹28 lakh in private hospitals, depending on the valve type and patient condition.",
   },
   {
     id: 7,
-    question: "Is TAVI better than open-heart surgery?",
+    question:
+      "Is Transcatheter Aortic Valve Implantation (TAVI) better than open-heart surgery?",
     answer:
-      "TAVI is less invasive and offers faster recovery, making it ideal for high-risk and elderly patients. Both TAVI and surgery can be performed in low-risk subsets, and TAVI is now USFDA-approved for low-risk patients. A specialist can help determine the best option for your individual case.",
+      "Transcatheter Aortic Valve Implantation (TAVI) is less invasive and offers faster recovery, making it ideal for high-risk and elderly patients. Both Transcatheter Aortic Valve Implantation (TAVI) and surgery can be performed in low-risk subsets, and Transcatheter Aortic Valve Implantation (TAVI) is now USFDA-approved for low-risk patients. A specialist can help determine the best option for your individual case.",
   },
   {
     id: 8,
-    question: "What is the life expectancy after TAVI?",
+    question:
+      "What is the life expectancy after Transcatheter Aortic Valve Implantation (TAVI)?",
     answer:
-      "Life expectancy after TAVI depends on age and overall health. Most patients see a better quality of life and long-term outcomes with proper care and follow-up.",
+      "Life expectancy after Transcatheter Aortic Valve Implantation (TAVI) depends on age and overall health. Most patients see a better quality of life and long-term outcomes with proper care and follow-up.",
   },
   {
     id: 9,
-    question: "How long does the TAVI procedure take?",
+    question:
+      "How long does the Transcatheter Aortic Valve Implantation (TAVI) procedure take?",
     answer:
-      "TAVI surgery typically takes 1 to 2 hours, depending on the patient's condition and the complexity of the case.",
+      "Transcatheter Aortic Valve Implantation (TAVI) surgery typically takes 1 to 2 hours, depending on the patient's condition and the complexity of the case.",
   },
   {
     id: 10,
-    question: "Will I need blood thinners after TAVI surgery/procedure?",
+    question:
+      "Will I need blood thinners after Transcatheter Aortic Valve Implantation (TAVI) surgery/procedure?",
     answer:
-      "Yes, most patients need blood thinners or antiplatelet medications for a period after TAVI to prevent clot for at least 6 months. The exact type and duration depend on your heart rhythm, medical history, and bleeding risk. Your doctor will prescribe the safest option for you.",
+      "Yes, most patients need blood thinners or antiplatelet medications for a period after Transcatheter Aortic Valve Implantation (TAVI) to prevent clot for at least 6 months. The exact type and duration depend on your heart rhythm, medical history, and bleeding risk. Your doctor will prescribe the safest option for you.",
   },
 ];
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "MedicalProcedure",
-  "name": "Transcatheter Aortic Valve Implantation (TAVI)",
-  "description":
-    "TAVI is a minimally invasive procedure in which a new aortic valve is implanted via a catheter, without the need for open-heart surgery.",
-  "procedureType": "http://schema.org/PercutaneousProcedure",
-  "bodyLocation": "Heart - Aortic Valve",
-  "howPerformed":
+  name: "Transcatheter Aortic Valve Implantation (TAVI)",
+  description:
+    "Transcatheter Aortic Valve Implantation (TAVI) is a minimally invasive procedure in which a new aortic valve is implanted via a catheter, without the need for open-heart surgery.",
+  procedureType: "http://schema.org/PercutaneousProcedure",
+  bodyLocation: "Heart - Aortic Valve",
+  howPerformed:
     "A catheter is inserted into an artery, typically in the groin or chest, and guided to the aortic valve. A collapsible replacement valve is delivered through the catheter and expanded inside the diseased valve.",
-  "preparation":
+  preparation:
     "Before the procedure, patients undergo diagnostic tests such as blood work, ECG, echocardiogram, and CT scans. Medications may be adjusted, and local anesthesia or light sedation is administered during the intervention.",
-  "followup":
+  followup:
     "After TAVI, patients stay in hospital for monitoring. They often take blood-thinning medication and have follow-up visits, including echocardiograms and cardiology check-ups.",
-  "url": "https://heartvalveexperts.com/tavi",
+  url: "https://heartvalveexperts.com/tavi",
 };
 
 const faqSchema = {
@@ -266,20 +274,20 @@ const servciepage = () => {
       />
       <TaviSectionAll
         imageSrc="/images/service/TAVI/1.webp"
-        imageAlt="TAVI Surgery"
+        imageAlt="Transcatheter Aortic Valve Implantation (TAVI) Surgery"
         imageTitle=""
         tag="About"
-        title="What is TAVI Surgery/Procedure?"
+        title="What is Transcatheter Aortic Valve Implantation (TAVI) Surgery/Procedure?"
         description={[
-          `TAVI, or Transcatheter Aortic Valve Implantation, is a minimally invasive procedure used to treat a narrowed aortic valve, also known as <a class="text-blue-500 hover:text-red-500" style="text-decoration: none;" href="https://heartvalveexperts.com/blog/aortic-stenosis-symptoms-risks-treatments" target="_blank" rel="noopener noreferrer">aortic stenosis</a>. It is also referred to as TAVR surgery/procedure, which stands for Transcatheter Aortic Valve Replacement. Instead of opening the chest as in traditional surgery, TAVI surgery is a suture-less procedure.`,
-          `It involves inserting a new valve through a catheter, usually via the femoral artery in the thigh, and positioning it inside the damaged valve. The <a class="text-blue-500 hover:text-red-500" style="text-decoration: none;" href="https://heartvalveexperts.com/blog/tavi-procedure-cost-in-india" target="_blank" rel="noopener noreferrer">TAVI procedure</a> is especially recommended for patients who are at high risk for open-heart surgery due to advanced age or other underlying health conditions.`,
-          `Patients looking for specialist evaluation can learn more about our <a class="text-blue-500 hover:text-red-500" style="text-decoration: none;" href="https://heartvalveexperts.com/tavi-in-mumbai" target="_blank" rel="noopener noreferrer">TAVI treatment in Mumbai.</a>`
+          `TAVI, or Transcatheter Aortic Valve Implantation, is a minimally invasive procedure used to treat a narrowed aortic valve, also known as <a class="text-blue-500 hover:text-red-500" style="text-decoration: none;" href="https://heartvalveexperts.com/blog/aortic-stenosis-symptoms-risks-treatments" target="_blank" rel="noopener noreferrer">aortic stenosis</a>. It is also referred to as TAVR surgery/procedure, which stands for Transcatheter Aortic Valve Replacement. Instead of opening the chest as in traditional surgery, Transcatheter Aortic Valve Implantation (TAVI) surgery is a suture-less procedure.`,
+          `It involves inserting a new valve through a catheter, usually via the femoral artery in the thigh, and positioning it inside the damaged valve. The <a class="text-blue-500 hover:text-red-500" style="text-decoration: none;" href="https://heartvalveexperts.com/blog/tavi-procedure-cost-in-india" target="_blank" rel="noopener noreferrer">Transcatheter Aortic Valve Implantation (TAVI) procedure</a> is especially recommended for patients who are at high risk for open-heart surgery due to advanced age or other underlying health conditions.`,
+          `Patients looking for specialist evaluation can learn more about our <a class="text-blue-500 hover:text-red-500" style="text-decoration: none;" href="https://heartvalveexperts.com/tavi-in-mumbai" target="_blank" rel="noopener noreferrer">Transcatheter Aortic Valve Implantation (TAVI) treatment in Mumbai.</a>`,
         ]}
         buttonText="Request a Consultation"
       />
       <TaviWhoFor
         sectionTag="Who It’s For?"
-        heading="Who Needs TAVI Surgery/Procedure?"
+        heading="Who Needs Transcatheter Aortic Valve Implantation (TAVI) Surgery/Procedure?"
         buttonText="Request a Consultation"
         conditions={conditionsData}
         imageSrc="/images/service/TAVI/Rectangle 27.webp"
@@ -287,12 +295,12 @@ const servciepage = () => {
       />
       <TaviBenefits
         benefits={benefitsData}
-        sectionLabel="Benefits of TAVI"
-        heading="What are the Benefits of TAVI Surgery/Procedure?"
+        sectionLabel="Benefits of Transcatheter Aortic Valve Implantation (TAVI)"
+        heading="What are the Benefits of Transcatheter Aortic Valve Implantation (TAVI) Surgery/Procedure?"
         sectionIconSrc="/images/icon/Ellipse 3.svg"
       />
       <ProcedureDelayRisks
-        title="Risks of Delay of TAVI/TAVR Surgery/Procedure"
+        title="Risks of Delay of Transcatheter Aortic Valve Implantation (TAVI)/Transcatheter Aortic Valve Replacement (TAVR) Surgery/Procedure"
         subtitle="Outcomes of Procedure Delay"
         risks={risksData}
         imageSrc="/images/service/TAVI/Rectangle 28.webp"
@@ -302,19 +310,19 @@ const servciepage = () => {
         <ProcedureTimeline
           timeline={timelineData}
           sectionTitle="Procedure Timeline"
-          heading="TAVI Procedure Timeline & Recovery"
+          heading="Transcatheter Aortic Valve Implantation (TAVI) Procedure Timeline & Recovery"
           leftImageSrc="/images/service/TAVI/Rectangle 29.webp"
         />
         <FollowUpSection
           tag="Procedure Follow Up"
-          title="Long-Term Follow Up After TAVI Procedure"
+          title="Long-Term Follow Up After Transcatheter Aortic Valve Implantation (TAVI) Procedure"
           intro="Modern transcatheter valves are designed for durability, but like all bioprosthetic valves, they can show structural deterioration over time."
-          subIntro="The 10-year NOTION trial, which evaluated earlier generation TAVI devices, found that:"
+          subIntro="The 10-year NOTION trial, which evaluated earlier generation Transcatheter Aortic Valve Implantation (TAVI) devices, found that:"
           bulletPoints={[
-            "TAVI valves had comparable long-term clinical outcomes to surgical valves, with similar rates of mortality, stroke, and myocardial infarction.",
-            "TAVI valves showed a lower rate of severe structural valve deterioration (SVD) compared to surgical valves at 10 years.",
-            "Hemodynamic performance was favorable for TAVI valves.",
-            "The overall rate of bioprosthetic valve failure was similar between TAVI and surgical valves.",
+            "Transcatheter Aortic Valve Implantation (TAVI) valves had comparable long-term clinical outcomes to surgical valves, with similar rates of mortality, stroke, and myocardial infarction.",
+            "Transcatheter Aortic Valve Implantation (TAVI) valves showed a lower rate of severe structural valve deterioration (SVD) compared to surgical valves at 10 years.",
+            "Hemodynamic performance was favorable for Transcatheter Aortic Valve Implantation (TAVI) valves.",
+            "The overall rate of bioprosthetic valve failure was similar between Transcatheter Aortic Valve Implantation (TAVI) and surgical valves.",
           ]}
           conclusion="This highlights the importance of long-term planning with your heart team, considering factors like valve type, patient anatomy, and individual risks to ensure the best possible care throughout your lifetime."
           buttonText="Request a Consultation"

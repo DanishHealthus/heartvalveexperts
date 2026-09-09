@@ -6,38 +6,38 @@ import Image from "next/image";
 const procedures = [
   {
     id: 1,
-    title: "TAVI",
+    title: "Transcatheter Aortic Valve Implantation (TAVI)",
     description:
       "A non/minimally invasive procedure that replaces a narrowed aortic valve without the need for open-heart surgery.",
-    img: "/images/homeimages/tavi.webp",
+    img: "/images/homeimages/procedures-overview01.webp",
   },
   {
     id: 2,
     title: "TMVR",
     description:
       "A procedure to replace the mitral valve through a catheter-based approach.",
-    img: "/images/homeimages/tmvr.webp",
+    img: "/images/homeimages/procedures-overview02.webp",
   },
   {
     id: 3,
     title: "TEER (MyClip/MitraClip)",
     description:
       "A minimally invasive repair procedure for the mitral valve using a clip device.",
-    img: "/images/homeimages/teer.webp",
+    img: "/images/homeimages/procedures-overview03.webp",
   },
   {
     id: 4,
     title: "LAAO",
     description:
       "Left Atrial Appendage Occlusion procedure to reduce stroke risk.",
-    img: "/images/homeimages/laao.webp",
+    img: "/images/homeimages/procedures-overview04.webp",
   },
   {
     id: 5,
     title: "Device Closures",
     description:
       "Minimally invasive procedures to close abnormal holes in the heart.",
-    img: "/images/homeimages/dClosures.webp",
+    img: "/images/homeimages/procedures-overview05.webp",
   },
 ];
 
@@ -52,7 +52,12 @@ export default function ProceduresOverview() {
           className="text-[#fff] mb-6 text-lg uppercase font-light tracking-wide flex items-center justify-center gap-1"
         >
           <span className="w-6 h-6 rounded-full ">
-            <Image width={25} height={25} src="/images/icon/Ellipse 3.svg" alt="" />
+            <Image
+              width={25}
+              height={25}
+              src="/images/icon/Ellipse 3.svg"
+              alt=""
+            />
           </span>
           Procedures Overview
         </p>

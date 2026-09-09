@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 import BreadCrumb from "@/component/BreadCrumb";
 import TaviSection from "@/component/Services/TaviSection";
-import FollowUpSection from '@/component/Services/FollowUpSection';
-import AppointmentCTAMumbai from '@/component/AppointmentCTAMumbai';
-import FAQAccordion from '@/component/Services/FAQAccordion';
-import PatientSuccessStories from '@/component/PatientSuccessStories';
-import Doctors from '@/component/Doctors';
-import TaviSectionAll from '@/component/Services/TaviSectionAll';
+import FollowUpSection from "@/component/Services/FollowUpSection";
+import AppointmentCTAMumbai from "@/component/AppointmentCTAMumbai";
+import FAQAccordion from "@/component/Services/FAQAccordion";
+import PatientSuccessStories from "@/component/PatientSuccessStories";
+import Doctors from "@/component/Doctors";
+import TaviSectionAll from "@/component/Services/TaviSectionAll";
 export const metadata = {
   title: "Best Heart Specialist in Mumbai | Heart Specialist Doctor Mumbai",
   description:
@@ -42,7 +42,8 @@ const faqData = [
   },
   {
     id: 5,
-    question: "How can I book an appointment with a heart specialist at Heart Valve Experts?",
+    question:
+      "How can I book an appointment with a heart specialist at Heart Valve Experts?",
     answer:
       "Appointments can be scheduled by contacting the team at Heart Valve Experts through the website, phone, or email to arrange a consultation with a heart specialist in Mumbai.",
   },
@@ -135,24 +136,22 @@ const page = () => {
         title="Expert Heart Specialists For Accurate Diagnosis And Confident Treatment Decisions"
         description={[
           `When you search for a heart specialist in Mumbai, you are usually looking for clarity, experience, and trustworthy guidance. The right specialist can significantly impact your outcomes and peace of mind, regardless of whether you are experiencing symptoms or have already received treatment advice.`,
-          "At Heart Valve Experts, patients have access to experienced specialists in Mumbai who focus on careful evaluations, evidence-based recommendations, and patient-centered cardiac care."
+          "At Heart Valve Experts, patients have access to experienced specialists in Mumbai who focus on careful evaluations, evidence-based recommendations, and patient-centered cardiac care.",
         ]}
-
         buttonText="Request a Consultation"
       />
 
-      <section
-        className="text-white relative animate-gradient-circle overflow-hidden"
-      >
+      <section className="text-white relative animate-gradient-circle overflow-hidden">
         <div className="max-w-7xl mx-auto text-white py-14 overflow-hidden">
           <FollowUpSection
             tag="Who it’s for?"
             title="Who is a Heart Specialist?"
             intro={`A heart specialist, also known as a <a target="_blank" href="https://heartvalveexperts.com/cardiologist-mumbai" class="text-blue-600 underline"></div>cardiologist</a>, is a doctor trained to diagnose and manage conditions affecting the heart and blood vessels. This includes evaluating symptoms, interpreting cardiac tests, and recommending appropriate treatment options.`}
             subIntro="Heart specialists play an essential role in:"
-            bulletPoints={["Early detection of heart disease.",
+            bulletPoints={[
+              "Early detection of heart disease.",
               "Managing chronic and complex cardiac conditions.",
-              "Guiding decisions around medication, procedures, or surgery."
+              "Guiding decisions around medication, procedures, or surgery.",
             ]}
             conclusion="Their role is to ensure patients receive timely, accurate, and appropriate care."
             buttonText="Request a Consultation"
@@ -169,7 +168,7 @@ const page = () => {
               "Palpitations or irregular heartbeat.",
               "Leg swelling along with sudden weight gain.",
               `Known <a target="_blank" href="https://heartvalveexperts.com/blog/heart-valve-disease-symptoms-causes-treatment" class="text-blue-600 underline">heart valve disease</a> or <a target="_blank" href="https://heartvalveexperts.com/blog/congenital-heart-disease-and-their-treatments" class="text-blue-600 underline">congenital heart conditions.</a>`,
-              "Chest discomfort, breathlessness, or unexplained fatigue."
+              "Chest discomfort, breathlessness, or unexplained fatigue.",
             ]}
             conclusion="Timely assessment can help prevent complications and unnecessary progression."
             buttonText="Request a Consultation"
@@ -189,12 +188,12 @@ const page = () => {
           "Coronary artery disease",
           `<a target="_blank" href="https://heartvalveexperts.com/blog/congenital-heart-disease-and-their-treatments" class="text-blue-600 underline">Congenital heart conditions.</a>`,
           "Heart rhythm disorders",
-          "Heart failure and structural heart problems"
+          "Heart failure and structural heart problems",
         ]}
         conclusion="Each condition requires individual assessment and a tailored care approach."
         buttonText="Request a Consultation"
         imageSrc="/images/newservices/heart/4.webp"
-        imageAlt="Who is Eligible for TAVI Surgery in Mumbai?"
+        imageAlt="Who is Eligible for Transcatheter Aortic Valve Implantation (TAVI) Surgery in Mumbai?"
       />
       <FollowUpSection
         tag="About"
@@ -204,28 +203,29 @@ const page = () => {
         bulletPoints={[
           "Explains the diagnosis clearly",
           "Discusses treatment or monitoring options",
-          "Recommends next steps such as medical therapy, further testing, or intervention when required"
+          "Recommends next steps such as medical therapy, further testing, or intervention when required",
         ]}
         conclusion="Patients are encouraged to ask questions and fully understand their care plan."
         buttonText="Request a Consultation"
         imageSrc="/images/newservices/heart/5.webp"
         imageAlt="reverse"
       />
-      <Doctors title="Meet Our Heart Specialist at Heart Valve Experts, Located in Mumbai"
-        des="Patients often want to know who will be treating them before booking an appointment." />
-      <section
-        className="text-white relative animate-gradient-circle overflow-hidden"
-      >
+      <Doctors
+        title="Meet Our Heart Specialist at Heart Valve Experts, Located in Mumbai"
+        des="Patients often want to know who will be treating them before booking an appointment."
+      />
+      <section className="text-white relative animate-gradient-circle overflow-hidden">
         <div className="max-w-7xl mx-auto text-white py-14 overflow-hidden">
           <FollowUpSection
             tag="Who it’s for?"
             title="Export Opinions and Advanced Cardiac Decisions"
             intro={`Many patients consult a heart specialist for a <a target="_blank" href="https://heartvalveexperts.com/expert-opinion-for-heart-surgery" class="text-blue-600 underline">second opinion</a> before making major decisions such as heart surgery or device-based procedures.`}
             subIntro="A specialist-led review helps:"
-            bulletPoints={["Confirm or clarify the diagnosis",
+            bulletPoints={[
+              "Confirm or clarify the diagnosis",
               "Assess the necessity and timing of intervention",
               "Explore less invasive or alternative treatment options",
-              "Reduce uncertainty before proceeding"
+              "Reduce uncertainty before proceeding",
             ]}
             conclusion="Reduce uncertainty before proceeding"
             buttonText="Request a Consultation"
@@ -241,7 +241,7 @@ const page = () => {
               "Expertise in complex and valve-related heart conditions",
               "Detailed evaluation and case-by-case treatment planning",
               "Clear communication and patient education",
-              "Experience in managing high-risk patients or those who are advised surgery"
+              "Experience in managing high-risk patients or those who are advised surgery",
             ]}
             conclusion="Recommendations are based on what is most appropriate for the individual patient."
             buttonText="Request a Consultation"
@@ -262,7 +262,7 @@ const page = () => {
         buttonLink="/contact-us"
       />
     </>
-  )
-}
+  );
+};
 
-export default page
+export default page;

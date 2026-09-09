@@ -71,7 +71,9 @@ export default function CaseStudy() {
 
         {/* Blog Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pb-10">
-          <Link href={`/case-studies/first-asia-pacific-an2-tavi-via-carotid-artery`}>
+          <Link
+            href={`/case-studies/first-asia-pacific-an2-tavi-via-carotid-artery`}
+          >
             <div
               style={{
                 boxShadow:
@@ -83,7 +85,9 @@ export default function CaseStudy() {
               <div className="relative w-full h-64 overflow-hidden">
                 <Image
                   src="/images/case1.webp"
-                  alt={'First Asia-Pacific AN2 TAVI via Carotid Artery'}
+                  alt={
+                    "First Asia-Pacific AN2 Transcatheter Aortic Valve Implantation (TAVI) via Carotid Artery"
+                  }
                   width={1000}
                   height={2000}
                   className="object-cover scale-[1.07] group-hover:scale-110 duration-500 h-full w-full"
@@ -96,20 +100,20 @@ export default function CaseStudy() {
                         <span>{post.date}</span>
                       </div> */}
                 <h3 className="text-base md:text-xl font-semibold mb-2 text-gray-900 line-clamp-2">
-                  First Asia-Pacific AN2 TAVI via Carotid Artery
+                  First Asia-Pacific AN2 Transcatheter Aortic Valve Implantation
+                  (TAVI) via Carotid Artery
                 </h3>
                 <p className="text-sm text-gray-600 line-clamp-3 mb-2">
-                  A 69-year-old woman presented with a history of diabetes, hypertension, prior stroke, and renal impairment. She also had multiple allergies, including intolerance to blood transfusions and several medications.
+                  A 69-year-old woman presented with a history of diabetes,
+                  hypertension, prior stroke, and renal impairment. She also had
+                  multiple allergies, including intolerance to blood
+                  transfusions and several medications.
                 </p>
               </div>
             </div>
           </Link>
         </div>
-
-
-
       </div>
     </section>
   );
 }
-

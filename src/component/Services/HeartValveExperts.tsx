@@ -1,5 +1,12 @@
-import React from 'react'
-import { FaCut, FaClock, FaShieldAlt, FaHeartbeat, FaHeart, FaSyringe } from "react-icons/fa";
+import React from "react";
+import {
+  FaCut,
+  FaClock,
+  FaShieldAlt,
+  FaHeartbeat,
+  FaHeart,
+  FaSyringe,
+} from "react-icons/fa";
 
 const benefits = [
   {
@@ -46,31 +53,31 @@ const HeartValveExperts = () => {
 
         {/* Heading */}
         <h2 className="text-2xl md:text-3xl font-bold mb-12">
-          What are the Benefits of TAVI Surgery/Procedure?
+          What are the Benefits of Transcatheter Aortic Valve Implantation
+          (TAVI) Surgery/Procedure?
         </h2>
 
         {/* Grid */}
-       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 border-t border-l border-gray-200">
-            {benefits.map((item, idx) => (
-                <div
-                key={idx}
-                className={`flex flex-row items-start gap-3 p-6 border-r border-gray-200 text-left 
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 border-t border-l border-gray-200">
+          {benefits.map((item, idx) => (
+            <div
+              key={idx}
+              className={`flex flex-row items-start gap-3 p-6 border-r border-gray-200 text-left 
                     ${idx % 2 === 0 ? "border-b border-gray-200" : ""}`} // odd index (1,3,5...) -> add border-b
-                >
-                <div>{item.icon}</div>
-                <div className="-mt-1">
-                    <h3 className="font-medium text-black text-xl">{item.title}</h3>
-                    <p className="text-sm opacity-80 text-gray-800 leading-relaxed">
-                    {item.desc}
-                    </p>
-                </div>
-                </div>
-            ))}
+            >
+              <div>{item.icon}</div>
+              <div className="-mt-1">
+                <h3 className="font-medium text-black text-xl">{item.title}</h3>
+                <p className="text-sm opacity-80 text-gray-800 leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
-
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HeartValveExperts
+export default HeartValveExperts;

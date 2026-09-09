@@ -43,7 +43,7 @@ async function getBlogData(slug: string): Promise<BlogPost | null> {
   try {
     const res = await fetch(
       `https://backend.heartvalveexperts.com/wp-json/custom-api/v1/blogs?slug=${slug}`,
-      { cache: "no-store" }
+      { cache: "no-store" },
     );
     if (!res.ok) return null;
     return await res.json();
@@ -152,29 +152,26 @@ export default async function SingleBlogPage({
 
   const extractedFaqs = extractFAQsFromHTML(blog.long_description || "");
   const faqSchema =
-    (blog.faq_list && blog.faq_list.length > 0
-      ? blog.faq_list
-      : extractedFaqs
-    ).length > 0
+    (blog.faq_list && blog.faq_list.length > 0 ? blog.faq_list : extractedFaqs)
+      .length > 0
       ? {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: (blog.faq_list && blog.faq_list.length > 0
-          ? blog.faq_list
-          : extractedFaqs
-        ).map((faq) => ({
-          "@type": "Question",
-          name: faq.question,
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: faq.answer,
-          },
-        })),
-      }
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: (blog.faq_list && blog.faq_list.length > 0
+            ? blog.faq_list
+            : extractedFaqs
+          ).map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: faq.answer,
+            },
+          })),
+        }
       : null;
 
-
-  const relatedPost = await getRelatedBLog()
+  const relatedPost = await getRelatedBLog();
   // const [relatedBlogs, setRelatedBlogs] = useState<RelatedBlogItem[]>([]);
   // useEffect(() => {
   //   const fetchRelated = async (): Promise<void> => {
@@ -214,7 +211,7 @@ export default async function SingleBlogPage({
         name="Dr. Ankur U. Phatarpekar"
         degrees="M.D., D.M., FSCAI"
         image="/images/doctors/dr-ankur.png"
-        description="With over 15 years of expertise, Dr. Phatarpekar is recognised as a renowned interventional cardiologist in Mumbai, specialising in complex coronary interventions, structural heart procedures, and pioneering work in TAVI (Transcatheter Aortic Valve Implantation)."
+        description="With over 15 years of expertise, Dr. Phatarpekar is recognised as a renowned interventional cardiologist in Mumbai, specialising in complex coronary interventions, structural heart procedures, and pioneering work in Transcatheter Aortic Valve Implantation (TAVI)."
       />
       <RelatedBlog posts={relatedPost.posts} />
     </>

@@ -19,7 +19,7 @@ interface FAQAccordionProps {
 export default function FAQAccordion({
   faqs,
   sectionLabel = "FAQs",
-  // heading = "Frequently Asked Questions About TAVI Procedure",
+  // heading = "Frequently Asked Questions About Transcatheter Aortic Valve Implantation (TAVI) Procedure",
   heading = "Frequently Asked Questions",
 }: FAQAccordionProps) {
   const [openId, setOpenId] = useState<number | null>(1);
@@ -36,7 +36,12 @@ export default function FAQAccordion({
           className="text-gray-600 text-base font-medium tracking-wide flex items-center justify-center gap-1 uppercase"
         >
           <span className="w-6 h-6 rounded-full">
-            <Image width={25} height={25} src="/images/icon/Ellipse 3.svg" alt="" />
+            <Image
+              width={25}
+              height={25}
+              src="/images/icon/Ellipse 3.svg"
+              alt=""
+            />
           </span>
           {sectionLabel}
         </p>

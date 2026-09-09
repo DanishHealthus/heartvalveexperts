@@ -13,27 +13,28 @@ const innovations = [
     title: "Transcatheter Advances",
     description:
       "No large incisions, faster recovery, and better patient outcomes.",
-    img: "/images/homeimages/Tech_01.webp",
+    img: "/images/homeimages/Tech-01.webp",
   },
   {
     id: 2,
     title: "Global Standards of Care",
     description: "Protocols aligned with international cardiac societies.",
-    img: "/images/homeimages/Tech_02.webp",
+    img: "/images/homeimages/Tech-02.webp",
   },
   {
     id: 3,
     title: "Next-Generation Imaging and Technology",
     description:
       "Advanced 3D imaging and precision-guided systems for accurate diagnosis and treatment planning.",
-    img: "/images/homeimages/Tech_03.webp",
+    img: "/images/homeimages/Tech-03.webp",
   },
   {
     id: 4,
-    title: "Pioneering MyClip and TAVI Innovations",
+    title:
+      "Pioneering MyClip and Transcatheter Aortic Valve Implantation (TAVI) Innovations",
     description:
-      "HVE led the first human trial of MyClip in India and introduced advanced TAVI techniques, setting new benchmarks for transcatheter interventions nationwide.",
-    img: "/images/homeimages/Tech_04.webp",
+      "HVE led the first human trial of MyClip in India and introduced advanced Transcatheter Aortic Valve Implantation (TAVI) techniques, setting new benchmarks for transcatheter interventions nationwide.",
+    img: "/images/homeimages/Tech-04.webp",
   },
 ];
 
@@ -58,7 +59,7 @@ export default function InnovationCardiacCare() {
       });
     }, sectionRef);
 
-    return () => ctx.revert(); 
+    return () => ctx.revert();
   }, []);
 
   return (
@@ -68,9 +69,20 @@ export default function InnovationCardiacCare() {
     >
       <div className="container mx-auto text-center">
         {/* Section Label */}
-        
-        <p style={{letterSpacing :'2px'}} className="text-[#000] mb-6 text-lg uppercase font-light tracking-wide flex items-center justify-center gap-1">
-          <span className="w-6 h-6 rounded-full "><Image width={25} height={25} src="/images/icon/Ellipse 3.svg" alt="" /></span>Innovation in Cardiac Care
+
+        <p
+          style={{ letterSpacing: "2px" }}
+          className="text-[#000] mb-6 text-lg uppercase font-light tracking-wide flex items-center justify-center gap-1"
+        >
+          <span className="w-6 h-6 rounded-full ">
+            <Image
+              width={25}
+              height={25}
+              src="/images/icon/Ellipse 3.svg"
+              alt=""
+            />
+          </span>
+          Innovation in Cardiac Care
         </p>
 
         {/* Title */}
@@ -83,9 +95,9 @@ export default function InnovationCardiacCare() {
           {innovations.map((item, i) => (
             <div
               key={i}
-            //   ref={(el) => {
-            //     if (el) cardsRef.current[i] = el;
-            //   }}
+              //   ref={(el) => {
+              //     if (el) cardsRef.current[i] = el;
+              //   }}
               className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition"
             >
               {/* Image */}

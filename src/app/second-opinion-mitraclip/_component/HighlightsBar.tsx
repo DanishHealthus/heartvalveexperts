@@ -7,7 +7,7 @@ export default function HighlightsBar() {
     {
       icon: <Award className="w-6 h-6 lg:w-8 lg:h-8" />,
       title: "First in Western India",
-      desc: "To introduce advanced TAVI technology",
+      desc: "To introduce advanced Transcatheter Aortic Valve Implantation (TAVI) technology",
     },
     {
       icon: <HeartPulse className="w-6 h-6 lg:w-8 lg:h-8" />,
@@ -25,7 +25,6 @@ export default function HighlightsBar() {
     <div className="w-full bg-gradient-to-r  py-6 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row rounded-2xl overflow-hidden border border-white/20">
-          
           {items.map((item, index) => (
             <div
               key={index}
@@ -44,7 +43,6 @@ export default function HighlightsBar() {
               </div>
             </div>
           ))}
-
         </div>
       </div>
     </div>

@@ -1,13 +1,14 @@
-import React from 'react'
+import React from "react";
 import BreadCrumb from "@/component/BreadCrumb";
 import TaviSection from "@/component/Services/TaviSection";
-import FollowUpSection from '@/component/Services/FollowUpSection';
-import AppointmentCTAMumbai from '@/component/AppointmentCTAMumbai';
-import FAQAccordion from '@/component/Services/FAQAccordion';
-import TaviSectionAll from '@/component/Services/TaviSectionAll';
+import FollowUpSection from "@/component/Services/FollowUpSection";
+import AppointmentCTAMumbai from "@/component/AppointmentCTAMumbai";
+import FAQAccordion from "@/component/Services/FAQAccordion";
+import TaviSectionAll from "@/component/Services/TaviSectionAll";
 
 export const metadata = {
-  title: "Device Closure Procedure for Congenital Heart Defect | Heart Valve Experts",
+  title:
+    "Device Closure Procedure for Congenital Heart Defect | Heart Valve Experts",
   description:
     "Learn about device closure for congenital heart defects. A safe, minimally invasive treatment for ASD & VSD with faster recovery and effective results.",
   alternates: {
@@ -142,12 +143,9 @@ const page = () => {
         description={[
           `Certain congenital heart defects, often referred to as “hole in the heart”, can be treated using device-based techniques. Device closure allows some patients to have the defect closed without open-heart surgery, using a catheter-based approach.`,
         ]}
-
         buttonText="Request a Consultation"
       />
-      <section
-        className="text-white relative animate-gradient-circle overflow-hidden"
-      >
+      <section className="text-white relative animate-gradient-circle overflow-hidden">
         <div className="max-w-7xl mx-auto text-white py-14 overflow-hidden">
           <FollowUpSection
             tag="Who it’s for?"
@@ -169,7 +167,7 @@ const page = () => {
               `<a target="_blank" href="https://heartvalveexperts.com/device-closure/atrial-septal-defect" class="text-blue-600 underline">Atrial Septal Defect (ASD) Device Closure</a> : A specialised device is placed across the opening between the upper heart chambers to stop abnormal blood flow and reduce strain on the heart and lungs.`,
               `<a target="_blank" href="https://heartvalveexperts.com/device-closure/patent-foramen-ovale" class="text-blue-600 underline">Patent Foramen Ovale (PFO) Device Closure</a> : A small closure device seals the flap-like opening between the atria that did not close after birth, helping lower the risk of stroke in selected patients.`,
               `<a target="_blank" href="https://heartvalveexperts.com/device-closure/ventricular-septal-defect" class="text-blue-600 underline">Selected Ventricular Septal Defects (VSD) Device Closure</a> : In some cases, a device is used to close the hole between the lower heart chambers without having to do open-heart surgery. This depends on the size and location of the defect.`,
-              `<a target="_blank" href="https://heartvalveexperts.com/device-closure/patent-ductus-arteriosus" class="text-blue-600 underline">Patent Ductus Arteriosus (PDA) Device Closure</a> : A catheter-delivered device is used to close the abnormal blood vessel connection between major arteries, preventing excess blood flow to the lungs.`
+              `<a target="_blank" href="https://heartvalveexperts.com/device-closure/patent-ductus-arteriosus" class="text-blue-600 underline">Patent Ductus Arteriosus (PDA) Device Closure</a> : A catheter-delivered device is used to close the abnormal blood vessel connection between major arteries, preventing excess blood flow to the lungs.`,
             ]}
             conclusion=""
             buttonText="Request a Consultation"
@@ -188,22 +186,22 @@ const page = () => {
           `The defect is well-defined and suitable for device placement.`,
           "Heart anatomy allows stable positioning of the device.",
           "There is evidence of abnormal blood flow or symptoms.",
-          "Open surgery can be safely avoided."
+          "Open surgery can be safely avoided.",
         ]}
         conclusion="Each case is reviewed individually to prioritise safety and long-term outcomes."
         buttonText="Request a Consultation"
         imageSrc="/images/newservices/4.webp"
-        imageAlt="Who is Eligible for TAVI Surgery in Mumbai?"
+        imageAlt="Who is Eligible for Transcatheter Aortic Valve Implantation (TAVI) Surgery in Mumbai?"
       />
       <TaviSection
         imageSrc="/images/service/ASD Closure/1.webp"
-        imageAlt="TEER Surgery"
+        imageAlt="Transcatheter Aortic Valve Implantation (TAVI) Surgery"
         imageTitle=""
         tag="About"
         title="How Device Closure Is Performed"
         description={[
           `The procedure is performed in a cardiac catheterisation laboratory. A thin, flexible tube is guided through a blood vessel to the heart under imaging guidance.`,
-          "Once the device is positioned across the defect, it is carefully released to seal the opening. The heart tissue gradually grows around the device, securing it in place. The procedure typically does not require opening the chest."
+          "Once the device is positioned across the defect, it is carefully released to seal the opening. The heart tissue gradually grows around the device, securing it in place. The procedure typically does not require opening the chest.",
         ]}
         buttonText="Request a Consultation"
       />
@@ -219,17 +217,15 @@ const page = () => {
           "Shorter hospital stay",
           "Previous cardiac surgery",
           "Faster recovery",
-          "Reduced physical trauma"
+          "Reduced physical trauma",
         ]}
         conclusion="Benefits depend on correct patient selection and procedural expertise."
         buttonText="Request a Consultation"
         imageSrc="/images/newservices/6.webp"
-        imageAlt="Who is Eligible for TAVI Surgery in Mumbai?"
+        imageAlt="Who is Eligible for Transcatheter Aortic Valve Implantation (TAVI) Surgery in Mumbai?"
       />
 
-      <section
-        className="text-white relative animate-gradient-circle overflow-hidden"
-      >
+      <section className="text-white relative animate-gradient-circle overflow-hidden">
         <div className="max-w-7xl mx-auto text-white py-14 overflow-hidden">
           <FollowUpSection
             tag="Who it’s for?"
@@ -266,7 +262,7 @@ const page = () => {
         buttonLink="/contact-us"
       />
     </>
-  )
-}
+  );
+};
 
-export default page
+export default page;

@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 import BreadCrumb from "@/component/BreadCrumb";
 import TaviSection from "@/component/Services/TaviSection";
-import FollowUpSection from '@/component/Services/FollowUpSection';
-import AppointmentCTAMumbai from '@/component/AppointmentCTAMumbai';
-import FAQAccordion from '@/component/Services/FAQAccordion';
-import PatientSuccessStories from '@/component/PatientSuccessStories';
+import FollowUpSection from "@/component/Services/FollowUpSection";
+import AppointmentCTAMumbai from "@/component/AppointmentCTAMumbai";
+import FAQAccordion from "@/component/Services/FAQAccordion";
+import PatientSuccessStories from "@/component/PatientSuccessStories";
 export const metadata = {
   title: "Expert Opinion for Heart Surgery | Heart Valve Experts",
   description:
@@ -46,7 +46,8 @@ const faqData = [
   },
   {
     id: 6,
-    question: "Is such guidance helpful for families deciding on behalf of parents?",
+    question:
+      "Is such guidance helpful for families deciding on behalf of parents?",
     answer:
       "Yes. Many families seek expert input before consenting to major valve procedures.",
   },
@@ -144,26 +145,25 @@ const page = () => {
         bulletPoints={[
           "1,000+ heart valve and surgery cases reviewed",
           `Specialist second opinions for complex <a target="_blank" href="https://heartvalveexperts.com/blog/heart-valve-disease-symptoms-causes-treatment" class="text-blue-600 underline">valve disease</a>`,
-          "Trusted centre for heart valve decisions"
+          "Trusted centre for heart valve decisions",
         ]}
         conclusion=""
         buttonText="Book Appointment Now"
         imageSrc="/images/newservices/expert/1.webp"
         imageAlt="reverse"
       />
-      <section
-        className="text-white relative animate-gradient-circle overflow-hidden"
-      >
+      <section className="text-white relative animate-gradient-circle overflow-hidden">
         <div className="max-w-7xl mx-auto text-white py-14 overflow-hidden">
           <FollowUpSection
             tag="Who it’s for?"
             title="How the Expert Opinion Process Works"
             intro="Our approach reflects how complex heart valve decisions are made in expert practice. Each stage is focused on accuracy, safety, and patient understanding."
             subIntro=""
-            bulletPoints={["You share your medical history, echocardiograms, scans, and current recommendations.",
+            bulletPoints={[
+              "You share your medical history, echocardiograms, scans, and current recommendations.",
               `Your case is reviewed by an expert team of <a target="_blank" href="https://heartvalveexperts.com/cardiologist-mumbai" class="text-blue-600 underline">cardiologists</a> with extensive experience in valve disease and structural heart conditions.`,
               "An appointment is scheduled to discuss your case in detail with an interventional specialist.",
-              "You receive a clear expert opinion outlining the diagnosis, treatment options, and recommended next steps."
+              "You receive a clear expert opinion outlining the diagnosis, treatment options, and recommended next steps.",
             ]}
             conclusion=""
             buttonText="Book Appointment Now"
@@ -179,7 +179,7 @@ const page = () => {
               "Assess whether surgery is truly required at this stage",
               "Evaluate suitability for catheter-based options",
               "Advise when careful monitoring may be safer than intervention",
-              "Help families understand risk in a realistic and balanced way"
+              "Help families understand risk in a realistic and balanced way",
             ]}
             conclusion="The goal is not to accelerate treatment but to make precise decisions."
             buttonText="Book Appointment Now"
@@ -198,12 +198,12 @@ const page = () => {
           `Whether current findings justify surgery`,
           "Whether the timing can be safely optimised",
           "How disease progression should be monitored",
-          "The right intervention approach to support the best possible long-term outcomes"
+          "The right intervention approach to support the best possible long-term outcomes",
         ]}
         conclusion="In many situations, patients and families simply want reassurance that the recommended treatment plan is appropriate."
         buttonText="Book Appointment Now"
         imageSrc="/images/newservices/expert/4.webp"
-        imageAlt="Who is Eligible for TAVI Surgery in Mumbai?"
+        imageAlt="Who is Eligible for Transcatheter Aortic Valve Implantation (TAVI) Surgery in Mumbai?"
       />
       <FollowUpSection
         tag="About"
@@ -215,7 +215,7 @@ const page = () => {
           "Your symptoms feel less severe than suggested by your reports.",
           "Surgery was recommended mainly based on imaging findings.",
           `An <a target="_blank" href="https://heartvalveexperts.com/blog/tavi-in-low-surgical-risk-patients" class="text-blue-600 underline">elderly parent or family member</a> with multiple health conditions has been advised to have valve surgery.`,
-          "You were given multiple treatment options without clear direction."
+          "You were given multiple treatment options without clear direction.",
         ]}
         conclusion="These are common situations where specialist review helps clarify whether intervention is needed now, later, or not at all."
         buttonText="Book Appointment Now"
@@ -234,7 +234,7 @@ const page = () => {
         buttonLink="/contact-us"
       />
     </>
-  )
-}
+  );
+};
 
-export default page
+export default page;

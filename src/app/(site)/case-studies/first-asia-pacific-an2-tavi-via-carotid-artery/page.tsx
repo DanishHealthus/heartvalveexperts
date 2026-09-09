@@ -3,19 +3,21 @@ import BreadCrumb from "@/component/BreadCrumb";
 import CardiacComparison from "@/component/Blog/CardiacComparison";
 
 export const metadata = {
-  title: "AN2 TAVI via Carotid Artery Case | Heart Valve Experts",
+  title:
+    "AN2 Transcatheter Aortic Valve Implantation (TAVI) via Carotid Artery Case | Heart Valve Experts",
   description:
-    "Case study: First Asia-Pacific AN2 TAVI performed via carotid artery, showcasing advanced minimally invasive heart valve experts in Mumbai.",
+    "Case study: First Asia-Pacific AN2 Transcatheter Aortic Valve Implantation (TAVI) performed via carotid artery, showcasing advanced minimally invasive heart valve experts in Mumbai.",
   alternates: {
-    canonical: "https://heartvalveexperts.com/case-studies/first-asia-pacific-an2-tavi-via-carotid-artery",
+    canonical:
+      "https://heartvalveexperts.com/case-studies/first-asia-pacific-an2-tavi-via-carotid-artery",
   },
 };
 
 export default async function SingleBlogPage() {
-
   const blog = {
-    image: "/images/case1.webp", 
-    title: "Case Report: First Asia-Pacific AN2 TAVI via Carotid Artery",
+    image: "/images/case1.webp",
+    title:
+      "Case Report: First Asia-Pacific AN2 Transcatheter Aortic Valve Implantation (TAVI) via Carotid Artery",
     long_description: `
     <h2>Patient Profile</h2>
     <p>A 69-year-old woman presented with a history of diabetes, hypertension, prior stroke, and renal impairment. She had multiple allergies, including intolerance to blood transfusions and several medications.</p>
@@ -49,7 +51,13 @@ export default async function SingleBlogPage() {
 
   return (
     <>
-      <BreadCrumb title={'First Asia-Pacific AN2 TAVI via Carotid Artery'} subpage="true" image="/images/contact.webp" />
+      <BreadCrumb
+        title={
+          "First Asia-Pacific AN2 Transcatheter Aortic Valve Implantation (TAVI) via Carotid Artery"
+        }
+        subpage="true"
+        image="/images/contact.webp"
+      />
       <CardiacComparison blog={blog} />
     </>
   );

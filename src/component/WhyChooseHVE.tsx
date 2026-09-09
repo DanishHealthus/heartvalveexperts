@@ -8,7 +8,7 @@ const features = [
     icon: "/images/icon/Group 43.svg",
     title: "Pioneering Interventions",
     description:
-      "First in Western India to introduce advanced TAVI technology and cutting-edge devices, and the first in India to lead a human trial of MyClip, bringing this innovative TEER device to the country.",
+      "First in Western India to introduce advanced Transcatheter Aortic Valve Implantation (TAVI) technology and cutting-edge devices, and the first in India to lead a human trial of MyClip, bringing this innovative TEER device to the country.",
   },
   {
     icon: "/images/icon/Group 44.svg",
@@ -40,14 +40,20 @@ export default function WhyChooseHVE() {
             className="text-[#fff] text-lg font-light tracking-wide flex items-center justify-center gap-1"
           >
             <span className="w-6 h-6 rounded-full">
-              <Image width={25} height={25} src="/images/icon/Ellipse 3.svg" alt="" />
+              <Image
+                width={25}
+                height={25}
+                src="/images/icon/Ellipse 3.svg"
+                alt=""
+              />
             </span>{" "}
             WHY CHOOSE HVE?
           </p>
           <h2 className="text-xl md:text-2xl font-light mt-4">
             When it comes to heart valve surgery in Mumbai, experience and
             innovation matter. At HVE, you are in the hands of a dedicated team
-            with decades of combined expertise in structural heart interventions.
+            with decades of combined expertise in structural heart
+            interventions.
           </h2>
         </div>
 
@@ -59,7 +65,13 @@ export default function WhyChooseHVE() {
               className="border border-white/30 rounded-2xl p-6 bg-white/5 hover:bg-white/10 transition-all"
             >
               <div className="w-12 h-12 mb-3 shrink-0">
-                <Image width={25} height={25} className="object-none rounded-full shrink-0" src={feature.icon} alt="" />
+                <Image
+                  width={25}
+                  height={25}
+                  className="object-none rounded-full shrink-0"
+                  src={feature.icon}
+                  alt=""
+                />
               </div>
               <h3
                 style={{ fontWeight: "300" }}
