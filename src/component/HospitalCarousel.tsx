@@ -18,17 +18,11 @@ const hospitals = [
 
 export default function HospitalCarousel() {
   return (
-    <section className="py-10 bg-white">
-      <div className="text-center">
-
-        <h2 className="text-2xl md:text-3xl font-medium text-gray-900 mb-12 ">
-          Doctors Affiliation
-        </h2>
-        {/* <hr /> */}
-      </div>
+    <section className="py-5 bg-white">
+      {/* <hr /> */}
       <div className="max-w-7xl mx-auto relative">
         <Swiper
-           modules={[Navigation, Pagination, Autoplay]}
+          modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={30}
           loop
           // autoplay={true}
