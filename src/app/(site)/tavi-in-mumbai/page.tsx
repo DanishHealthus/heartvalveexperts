@@ -20,7 +20,7 @@ export const metadata = {
   title:
     "Transcatheter Aortic Valve Implantation (TAVI) in Mumbai | Heart Valve Experts",
   description:
-    "Need TAVI/TAVR in Mumbai? Get minimally invasive valve replacement at Heart Valve Experts. 10,000+ procedures by experts, faster recovery. Call us for details.",
+    "Need Transcatheter Aortic Valve Implantation (TAVI)/TAVR in Mumbai? Get minimally invasive valve replacement at Heart Valve Experts. 10,000+ procedures by experts, faster recovery. Call us for details.",
   alternates: {
     canonical: "https://heartvalveexperts.com/tavi-in-mumbai",
   },
@@ -67,13 +67,13 @@ const faqData = [
   },
   {
     id: 7,
-    question: "What are the risks of TAVI?",
+    question: "What are the risks of Transcatheter Aortic Valve Implantation (TAVI)?",
     answer:
       "Possible risks include bleeding, stroke, vascular complications, rhythm disturbances, or valve leakage. A careful evaluation minimises these risks.",
   },
   {
     id: 8,
-    question: "Can elderly patients undergo TAVI?",
+    question: "Can elderly patients undergo Transcatheter Aortic Valve Implantation (TAVI)?",
     answer:
       "Yes. Transcatheter Aortic Valve Implantation (TAVI) is commonly recommended for elderly patients with high surgical risk.",
   },
@@ -161,18 +161,18 @@ const servciepage = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <BreadCrumb
-        title="Transcatheter Aortic Valve Implantation (TAVI) (Transcatheter Aortic Valve Implantation) in Mumbai"
+        title="Transcatheter Aortic Valve Implantation (TAVI) in Mumbai"
         subpage="false"
         image="/images/service/TAVI/bread.webp"
       />
       <TaviSectionAll
         imageSrc="/images/service/TAVI/1.webp"
-        imageAlt="Transcatheter Aortic Valve Implantation (TAVI) (Transcatheter aortic valve implantation) in Mumbai at Heart Valve Experts"
-        imageTitle="Transcatheter Aortic Valve Implantation (TAVI) (Transcatheter aortic valve implantation) in Mumbai"
+        imageAlt="Transcatheter Aortic Valve Implantation (TAVI) in Mumbai at Heart Valve Experts"
+        imageTitle="Transcatheter Aortic Valve Implantation (TAVI) in Mumbai"
         tag="About"
         title="Transcatheter Aortic Valve Implantation (TAVI) in Mumbai – Advanced Minimally Invasive Aortic Valve Replacement"
         description={[
-          "Timely treatment is essential if you or your loved one has been diagnosed with severe aortic stenosis. Transcatheter Aortic Valve Implantation (TAVI) (Transcatheter aortic valve implantation) in Mumbai offers a minimally invasive alternative to traditional open-heart valve replacement surgery and is widely used for patients who are elderly or considered high surgical risk.",
+          "Timely treatment is essential if you or your loved one has been diagnosed with severe aortic stenosis. Transcatheter Aortic Valve Implantation (TAVI) in Mumbai offers a minimally invasive alternative to traditional open-heart valve replacement surgery and is widely used for patients who are elderly or considered high surgical risk.",
           "At Heart Valve Experts, patients are evaluated by a dedicated structural heart team with extensive experience in transcatheter valve therapies. Collectively, the team has performed close to 1000 Transcatheter Aortic Valve Implantation (TAVI) procedures, making it one of the highest-volume Transcatheter Aortic Valve Implantation (TAVI) programmes in Mumbai.",
           `We provide comprehensive consultation, procedural planning, and follow-up care for patients seeking the Transcatheter Aortic Valve Implantation (TAVI) procedure in Mumbai and across Maharashtra.`,
         ]}
@@ -224,7 +224,7 @@ const servciepage = () => {
       />
       <TaviSection
         imageSrc="/images/service/TAVI/1.webp"
-        imageAlt="TAVI/Transcatheter Aortic Valve Implantation (TAVI) in Mumbai by Heart Valve Experts"
+        imageAlt="Transcatheter Aortic Valve Implantation (TAVI) in Mumbai by Heart Valve Experts"
         imageTitle="What is Transcatheter Aortic Valve Implantation (TAVI) or TAVR?"
         tag="About"
         title="What is Transcatheter Aortic Valve Implantation (TAVI) or TAVR?"
@@ -301,7 +301,7 @@ const servciepage = () => {
           <ComparisonSection
             title="Transcatheter Aortic Valve Implantation (TAVI) vs Open Heart Surgery"
             subtitle="For many patients, Transcatheter Aortic Valve Implantation (TAVI) in Mumbai offers a less invasive approach with a shorter recovery time."
-            badge="Why Choose TAVI"
+            badge="Why Choose Transcatheter Aortic Valve Implantation (TAVI)"
             rows={[
               {
                 feature: "Chest Opening",

@@ -230,7 +230,7 @@ const page = () => {
         heading="Take the Next Step"
         badgeText="If you or your family member is facing a decision about heart valve treatment, specialist clarity matters."
         paraText=""
-        buttonText="Book a TAVI Consultation"
+        buttonText="Book a Transcatheter Aortic Valve Implantation (TAVI) Consultation"
         buttonLink="/contact-us"
       />
     </>

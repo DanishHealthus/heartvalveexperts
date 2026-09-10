@@ -258,7 +258,7 @@ const page = () => {
         heading="Take the Next Step With a Heart Specialist in India"
         badgeText="If you are searching for a heart specialist near you or need expert guidance for a heart condition, an early consultation can provide clarity and direction."
         paraText=""
-        buttonText="Book a TAVI Consultation"
+        buttonText="Book a Transcatheter Aortic Valve Implantation (TAVI) Consultation"
         buttonLink="/contact-us"
       />
     </>

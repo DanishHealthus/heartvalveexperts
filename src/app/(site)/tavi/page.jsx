@@ -11,9 +11,9 @@ import PatientSuccessStories from "@/component/PatientSuccessStories";
 import TaviSectionAll from "@/component/Services/TaviSectionAll";
 
 export const metadata = {
-  title: "TAVI/TAVR Surgery | Procedure, Risks & Recovery Guide",
+  title: "Transcatheter Aortic Valve Implantation (TAVI)/TAVR Surgery | Procedure, Risks & Recovery Guide",
   description:
-    "What is TAVI/TAVR surgery? A detailed guide explaining the minimally invasive procedure, step-by-step process, potential risks, and recovery.",
+    "What is Transcatheter Aortic Valve Implantation (TAVI)/TAVR surgery? A detailed guide explaining the minimally invasive procedure, step-by-step process, potential risks, and recovery.",
   alternates: {
     canonical: "https://heartvalveexperts.com/tavi",
   },
@@ -42,7 +42,7 @@ const conditionsData = [
   },
   {
     title: "Multiple comorbidities",
-    desc: "Patients with combined health issues such as diabetes, hypertension, or prior stroke are often better suited for minimally invasive options like TAVI.",
+    desc: "Patients with combined health issues such as diabetes, hypertension, or prior stroke are often better suited for minimally invasive options like Transcatheter Aortic Valve Implantation (TAVI).",
   },
 ];
 
@@ -146,7 +146,7 @@ const benefitsData2 = [
   {
     iconSrc: "/images/service/icon/b5.svg",
     title: "Comprehensive Structural",
-    desc: "We are one of the few centres equipped to perform the full range of structural heart procedures, including MitraClip, BMV, and PVL device closures.",
+    desc: "We are one of the few centres equipped to perform the full range of structural heart procedures, including MitraClip, Balloon Mitral Valvotomy (BMV), and PVL device closures.",
   },
   {
     iconSrc: "/images/service/icon/b6.svg",
@@ -239,7 +239,7 @@ const serviceSchema = {
   preparation:
     "Before the procedure, patients undergo diagnostic tests such as blood work, ECG, echocardiogram, and CT scans. Medications may be adjusted, and local anesthesia or light sedation is administered during the intervention.",
   followup:
-    "After TAVI, patients stay in hospital for monitoring. They often take blood-thinning medication and have follow-up visits, including echocardiograms and cardiology check-ups.",
+    "After Transcatheter Aortic Valve Implantation (TAVI), patients stay in hospital for monitoring. They often take blood-thinning medication and have follow-up visits, including echocardiograms and cardiology check-ups.",
   url: "https://heartvalveexperts.com/tavi",
 };
 
@@ -268,7 +268,7 @@ const servciepage = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <BreadCrumb
-        title="TAVI/TAVR Surgery/Procedure"
+        title="Transcatheter Aortic Valve Implantation (TAVI/TAVR) Surgery/Procedure"
         subpage="false"
         image="/images/service/TAVI/bread.webp"
       />
@@ -279,7 +279,7 @@ const servciepage = () => {
         tag="About"
         title="What is Transcatheter Aortic Valve Implantation (TAVI) Surgery/Procedure?"
         description={[
-          `TAVI, or Transcatheter Aortic Valve Implantation, is a minimally invasive procedure used to treat a narrowed aortic valve, also known as <a class="text-blue-500 hover:text-red-500" style="text-decoration: none;" href="https://heartvalveexperts.com/blog/aortic-stenosis-symptoms-risks-treatments" target="_blank" rel="noopener noreferrer">aortic stenosis</a>. It is also referred to as TAVR surgery/procedure, which stands for Transcatheter Aortic Valve Replacement. Instead of opening the chest as in traditional surgery, Transcatheter Aortic Valve Implantation (TAVI) surgery is a suture-less procedure.`,
+          `Transcatheter Aortic Valve Implantation (TAVI) is a minimally invasive procedure used to treat a narrowed aortic valve, also known as <a class="text-blue-500 hover:text-red-500" style="text-decoration: none;" href="https://heartvalveexperts.com/blog/aortic-stenosis-symptoms-risks-treatments" target="_blank" rel="noopener noreferrer">aortic stenosis</a>. It is also referred to as TAVR surgery/procedure, which stands for Transcatheter Aortic Valve Replacement. Instead of opening the chest as in traditional surgery, Transcatheter Aortic Valve Implantation (TAVI) surgery is a suture-less procedure.`,
           `It involves inserting a new valve through a catheter, usually via the femoral artery in the thigh, and positioning it inside the damaged valve. The <a class="text-blue-500 hover:text-red-500" style="text-decoration: none;" href="https://heartvalveexperts.com/blog/tavi-procedure-cost-in-india" target="_blank" rel="noopener noreferrer">Transcatheter Aortic Valve Implantation (TAVI) procedure</a> is especially recommended for patients who are at high risk for open-heart surgery due to advanced age or other underlying health conditions.`,
           `Patients looking for specialist evaluation can learn more about our <a class="text-blue-500 hover:text-red-500" style="text-decoration: none;" href="https://heartvalveexperts.com/tavi-in-mumbai" target="_blank" rel="noopener noreferrer">Transcatheter Aortic Valve Implantation (TAVI) treatment in Mumbai.</a>`,
         ]}

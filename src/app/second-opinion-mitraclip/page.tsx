@@ -23,9 +23,9 @@ const page = () => {
     {
       id: 2,
       question:
-        "What is the difference between a second opinion and a consultation at HVE?",
+        "What is the difference between a second opinion and a consultation at Heart Valve Experts (HVE)?",
       answer:
-        "At HVE, we treat every first visit as a thorough evaluation not a quick second opinion. We review your imaging, reports, symptoms, and risk profile in detail before the appointment, so the consultation itself is focused and productive. You receive a clear clinical recommendation, not just an opinion.",
+        "At Heart Valve Experts (HVE), we treat every first visit as a thorough evaluation not a quick second opinion. We review your imaging, reports, symptoms, and risk profile in detail before the appointment, so the consultation itself is focused and productive. You receive a clear clinical recommendation, not just an opinion.",
     },
     {
       id: 3,
@@ -174,7 +174,7 @@ const page = () => {
           subtitle=""
           image={{
             src: "/images/lp/newlp/2.webp",
-            alt: "TAVI",
+            alt: "Transcatheter Aortic Valve Implantation (TAVI)",
           }}
           considerationTitle=""
           bullets={[
@@ -212,17 +212,17 @@ const page = () => {
         subtitle="Not every patient is a candidate for a catheter-based procedure. That determination is made only after a structured evaluation, which is exactly what our evaluation appointment provides."
         image={{
           src: "/images/lp/newlp/3a.webp",
-          alt: "TEER / MitraClip",
+          alt: "Transcatheter Edge-to-Edge Repair (TEER) / MitraClip",
         }}
         videoUrl="https://www.youtube.com/watch?v=tA5I5_sHG30"
-        considerationTitle="TEER / MitraClip"
+        considerationTitle="Transcatheter Edge-to-Edge Repair (TEER) / MitraClip"
         bullets={[
           { id: 1, text: "Significant mitral regurgitation" },
           { id: 2, text: "High or intermediate surgical risk" },
           { id: 3, text: "Previously declined for surgery" },
         ]}
         whyTitle="Transcatheter Mitral Valve Edge-to-Edge Repair"
-        whyDescription="MV TEER allows our specialist team to repair a leaking mitral valve using a catheter without opening the chest. It is particularly recommended for patients with significant mitral regurgitation who are at elevated surgical risk or prefer to avoid open surgery."
+        whyDescription="MV Transcatheter Edge-to-Edge Repair (TEER) allows our specialist team to repair a leaking mitral valve using a catheter without opening the chest. It is particularly recommended for patients with significant mitral regurgitation who are at elevated surgical risk or prefer to avoid open surgery."
       />
       <ConsultationProcess {...data} />
       <FAQAccordion faqs={faqData} />

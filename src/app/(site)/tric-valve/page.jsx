@@ -10,9 +10,9 @@ import PatientSuccessStories from "@/component/PatientSuccessStories";
 import TaviSectionAll from "@/component/Services/TaviSectionAll";
 
 export const metadata = {
-  title: "TricValve Surgery/Procedure in Mumbai | Heart Valve Experts",
+  title: "Tricuspid Valve Repair (TricValve) Surgery/Procedure in Mumbai | Heart Valve Experts",
   description:
-    "Get expert TricValve surgery in Mumbai with advanced techniques for safer heart valve repair. Book now to improve your heart health and quality of life!",
+    "Get expert Tricuspid Valve Repair (TricValve) surgery in Mumbai with advanced techniques for safer heart valve repair. Book now to improve your heart health and quality of life!",
   alternates: {
     canonical: "https://heartvalveexperts.com/tric-valve",
   },
@@ -87,7 +87,7 @@ const timelineData = [
   },
   {
     title: "Day 2",
-    desc: "TricValve implantation via femoral vein under local anesthesia. Two valves are positioned in the inferior and superior vena cava.",
+    desc: "Tricuspid Valve Repair (TricValve) implantation via femoral vein under local anesthesia. Two valves are positioned in the inferior and superior vena cava.",
     iconSrc: "/images/service/icon/heart.svg",
   },
   {
@@ -120,8 +120,8 @@ const timelineData = [
 const benefitsData2 = [
   {
     iconSrc: "/images/service/icon/b1.svg",
-    title: "Mumbai’s Experienced TricValve Team",
-    desc: "Performed India’s first TricValve in Mumbai and among the first few globally.",
+    title: "Mumbai’s Experienced Tricuspid Valve Repair (TricValve) Team",
+    desc: "Performed India’s first Tricuspid Valve Repair (TricValve) in Mumbai and among the first few globally.",
   },
   {
     iconSrc: "/images/service/icon/b2.svg",
@@ -146,51 +146,51 @@ const benefitsData2 = [
   {
     iconSrc: "/images/service/icon/b6.svg",
     title: "High Surgical Success Rates",
-    desc: "We have a proven track record in treating rare and complex valve pathologies, including TricValve.",
+    desc: "We have a proven track record in treating rare and complex valve pathologies, including Tricuspid Valve Repair (TricValve).",
   },
 ];
 
 const faqData = [
   {
     id: 1,
-    question: "Is the TricValve procedure safe?",
+    question: "Is the Tricuspid Valve Repair (TricValve) procedure safe?",
     answer:
       "Yes. It is a CE-approved system designed for high-risk patients who cannot undergo traditional tricuspid valve repair surgery in Mumbai. It avoids open-heart surgery, reducing complications.",
   },
   {
     id: 2,
     question:
-      "What is the difference between TricValve and traditional tricuspid valve replacement?",
+      "What is the difference between Tricuspid Valve Repair (TricValve) and traditional tricuspid valve replacement?",
     answer:
-      "TricValve is a non-surgical treatment for severe tricuspid regurgitation, where two bioprosthetic valves are placed in the vena cavae to reduce backflow without removing the native valve. In contrast, traditional tricuspid valve replacement is an open-heart surgery where the tricuspid valve is removed and replaced with a mechanical or tissue valve, requiring general anesthesia and a longer recovery.",
+      "Tricuspid Valve Repair (TricValve) is a non-surgical treatment for severe tricuspid regurgitation, where two bioprosthetic valves are placed in the vena cavae to reduce backflow without removing the native valve. In contrast, traditional tricuspid valve replacement is an open-heart surgery where the tricuspid valve is removed and replaced with a mechanical or tissue valve, requiring general anesthesia and a longer recovery.",
   },
   {
     id: 3,
-    question: "How much does TricValve therapy cost in Mumbai?",
+    question: "How much does Tricuspid Valve Repair (TricValve) therapy cost in Mumbai?",
     answer:
       "Cost varies based on patient condition, hospital stay, and support care, but is generally less than open-heart tricuspid valve replacement surgery in Mumbai due to reduced ICU time and faster recovery.",
   },
   {
     id: 4,
-    question: "Who is not eligible for TricValve?",
+    question: "Who is not eligible for Tricuspid Valve Repair (TricValve)?",
     answer:
       "Patients with active infections, intracardiac thrombus, or advanced left heart failure may not be suitable. A detailed evaluation by a heart specialist in Mumbai is necessary.",
   },
   {
     id: 5,
-    question: "What are the contraindications for TricValve?",
+    question: "What are the contraindications for Tricuspid Valve Repair (TricValve)?",
     answer:
-      "A recent myocardial infarction that occurred within less than a month, severe vena cava obstruction, or known allergy to device materials are contraindications of TricValve Surgery.",
+      "A recent myocardial infarction that occurred within less than a month, severe vena cava obstruction, or known allergy to device materials are contraindications of Tricuspid Valve Repair (TricValve) Surgery.",
   },
   {
     id: 6,
-    question: "How does TricValve work?",
+    question: "How does Tricuspid Valve Repair (TricValve) work?",
     answer:
-      "TricValve uses two bioprosthetic valves implanted in the superior and inferior vena cava to prevent backflow from the right ventricle to the right atrium, easing symptoms of severe tricuspid regurgitation without removing the native valve.",
+      "Tricuspid Valve Repair (TricValve) uses two bioprosthetic valves implanted in the superior and inferior vena cava to prevent backflow from the right ventricle to the right atrium, easing symptoms of severe tricuspid regurgitation without removing the native valve.",
   },
   {
     id: 7,
-    question: "How long does the TricValve procedure take?",
+    question: "How long does the Tricuspid Valve Repair (TricValve) procedure take?",
     answer:
       "The procedure typically takes about 1 to 2 hours and is performed under local anesthesia.",
   },
@@ -198,9 +198,9 @@ const faqData = [
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "MedicalProcedure",
-  name: "TricValve Transcatheter Bicaval Valve System",
+  name: "Tricuspid Valve Repair (TricValve) Transcatheter Bicaval Valve System",
   description:
-    "TricValve is a minimally invasive, catheter-based procedure that places two biological valves in the superior and inferior vena cava to treat severe tricuspid regurgitation and reduce venous backflow.",
+    "Tricuspid Valve Repair (TricValve) is a minimally invasive, catheter-based procedure that places two biological valves in the superior and inferior vena cava to treat severe tricuspid regurgitation and reduce venous backflow.",
   procedureType: "http://schema.org/PercutaneousProcedure",
   bodyLocation:
     "Heart – Superior vena cava (SVC), Inferior vena cava (IVC), Tricuspid valve region",
@@ -237,25 +237,25 @@ const servciepage = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <BreadCrumb
-        title="TricValve Surgery/Procedure"
+        title="Tricuspid Valve Repair (TricValve) Surgery/Procedure"
         subpage="false"
         image="/images/service/TricValve/bread.webp"
       />
       <TaviSectionAll
         imageSrc="/images/service/TricValve/1.webp"
-        imageAlt="TEER Surgery"
+        imageAlt="Transcatheter Edge-to-Edge Repair (TEER) Surgery"
         imageTitle=""
         tag="About"
-        title="What is the TricValve Procedure?"
+        title="What is the Tricuspid Valve Repair (TricValve) Procedure?"
         description={[
-          "TricValve is a minimally invasive, catheter-based procedure designed for patients with severe tricuspid valve regurgitation who are not suitable candidates for open-heart surgery. Also called the transcatheter bicaval valve system, it implants two biological valves into the superior and inferior vena cava to manage the abnormal flow caused by a leaky tricuspid valve, reducing symptoms like leg swelling, liver congestion, and breathlessness.",
-          "Unlike conventional tricuspid valve repair surgery/procedure in Mumbai, this method avoids opening the chest or manipulating the native valve. The implanted valves reroute venous return, lowering stress on the heart and organs. For those seeking alternatives to tricuspid valve replacement surgery, TricValve offers a safer, faster-recovery option guided by expert heart surgeons in Mumbai.",
+          "Tricuspid Valve Repair (TricValve) is a minimally invasive, catheter-based procedure designed for patients with severe tricuspid valve regurgitation who are not suitable candidates for open-heart surgery. Also called the transcatheter bicaval valve system, it implants two biological valves into the superior and inferior vena cava to manage the abnormal flow caused by a leaky tricuspid valve, reducing symptoms like leg swelling, liver congestion, and breathlessness.",
+          "Unlike conventional tricuspid valve repair surgery/procedure in Mumbai, this method avoids opening the chest or manipulating the native valve. The implanted valves reroute venous return, lowering stress on the heart and organs. For those seeking alternatives to tricuspid valve replacement surgery, Tricuspid Valve Repair (TricValve) offers a safer, faster-recovery option guided by expert heart surgeons in Mumbai.",
         ]}
         buttonText="Request a Consultation"
       />
       <TaviWhoFor
         sectionTag="Who It’s For?"
-        heading="Who Needs TricValve Surgery/Procedure?"
+        heading="Who Needs Tricuspid Valve Repair (TricValve) Surgery/Procedure?"
         buttonText="Request a Consultation"
         conditions={conditionsData}
         imageSrc="/images/service/TricValve/Rectangle 44.webp"
@@ -263,12 +263,12 @@ const servciepage = () => {
       />
       <TaviBenefits
         benefits={benefitsData}
-        sectionLabel="Benefits of TricValve"
-        heading="What are the Benefits of TricValve Surgery/Procedure?"
+        sectionLabel="Benefits of Tricuspid Valve Repair (TricValve)"
+        heading="What are the Benefits of Tricuspid Valve Repair (TricValve) Surgery/Procedure?"
         sectionIconSrc="/images/icon/Ellipse 3.svg"
       />
       <ProcedureDelayRisks
-        title="Risks of Delay of TricValve Surgery/Procedure"
+        title="Risks of Delay of Tricuspid Valve Repair (TricValve) Surgery/Procedure"
         subtitle="Outcomes of Procedure Delay"
         risks={risksData}
         imageSrc="/images/service/TricValve/Rectangle 46.webp"
@@ -278,7 +278,7 @@ const servciepage = () => {
         <ProcedureTimeline
           timeline={timelineData}
           sectionTitle="Procedure Timeline"
-          heading="TricValve Procedure Timeline & Recovery"
+          heading="Tricuspid Valve Repair (TricValve) Procedure Timeline & Recovery"
           leftImageSrc="/images/service/TricValve/Rectangle 45.webp"
         />
       </section>

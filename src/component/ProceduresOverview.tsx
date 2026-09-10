@@ -8,35 +8,35 @@ const procedures = [
     id: 1,
     title: "Transcatheter Aortic Valve Implantation (TAVI)",
     description:
-      "A non/minimally invasive procedure that replaces a narrowed aortic valve without the need for open-heart surgery.",
+      "A non/minimally invasive procedure that replaces a narrowed aortic valve without the need for open-heart surgery",
     img: "/images/homeimages/procedures-overview01.webp",
   },
   {
     id: 2,
-    title: "TMVR",
+    title: "Transcatheter Mitral Valve Repair (TMVR)",
     description:
-      "A procedure to replace the mitral valve through a catheter-based approach.",
+      "A procedure to replace the mitral valve through a catheter-based approach",
     img: "/images/homeimages/procedures-overview02.webp",
   },
   {
     id: 3,
-    title: "TEER (MyClip/MitraClip)",
+    title: "Transcatheter Edge-to-Edge Repair (TEER) – MyClip/MitraClip",
     description:
-      "A minimally invasive repair procedure for the mitral valve using a clip device.",
+      "A minimally invasive repair procedure for the mitral valve using a clip device",
     img: "/images/homeimages/procedures-overview03.webp",
   },
   {
     id: 4,
-    title: "LAAO",
+    title: "Left Atrial Appendage Occlusion (LAAO)",
     description:
-      "Left Atrial Appendage Occlusion procedure to reduce stroke risk.",
+      "Left Atrial Appendage Occlusion procedure to reduce stroke risk",
     img: "/images/homeimages/procedures-overview04.webp",
   },
   {
     id: 5,
     title: "Device Closures",
     description:
-      "Minimally invasive procedures to close abnormal holes in the heart.",
+      "Minimally invasive procedures to close abnormal holes in the heart",
     img: "/images/homeimages/procedures-overview05.webp",
   },
 ];

@@ -11,9 +11,9 @@ import ASDClosureSection from "@/component/Services/ASDClosureSection";
 import TaviSectionAll from "@/component/Services/TaviSectionAll";
 
 export const metadata = {
-  title: "PFO Closure Surgery in Mumbai | Heart Valve Experts",
+  title: "Patent Foramen Ovale (PFO) Closure Surgery in Mumbai | Heart Valve Experts",
   description:
-    "PFO Closure surgery in Mumbai by expert cardiologists at Heart Valve Experts. Minimally invasive procedure with advanced care and faster recovery.",
+    "Patent Foramen Ovale (PFO) Closure surgery in Mumbai by expert cardiologists at Heart Valve Experts. Minimally invasive procedure with advanced care and faster recovery.",
   alternates: {
     canonical: "https://heartvalveexperts.com/device-closure/patent-foramen-ovale",
   },
@@ -34,7 +34,7 @@ const benefitsData = [
   {
     iconSrc: "/images/service/icon/2.svg",
     title: "Stroke prevention",
-    desc: "Seals the PFO to reduce the risk of future strokes",
+    desc: "Seals the Patent Foramen Ovale (PFO) to reduce the risk of future strokes",
   },
   {
     iconSrc: "/images/service/icon/3.svg",
@@ -71,7 +71,7 @@ const benefitsData = [
 const timelineData = [
   {
     title: "Day of Procedure",
-    desc: "Most patients are discharged within 1–2 days after the PFO closure.",
+    desc: "Most patients are discharged within 1–2 days after the Patent Foramen Ovale (PFO) closure.",
     iconSrc: "/images/service/icon/bed.svg",
   },
   {
@@ -99,13 +99,13 @@ const timelineData = [
 const benefitsData2 = [
   {
     iconSrc: "/images/service/icon/b1.svg",
-    title: "Experience in PFO Closure Procedure",
-    desc: "Our team has performed numerous successful PFO closure procedures using advanced catheter-based techniques tailored to individual heart anatomy.",
+    title: "Experience in Patent Foramen Ovale (PFO) Closure Procedure",
+    desc: "Our team has performed numerous successful Patent Foramen Ovale (PFO) closure procedures using advanced catheter-based techniques tailored to individual heart anatomy.",
   },
   {
     iconSrc: "/images/service/icon/b2.svg",
     title: "Leading Cardiologist in Mumbai",
-    desc: `Our <a href="https://heartvalveexperts.com/cardiologist-mumbai" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">interventional cardiologist</a> is a recognized expert in managing stroke patients with PFO and delivering safe, evidence-based device closure.`,
+    desc: `Our <a href="https://heartvalveexperts.com/cardiologist-mumbai" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">interventional cardiologist</a> is a recognized expert in managing stroke patients with Patent Foramen Ovale (PFO) and delivering safe, evidence-based device closure.`,
 
   },
   {
@@ -133,57 +133,57 @@ const benefitsData2 = [
 const faqData = [
   {
     id: 1,
-    question: "How long does the PFO closure procedure take?",
+    question: "How long does the Patent Foramen Ovale (PFO) closure procedure take?",
     answer:
       "Usually 1-2 hours, performed under sedation without open-heart surgery.",
   },
   {
     id: 2,
-    question: "Is PFO closure permanent?",
+    question: "Is Patent Foramen Ovale (PFO) closure permanent?",
     answer:
       "Yes. The device becomes part of your heart, sealing the hole long-term.",
   },
   {
     id: 3,
-    question: "What is the recovery time for PFO Closure?",
+    question: "What is the recovery time for Patent Foramen Ovale (PFO) Closure?",
     answer:
       "Most patients go home the next day and return to everyday activities within a week.",
   },
   {
     id: 4,
-    question: "How much does PFO closure cost in Mumbai?",
+    question: "How much does Patent Foramen Ovale (PFO) closure cost in Mumbai?",
     answer:
       "Costs vary by hospital and case details; a personalized estimate is provided during consultation.",
   },
   {
     id: 5,
-    question: "Is PFO closure considered major surgery?",
+    question: "Is Patent Foramen Ovale (PFO) closure considered major surgery?",
     answer:
-      "No, PFO closure is not a major surgery. It’s a minimally invasive procedure performed through a small incision in the groin, avoiding open-heart surgery altogether.",
+      "No, Patent Foramen Ovale (PFO) closure is not a major surgery. It’s a minimally invasive procedure performed through a small incision in the groin, avoiding open-heart surgery altogether.",
   },
   {
     id: 6,
-    question: "Can you live a normal life after PFO closure?",
+    question: "Can you live a normal life after Patent Foramen Ovale (PFO) closure?",
     answer:
-      "Yes, most patients return to a normal, active life shortly after the PFO closure procedure. Your cardiologist in Mumbai will guide you on recovery and follow-up care.",
+      "Yes, most patients return to a normal, active life shortly after the Patent Foramen Ovale (PFO) closure procedure. Your cardiologist in Mumbai will guide you on recovery and follow-up care.",
   },
   {
     id: 7,
-    question: "What to avoid after PFO closure?",
+    question: "What to avoid after Patent Foramen Ovale (PFO) closure?",
     answer:
       "After patent foramen ovale closure, it's best to avoid heavy lifting, strenuous exercise, and long travel for the first few weeks. Your doctor will provide personalized precautions based on your recovery.",
   },
   {
     id: 8,
-    question: "Can you still have a stroke after PFO closure?",
+    question: "Can you still have a stroke after Patent Foramen Ovale (PFO) closure?",
     answer:
-      "While PFO closure significantly reduces the risk of stroke, no procedure eliminates the risk. Continued follow-up with your cardiologist in Mumbai is important.",
+      "While Patent Foramen Ovale (PFO) closure significantly reduces the risk of stroke, no procedure eliminates the risk. Continued follow-up with your cardiologist in Mumbai is important.",
   },
   {
     id: 9,
-    question: "How long on blood thinners after PFO closure?",
+    question: "How long on blood thinners after Patent Foramen Ovale (PFO) closure?",
     answer:
-      "Most patients are prescribed blood thinners for a few months after the PFO closure procedure to prevent blood clot formation. The exact duration depends on your case and the recommendation of your heart specialist.",
+      "Most patients are prescribed blood thinners for a few months after the Patent Foramen Ovale (PFO) closure procedure to prevent blood clot formation. The exact duration depends on your case and the recommendation of your heart specialist.",
   },
 ];
 const serviceSchema = {
@@ -191,15 +191,15 @@ const serviceSchema = {
   "@type": "MedicalProcedure",
   name: "Patent Foramen Ovale (PFO) Closure",
   description:
-    "PFO closure is a catheter-based procedure to close a small opening in the heart between the atria, reducing risk of stroke in certain patients.",
+    "Patent Foramen Ovale (PFO) closure is a catheter-based procedure to close a small opening in the heart between the atria, reducing risk of stroke in certain patients.",
   procedureType: "http://schema.org/PercutaneousProcedure",
   bodyLocation: "Heart - Atrial Septum",
   howPerformed:
-    "A catheter is inserted via a vein in the groin and guided into the heart. A closure device (occluder) is delivered across the PFO opening and deployed to permanently seal it. Imaging such as intracardiac echocardiography and fluoroscopy assist in proper positioning.",
+    "A catheter is inserted via a vein in the groin and guided into the heart. A closure device (occluder) is delivered across the Patent Foramen Ovale (PFO) opening and deployed to permanently seal it. Imaging such as intracardiac echocardiography and fluoroscopy assist in proper positioning.",
   preparation:
-    "Before the procedure, patients undergo imaging tests such as echocardiogram or transesophageal echo, along with blood tests, to assess PFO anatomy and rule out clots. Anticoagulation therapy may be adjusted.",
+    "Before the procedure, patients undergo imaging tests such as echocardiogram or transesophageal echo, along with blood tests, to assess Patent Foramen Ovale (PFO) anatomy and rule out clots. Anticoagulation therapy may be adjusted.",
   followup:
-    "After PFO closure, patients are monitored in the hospital and placed on blood-thinning medications during the healing phase. Follow-up imaging, usually echocardiography, is performed to confirm correct device placement and sealing.",
+    "After Patent Foramen Ovale (PFO) closure, patients are monitored in the hospital and placed on blood-thinning medications during the healing phase. Follow-up imaging, usually echocardiography, is performed to confirm correct device placement and sealing.",
   url: "https://heartvalveexperts.com/device-closure/patent-foramen-ovale",
 };
 
@@ -227,25 +227,25 @@ const servciepage = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <BreadCrumb
-        title="PFO Closure"
+        title="Patent Foramen Ovale (PFO) Closure"
         subpage="false"
         image="/images/service/PFO Closure/bread.webp"
       />
       <TaviSectionAll
         imageSrc="/images/service/PFO Closure/1.webp"
-        imageAlt="TEER Surgery"
+        imageAlt="Transcatheter Edge-to-Edge Repair (TEER) Surgery"
         tag="About"
-        title="What is the PFO Closure Procedure?"
+        title="What is the Patent Foramen Ovale (PFO) Closure Procedure?"
         description={[
-          "A Patent Foramen Ovale (PFO) is a small, congenital opening between the heart’s upper chambers (atria) that can allow blood clots to bypass the lungs and potentially cause strokes. The PFO closure procedure is a minimally invasive technique in which a closure device is delivered through a catheter inserted via the femoral vein in the groin to seal this opening. This PFO closure procedure in Mumbai offers a safe, effective alternative to lifelong medication and significantly reduces the risk of repeat strokes in patients where no clear cause of stroke has been found.",
+          "A Patent Foramen Ovale (PFO) is a small, congenital opening between the heart’s upper chambers (atria) that can allow blood clots to bypass the lungs and potentially cause strokes. The Patent Foramen Ovale (PFO) closure procedure is a minimally invasive technique in which a closure device is delivered through a catheter inserted via the femoral vein in the groin to seal this opening. This Patent Foramen Ovale (PFO) closure procedure in Mumbai offers a safe, effective alternative to lifelong medication and significantly reduces the risk of repeat strokes in patients where no clear cause of stroke has been found.",
         ]}
         buttonText="Request a Consultation"
       />
       <ASDClosureSection
         tag="How It's Done"
-        title="How Is PFO Closure Done?"
+        title="How Is Patent Foramen Ovale (PFO) Closure Done?"
         imageSrc="/images/service/PFO Closure/2.webp"
-        imageAlt="ASD Closure Illustration"
+        imageAlt="Atrial Septal Defect (ASD) Closure Illustration"
         steps={[
           {
             text: (
@@ -272,7 +272,7 @@ const servciepage = () => {
           {
             text: (
               <>
-                A specially designed PFO closure device is delivered through the
+                A specially designed Patent Foramen Ovale (PFO) closure device is delivered through the
                 catheter and positioned at the hole.
               </>
             ),
@@ -280,7 +280,7 @@ const servciepage = () => {
           {
             text: (
               <>
-                The device is released to seal the PFO permanently, allowing
+                The device is released to seal the Patent Foramen Ovale (PFO) permanently, allowing
                 heart tissue to grow over it naturally.
               </>
             ),
@@ -298,13 +298,13 @@ const servciepage = () => {
       <section className="animate-gradient-circle text-white relative overflow-hidden">
         <FollowUpSection
           tag="Who it’s for?"
-          title="Who Needs PFO Closure?"
-          intro="PFO closure is considered only for patients who have a confirmed PFO and meet one or more of the following criteria:"
+          title="Who Needs Patent Foramen Ovale (PFO) Closure?"
+          intro="Patent Foramen Ovale (PFO) closure is considered only for patients who have a confirmed Patent Foramen Ovale (PFO) and meet one or more of the following criteria:"
           subIntro=""
           bulletPoints={[
             "Had a stroke or Transient Ischemic Attack (mini-stroke) with no clear cause.",
-            "Evaluated for cryptogenic stroke during bubble contrast study or pressure testing, where PFO is found as a contributing factor",
-            "Are under 16 to 65 years old with high-risk PFO features.",
+            "Evaluated for cryptogenic stroke during bubble contrast study or pressure testing, where Patent Foramen Ovale (PFO) is found as a contributing factor",
+            "Are under 16 to 65 years old with high-risk Patent Foramen Ovale (PFO) features.",
             "Have an atrial septal aneurysm.",
             "Have migraines with aura.",
             "Experienced a paradoxical embolism or decompression illness.",
@@ -321,12 +321,12 @@ const servciepage = () => {
       </section>
       <TaviBenefits
         benefits={benefitsData}
-        sectionLabel="Benefits of PFO Closure"
-        heading="What are the Benefits of PFO Device Closure?"
+        sectionLabel="Benefits of Patent Foramen Ovale (PFO) Closure"
+        heading="What are the Benefits of Patent Foramen Ovale (PFO) Device Closure?"
         sectionIconSrc="/images/icon/Ellipse 3.svg"
       />
       <ProcedureDelayRisks
-        title="Risks of Delay of PFO Closure"
+        title="Risks of Delay of Patent Foramen Ovale (PFO) Closure"
         subtitle="Outcomes of Procedure Delay"
         risks={risksData}
         imageSrc="/images/service/PFO Closure/Rectangle 55.webp"

@@ -29,7 +29,7 @@ export default function RelatedBlogClient({ posts }: { posts: BlogPost[] }) {
               ● Blogs
             </p>
             <h2 className="text-2xl md:text-3xl font-medium text-gray-900 mt-3">
-              Related HVE Blogs
+              Related Heart Valve Experts (HVE) Blogs
             </h2>
           </div>
 

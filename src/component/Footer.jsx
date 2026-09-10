@@ -255,7 +255,7 @@ export default function Footer() {
         {/* Bottom Row */}
         <div className="mt-12 flex flex-col md:flex-row items-center justify-between border-t border-white/20 pt-6 text-sm text-gray-300">
           <p className="text-center  lg:text-left">
-            © Heart Valve Experts. 2026. All rights reserved. |{" "}
+           © Heart Valve Experts. {new Date().getFullYear()}. All rights reserved. |{" "}
             <a href="/privacy-policy" className="hover:text-white underline">
               Privacy Policy
             </a>

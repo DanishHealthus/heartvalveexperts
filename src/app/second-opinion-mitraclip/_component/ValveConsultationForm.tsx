@@ -145,22 +145,22 @@ const ValveConsultationForm = () => {
               Select   an option
             </option>
             <option value="TAVI" className="text-black">
-              TAVI
+              Transcatheter Aortic Valve Implantation (TAVI)
             </option>
             <option value="TMVR" className="text-black">
-              TMVR
+              Transcatheter Mitral Valve Repair (TMVR)
             </option>
             <option value="TEER (MitraClip & TriClip)" className="text-black">
-              TEER (MitraClip & TriClip)
+              Transcatheter Edge-to-Edge Repair (TEER) – MitraClip & TriClip
             </option>
             <option value="LAAO" className="text-black">
-              LAAO
+              Left Atrial Appendage Occlusion (LAAO)
             </option>
             <option value="Device Closures (ASD, PFO, VSD, PDA)" className="text-black">
-              Device Closures (ASD, PFO, VSD, PDA)
+              Device Closures – Atrial Septal Defect (ASD), Patent Foramen Ovale (PFO), Ventricular Septal Defect (VSD), Patent Ductus Arteriosus (PDA)
             </option>
             <option value="Other Procedures (BMV, RSOV, Tric Valve)" className="text-black">
-              Other Procedures (BMV, RSOV, Tric Valve)
+              Other Procedures – Balloon Mitral Valvotomy (BMV), Ruptured Sinus of Valsalva (RSOV), Tricuspid Valve Repair (TricValve)
             </option>
           </select>
 

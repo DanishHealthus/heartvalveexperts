@@ -25,7 +25,7 @@ const page = () => {
       question:
         "What is the difference between Transcatheter Aortic Valve Implantation (TAVI) and open-heart surgery?",
       answer:
-        "In TAVI, the new valve is delivered through a catheter — typically via the groin — without opening the chest. Open-heart surgery requires a sternotomy (cutting through the breastbone) and cardiopulmonary bypass. For suitable patients, Transcatheter Aortic Valve Implantation (TAVI) typically means a shorter hospital stay and faster recovery",
+        "In Transcatheter Aortic Valve Implantation (TAVI), the new valve is delivered through a catheter — typically via the groin — without opening the chest. Open-heart surgery requires a sternotomy (cutting through the breastbone) and cardiopulmonary bypass. For suitable patients, Transcatheter Aortic Valve Implantation (TAVI) typically means a shorter hospital stay and faster recovery",
     },
     {
       id: 3,
@@ -98,7 +98,7 @@ const page = () => {
 
       <HeroValve />
       <WhoIsThisTreatmentFor
-        title=" Why TAVI"
+        title=" Why Transcatheter Aortic Valve Implantation (TAVI)"
         subtitle="Open-Heart Surgery Is Not Always the Only Option"
         image={{
           src: "/images/lp/newlp/1.webp",
@@ -169,7 +169,7 @@ const page = () => {
           subtitle=""
           image={{
             src: "/images/lp/newlp/2.webp",
-            alt: "TAVI",
+            alt: "Transcatheter Aortic Valve Implantation (TAVI)",
           }}
           considerationTitle=""
           bullets={[
@@ -197,10 +197,10 @@ const page = () => {
         subtitle="Not every patient is a candidate for a catheter-based procedure. That determination is made only after a structured evaluation, which is exactly what your consultation provides."
         image={{
           src: "/images/lp/newlp/3.webp",
-          alt: "TAVI",
+          alt: "Transcatheter Aortic Valve Implantation (TAVI)",
         }}
         videoUrl="https://www.youtube.com/watch?v=kc8s6CCKBwc"
-        considerationTitle="TAVI"
+        considerationTitle="Transcatheter Aortic Valve Implantation (TAVI)"
         bullets={[
           { id: 1, text: "Severe aortic stenosis" },
           { id: 2, text: "High or intermediate surgical risk patients" },

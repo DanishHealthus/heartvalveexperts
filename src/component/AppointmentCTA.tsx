@@ -36,7 +36,7 @@ export default function AppointmentCTA() {
           </p>
           <h2 className="text-2xl md:text-3xl font-normal leading-snug mb-6">
             Book a consultation at the best heart valve clinic in Mumbai and
-            experience world-class care.
+            experience world-class care
           </h2>
           <Link href="/contact-us">
             <button className="w-fit cursor-pointer px-6 py-3 border border-white rounded-full hover:bg-white hover:text-[#2a3c8f] transition font-medium">

@@ -17,7 +17,7 @@ export default function TeerProcedure() {
         >
           <Image
             src="/images/service/TEER/1.webp"
-            alt="TEER Procedure"
+            alt="Transcatheter Edge-to-Edge Repair (TEER) Procedure"
             width={1000}
             height={1000}
             className="object-cover rounded-xl"
@@ -42,18 +42,18 @@ export default function TeerProcedure() {
             ABOUT
           </p>
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mt-2">
-            What is TEER Surgery/Procedure?
+            What is Transcatheter Edge-to-Edge Repair (TEER) Surgery/Procedure?
           </h2>
 
 
           <p className="mt-4 leading-relaxed text-gray-600">
-            TEER, or Transcatheter Edge-to-Edge Repair, is a minimally invasive procedure in Mumbai
+            Transcatheter Edge-to-Edge Repair (TEER) is a minimally invasive procedure in Mumbai
             used to treat leaky mitral valves (mitral regurgitation). Instead of open-heart surgery,
-            TEER uses a catheter to clip the mitral valve leaflets together, reducing the backflow of blood.
+            Transcatheter Edge-to-Edge Repair (TEER) uses a catheter to clip the mitral valve leaflets together, reducing the backflow of blood.
           </p>
 
           <p className="text-lg text-gray-700">
-            Two widely used TEER devices are:
+            Two widely used Transcatheter Edge-to-Edge Repair (TEER) devices are:
           </p>
 
           <div className="space-y-3">
@@ -62,7 +62,7 @@ export default function TeerProcedure() {
               <p
                 className="text-md text-gray-600"
                 dangerouslySetInnerHTML={{
-                  __html: `Used to treat <a href="https://heartvalveexperts.com/blog/mitraclip-procedure" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">mitral valve regurgitation</a>, where the valve between the left atrium and left ventricle doesn’t close fully, causing blood to flow backward into the lungs. <a href="https://heartvalveexperts.com/blog/mitraclip-procedure" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">MitraClip</a> is a minimally invasive TEER device that clips the valve leaflets together to reduce the leak.`,
+                  __html: `Used to treat <a href="https://heartvalveexperts.com/blog/mitraclip-procedure" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">mitral valve regurgitation</a>, where the valve between the left atrium and left ventricle doesn’t close fully, causing blood to flow backward into the lungs. <a href="https://heartvalveexperts.com/blog/mitraclip-procedure" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">MitraClip</a> is a minimally invasive Transcatheter Edge-to-Edge Repair (TEER) device that clips the valve leaflets together to reduce the leak.`,
                 }}
               />
             </div>
@@ -70,7 +70,7 @@ export default function TeerProcedure() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900">MyClip</h3>
               <p className="text-md text-gray-600">
-                A pioneering Indian TEER device, MyClip treats mitral regurgitation similarly to MitraClip, with
+                A pioneering Indian Transcatheter Edge-to-Edge Repair (TEER) device, MyClip treats mitral regurgitation similarly to MitraClip, with
                 multiple clip angles and advanced deployment features. Heart Valve Experts (HVE) were the first
                 to study and bring MyClip to India, performing the first human trial in the country.
               </p>

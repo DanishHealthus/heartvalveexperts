@@ -76,7 +76,7 @@ const staticDoctorSchema: Record<string, PhysicianSchema> = {
     name: "Dr. Ankur U. Phatarpekar",
     image: "https://backend.heartvalveexperts.com/wp-content/uploads/2025/09/Dr.webp",
     description:
-      "Dr. Ankur U. Phatarpekar is a leading Interventional and Structural Cardiologist in Mumbai with expertise in TAVI, TMVR, TEER, device closure procedures, and advanced coronary interventions.",
+      "Dr. Ankur U. Phatarpekar is a leading Interventional and Structural Cardiologist in Mumbai with expertise in Transcatheter Aortic Valve Implantation (TAVI), Transcatheter Mitral Valve Repair (TMVR), Transcatheter Edge-to-Edge Repair (TEER), device closure procedures, and advanced coronary interventions.",
     medicalSpecialty: "http://schema.org/Cardiovascular",
     url: "https://heartvalveexperts.com/cardiologist-mumbai/dr-ankur-u-phatarpekar",
     address: {
@@ -99,7 +99,7 @@ const staticDoctorSchema: Record<string, PhysicianSchema> = {
     image:
       "https://backend.heartvalveexperts.com/wp-content/uploads/2025/09/Rectangle-29.webp",
     description:
-      "Dr. Meghav Manoj Shah is a structural and interventional cardiologist in Mumbai with expertise in TAVI, Mitral TEER, device closure procedures, and complex coronary interventions.",
+      "Dr. Meghav Manoj Shah is a structural and interventional cardiologist in Mumbai with expertise in Transcatheter Aortic Valve Implantation (TAVI), Mitral Transcatheter Edge-to-Edge Repair (TEER), device closure procedures, and complex coronary interventions.",
     medicalSpecialty: "http://schema.org/Cardiovascular",
     url: "https://heartvalveexperts.com/cardiologist-mumbai/dr-meghav-manoj-shah",
     address: {
@@ -122,7 +122,7 @@ const staticDoctorSchema: Record<string, PhysicianSchema> = {
     image:
       "https://backend.heartvalveexperts.com/wp-content/uploads/2025/09/Rectangle-32.webp",
     description:
-      "Dr. Amit S. Gangwani is a structural and interventional cardiologist based in Mumbai, specialising in TAVI, mitral and tricuspid valve interventions, and congenital heart disease treatments.",
+      "Dr. Amit S. Gangwani is a structural and interventional cardiologist based in Mumbai, specialising in Transcatheter Aortic Valve Implantation (TAVI), mitral and tricuspid valve interventions, and congenital heart disease treatments.",
     medicalSpecialty: "http://schema.org/Cardiovascular",
     url: "https://heartvalveexperts.com/cardiologist-mumbai/dr-amit-s-gangwani",
     address: {

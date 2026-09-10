@@ -9,9 +9,9 @@ import AppointmentCTA from "@/component/AppointmentCTA";
 import PatientSuccessStories from "@/component/PatientSuccessStories";
 
 export const metadata = {
-  title: "TEER Procedure/Surgery in Mumbai | TEER Specialist Mumbai",
+  title: "Transcatheter Edge-to-Edge Repair (TEER) Procedure/Surgery in Mumbai | Transcatheter Edge-to-Edge Repair (TEER) Specialist Mumbai",
   description:
-    "TEER Procedure or surgery in Mumbai for leaky heart valves. Safe, expert care to improve heart function. Book your consultation with our teer specialists today!",
+    "Transcatheter Edge-to-Edge Repair (TEER) Procedure or surgery in Mumbai for leaky heart valves. Safe, expert care to improve heart function. Book your consultation with our teer specialists today!",
   alternates: {
     canonical: "https://heartvalveexperts.com/teer",
   },
@@ -28,12 +28,12 @@ const conditionsData = [
   },
   {
     title: "When preserving the native valve is preferred",
-    desc: "TEER repairs the existing valve without replacing it, making it preferable for patients where native valve function should be maintained.",
+    desc: "Transcatheter Edge-to-Edge Repair (TEER) repairs the existing valve without replacing it, making it preferable for patients where native valve function should be maintained.",
   },
   {
     title:
-      "Not suitable for Transcatheter Aortic Valve Implantation (TAVI)  surgery or TMVR surgery",
-    desc: "TEER treats leaky valves, not narrowed ones like in TAVI, and avoids full replacement like TMVR.",
+      "Not suitable for Transcatheter Aortic Valve Implantation (TAVI)  surgery or Transcatheter Mitral Valve Repair (TMVR) surgery",
+    desc: "Transcatheter Edge-to-Edge Repair (TEER) treats leaky valves, not narrowed ones like in Transcatheter Aortic Valve Implantation (TAVI), and avoids full replacement like Transcatheter Mitral Valve Repair (TMVR).",
   },
   {
     title: "Functional or degenerative mitral regurgitation",
@@ -57,12 +57,12 @@ const benefitsData = [
   {
     iconSrc: "/images/service/icon/1.svg",
     title: "Minimally invasive",
-    desc: "TEER is performed via catheter through a vein, avoiding the need for chest incisions.",
+    desc: "Transcatheter Edge-to-Edge Repair (TEER) is performed via catheter through a vein, avoiding the need for chest incisions.",
   },
   {
     iconSrc: "/images/service/icon/2.svg",
     title: "Improves symptoms and heart function",
-    desc: "TEER reduces regurgitation, significantly relieving breathlessness and fatigue.",
+    desc: "Transcatheter Edge-to-Edge Repair (TEER) reduces regurgitation, significantly relieving breathlessness and fatigue.",
   },
   {
     iconSrc: "/images/service/icon/3.svg",
@@ -72,7 +72,7 @@ const benefitsData = [
   {
     iconSrc: "/images/service/icon/4.svg",
     title: "Better tolerated in complex heart anatomy",
-    desc: "TEER can be performed even in anatomically challenging or frail hearts.",
+    desc: "Transcatheter Edge-to-Edge Repair (TEER) can be performed even in anatomically challenging or frail hearts.",
   },
   {
     iconSrc: "/images/service/icon/5.svg",
@@ -82,7 +82,7 @@ const benefitsData = [
   {
     iconSrc: "/images/service/icon/6.svg",
     title: "Improves long-term survival",
-    desc: "Especially in younger or moderate-risk patients, TEER may delay or avoid future surgeries.",
+    desc: "Especially in younger or moderate-risk patients, Transcatheter Edge-to-Edge Repair (TEER) may delay or avoid future surgeries.",
   },
 ];
 
@@ -94,7 +94,7 @@ const timelineData = [
   },
   {
     title: "Day 2",
-    desc: "TEER procedure via femoral vein catheter under conscious sedation or light anesthesia. During clip deployment, temporary blood flow changes called overload mismatch are carefully monitored with advanced imaging to ensure precise and safe placement, making the first 1–2 days of post-procedure observation crucial.",
+    desc: "Transcatheter Edge-to-Edge Repair (TEER) procedure via femoral vein catheter under conscious sedation or light anesthesia. During clip deployment, temporary blood flow changes called overload mismatch are carefully monitored with advanced imaging to ensure precise and safe placement, making the first 1–2 days of post-procedure observation crucial.",
     iconSrc: "/images/service/icon/heart.svg",
   },
   {
@@ -123,12 +123,12 @@ const benefitsData2 = [
   {
     iconSrc: "/images/service/icon/b1.svg",
     title: "Pioneers of MyClip in India",
-    desc: "HVE led the first human trial of MyClip and were the first to bring this innovative TEER device to India.",
+    desc: "Heart Valve Experts (HVE) led the first human trial of MyClip and were the first to bring this innovative Transcatheter Edge-to-Edge Repair (TEER) device to India.",
   },
   {
     iconSrc: "/images/service/icon/b2.svg",
     title: "Expert Team in MitraClip & MyClip",
-    desc: "Our team of TEER specialists in Mumbai specializes in TEER using MitraClip, offering precise, minimally invasive solutions for valve regurgitation.",
+    desc: "Our team of Transcatheter Edge-to-Edge Repair (TEER) specialists in Mumbai specializes in Transcatheter Edge-to-Edge Repair (TEER) using MitraClip, offering precise, minimally invasive solutions for valve regurgitation.",
   },
   {
     iconSrc: "/images/service/icon/b3.svg",
@@ -138,7 +138,7 @@ const benefitsData2 = [
   {
     iconSrc: "/images/service/icon/b4.svg",
     title: "High-Risk & Elderly Patient Care",
-    desc: "We provide tailored TEER treatment plans for patients unfit for open-heart surgery, especially seniors and those with comorbidities.",
+    desc: "We provide tailored Transcatheter Edge-to-Edge Repair (TEER) treatment plans for patients unfit for open-heart surgery, especially seniors and those with comorbidities.",
   },
   {
     iconSrc: "/images/service/icon/b5.svg",
@@ -147,7 +147,7 @@ const benefitsData2 = [
   },
   {
     iconSrc: "/images/service/icon/b6.svg",
-    title: "Trusted TEER Center in Mumbai",
+    title: "Trusted Transcatheter Edge-to-Edge Repair (TEER) Center in Mumbai",
     desc: `Led by experienced <a href="https://heartvalveexperts.com/cardiologist-mumbai" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">cardiologists</a> in Mumbai, our center is known for successful outcomes and patient-first transcatheter valve repair.`,
   },
 ];
@@ -155,7 +155,7 @@ const benefitsData2 = [
 const faqData = [
   {
     id: 1,
-    question: "What is the TEER procedure?",
+    question: "What is the Transcatheter Edge-to-Edge Repair (TEER) procedure?",
     answer:
       "TEER (Transcatheter Edge-to-Edge Repair) is a minimally invasive treatment that clips leaky mitral or tricuspid valves to reduce regurgitation.",
   },
@@ -163,43 +163,43 @@ const faqData = [
     id: 2,
     question: "What is the difference between MitraClip and TriClip?",
     answer:
-      "Both are TEER devices; MitraClip treats the mitral valve, while TriClip targets the tricuspid valve.",
+      "Both are Transcatheter Edge-to-Edge Repair (TEER) devices; MitraClip treats the mitral valve, while TriClip targets the tricuspid valve.",
   },
   {
     id: 3,
-    question: "Who is eligible for TEER surgery/procedure?",
+    question: "Who is eligible for Transcatheter Edge-to-Edge Repair (TEER) surgery/procedure?",
     answer:
-      "Patients with moderate-to-severe valve regurgitation who are high-risk for open surgery may benefit from a consultation with a TEER specialist in Mumbai.",
+      "Patients with moderate-to-severe valve regurgitation who are high-risk for open surgery may benefit from a consultation with a Transcatheter Edge-to-Edge Repair (TEER) specialist in Mumbai.",
   },
   {
     id: 4,
-    question: "Is TEER safer than valve surgery?",
+    question: "Is Transcatheter Edge-to-Edge Repair (TEER) safer than valve surgery?",
     answer:
-      "TEER is a minimally invasive, catheter-based procedure that does not require opening the chest, making it an alternative option to traditional surgery for certain patients.",
+      "Transcatheter Edge-to-Edge Repair (TEER) is a minimally invasive, catheter-based procedure that does not require opening the chest, making it an alternative option to traditional surgery for certain patients.",
   },
   {
     id: 5,
-    question: "How long does TEER surgery/procedure take?",
+    question: "How long does Transcatheter Edge-to-Edge Repair (TEER) surgery/procedure take?",
     answer:
       "The procedure typically takes 1–2 hours, followed by a brief hospital stay.",
   },
   {
     id: 6,
-    question: "How much does the TEER surgery/procedure cost?",
+    question: "How much does the Transcatheter Edge-to-Edge Repair (TEER) surgery/procedure cost?",
     answer:
-      "The cost of TEER in Mumbai typically ranges from ₹15 to ₹25 lakhs, depending on the device used (MitraClip or TriClip), hospital facilities, and patient condition.",
+      "The cost of Transcatheter Edge-to-Edge Repair (TEER) in Mumbai typically ranges from ₹15 to ₹25 lakhs, depending on the device used (MitraClip or TriClip), hospital facilities, and patient condition.",
   },
   {
     id: 7,
-    question: "What is the success rate of TEER?",
+    question: "What is the success rate of Transcatheter Edge-to-Edge Repair (TEER)?",
     answer:
-      "TEER shows high procedural success rates, with real-world data demonstrating 96% acute success and significant reduction of mitral regurgitation.",
+      "Transcatheter Edge-to-Edge Repair (TEER) shows high procedural success rates, with real-world data demonstrating 96% acute success and significant reduction of mitral regurgitation.",
   },
   {
     id: 8,
-    question: "Is TEER a permanent solution?",
+    question: "Is Transcatheter Edge-to-Edge Repair (TEER) a permanent solution?",
     answer:
-      "TEER offers long-term relief, but outcomes may vary based on valve condition and overall heart function.",
+      "Transcatheter Edge-to-Edge Repair (TEER) offers long-term relief, but outcomes may vary based on valve condition and overall heart function.",
   },
 ];
 const serviceSchema = {
@@ -207,13 +207,13 @@ const serviceSchema = {
   "@type": "MedicalProcedure",
   name: "Transcatheter Edge-to-Edge Repair (TEER)",
   description:
-    "TEER is a minimally invasive procedure that treats mitral valve regurgitation by using a clip device to repair the leaking valve leaflets via a catheter.",
+    "Transcatheter Edge-to-Edge Repair (TEER) is a minimally invasive procedure that treats mitral valve regurgitation by using a clip device to repair the leaking valve leaflets via a catheter.",
   procedureType: "http://schema.org/PercutaneousProcedure",
   bodyLocation: "Heart – Mitral Valve",
   howPerformed:
     "A catheter is inserted, typically via the femoral vein, guided to the mitral valve. A clip device (such as MitraClip or MyClip) grasps and approximates the valve leaflets to reduce backflow of blood.",
   preparation:
-    "Before TEER, patients undergo imaging tests such as echocardiogram and transesophageal echo. Blood work and heart assessments are done. The procedure is performed under sedation or light anesthesia.",
+    "Before Transcatheter Edge-to-Edge Repair (TEER), patients undergo imaging tests such as echocardiogram and transesophageal echo. Blood work and heart assessments are done. The procedure is performed under sedation or light anesthesia.",
   followup:
     "After the procedure, patients are monitored in hospital, begin mobility early, have follow-up echocardiograms, and attend cardiology visits to check clip stability and valve function.",
   url: "https://heartvalveexperts.com/teer",
@@ -243,14 +243,14 @@ const servciepage = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <BreadCrumb
-        title="TEER Surgery/Procedure (Mitraclip/Myclip)"
+        title="Transcatheter Edge-to-Edge Repair (TEER) Surgery/Procedure (Mitraclip/Myclip)"
         subpage="false"
         image="/images/service/TEER/bread.webp"
       />
       <TeerProcedure />
       <TaviWhoFor
         sectionTag="Who It’s For?"
-        heading="Who Needs TEER Surgery/Procedure?"
+        heading="Who Needs Transcatheter Edge-to-Edge Repair (TEER) Surgery/Procedure?"
         buttonText="Request a Consultation"
         conditions={conditionsData}
         imageSrc="/images/service/TEER/Rectangle 35.webp"
@@ -258,12 +258,12 @@ const servciepage = () => {
       />
       <TaviBenefits
         benefits={benefitsData}
-        sectionLabel="Benefits of TEER"
+        sectionLabel="Benefits of Transcatheter Edge-to-Edge Repair (TEER)"
         heading="What are the Benefits of TEER (MitraClip & TriClip)?"
         sectionIconSrc="/images/icon/Ellipse 3.svg"
       />
       <ProcedureDelayRisks
-        title="Risks of Delay of TEER Surgery/Procedure"
+        title="Risks of Delay of Transcatheter Edge-to-Edge Repair (TEER) Surgery/Procedure"
         subtitle="Outcomes of Procedure Delay"
         risks={risksData}
         imageSrc="/images/service/TEER/Rectangle 37.webp"
@@ -273,14 +273,14 @@ const servciepage = () => {
         <ProcedureTimeline
           timeline={timelineData}
           sectionTitle="Procedure Timeline"
-          heading="TEER Procedure Timeline & Recovery"
+          heading="Transcatheter Edge-to-Edge Repair (TEER) Procedure Timeline & Recovery"
           leftImageSrc="/images/service/TEER/Rectangle 36.webp"
         />
       </section>
       <TaviBenefits
         benefits={benefitsData2}
         sectionLabel="What Sets us Apart"
-        heading="Why Choose Heart Valve Experts for TEER in Mumbai?"
+        heading="Why Choose Heart Valve Experts for Transcatheter Edge-to-Edge Repair (TEER) in Mumbai?"
         sectionIconSrc="/images/icon/Ellipse 3.svg"
       />
       <PatientSuccessStories />

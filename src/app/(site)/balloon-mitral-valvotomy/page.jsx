@@ -9,9 +9,9 @@ import AppointmentCTA from "@/component/AppointmentCTA";
 import PatientSuccessStories from "@/component/PatientSuccessStories";
 
 export const metadata = {
-  title: "What is Balloon Mitral Valvotomy ? Benefits, Procedure & Recovery",
+  title: "What is Balloon Mitral Valvotomy (BMV)? Benefits, Procedure & Recovery",
   description:
-    "Learn about Balloon Mitral Valvotomy surgery, including its benefits, procedure, recovery timeline, risks, and how it helps treat mitral valve stenosis effectively.",
+    "Learn about Balloon Mitral Valvotomy (BMV) surgery, including its benefits, procedure, recovery timeline, risks, and how it helps treat mitral valve stenosis effectively.",
   alternates: {
     canonical: "https://heartvalveexperts.com/balloon-mitral-valvotomy",
   },
@@ -44,14 +44,14 @@ const risksData = [
   "Progressive valve narrowing can lead to heart failure and lung hypertension.",
   "Increases the risk of atrial fibrillation and related stroke complications.",
   "Symptoms like fatigue and breathlessness may become harder to manage.",
-  "Delayed care may result in calcified or leaking valves, making BMV unsuitable.",
-  "May lead to the need for TMVR, a more invasive and expensive procedure.",
+  "Delayed care may result in calcified or leaking valves, making Balloon Mitral Valvotomy (BMV) unsuitable.",
+  "May lead to the need for Transcatheter Mitral Valve Repair (TMVR), a more invasive and expensive procedure.",
 ];
 const benefitsData = [
   {
     iconSrc: "/images/service/icon/1.svg",
     title: "Minimally invasive",
-    desc: "BMV is done via a catheter inserted through the vein, avoiding the need for open-heart surgery or chest incisions.",
+    desc: "Balloon Mitral Valvotomy (BMV) is done via a catheter inserted through the vein, avoiding the need for open-heart surgery or chest incisions.",
   },
   {
     iconSrc: "/images/service/icon/2.svg",
@@ -66,17 +66,17 @@ const benefitsData = [
   {
     iconSrc: "/images/service/icon/4.svg",
     title: "Preserves the native mitral valve",
-    desc: "Unlike valve replacement, BMV improves valve function without removing or replacing the natural valve.",
+    desc: "Unlike valve replacement, Balloon Mitral Valvotomy (BMV) improves valve function without removing or replacing the natural valve.",
   },
   {
     iconSrc: "/images/service/icon/5.svg",
     title: "Lower procedural cost and long-term durability",
-    desc: "More affordable and durable in suitable patients, making it a valuable first-line treatment before considering valve replacement options like TMVR.",
+    desc: "More affordable and durable in suitable patients, making it a valuable first-line treatment before considering valve replacement options like Transcatheter Mitral Valve Repair (TMVR).",
   },
   {
     iconSrc: "/images/service/icon/6.svg",
     title: "Preferred for younger patients with rheumatic mitral stenosis",
-    desc: `Especially suitable for rheumatic cases, where structural repair is possible, unlike <a href="https://heartvalveexperts.com/blog/tavi-tavr-procedure-risks-benefits-cost-and-recovery" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">TAVI/TMVR</a>, which is designed for calcific degeneration.`,
+    desc: `Especially suitable for rheumatic cases, where structural repair is possible, unlike <a href="https://heartvalveexperts.com/blog/tavi-tavr-procedure-risks-benefits-cost-and-recovery" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">Transcatheter Aortic Valve Implantation (TAVI)/Transcatheter Mitral Valve Repair (TMVR)</a>, which is designed for calcific degeneration.`,
   }
 
 ];
@@ -89,7 +89,7 @@ const timelineData = [
   },
   {
     title: "Day 2",
-    desc: "BMV procedure performed via femoral vein access under local anesthesia and sedation; balloon catheter is used to widen the narrowed mitral valve",
+    desc: "Balloon Mitral Valvotomy (BMV) procedure performed via femoral vein access under local anesthesia and sedation; balloon catheter is used to widen the narrowed mitral valve",
     iconSrc: "/images/service/icon/heart.svg",
   },
   {
@@ -117,13 +117,13 @@ const timelineData = [
 const benefitsData2 = [
   {
     iconSrc: "/images/service/icon/b1.svg",
-    title: "Mumbai’s Trusted BMV Specialist Team",
-    desc: `Our BMV doctors in Mumbai have successfully treated hundreds of patients with <a href="https://heartvalveexperts.com/blog/treatment-modalities-available-for-severe-mitral-stenosis" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">mitral valve stenosis</a> using the latest balloon dilation techniques.`,
+    title: "Mumbai’s Trusted Balloon Mitral Valvotomy (BMV) Specialist Team",
+    desc: `Our Balloon Mitral Valvotomy (BMV) doctors in Mumbai have successfully treated hundreds of patients with <a href="https://heartvalveexperts.com/blog/treatment-modalities-available-for-severe-mitral-stenosis" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">mitral valve stenosis</a> using the latest balloon dilation techniques.`,
   },
   {
     iconSrc: "/images/service/icon/b2.svg",
     title: "Advanced 3D Echo Precision",
-    desc: "We use cutting-edge imaging and catheterization equipment to ensure accurate balloon placement and safer outcomes during BMV.",
+    desc: "We use cutting-edge imaging and catheterization equipment to ensure accurate balloon placement and safer outcomes during Balloon Mitral Valvotomy (BMV).",
   },
   {
     iconSrc: "/images/service/icon/b3.svg",
@@ -138,12 +138,12 @@ const benefitsData2 = [
   {
     iconSrc: "/images/service/icon/b5.svg",
     title: "Personalized Cardiac Care",
-    desc: "Every patient is evaluated and managed by top cardiologists in Mumbai with tailored treatment plans and post-BMV monitoring.",
+    desc: "Every patient is evaluated and managed by top cardiologists in Mumbai with tailored treatment plans and post-Balloon Mitral Valvotomy (BMV) monitoring.",
   },
   {
     iconSrc: "/images/service/icon/b6.svg",
     title: "Seamless Recovery Support",
-    desc: "From hospital discharge to home care and follow-up, we offer end-to-end support to ensure smooth recovery after the BMV procedure.",
+    desc: "From hospital discharge to home care and follow-up, we offer end-to-end support to ensure smooth recovery after the Balloon Mitral Valvotomy (BMV) procedure.",
   },
 ];
 
@@ -152,12 +152,12 @@ const faqData = [
     id: 1,
     question: "Is Balloon Valvuloplasty Safe?",
     answer:
-      "Yes, balloon valvuloplasty is generally safe when performed by experienced BMV doctors using advanced cath lab techniques.",
+      "Yes, balloon valvuloplasty is generally safe when performed by experienced Balloon Mitral Valvotomy (BMV) doctors using advanced cath lab techniques.",
   },
   {
     id: 2,
     question: "How long does the balloon mitral valvuloplasty procedure take?",
-    answer: "The BMV procedure typically takes 1 to 2 hours.",
+    answer: "The Balloon Mitral Valvotomy (BMV) procedure typically takes 1 to 2 hours.",
   },
   {
     id: 3,
@@ -179,15 +179,15 @@ const faqData = [
   },
   {
     id: 6,
-    question: "Who performs BMV in Mumbai?",
+    question: "Who performs Balloon Mitral Valvotomy (BMV) in Mumbai?",
     answer:
       "Our team of experienced cardiologists in Mumbai is specialized in performing balloon mitral valvotomy with high success rates.",
   },
   {
     id: 7,
-    question: "What is the cost of BMV in cardiology?",
+    question: "What is the cost of Balloon Mitral Valvotomy (BMV) in cardiology?",
     answer:
-      "The cost of BMV in Mumbai can vary depending on the hospital, cardiologist experience, and patient condition; your cardiologist will provide a detailed estimate.",
+      "The cost of Balloon Mitral Valvotomy (BMV) in Mumbai can vary depending on the hospital, cardiologist experience, and patient condition; your cardiologist will provide a detailed estimate.",
   },
   {
     id: 8,
@@ -237,16 +237,16 @@ const servciepage = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <BreadCrumb
-        title="BMV (Balloon Mitral Valvotomy)"
+        title="Balloon Mitral Valvotomy (BMV)"
         subpage="false"
         image="/images/service/BMV/bread.webp"
       />
       <TaviSectionAll
         imageSrc="/images/service/BMV/2.webp"
-        imageAlt="TEER Surgery"
+        imageAlt="Transcatheter Edge-to-Edge Repair (TEER) Surgery"
         imageTitle=""
         tag="About"
-        title="What Is BMV Surgery/Procedure?"
+        title="What Is Balloon Mitral Valvotomy (BMV) Surgery/Procedure?"
         description={[
           "Balloon Mitral Valvotomy (BMV) is a non-surgical procedure to treat narrowed mitral valves. A balloon-tipped catheter is guided through the femoral vein into the heart, crossing from the right atrium to the left via a transseptal puncture. Once positioned across the narrowed mitral valve, the balloon is inflated to widen the opening and improve blood flow between the left atrium and ventricle.",
           `This <a href="https://heartvalveexperts.com/blog/balloon-mitral-valvuloplasty-bmv-procedure" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">Balloon Mitral Valvotomy Treatment</a> is ideal for patients with rheumatic mitral stenosis who are not candidates for open-heart surgery.`
@@ -255,7 +255,7 @@ const servciepage = () => {
       />
       <TaviWhoFor
         sectionTag="Who It’s For?"
-        heading="Who Needs BMV Surgery/Procedure?"
+        heading="Who Needs Balloon Mitral Valvotomy (BMV) Surgery/Procedure?"
         buttonText="Request a Consultation"
         conditions={conditionsData}
         imageSrc="/images/service/BMV/Rectangle 38.webp"
@@ -263,12 +263,12 @@ const servciepage = () => {
       />
       <TaviBenefits
         benefits={benefitsData}
-        sectionLabel="Benefits of BMV"
-        heading="What are the Benefits of BMV Surgery/Procedure?"
+        sectionLabel="Benefits of Balloon Mitral Valvotomy (BMV)"
+        heading="What are the Benefits of Balloon Mitral Valvotomy (BMV) Surgery/Procedure?"
         sectionIconSrc="/images/icon/Ellipse 3.svg"
       />
       <ProcedureDelayRisks
-        title="Risks of Delay of BMV Surgery/Procedure"
+        title="Risks of Delay of Balloon Mitral Valvotomy (BMV) Surgery/Procedure"
         subtitle="Outcomes of Procedure Delay"
         risks={risksData}
         imageSrc="/images/service/BMV/Rectangle 40.webp"
@@ -278,7 +278,7 @@ const servciepage = () => {
         <ProcedureTimeline
           timeline={timelineData}
           sectionTitle="Procedure Timeline"
-          heading="BMV Procedure Timeline & Recovery"
+          heading="Balloon Mitral Valvotomy (BMV) Procedure Timeline & Recovery"
           leftImageSrc="/images/service/BMV/Rectangle 39.webp"
         />
       </section>

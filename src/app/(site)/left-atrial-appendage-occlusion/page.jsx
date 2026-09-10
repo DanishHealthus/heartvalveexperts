@@ -20,7 +20,7 @@ export const metadata = {
 const conditionsData = [
   {
     title: "Have non-valvular atrial fibrillation (AF)",
-    desc: "LAAO is used to prevent stroke in patients with AF not caused by a heart valve issue, where clots commonly form in the left atrial appendage.",
+    desc: "Left Atrial Appendage Occlusion (LAAO) is used to prevent stroke in patients with AF not caused by a heart valve issue, where clots commonly form in the left atrial appendage.",
   },
   {
     title: "Cannot tolerate long-term blood thinners",
@@ -28,11 +28,11 @@ const conditionsData = [
   },
   {
     title: "Have had bleeding complications on anticoagulants",
-    desc: "LAAO is ideal for those who’ve experienced serious bleeding while on blood thinners.",
+    desc: "Left Atrial Appendage Occlusion (LAAO) is ideal for those who’ve experienced serious bleeding while on blood thinners.",
   },
   {
     title: "Prefer a one-time procedure over lifelong medication",
-    desc: "LAAO provides stroke protection without the need for daily anticoagulants, under the care of a Left Atrial Appendage Occlusion specialist in Mumbai.",
+    desc: "Left Atrial Appendage Occlusion (LAAO) provides stroke protection without the need for daily anticoagulants, under the care of a Left Atrial Appendage Occlusion specialist in Mumbai.",
   },
 ];
 
@@ -79,7 +79,7 @@ const timelineData = [
   },
   {
     title: "Day 2",
-    desc: "LAAO device placement via a catheter-based procedure under general anesthesia",
+    desc: "Left Atrial Appendage Occlusion (LAAO) device placement via a catheter-based procedure under general anesthesia",
     iconSrc: "/images/service/icon/heart.svg",
   },
   {
@@ -113,7 +113,7 @@ const benefitsData2 = [
   {
     iconSrc: "/images/service/icon/b2.svg",
     title: "Leading Cardiologist in Mumbai",
-    desc: "Specializes in atrial fibrillation care and non-surgical stroke prevention options like LAAO.",
+    desc: "Specializes in atrial fibrillation care and non-surgical stroke prevention options like Left Atrial Appendage Occlusion (LAAO).",
   },
   {
     iconSrc: "/images/service/icon/b3.svg",
@@ -132,7 +132,7 @@ const benefitsData2 = [
   },
   {
     iconSrc: "/images/service/icon/b6.svg",
-    title: "Personalized LAAO Treatment Plans",
+    title: "Personalized Left Atrial Appendage Occlusion (LAAO) Treatment Plans",
     desc: "Every patient receives tailored care from a Left Atrial Appendage Occlusion specialist in Mumbai.",
   },
 ];
@@ -140,19 +140,19 @@ const benefitsData2 = [
 const faqData = [
   {
     id: 1,
-    question: "When should LAAO be considered?",
+    question: "When should Left Atrial Appendage Occlusion (LAAO) be considered?",
     answer:
-      "LAAO is recommended for patients with AF who are at risk of stroke but cannot safely take long-term blood thinners due to bleeding complications.",
+      "Left Atrial Appendage Occlusion (LAAO) is recommended for patients with AF who are at risk of stroke but cannot safely take long-term blood thinners due to bleeding complications.",
   },
   {
     id: 2,
-    question: "How is the LAAO device implanted?",
+    question: "How is the Left Atrial Appendage Occlusion (LAAO) device implanted?",
     answer:
       "The Left Atrial Appendage Occlusion Device is placed using a catheter inserted through a vein in the leg and guided into the heart. The procedure takes 1–2 hours and does not require open-heart surgery.",
   },
   {
     id: 3,
-    question: "Is the LAAO device permanent?",
+    question: "Is the Left Atrial Appendage Occlusion (LAAO) device permanent?",
     answer:
       "Yes, the device becomes part of your heart tissue over time, sealing the appendage permanently. Most patients can stop blood thinners after 3 months.",
   },
@@ -164,7 +164,7 @@ const faqData = [
   },
   {
     id: 5,
-    question: "Who performs LAAO in Mumbai?",
+    question: "Who performs Left Atrial Appendage Occlusion (LAAO) in Mumbai?",
     answer:
       "Left Atrial Appendage Occlusion is typically performed by an experienced interventional cardiologist or structural heart specialist, often working alongside a team that includes electrophysiologists and cardiac anesthetists. At our center in Mumbai, the procedure is led by a Left Atrial Appendage Occlusion specialist with expertise in catheter-based therapies for atrial fibrillation, supported by leading cardiologists in Mumbai and a full structural heart team.",
   },
@@ -194,7 +194,7 @@ const serviceSchema = {
   "@type": "MedicalProcedure",
   name: "Left Atrial Appendage Occlusion (LAAO)",
   description:
-    "LAAO is a minimally invasive procedure that closes off the left atrial appendage to prevent blood clots and reduce stroke risk in atrial fibrillation patients who cannot take long-term blood thinners.",
+    "Left Atrial Appendage Occlusion (LAAO) is a minimally invasive procedure that closes off the left atrial appendage to prevent blood clots and reduce stroke risk in atrial fibrillation patients who cannot take long-term blood thinners.",
   procedureType: "http://schema.org/PercutaneousProcedure",
   bodyLocation: "Heart – Left Atrial Appendage",
   howPerformed:
@@ -202,7 +202,7 @@ const serviceSchema = {
   preparation:
     "Patients undergo imaging tests like echocardiogram or CT scan to check appendage anatomy and exclude clots. Blood tests and risk assessment are also done before the procedure.",
   followup:
-    "After LAAO, patients typically take blood-thinning medication for around 45 days, then have a follow-up transesophageal echo (TEE) to confirm proper device position, followed by long-term checkups.",
+    "After Left Atrial Appendage Occlusion (LAAO), patients typically take blood-thinning medication for around 45 days, then have a follow-up transesophageal echo (TEE) to confirm proper device position, followed by long-term checkups.",
   url: "https://heartvalveexperts.com/left-atrial-appendage-occlusion",
 };
 
@@ -230,13 +230,13 @@ const servciepage = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <BreadCrumb
-        title="LAAO Surgery/Procedure"
+        title="Left Atrial Appendage Occlusion (LAAO) Surgery/Procedure"
         subpage="false"
         image="/images/service/LAAO/bread.webp"
       />
       <TaviSectionAll
         imageSrc="/images/service/LAAO/1.webp"
-        imageAlt="TEER Surgery"
+        imageAlt="Transcatheter Edge-to-Edge Repair (TEER) Surgery"
         imageTitle=""
         tag="About"
         title="What is Left Atrial Appendage Occlusion Surgery/Procedure?"
@@ -248,7 +248,7 @@ const servciepage = () => {
       />
       <TaviWhoFor
         sectionTag="Who It’s For?"
-        heading="Who Needs LAAO Surgery/Procedure?"
+        heading="Who Needs Left Atrial Appendage Occlusion (LAAO) Surgery/Procedure?"
         buttonText="Request a Consultation"
         conditions={conditionsData}
         imageSrc="/images/service/LAAO/Rectangle 47.webp"
@@ -256,12 +256,12 @@ const servciepage = () => {
       />
       <TaviBenefits
         benefits={benefitsData}
-        sectionLabel="Benefits of LAAO"
-        heading="What are the Benefits of LAAO Surgery/Procedure?"
+        sectionLabel="Benefits of Left Atrial Appendage Occlusion (LAAO)"
+        heading="What are the Benefits of Left Atrial Appendage Occlusion (LAAO) Surgery/Procedure?"
         sectionIconSrc="/images/icon/Ellipse 3.svg"
       />
       <ProcedureDelayRisks
-        title="Risks of Delay of LAAO Surgery/Procedure"
+        title="Risks of Delay of Left Atrial Appendage Occlusion (LAAO) Surgery/Procedure"
         subtitle="Outcomes of Procedure Delay"
         risks={risksData}
         imageSrc="/images/service/LAAO/Rectangle 49.webp"
@@ -271,7 +271,7 @@ const servciepage = () => {
         <ProcedureTimeline
           timeline={timelineData}
           sectionTitle="Procedure Timeline"
-          heading="LAAO Procedure Timeline & Recovery"
+          heading="Left Atrial Appendage Occlusion (LAAO) Procedure Timeline & Recovery"
           leftImageSrc="/images/service/LAAO/Rectangle 48.webp"
         />
       </section>

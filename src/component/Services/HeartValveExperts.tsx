@@ -48,7 +48,7 @@ const HeartValveExperts = () => {
         {/* Section Label */}
         <p className="uppercase tracking-widest text-sm font-medium text-blue-600 flex items-center justify-center gap-2 mb-3">
           <span className="w-2 h-2 rounded-full bg-blue-600 inline-block" />
-          Benefits of TAVI
+          Benefits of Transcatheter Aortic Valve Implantation (TAVI)
         </p>
 
         {/* Heading */}

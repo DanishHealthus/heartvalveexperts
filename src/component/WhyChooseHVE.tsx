@@ -8,25 +8,25 @@ const features = [
     icon: "/images/icon/Group 43.svg",
     title: "Pioneering Interventions",
     description:
-      "First in Western India to introduce advanced Transcatheter Aortic Valve Implantation (TAVI) technology and cutting-edge devices, and the first in India to lead a human trial of MyClip, bringing this innovative TEER device to the country.",
+      "First in Western India to introduce advanced Transcatheter Aortic Valve Implantation (TAVI) technology and cutting-edge devices, and the first in India to lead a human trial of MyClip",
   },
   {
     icon: "/images/icon/Group 44.svg",
     title: "Unmatched Experience",
     description:
-      "Hundreds of successful valve replacement procedures in Mumbai with excellent outcomes.",
+      "Hundreds of successful valve replacement procedures in Mumbai with excellent outcomes",
   },
   {
     icon: "/images/icon/Group 45.svg",
     title: "Patient-First Safety",
     description:
-      "A multidisciplinary team ensuring your procedure is safe, precise, and recovery-focused.",
+      "A multidisciplinary team ensuring your procedure is safe, precise, and recovery-focused",
   },
   {
     icon: "/images/icon/Group 46.svg",
     title: "Recognized Excellence",
     description:
-      "Among the most trusted heart valve clinics in Mumbai, setting global standards of care.",
+      "Among the most trusted heart valve clinics in Mumbai, setting global standards of care",
   },
 ];
 
@@ -47,40 +47,39 @@ export default function WhyChooseHVE() {
                 alt=""
               />
             </span>{" "}
-            WHY CHOOSE HVE?
+            WHY CHOOSE Heart Valve Experts (HVE)?
           </p>
           <h2 className="text-xl md:text-2xl font-light mt-4">
             When it comes to heart valve surgery in Mumbai, experience and
-            innovation matter. At HVE, you are in the hands of a dedicated team
+            innovation matter. At Heart Valve Experts (HVE), you are in the hands of a dedicated team
             with decades of combined expertise in structural heart
-            interventions.
+            interventions
           </h2>
         </div>
-
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="border border-white/30 rounded-2xl p-6 bg-white/5 hover:bg-white/10 transition-all"
+              className="border border-white/30 rounded-2xl p-6 bg-white/5 hover:bg-black/10 transition-all"
             >
-              <div className="w-12 h-12 mb-3 shrink-0">
+              <div className="w-8 h-8 lg:w-12 lg:h-12 mb-3 shrink-0">
                 <Image
-                  width={25}
-                  height={25}
-                  className="object-none rounded-full shrink-0"
+                  width={30}
+                  height={30}
+                  className="w-8 h-8 lg:w-12 lg:h-12 object-fit 2xl:object-none rounded-full shrink-0"
                   src={feature.icon}
                   alt=""
                 />
               </div>
               <h3
-                style={{ fontWeight: "300" }}
-                className="text-lg lg:text-[22px] font-normal mb-2"
+                style={{ fontWeight: "400" }}
+                className="text-xl lg:text-[22px] font-normal mb-2"
               >
                 {feature.title}
               </h3>
               <p
-                style={{ fontWeight: "100" }}
+                style={{ fontWeight: "300" }}
                 className="text-gray-200 text-base"
               >
                 {feature.description}

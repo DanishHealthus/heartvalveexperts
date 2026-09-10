@@ -11,9 +11,9 @@ import ASDClosureSection from "@/component/Services/ASDClosureSection";
 import TaviSectionAll from "@/component/Services/TaviSectionAll";
 
 export const metadata = {
-  title: "Atrial Septum Defect (ASD) Closure Procedure in Mumbai ",
+  title: "Atrial Septal Defect (ASD) Closure Procedure in Mumbai ",
   description:
-    "Get safe, expert ASD closure in Mumbai with advanced catheter procedure. Book now for effective treatment that improves heart health and quality of life!",
+    "Get safe, expert Atrial Septal Defect (ASD) closure in Mumbai with advanced catheter procedure. Book now for effective treatment that improves heart health and quality of life!",
   alternates: {
     canonical: "https://heartvalveexperts.com/device-closure/atrial-septal-defect",
   },
@@ -47,7 +47,7 @@ const benefitsData = [
   {
     iconSrc: "/images/service/icon/4.svg",
     title: "Stroke prevention",
-    desc: "Seals the ASD to reduce the risk of clots passing through",
+    desc: "Seals the Atrial Septal Defect (ASD) to reduce the risk of clots passing through",
   },
   {
     iconSrc: "/images/service/icon/5.svg",
@@ -74,7 +74,7 @@ const benefitsData = [
 const timelineData = [
   {
     title: "Day of Procedure",
-    desc: "Most patients are discharged within 24–48 hours after the ASD closure procedure.",
+    desc: "Most patients are discharged within 24–48 hours after the Atrial Septal Defect (ASD) closure procedure.",
     iconSrc: "/images/service/icon/bed.svg",
   },
   {
@@ -108,13 +108,13 @@ const benefitsData2 = [
   },
   {
     iconSrc: "/images/service/icon/b2.svg",
-    title: "Expert ASD Closure Team",
-    desc: "Led by a leading cardiologist in Mumbai, our team has extensive experience in performing device-based ASD closures using state-of-the-art, minimally invasive techniques for safe and effective results.",
+    title: "Expert Atrial Septal Defect (ASD) Closure Team",
+    desc: "Led by a leading cardiologist in Mumbai, our team has extensive experience in performing device-based Atrial Septal Defect (ASD) closures using state-of-the-art, minimally invasive techniques for safe and effective results.",
   },
   {
     iconSrc: "/images/service/icon/b3.svg",
     title: "Tailored Device Selection",
-    desc: "We select the most appropriate atrial septal defect closure device based on the size, location, and structure of your ASD.",
+    desc: "We select the most appropriate atrial septal defect closure device based on the size, location, and structure of your Atrial Septal Defect (ASD).",
   },
   {
     iconSrc: "/images/service/icon/b4.svg",
@@ -131,57 +131,57 @@ const benefitsData2 = [
 const faqData = [
   {
     id: 1,
-    question: "How risky is ASD closure?",
+    question: "How risky is Atrial Septal Defect (ASD) closure?",
     answer:
-      "The ASD device closure procedure is considered very safe, with a low risk of complications. It’s a minimally invasive alternative to ASD heart surgery, offering high success rates and short recovery time.",
+      "The Atrial Septal Defect (ASD) device closure procedure is considered very safe, with a low risk of complications. It’s a minimally invasive alternative to Atrial Septal Defect (ASD) heart surgery, offering high success rates and short recovery time.",
   },
   {
     id: 2,
-    question: "Can you live a normal life after ASD closure?",
+    question: "Can you live a normal life after Atrial Septal Defect (ASD) closure?",
     answer:
-      "Yes. Most patients lead a full, active life after ASD device closure. Your cardiologist in Mumbai will provide lifestyle guidance.",
+      "Yes. Most patients lead a full, active life after Atrial Septal Defect (ASD) device closure. Your cardiologist in Mumbai will provide lifestyle guidance.",
   },
   {
     id: 3,
-    question: "What is the recovery time for ASD Closure procedure?",
+    question: "What is the recovery time for Atrial Septal Defect (ASD) Closure procedure?",
     answer:
       "Most patients are discharged within a day or two and can resume normal activity within a week.",
   },
   {
     id: 4,
-    question: "What to avoid after ASD closure?",
+    question: "What to avoid after Atrial Septal Defect (ASD) closure?",
     answer:
       "Avoid strenuous exercise, lifting heavy weights, and long travel for 1–2 weeks after atrial septal defect closure. Your doctor will advise based on your condition.",
   },
   {
     id: 5,
-    question: "What size ASD requires closure surgery/procedure?",
+    question: "What size Atrial Septal Defect (ASD) requires closure surgery/procedure?",
     answer:
-      "Any ASD which causes symptoms may require ASD closure surgery/procedure or a device-based ASD closure procedure.",
+      "Any Atrial Septal Defect (ASD) which causes symptoms may require Atrial Septal Defect (ASD) closure surgery/procedure or a device-based Atrial Septal Defect (ASD) closure procedure.",
   },
   {
     id: 6,
-    question: "What medication is given after ASD closure?",
+    question: "What medication is given after Atrial Septal Defect (ASD) closure?",
     answer:
-      "After an ASD closure procedure, most patients are prescribed blood thinners like aspirin or clopidogrel for 3–6 months to prevent clot formation around the device.",
+      "After an Atrial Septal Defect (ASD) closure procedure, most patients are prescribed blood thinners like aspirin or clopidogrel for 3–6 months to prevent clot formation around the device.",
   },
   {
     id: 7,
-    question: "Is ASD closure permanent?",
+    question: "Is Atrial Septal Defect (ASD) closure permanent?",
     answer:
-      "Yes, the device remains in place and becomes part of the heart tissue, sealing the ASD permanently.",
+      "Yes, the device remains in place and becomes part of the heart tissue, sealing the Atrial Septal Defect (ASD) permanently.",
   },
   {
     id: 8,
-    question: "How much does ASD closure cost in Mumbai?",
+    question: "How much does Atrial Septal Defect (ASD) closure cost in Mumbai?",
     answer:
       "Costs depend on the hospital, device used, and individual case complexity. A personalized quote is provided during your consultation.",
   },
   {
     id: 9,
-    question: "Is ASD closure an open-heart surgery?",
+    question: "Is Atrial Septal Defect (ASD) closure an open-heart surgery?",
     answer:
-      "ASD closure can be done through open-heart surgery or a minimally invasive device closure, depending on the defect’s size, location, and patient condition.",
+      "Atrial Septal Defect (ASD) closure can be done through open-heart surgery or a minimally invasive device closure, depending on the defect’s size, location, and patient condition.",
   },
 ];
 const serviceSchema = {
@@ -189,7 +189,7 @@ const serviceSchema = {
   "@type": "MedicalProcedure",
   name: "Atrial Septal Defect (ASD) Device Closure",
   description:
-    "ASD device closure is a minimally invasive, catheter-based procedure used to close an opening in the atrial septum (the wall between the two upper heart chambers) to prevent abnormal blood flow and reduce right-heart overload.",
+    "Atrial Septal Defect (ASD) device closure is a minimally invasive, catheter-based procedure used to close an opening in the atrial septum (the wall between the two upper heart chambers) to prevent abnormal blood flow and reduce right-heart overload.",
   procedureType: "http://schema.org/PercutaneousProcedure",
   bodyLocation: "Heart – Atrial Septum",
   howPerformed:
@@ -225,28 +225,28 @@ const servciepage = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <BreadCrumb
-        title="ASD Closure"
+        title="Atrial Septal Defect (ASD) Closure"
         subpage="false"
         image="/images/service/ASD Closure/bread.webp"
       />
       <TaviSectionAll
         imageSrc="/images/service/ASD Closure/1.webp"
-        imageAlt="TEER Surgery"
+        imageAlt="Transcatheter Edge-to-Edge Repair (TEER) Surgery"
         imageTitle=""
         tag="About"
-        title="What is the ASD Closure Procedure?"
+        title="What is the Atrial Septal Defect (ASD) Closure Procedure?"
         description={[
           `An <a href="https://heartvalveexperts.com/blog/atrial-septal-defect-symptoms" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-red-500" style="text-decoration: none;">Atrial Septal Defect (ASD)</a> is a hole in the wall (septum) that separates the two upper chambers of the heart (atria). This allows oxygen-rich blood to mix with deoxygenated blood, increasing the workload on the heart and lungs and potentially leading to long-term complications.`,
-          "The ASD closure procedure is a minimally invasive treatment where a specially designed device is inserted via a catheter to seal the opening. This ASD Closure procedure in Mumbai offers a safe and effective alternative to open-heart ASD surgery, helping prevent complications like pulmonary hypertension, arrhythmia, and heart failure.",
+          "The Atrial Septal Defect (ASD) closure procedure is a minimally invasive treatment where a specially designed device is inserted via a catheter to seal the opening. This Atrial Septal Defect (ASD) Closure procedure in Mumbai offers a safe and effective alternative to open-heart Atrial Septal Defect (ASD) surgery, helping prevent complications like pulmonary hypertension, arrhythmia, and heart failure.",
         ]}
 
         buttonText="Request a Consultation"
       />
       <ASDClosureSection
         tag="How It's Done"
-        title="How Is ASD Closure Done?"
+        title="How Is Atrial Septal Defect (ASD) Closure Done?"
         imageSrc="/images/service/ASD Closure/2.webp"
-        imageAlt="ASD Closure Illustration"
+        imageAlt="Atrial Septal Defect (ASD) Closure Illustration"
         steps={[
           {
             text: (
@@ -275,7 +275,7 @@ const servciepage = () => {
           {
             text: (
               <>
-                A <b>ASD closure device</b> is positioned across the defect via
+                A <b>Atrial Septal Defect (ASD) closure device</b> is positioned across the defect via
                 catheter.
               </>
             ),
@@ -306,8 +306,8 @@ const servciepage = () => {
       <section className="animate-gradient-circle text-white relative overflow-hidden">
         <FollowUpSection
           tag="Who it’s for?"
-          title="Who Needs ASD Closure?"
-          intro="ASD closure is recommended for patients with a diagnosed atrial septal defect and meet one or more of the following criteria:"
+          title="Who Needs Atrial Septal Defect (ASD) Closure?"
+          intro="Atrial Septal Defect (ASD) closure is recommended for patients with a diagnosed atrial septal defect and meet one or more of the following criteria:"
           subIntro=""
           bulletPoints={[
             "Symptoms such as fatigue, shortness of breath, or palpitations",
@@ -315,7 +315,7 @@ const servciepage = () => {
             "History of stroke or embolism with no other cause",
             "Risk of developing pulmonary hypertension",
             "Significant left-to-right shunting of blood (Qp:Qs ratio > 1.5:1)",
-            "Planned pregnancy, especially in women with large ASD",
+            "Planned pregnancy, especially in women with large Atrial Septal Defect (ASD)",
             "Desire to avoid open-heart surgery with a minimally invasive approach"
           ]}
           conclusion=""
@@ -327,12 +327,12 @@ const servciepage = () => {
 
       <TaviBenefits
         benefits={benefitsData}
-        sectionLabel="Benefits of ASD Closure"
-        heading="What are the Benefits of ASD Closure?"
+        sectionLabel="Benefits of Atrial Septal Defect (ASD) Closure"
+        heading="What are the Benefits of Atrial Septal Defect (ASD) Closure?"
         sectionIconSrc="/images/icon/Ellipse 3.svg"
       />
       <ProcedureDelayRisks
-        title="Risks of Delay of ASD Closure"
+        title="Risks of Delay of Atrial Septal Defect (ASD) Closure"
         subtitle="Outcomes of Procedure Delay"
         risks={risksData}
         imageSrc="/images/service/ASD Closure/Rectangle 52.webp"

@@ -29,7 +29,7 @@ const procedures = [
     id: 4,
     title: "Coronary Artery Bypass (if required)",
     description:
-      "In rare cases, RSOV may affect the coronary arteries. A coronary artery bypass may be added to improve blood supply to the heart muscle.",
+      "In rare cases, Ruptured Sinus of Valsalva (RSOV) may affect the coronary arteries. A coronary artery bypass may be added to improve blood supply to the heart muscle.",
     img: "/images/homeimages/4.webp",
   },
 ];

@@ -32,7 +32,7 @@ const HeartValveSpecialists: React.FC<HeartValveSpecialistsProps> = ({
             <span className="w-6 h-6 rounded-full">
               <Image width={25} height={25} src="/images/icon/Ellipse 3.svg" alt="" />
             </span>{" "}
-            ABOUT HVE
+            ABOUT Heart Valve Experts (HVE)
           </p>
           <h2 className="text-2xl md:text-3xl mb-4">
             {title}

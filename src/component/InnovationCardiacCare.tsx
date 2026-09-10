@@ -12,20 +12,20 @@ const innovations = [
     id: 1,
     title: "Transcatheter Advances",
     description:
-      "No large incisions, faster recovery, and better patient outcomes.",
+      "No large incisions, faster recovery, and better patient outcomes",
     img: "/images/homeimages/Tech-01.webp",
   },
   {
     id: 2,
     title: "Global Standards of Care",
-    description: "Protocols aligned with international cardiac societies.",
+    description: "Protocols aligned with international cardiac societies",
     img: "/images/homeimages/Tech-02.webp",
   },
   {
     id: 3,
     title: "Next-Generation Imaging and Technology",
     description:
-      "Advanced 3D imaging and precision-guided systems for accurate diagnosis and treatment planning.",
+      "Advanced 3D imaging and precision-guided systems for accurate diagnosis and treatment planning",
     img: "/images/homeimages/Tech-03.webp",
   },
   {
@@ -33,7 +33,7 @@ const innovations = [
     title:
       "Pioneering MyClip and Transcatheter Aortic Valve Implantation (TAVI) Innovations",
     description:
-      "HVE led the first human trial of MyClip in India and introduced advanced Transcatheter Aortic Valve Implantation (TAVI) techniques, setting new benchmarks for transcatheter interventions nationwide.",
+      "Heart Valve Experts (HVE) led the first human trial of MyClip in India and introduced advanced Transcatheter Aortic Valve Implantation (TAVI) techniques, setting new benchmarks for transcatheter interventions nationwide",
     img: "/images/homeimages/Tech-04.webp",
   },
 ];
@@ -87,7 +87,7 @@ export default function InnovationCardiacCare() {
 
         {/* Title */}
         <h2 className="text-2xl md:text-3xl font-medium text-gray-900 mb-12">
-          At HVE, innovation is the way we save lives every day.
+          At Heart Valve Experts (HVE), innovation is the way we save lives every day
         </h2>
 
         {/* Cards Grid */}

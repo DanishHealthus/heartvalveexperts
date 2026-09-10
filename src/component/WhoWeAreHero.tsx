@@ -109,14 +109,15 @@ export default function WhoWeAreHero() {
           </span>{" "}
           Who We Are
         </div>
+        <h2 className="text-2xl lg:text-3xl">Specialist Heart Valve Care in Mumbai</h2>
 
         <p
           ref={(el) => {
             if (el) contentRefs.current.push(el);
           }}
-          className="text-xl md:text-3xl text-gray-800 leading-10"
+          className="text-base md:text-xl text-gray-800 leading-relaxed"
         >
-          At the Forefront of Structural Heart Care : Heart Valve Experts brings together specialists in advanced, minimally invasive treatments for complex valve and structural heart conditions, helping every patient understand their options and find the right way forward.
+          Heart Valve Experts is a specialist heart valve clinic in Mumbai, providing diagnosis and treatment for complex heart valve and structural heart conditions. Our team has extensive experience in Transcatheter Aortic Valve Implantation (TAVI), TAVR, and MitraClip, including some of India&apos;s early structural heart procedures. If you have been advised valve replacement surgery in Mumbai, we help you understand whether minimally invasive options such as Transcatheter Aortic Valve Implantation (TAVI) or MitraClip may be suitable for you. We also explain treatment options, expected recovery, and Transcatheter Aortic Valve Implantation (TAVI) and MitraClip procedure costs in India clearly, so you can make an informed decision about your care.
         </p>
 
         <div

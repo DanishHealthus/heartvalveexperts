@@ -11,7 +11,7 @@ import ASDClosureSection from "@/component/Services/ASDClosureSection";
 import TaviSectionAll from "@/component/Services/TaviSectionAll";
 
 export const metadata = {
-  title: "Patent Ductus Arteriosus Surgery in Mumbai | PDA Closure",
+  title: "Patent Ductus Arteriosus (PDA) Surgery in Mumbai | Patent Ductus Arteriosus (PDA) Closure",
   description:
     "Safe and effective Patent Ductus Arteriosus (PDA) closure surgery in Mumbai. Expert cardiac care for children and adults. Book your consultation today!",
   alternates: {
@@ -46,12 +46,12 @@ const benefitsData = [
   {
     iconSrc: "/images/service/icon/4.svg",
     title: "Lower lung pressure",
-    desc: "Helps avoid pulmonary hypertension caused by prolonged PDA",
+    desc: "Helps avoid pulmonary hypertension caused by prolonged Patent Ductus Arteriosus (PDA)",
   },
   {
     iconSrc: "/images/service/icon/5.svg",
     title: "Minimally invasive recovery",
-    desc: "Catheter-based PDA closure procedure ensures faster healing with minimal discomfort",
+    desc: "Catheter-based Patent Ductus Arteriosus (PDA) closure procedure ensures faster healing with minimal discomfort",
   },
   {
     iconSrc: "/images/service/icon/6.svg",
@@ -68,7 +68,7 @@ const benefitsData = [
 const timelineData = [
   {
     title: "Hospital Stay",
-    desc: "Usually 1-2 days for catheter-based PDA closure surgery",
+    desc: "Usually 1-2 days for catheter-based Patent Ductus Arteriosus (PDA) closure surgery",
     iconSrc: "/images/service/icon/bed.svg",
   },
   {
@@ -96,18 +96,18 @@ const timelineData = [
 const benefitsData2 = [
   {
     iconSrc: "/images/service/icon/b1.svg",
-    title: "Specialized PDA Closure Team",
-    desc: "We offer catheter-based PDA closure procedures with consistently high success rates.",
+    title: "Specialized Patent Ductus Arteriosus (PDA) Closure Team",
+    desc: "We offer catheter-based Patent Ductus Arteriosus (PDA) closure procedures with consistently high success rates.",
   },
   {
     iconSrc: "/images/service/icon/b2.svg",
     title: "Tailored Device Choice",
-    desc: "We use advanced PDA closure devices selected based on your child’s size and heart anatomy.",
+    desc: "We use advanced Patent Ductus Arteriosus (PDA) closure devices selected based on your child’s size and heart anatomy.",
   },
   {
     iconSrc: "/images/service/icon/b3.svg",
     title: "Pediatric Expertise",
-    desc: "Our team has extensive experience managing PDA in infants, newborns, and children.",
+    desc: "Our team has extensive experience managing Patent Ductus Arteriosus (PDA) in infants, newborns, and children.",
   },
   {
     iconSrc: "/images/service/icon/b4.svg",
@@ -122,7 +122,7 @@ const benefitsData2 = [
   {
     iconSrc: "/images/service/icon/b6.svg",
     title: "Skilled Cardiology Team",
-    desc: "Our interventional cardiologists in Mumbai are trusted experts in PDA management.",
+    desc: "Our interventional cardiologists in Mumbai are trusted experts in Patent Ductus Arteriosus (PDA) management.",
   },
   {
     iconSrc: "/images/service/icon/b6.svg",
@@ -133,57 +133,57 @@ const benefitsData2 = [
 const faqData = [
   {
     id: 1,
-    question: "Is PDA closure an open-heart surgery?",
+    question: "Is Patent Ductus Arteriosus (PDA) closure an open-heart surgery?",
     answer:
-      "No, PDA closure is usually done using a catheter-based, non-surgical procedure, not open-heart surgery.",
+      "No, Patent Ductus Arteriosus (PDA) closure is usually done using a catheter-based, non-surgical procedure, not open-heart surgery.",
   },
   {
     id: 2,
-    question: "Is PDA a hole in the heart?",
+    question: "Is Patent Ductus Arteriosus (PDA) a hole in the heart?",
     answer:
       "Not exactly. A patent ductus arteriosus (PDA) is a persistent blood vessel that should close after birth but remains open, affecting normal blood flow.",
   },
   {
     id: 3,
-    question: "What happens if the PDA is not closed?",
+    question: "What happens if the Patent Ductus Arteriosus (PDA) is not closed?",
     answer:
-      "If left untreated, PDA can lead to heart enlargement, lung damage, or heart failure, especially in infants and children.",
+      "If left untreated, Patent Ductus Arteriosus (PDA) can lead to heart enlargement, lung damage, or heart failure, especially in infants and children.",
   },
   {
     id: 4,
-    question: "What is the cost of PDA closure in India?",
+    question: "What is the cost of Patent Ductus Arteriosus (PDA) closure in India?",
     answer:
-      "The cost of PDA closure in India typically ranges up to ₹2 lakhs, depending on the hospital, device, and patient age.",
+      "The cost of Patent Ductus Arteriosus (PDA) closure in India typically ranges up to ₹2 lakhs, depending on the hospital, device, and patient age.",
   },
   {
     id: 5,
-    question: "What to expect after PDA closure?",
+    question: "What to expect after Patent Ductus Arteriosus (PDA) closure?",
     answer:
-      "Most patients experience a quick recovery with improved heart function. Regular follow-ups ensure the PDA device is well-positioned and healing is on track.",
+      "Most patients experience a quick recovery with improved heart function. Regular follow-ups ensure the Patent Ductus Arteriosus (PDA) device is well-positioned and healing is on track.",
   },
   {
     id: 6,
-    question: "What are the complications after PDA closure?",
+    question: "What are the complications after Patent Ductus Arteriosus (PDA) closure?",
     answer:
-      "Complications are rare but may include residual leak, device migration, or arrhythmias. Choosing an experienced PDA closure center reduces these risks.",
+      "Complications are rare but may include residual leak, device migration, or arrhythmias. Choosing an experienced Patent Ductus Arteriosus (PDA) closure center reduces these risks.",
   },
   {
     id: 7,
-    question: "What are the options for PDA closure?",
+    question: "What are the options for Patent Ductus Arteriosus (PDA) closure?",
     answer:
-      "Options include catheter-based PDA device closure for most patients or surgical ligation in specific or complex cases. The choice depends on age, size, and PDA type.",
+      "Options include catheter-based Patent Ductus Arteriosus (PDA) device closure for most patients or surgical ligation in specific or complex cases. The choice depends on age, size, and Patent Ductus Arteriosus (PDA) type.",
   },
   {
     id: 8,
-    question: "What is the best age for PDA closure surgery/procedure?",
+    question: "What is the best age for Patent Ductus Arteriosus (PDA) closure surgery/procedure?",
     answer:
-      "PDA closure is ideally done in infancy or early childhood once the duct has failed to close naturally and causes symptoms or heart changes.",
+      "Patent Ductus Arteriosus (PDA) closure is ideally done in infancy or early childhood once the duct has failed to close naturally and causes symptoms or heart changes.",
   },
   {
     id: 9,
-    question: "What is the recovery time for PDA closure?",
+    question: "What is the recovery time for Patent Ductus Arteriosus (PDA) closure?",
     answer:
-      "Children typically recover within a few days after a catheter-based PDA closure procedure, with minimal restrictions.",
+      "Children typically recover within a few days after a catheter-based Patent Ductus Arteriosus (PDA) closure procedure, with minimal restrictions.",
   },
 ];
 const serviceSchema = {
@@ -191,7 +191,7 @@ const serviceSchema = {
   "@type": "MedicalProcedure",
   name: "Patent Ductus Arteriosus (PDA) Device Closure",
   description:
-    "PDA device closure is a minimally invasive procedure that closes a persistent opening between the aorta and pulmonary artery to prevent abnormal blood flow and reduce cardiac strain.",
+    "Patent Ductus Arteriosus (PDA) device closure is a minimally invasive procedure that closes a persistent opening between the aorta and pulmonary artery to prevent abnormal blood flow and reduce cardiac strain.",
   procedureType: "http://schema.org/PercutaneousProcedure",
   bodyLocation: "Heart - Ductus Arteriosus",
   howPerformed:
@@ -227,27 +227,27 @@ const servciepage = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <BreadCrumb
-        title="PDA Closure"
+        title="Patent Ductus Arteriosus (PDA) Closure"
         subpage="false"
         image="/images/service/PDA Closure/bread.webp"
       />
       <TaviSectionAll
         imageSrc="/images/service/PDA Closure/1.webp"
-        imageAlt="TEER Surgery"
+        imageAlt="Transcatheter Edge-to-Edge Repair (TEER) Surgery"
         imageTitle=""
         tag="About"
-        title="What is PDA Closure Procedure?"
+        title="What is Patent Ductus Arteriosus (PDA) Closure Procedure?"
         description={[
           "Patent Ductus Arteriosus (PDA) is a heart condition where a blood vessel called the ductus arteriosus remains open after birth. This creates an abnormal connection between the aorta and the pulmonary artery, allowing extra blood to flow into the lungs. Over time, this can strain the heart, raise lung pressure, and lead to symptoms like fast breathing, poor weight gain, or even heart failure.",
-          "PDA closure is a medical procedure that seals this opening to restore normal blood circulation. Today, most PDA closure procedures are performed using a catheter-based technique, where a small device is delivered through a vein in the groin to close the PDA. This PDA closure procedure in Mumbai is minimally invasive, safe, and allows for a quicker recovery compared to traditional surgery.",
+          "Patent Ductus Arteriosus (PDA) closure is a medical procedure that seals this opening to restore normal blood circulation. Today, most Patent Ductus Arteriosus (PDA) closure procedures are performed using a catheter-based technique, where a small device is delivered through a vein in the groin to close the Patent Ductus Arteriosus (PDA). This Patent Ductus Arteriosus (PDA) closure procedure in Mumbai is minimally invasive, safe, and allows for a quicker recovery compared to traditional surgery.",
         ]}
         buttonText="Request a Consultation"
       />
       <ASDClosureSection
         tag="How It's Done"
-        title="How is PDA Closure Done?"
+        title="How is Patent Ductus Arteriosus (PDA) Closure Done?"
         imageSrc="/images/service/PDA Closure/2.webp"
-        imageAlt="ASD Closure Illustration"
+        imageAlt="Atrial Septal Defect (ASD) Closure Illustration"
         steps={[
           {
             text: (
@@ -260,18 +260,18 @@ const servciepage = () => {
           {
             text: (
               <>
-                A catheter is guided into the heart and towards the PDA using
+                A catheter is guided into the heart and towards the Patent Ductus Arteriosus (PDA) using
                 fluoroscopy and echocardiography.
               </>
             ),
           },
           {
-            text: <>The size and position of the PDA are measured precisely.</>,
+            text: <>The size and position of the Patent Ductus Arteriosus (PDA) are measured precisely.</>,
           },
           {
             text: (
               <>
-                A specialized PDA device closure procedure is performed, where a
+                A specialized Patent Ductus Arteriosus (PDA) device closure procedure is performed, where a
                 self-expanding device is positioned to block the abnormal
                 opening.
               </>
@@ -298,18 +298,18 @@ const servciepage = () => {
       <section className="animate-gradient-circle text-white relative overflow-hidden">
         <FollowUpSection
           tag="Who it’s for?"
-          title="Who Needs PDA Closure?"
-          intro="PDA closure is recommended in patients who meet one or more of the following criteria:"
+          title="Who Needs Patent Ductus Arteriosus (PDA) Closure?"
+          intro="Patent Ductus Arteriosus (PDA) closure is recommended in patients who meet one or more of the following criteria:"
           subIntro=""
           bulletPoints={[
-            "Infants with large PDA causing heart strain or breathing issues",
-            "Premature babies where PDA affects feeding or oxygen levels",
-            "Children diagnosed with PDA during routine heart check-ups",
-            "Adults with undetected PDA showing fatigue or shortness of breath",
-            "Patients at risk of heart infection (endocarditis) due to PDA",
-            "Those with heart enlargement or lung overload from PDA shunting",
-            "Women planning pregnancy with a known PDA",
-            "Anyone advised closure after PDA is confirmed on echocardiogram",
+            "Infants with large Patent Ductus Arteriosus (PDA) causing heart strain or breathing issues",
+            "Premature babies where Patent Ductus Arteriosus (PDA) affects feeding or oxygen levels",
+            "Children diagnosed with Patent Ductus Arteriosus (PDA) during routine heart check-ups",
+            "Adults with undetected Patent Ductus Arteriosus (PDA) showing fatigue or shortness of breath",
+            "Patients at risk of heart infection (endocarditis) due to Patent Ductus Arteriosus (PDA)",
+            "Those with heart enlargement or lung overload from Patent Ductus Arteriosus (PDA) shunting",
+            "Women planning pregnancy with a known Patent Ductus Arteriosus (PDA)",
+            "Anyone advised closure after Patent Ductus Arteriosus (PDA) is confirmed on echocardiogram",
           ]}
           conclusion=""
           buttonText="Request a Consultation"
@@ -319,12 +319,12 @@ const servciepage = () => {
       </section>
       <TaviBenefits
         benefits={benefitsData}
-        sectionLabel="Benefits of PDA Closure"
-        heading="What are the Benefits of PDA Device Closure?"
+        sectionLabel="Benefits of Patent Ductus Arteriosus (PDA) Closure"
+        heading="What are the Benefits of Patent Ductus Arteriosus (PDA) Device Closure?"
         sectionIconSrc="/images/icon/Ellipse 3.svg"
       />
       <ProcedureDelayRisks
-        title="Risks of Delay of PDA Closure"
+        title="Risks of Delay of Patent Ductus Arteriosus (PDA) Closure"
         subtitle="Outcomes of Procedure Delay"
         risks={risksData}
         imageSrc="/images/service/PDA Closure/Rectangle 61.webp"

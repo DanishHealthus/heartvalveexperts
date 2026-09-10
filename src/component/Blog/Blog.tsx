@@ -66,7 +66,7 @@ export default function Blog() {
             ● Innovation in Cardiac Care
           </p>
           <h2 className="text-2xl md:text-3xl font-medium text-gray-900 mt-3">
-            At HVE, innovation is the way we save lives every day.
+            At Heart Valve Experts (HVE), innovation is the way we save lives every day.
           </h2>
         </div>
 

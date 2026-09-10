@@ -238,7 +238,7 @@ const servciepage = () => {
             <section className="animate-gradient-circle text-white relative overflow-hidden">
                 <div className="max-w-6xl mx-auto text-white text-center">
                     <TaviProMumbai
-                        heading="TEER Procedure in Mumbai – Step by Step"
+                        heading="Transcatheter Edge-to-Edge Repair (TEER) Procedure in Mumbai – Step by Step"
                         procedures={[
                             {
                                 id: 1,

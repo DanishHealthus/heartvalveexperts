@@ -203,28 +203,28 @@ export default function Services() {
 
             className="block hover:text-[#0074dd] text-xl transition"
           >
-            TAVI
+            Transcatheter Aortic Valve Implantation (TAVI)
           </Link>
           <Link
             href="/tmvr"
 
             className="block hover:text-[#0074dd] text-xl transition"
           >
-            TMVR
+            Transcatheter Mitral Valve Repair (TMVR)
           </Link>
           <Link
             href="/teer"
 
             className="block hover:text-[#0074dd] text-xl transition"
           >
-            TEER (Mitraclip & Myclip)
+            Transcatheter Edge-to-Edge Repair (TEER) – Mitraclip & Myclip
           </Link>
           <Link
             href="/left-atrial-appendage-occlusion"
 
             className="block hover:text-[#0074dd] text-xl transition"
           >
-            LAAO
+            Left Atrial Appendage Occlusion (LAAO)
           </Link>
 
           {/* About with toggle */}
@@ -239,16 +239,16 @@ export default function Services() {
             {aboutOpen && (
               <div className="border-l border-gray-400 pl-4 mt-5 space-y-4 text-sm text-gray-900">
                 <Link href="/device-closure/atrial-septal-defect" className=" block text-lg hover:text-[#0074dd]">
-                  ASD
+                  Atrial Septal Defect (ASD)
                 </Link>
                 <Link href="/device-closure/patent-foramen-ovale" className=" block text-lg hover:text-[#0074dd]">
-                  PFO
+                  Patent Foramen Ovale (PFO)
                 </Link>
                 <Link href="/device-closure/ventricular-septal-defect" className=" block text-lg hover:text-[#0074dd]">
-                  VSD
+                  Ventricular Septal Defect (VSD)
                 </Link>
                 <Link href="/device-closure/patent-ductus-arteriosus" className=" block text-lg hover:text-[#0074dd]">
-                  PDA
+                  Patent Ductus Arteriosus (PDA)
                 </Link>
               </div>
             )}
@@ -266,13 +266,13 @@ export default function Services() {
             {proceduresOpen && (
               <div className="border-l-2 border-gray-400 pl-4 mt-5 space-y-4 text-sm text-gray-900">
                 <Link href="/balloon-mitral-valvotomy" className=" block text-lg hover:text-[#0074dd]">
-                  BMV
+                  Balloon Mitral Valvotomy (BMV)
                 </Link>
                 <Link href="/ruptured-sinus-of-valsalva" className=" block text-lg hover:text-[#0074dd]">
-                  RSOV
+                  Ruptured Sinus of Valsalva (RSOV)
                 </Link>
                 <Link href="/tric-valve" className=" block text-lg hover:text-[#0074dd]">
-                  Tric Valve
+                  Tricuspid Valve Repair (TricValve)
                 </Link>
               </div>
             )}
@@ -283,7 +283,7 @@ export default function Services() {
 
               className="flex items-center text-xl justify-between w-full hover:text-[#0074dd] transition pr-4"
             >
-              HVE Cardiac Team {cardiacOpen ? <FiChevronUp /> : <FiChevronDown />}
+              Heart Valve Experts (HVE) Cardiac Team {cardiacOpen ? <FiChevronUp /> : <FiChevronDown />}
             </button>
             {cardiacOpen && (
               <div className="border-l-2 border-gray-400 pl-4 mt-5 space-y-4 text-sm text-gray-900">

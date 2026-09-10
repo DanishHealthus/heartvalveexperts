@@ -62,7 +62,7 @@ const cardiologistspage = () => {
         tag="Who it’s for?"
         title="Common Conditions We Treat"
         imageSrc="/images/service/TMVR/Rectangle.webp"
-        imageAlt="ASD Closure Illustration"
+        imageAlt="Atrial Septal Defect (ASD) Closure Illustration"
         steps={[
           { text: <>Coronary artery disease (blocked arteries)</> },
           {

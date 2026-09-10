@@ -179,15 +179,15 @@ export default function HomePage() {
         </Link>
       </div>
 
-      <div className="relative z-10 text-center md:bottom-[110px] max-w-6xl px-6">
+      <div className="relative z-10 text-center md:bottom-[110px] max-w-5xl px-6">
         <h1
           ref={titleRef}
-          className="text-2xl md:text-5xl font-medium leading-snug"
+          className="text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl xl:leading-snug font-medium pt-10"
         >
           India’s Trusted Heart Specialist’s for Advanced and Complex Cardiac
           Care
         </h1>
-        <div className="pt-10 flex justify-center" ref={buttonRef}>
+        <div className="pt-10 lg:pt-7 xl:pt-10 flex justify-center" ref={buttonRef}>
           <div className="cursor-pointer" onClick={() => setShowModal(true)}>
             <button className="flex items-center gap-2 cursor-pointer px-5 py-2 border-2 border-white rounded-full hover:bg-white hover:text-black transition duration-500 ease-in-out">
               Book Appointment
@@ -258,19 +258,19 @@ export default function HomePage() {
             href="/tmvr"
             className="block hover:text-[#0074dd] text-xl transition"
           >
-            TMVR
+            Transcatheter Mitral Valve Repair (TMVR)
           </Link>
           <Link
             href="/teer"
             className="block hover:text-[#0074dd] text-xl transition"
           >
-            TEER (MitraClip & TriClip)
+            Transcatheter Edge-to-Edge Repair (TEER) – MitraClip & TriClip
           </Link>
           <Link
             href="/left-atrial-appendage-occlusion"
             className="block hover:text-[#0074dd] text-xl transition"
           >
-            LAAO
+            Left Atrial Appendage Occlusion (LAAO)
           </Link>
 
           {/* About with toggle */}
@@ -292,25 +292,25 @@ export default function HomePage() {
                   href="/device-closure/atrial-septal-defect"
                   className=" block text-lg hover:text-[#0074dd]"
                 >
-                  ASD
+                  Atrial Septal Defect (ASD)
                 </Link>
                 <Link
                   href="/device-closure/patent-foramen-ovale"
                   className=" block text-lg hover:text-[#0074dd]"
                 >
-                  PFO
+                  Patent Foramen Ovale (PFO)
                 </Link>
                 <Link
                   href="/device-closure/ventricular-septal-defect"
                   className=" block text-lg hover:text-[#0074dd]"
                 >
-                  VSD
+                  Ventricular Septal Defect (VSD)
                 </Link>
                 <Link
                   href="/device-closure/patent-ductus-arteriosus"
                   className=" block text-lg hover:text-[#0074dd]"
                 >
-                  PDA
+                  Patent Ductus Arteriosus (PDA)
                 </Link>
               </div>
             )}
@@ -331,19 +331,19 @@ export default function HomePage() {
                   href="/balloon-mitral-valvotomy"
                   className=" block text-lg hover:text-[#0074dd]"
                 >
-                  BMV
+                  Balloon Mitral Valvotomy (BMV)
                 </Link>
                 <Link
                   href="/ruptured-sinus-of-valsalva"
                   className=" block text-lg hover:text-[#0074dd]"
                 >
-                  RSOV
+                  Ruptured Sinus of Valsalva (RSOV)
                 </Link>
                 <Link
                   href="/tric-valve"
                   className=" block text-lg hover:text-[#0074dd]"
                 >
-                  Tric Valve
+                  Tricuspid Valve Repair (TricValve)
                 </Link>
               </div>
             )}
@@ -351,10 +351,10 @@ export default function HomePage() {
           <div>
             <button
               onClick={() => setCardiacOpen(!cardiacOpen)}
-              className="flex items-center text-xl justify-between w-full hover:text-[#0074dd] transition pr-4"
+              className="flex items-center text-left text-xl justify-between w-full hover:text-[#0074dd] transition pr-4"
             >
-              HVE Cardiac Team{" "}
-              {cardiacOpen ? <FiChevronUp /> : <FiChevronDown />}
+              Heart Valve Experts (HVE) Cardiac Team{" "}
+              {cardiacOpen ? <FiChevronUp className="shrink-0" /> : <FiChevronDown className="shrink-0" />}
             </button>
             {cardiacOpen && (
               <div className="border-l-2 border-gray-400 pl-4 mt-5 space-y-4 text-sm text-gray-900">

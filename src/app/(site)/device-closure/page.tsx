@@ -10,7 +10,7 @@ export const metadata = {
   title:
     "Device Closure Procedure for Congenital Heart Defect | Heart Valve Experts",
   description:
-    "Learn about device closure for congenital heart defects. A safe, minimally invasive treatment for ASD & VSD with faster recovery and effective results.",
+    "Learn about device closure for congenital heart defects. A safe, minimally invasive treatment for Atrial Septal Defect (ASD) & Ventricular Septal Defect (VSD) with faster recovery and effective results.",
   alternates: {
     canonical: "https://heartvalveexperts.com/device-closure",
   },
@@ -258,7 +258,7 @@ const page = () => {
         heading="Take the Next Step"
         badgeText="Expert evaluation is essential if you or a loved one has received a diagnosis of a congenital heart defect."
         paraText="Request a consultation to understand whether device closure may be a suitable option."
-        buttonText="Book a TAVI Consultation"
+        buttonText="Book a Transcatheter Aortic Valve Implantation (TAVI) Consultation"
         buttonLink="/contact-us"
       />
     </>

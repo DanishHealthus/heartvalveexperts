@@ -58,7 +58,7 @@ const faqData = [
     id: 7,
     question: "Can a heart valve be treated without open-heart surgery?",
     answer:
-      "Yes, in many cases. Catheter-based procedures such as TAVI, TEER, or Balloon Mitral Valvotomy can treat valve disease without open-heart surgery, depending on the condition and its severity.",
+      "Yes, in many cases. Catheter-based procedures such as Transcatheter Aortic Valve Implantation (TAVI), Transcatheter Edge-to-Edge Repair (TEER), or Balloon Mitral Valvotomy can treat valve disease without open-heart surgery, depending on the condition and its severity.",
   },
   {
     id: 8,
@@ -226,7 +226,7 @@ const page = () => {
             img: "/images/newservices/minimal/4.webp",
             bulletPoints: [
               `<a target="_blank" href="https://heartvalveexperts.com/tavi" class="text-blue-600 underline">Transcatheter Aortic Valve Implantation (TAVI)</a> : Treatment for severe aortic valve narrowing.`,
-              `<a target="_blank" href="https://heartvalveexperts.com/tmvr" class="text-blue-600 underline">TMVR (Transcatheter Mitral Valve Replacement) </a>: A minimally invasive option for certain <a target="_blank" href="https://heartvalveexperts.com/blog/mitral-valve-regurgitation-causes-symptoms-treatment" class="text-blue-600 underline">mitral valve conditions.</a>`,
+              `<a target="_blank" href="https://heartvalveexperts.com/tmvr" class="text-blue-600 underline">TMVR (Transcatheter Mitral Valve Repair) </a>: A minimally invasive option for certain <a target="_blank" href="https://heartvalveexperts.com/blog/mitral-valve-regurgitation-causes-symptoms-treatment" class="text-blue-600 underline">mitral valve conditions.</a>`,
               `<a target="_blank" href="https://heartvalveexperts.com/teer" class="text-blue-600 underline">TEER (MitraClip & TriClip) </a>: Used to treat <a target="_blank" href="https://heartvalveexperts.com/blog/tricuspid-regurgitation-a-broken-heart" class="text-blue-600 underline">mitral or tricuspid valve regurgitation.</a>`,
             ],
           },
@@ -246,10 +246,10 @@ const page = () => {
               "Certain congenital heart defects can also be treated using catheter-based closure techniques:",
             img: "/images/newservices/minimal/6.webp",
             bulletPoints: [
-              `<a target="_blank" href="https://heartvalveexperts.com/device-closure/atrial-septal-defect" class="text-blue-600 underline">ASD Closure</a>`,
-              `<a target="_blank" href="https://heartvalveexperts.com/device-closure/patent-foramen-ovale" class="text-blue-600 underline">PFO Closure</a>`,
-              `<a target="_blank" href="https://heartvalveexperts.com/device-closure/ventricular-septal-defect" class="text-blue-600 underline">VSD Closure</a>`,
-              `<a target="_blank" href="https://heartvalveexperts.com/device-closure/patent-ductus-arteriosus" class="text-blue-600 underline">PDA Closure</a>`,
+              `<a target="_blank" href="https://heartvalveexperts.com/device-closure/atrial-septal-defect" class="text-blue-600 underline">Atrial Septal Defect (ASD) Closure</a>`,
+              `<a target="_blank" href="https://heartvalveexperts.com/device-closure/patent-foramen-ovale" class="text-blue-600 underline">Patent Foramen Ovale (PFO) Closure</a>`,
+              `<a target="_blank" href="https://heartvalveexperts.com/device-closure/ventricular-septal-defect" class="text-blue-600 underline">Ventricular Septal Defect (VSD) Closure</a>`,
+              `<a target="_blank" href="https://heartvalveexperts.com/device-closure/patent-ductus-arteriosus" class="text-blue-600 underline">Patent Ductus Arteriosus (PDA) Closure</a>`,
             ],
           },
           {
@@ -259,7 +259,7 @@ const page = () => {
             img: "/images/newservices/minimal/7.webp",
             bulletPoints: [
               `<a target="_blank" href="https://heartvalveexperts.com/balloon-mitral-valvotomy" class="text-blue-600 underline">Balloon Mitral Valvotomy (BMV)</a>`,
-              `<a target="_blank" href="https://heartvalveexperts.com/ruptured-sinus-of-valsalva" class="text-blue-600 underline">RSOV Closure</a>`,
+              `<a target="_blank" href="https://heartvalveexperts.com/ruptured-sinus-of-valsalva" class="text-blue-600 underline">Ruptured Sinus of Valsalva (RSOV) Closure</a>`,
               `<a target="_blank" href="https://heartvalveexperts.com/tric-valve" class="text-blue-600 underline">Tricuspid valve interventions</a>`,
             ],
           },
@@ -326,7 +326,7 @@ const page = () => {
         heading="Take the Next Step Toward Minimally Invasive Treatment"
         badgeText="Understanding your treatment options is the first step toward managing heart valve disease."
         paraText="A detailed evaluation by a heart valve specialist can help determine whether a minimally invasive procedure may be suitable for your condition."
-        buttonText="Book a TAVI Consultation"
+        buttonText="Book a Transcatheter Aortic Valve Implantation (TAVI) Consultation"
         buttonLink="/contact-us"
       />
     </>

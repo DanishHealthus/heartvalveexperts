@@ -10,7 +10,7 @@ interface Benefit {
 
 interface TaviBenefitsProps {
   benefits: Benefit[];
-  sectionLabel?: string; // e.g., "Benefits of TAVI"
+  sectionLabel?: string; // e.g., "Benefits of Transcatheter Aortic Valve Implantation (TAVI)"
   heading?: string; // e.g., "What are the Benefits of Transcatheter Aortic Valve Implantation (TAVI) Surgery/Procedure?"
   sectionIconSrc?: string; // icon for the section label
 }

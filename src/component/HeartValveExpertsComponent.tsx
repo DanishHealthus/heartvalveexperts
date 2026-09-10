@@ -29,7 +29,7 @@ export default function HeartValveExpertsComponent({ appointmentLink = "#" }) {
         },
         {
             q: "Can an Interventional Cardiologist perform valve replacement?",
-            a: "Yes, they can carry out some of the procedures through the catheter, like TAVR or TMVR, but open-heart valve surgery is carried out by a cardiac surgeon.",
+            a: "Yes, they can carry out some of the procedures through the catheter, like TAVR or Transcatheter Mitral Valve Repair (TMVR), but open-heart valve surgery is carried out by a cardiac surgeon.",
         },
     ];
 
@@ -59,11 +59,11 @@ export default function HeartValveExpertsComponent({ appointmentLink = "#" }) {
                 >
                     <div className="prose prose-slate max-w-none text-slate-700 text-sm leading-relaxed space-y-3">
                         <p className="text-slate-600">When it comes to your heart, finding the right specialist can really make a difference in your journey of health. Be it the best cardiologist in Mumbai, a highly trained interventional cardiologist, or simply a heart doctor near me, Heart Valve Experts  provides you with the expertise, trust, and advanced care you are looking for.</p>
-                        <p className="text-slate-600"><Link href='https://heartvalveexperts.com/' className="text-[#0074dd] hover:text-[#97323b]"> Heart Valve Experts</Link> is renowned for its cardiac services, which are truly world-class, supported by experienced heart specialists, the latest technology, and a model of care that truly addresses the needs of the patient. <Link href='https://heartvalveexperts.com/blog/heart-valve-disease-symptoms-causes-treatment' className="text-[#0074dd] hover:text-[#97323b]">Heart diseases </Link>continue to be one of India leading health challenges, and timely diagnosis followed by expert management is key. Our cardiologist, ranked among the best heart doctors in Mumbai, provides comprehensive evaluation and treatment for all cardiac disorders-from chest pain and hypertension to complex coronary artery disease.</p>
+                        <p className="text-slate-600"><Link href='https://heartvalveexperts.com/' className="text-[#0074dd] hover:text-[#97323b]"> Heart Valve Experts</Link> is renowned for its cardiac services, which are truly world-class, supported by experienced heart specialists, the latest technology, and a model of care that truly addresses the needs of the patient. <Link href='https://heartvalveexperts.com/blog/heart-valve-disease-symptoms-causes-treatment' className="text-[#0074dd] hover:text-[#97323b]">Heart diseases </Link>continue to be Use one of India’s leading health challenges, and timely diagnosis followed by expert management is key. Our cardiologist, ranked among the best heart doctors in Mumbai, provides comprehensive evaluation and treatment for all cardiac disorders-from chest pain and hypertension to complex coronary artery disease.</p>
 
                         <h2 className="text-2xl font-semibold text-slate-900">Why Choosing the Right Cardiologist Matters?</h2>
 
-                        <p className="text-slate-600">Your heart is the most critical organ in your body, and the selection of a professional who <Link href='https://heartvalveexperts.com/blog/heart-valve-problems-symptoms' className="text-[#0074dd] hover:text-[#97323b]"> understands your symptoms</Link> , your lifestyle, and your long-term health goals is very important. A highly qualified cardiologist ensures early diagnosis, precise monitoring, and evidence-based treatments tailored for you.</p>
+                        <p className="text-slate-600">Your heart is the most critical organ in your body, and the selection of a professional who <Link href='https://heartvalveexperts.com/blog/heart-valve-problems-symptoms' className="text-[#0074dd] hover:text-[#97323b]"> understands your symptoms</Link>, your lifestyle, and your long-term health goals is very important. A highly qualified cardiologist ensures early diagnosis, precise monitoring, and evidence-based treatments tailored for you.</p>
                         <p className="text-slate-600">From preventive heart care to interventional treatment, and on to long-term cardiac management, having a specialist helps navigate the journey with confidence, clarity, and compassion. Our cardiologist covers all aspects from routine screening to emergency cardiac care.</p>
 
                         <h2 className="text-2xl font-semibold text-slate-900">What to Look For in A Heart Specialist Or Cardiac Heart Valve Experts</h2>
@@ -103,18 +103,14 @@ export default function HeartValveExpertsComponent({ appointmentLink = "#" }) {
                         <p className="text-slate-600">Our specialist provides comprehensive care for everything ranging from hypertension to valve disorders. As regards valve-related disorders, he is also considered the best heart valve specialist with advanced options available for:</p>
 
                         <ul className="list-disc pl-8 space-y-2 text-slate-600">
-                            <li><Link href='https://heartvalveexperts.com/tavi' className="text-[#0074dd] hover:text-[#97323b]">TAVI</Link></li>
+                            <li><Link href='https://heartvalveexperts.com/tavi' className="text-[#0074dd] hover:text-[#97323b]">Transcatheter Aortic Valve Implantation (TAVI)</Link></li>
                             <li>Valve repair</li>
                             <li>Valve replacement</li>
                         </ul>
-
                         <h4 className="text-lg font-semibold text-slate-500 mb-0">Convenient and Accessible Location</h4>
                         <p className="text-slate-600">Accessibility is key when one is seeking a heart doctor near me, especially in cases of emergency. Heart Valve Experts is located for easy access in time of need.</p>
-
                         <h4 className="text-lg font-semibold text-slate-500 mb-0">Supportive Patient Services</h4>
                         <p className="text-slate-600">These patients, from lifestyle counseling to long-term cardiac follow-ups, are under continued support toward complete recovery and heart-healthy living.</p>
-
-
                         <h2 className="text-2xl font-semibold text-slate-900">When to visit a cardiologist or Heart Valve Experts</h2>
                         <p className="text-slate-600">You should consult a heart specialist in the following cases:</p>
                         <ul className="list-disc pl-8 space-y-2 text-slate-600">
@@ -126,9 +122,7 @@ export default function HeartValveExpertsComponent({ appointmentLink = "#" }) {
                         </ul>
                         <p className="text-slate-600">This may be due to age or other life factors that raise the risk of cardiovascular disease.</p>
                         <p className="text-slate-600">Early evaluation by the best cardiac surgeon or cardiology team helps to prevent long-term complications.</p>
-
-
-                        <h2 className="text-2xl font-semibold text-slate-900">Best Cardiac Care to Services at  Heart Valve Experts</h2>
+                        <h2 className="text-2xl font-semibold text-slate-900">Best Cardiac Care Services at Heart Valve Experts</h2>
                         <p className="text-slate-600">
                            Heart Valve Experts offers first-class cardiac services on par with national cardiac centers:
                         </p>
@@ -149,11 +143,11 @@ export default function HeartValveExpertsComponent({ appointmentLink = "#" }) {
                         </ul>
                         <h2 className="text-2xl font-semibold text-slate-900">Tips to Find the Best Cardiologist or Cardiac Heart Valve Experts in Mumbai</h2>
                         <p className="text-slate-600">
-                           Here how you can choose the right heart specialist:
+                           Here’s how you can choose...
                         </p>   
                         <ul className="list-disc pl-8 space-y-2 text-slate-600">
                             <li><strong>Search Online</strong>: Use keywords like best cardiologist, interventional cardiologist, or heart doctor near me.</li>
-                            <li><strong>Check Reviews</strong>: Patient experiences are indicative of the cardiologist expertise and approach.</li>
+                            <li><strong>Check Reviews</strong>: Patient experiences are indicative of the cardiologist’s expertise and approach.</li>
                             <li><strong>Verify Credentials</strong>: Ensure your specialist is certified and experienced in interventional cardiology.</li>
                             <li><strong>Assess Emergency Support</strong>: Heart Valve Experts provide 24×7 cardiac emergency services.</li>
                             <li><strong>Look at Technology</strong>: Modern diagnostics lead to faster, more accurate results.</li>

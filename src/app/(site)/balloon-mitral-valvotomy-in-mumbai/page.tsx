@@ -6,7 +6,7 @@ import TaviWhoFor from "@/component/Services/TaviWhoFor";
 import TaviSectionAll from "@/component/Services/TaviSectionAll";
 
 export const metadata = {
-    title: "Balloon Mitral Valvotomy (BMV) in Mumbai | BMV Treatment",
+    title: "Balloon Mitral Valvotomy (BMV) in Mumbai | Balloon Mitral Valvotomy (BMV) Treatment",
     description:
         "Explore advanced Balloon Mitral Valvotomy (BMV) treatment in Mumbai for mitral valve narrowing using minimally invasive catheter-based heart procedures.",
     alternates: {
@@ -19,7 +19,7 @@ const faqData = [
         id: 1,
         question: "What is Balloon Mitral Valvotomy?",
         answer:
-            "BMV is a minimally invasive catheter-based procedure that treats mitral stenosis by widening the narrowed mitral valve using a small balloon, without the need for open-heart surgery.",
+            "Balloon Mitral Valvotomy (BMV) is a minimally invasive catheter-based procedure that treats mitral stenosis by widening the narrowed mitral valve using a small balloon, without the need for open-heart surgery.",
     },
     {
         id: 2,
@@ -35,25 +35,25 @@ const faqData = [
     },
     {
         id: 4,
-        question: "What is the cost of a BMV in India?",
+        question: "What is the cost of a Balloon Mitral Valvotomy (BMV) in India?",
         answer:
             "The cost varies depending on the hospital, city, and complexity of the case. Your specialist can provide a clear estimate during your consultation.",
     },
     {
         id: 5,
-        question: "How long does BMV last, and what is its success rate?",
+        question: "How long does Balloon Mitral Valvotomy (BMV) last, and what is its success rate?",
         answer:
-            "BMV has well-established long-term outcomes in suitable patients. Many experience significant symptom relief for several years. Success depends on valve anatomy and overall health, which is why careful patient selection is essential.",
+            "Balloon Mitral Valvotomy (BMV) has well-established long-term outcomes in suitable patients. Many experience significant symptom relief for several years. Success depends on valve anatomy and overall health, which is why careful patient selection is essential.",
     },
 ];
 const conditionsData = [
   {
     title: "Dedicated focus on structural heart procedures",
-    desc: "The practice specialises in catheter-based valve treatments, including BMV for mitral stenosis.",
+    desc: "The practice specialises in catheter-based valve treatments, including Balloon Mitral Valvotomy (BMV) for mitral stenosis.",
   },
   {
     title: "Thorough pre-procedure evaluation",
-    desc: "Suitability for BMV is assessed using detailed echocardiography and clinical review to ensure the right patients are recommended for the procedure.",
+    desc: "Suitability for Balloon Mitral Valvotomy (BMV) is assessed using detailed echocardiography and clinical review to ensure the right patients are recommended for the procedure.",
   },
   {
     title: "Experience with complex and high-risk cases",
@@ -151,7 +151,7 @@ const servciepage = () => {
                 title="A catheter-based approach to mitral stenosis treatment in Mumbai"
                 description={[
                     `If you or a loved one has been diagnosed with <a target="_blank" href="https://heartvalveexperts.com/blog/mitral-valve-regurgitation-causes-symptoms-treatment" class="text-blue-600 underline">mitral stenosis</a>, it may mean that the heart’s mitral valve has become too narrow, making it harder for blood to flow properly. Many patients with this condition are eligible for <a target="_blank" href="https://heartvalveexperts.com/balloon-mitral-valvotomy" class="text-blue-600 underline">Balloon Mitral Valvotomy</a>, a minimally invasive procedure that can widen the valve without opening the chest.`,
-                    `At <a target="_blank" href="https://heartvalveexperts.com" class="text-blue-600 underline">Heart Valve Experts</a> in Mumbai, we evaluate patients with mitral stenosis for BMV and help them understand whether this approach is suitable for their condition.`
+                    `At <a target="_blank" href="https://heartvalveexperts.com" class="text-blue-600 underline">Heart Valve Experts</a> in Mumbai, we evaluate patients with mitral stenosis for Balloon Mitral Valvotomy (BMV) and help them understand whether this approach is suitable for their condition.`
                 ]}
                 buttonText="Request a Consultation"
             />
@@ -196,8 +196,8 @@ const servciepage = () => {
             
             <FollowUpSection
                 tag="Who it’s For"
-                title="Who May Benefit from BMV?"
-                intro="You may be a suitable candidate for BMV if:"
+                title="Who May Benefit from Balloon Mitral Valvotomy (BMV)?"
+                intro="You may be a suitable candidate for Balloon Mitral Valvotomy (BMV) if:"
                 subIntro=""
                 bulletPoints={[
                     `You have been diagnosed with moderate to  <a target="_blank" class="text-blue-600 underline" href="https://heartvalveexperts.com/blog/treatment-modalities-available-for-severe-mitral-stenosis">severe mitral stenosis</a>`,
@@ -205,7 +205,7 @@ const servciepage = () => {
                     "You are experiencing symptoms such as breathlessness or reduced stamina",
                     "You have a higher surgical risk due to age or other medical conditions"
                 ]}
-                conclusion="A detailed evaluation is required to confirm whether BMV is appropriate for your situation."
+                conclusion="A detailed evaluation is required to confirm whether Balloon Mitral Valvotomy (BMV) is appropriate for your situation."
                 buttonText="Request a Consultation"
                 imageSrc="/images/lp/bmv/4.webp"
                 imageAlt="TAV or TAVR Treatment in Mumbai by Heart Valve Experts"
@@ -213,7 +213,7 @@ const servciepage = () => {
             <FollowUpSection
                 tag="Who it’s For"
                 title="What Recovery May Look Like"
-                intro='Recovery from BMV is generally faster than recovery from open-heart surgery. Many patients experience:'
+                intro='Recovery from Balloon Mitral Valvotomy (BMV) is generally faster than recovery from open-heart surgery. Many patients experience:'
                 subIntro=""
                 bulletPoints={[
                     "Mobilisation within 24 hours",
@@ -228,7 +228,7 @@ const servciepage = () => {
             />
             <TaviWhoFor
                     sectionTag="Who It’s For?"
-                    heading="Why Choose Heart Valve Experts for BMV in Mumbai?"
+                    heading="Why Choose Heart Valve Experts for Balloon Mitral Valvotomy (BMV) in Mumbai?"
                     buttonText="Request a Consultation"
                     conditions={conditionsData}
                     imageSrc="/images/lp/bmv/6.webp"
@@ -238,10 +238,10 @@ const servciepage = () => {
             <AppointmentCTAMumbai
                 imageSrc="/images/lp/bmv/6.webp"
                 imageAlt="Consultation"
-                heading="Schedule a Consultation for BMV in Mumbai"
-                badgeText="If you or a loved one has severe aortic stenosis, early evaluation for BMV in Mumbai is important."
-                paraText="Heart Valve Experts offer structured, medically guided assessments to determine whether BMV in Mumbai is the most appropriate treatment option based on your clinical profile."
-                buttonText="Book a BMV Consultation"
+                heading="Schedule a Consultation for Balloon Mitral Valvotomy (BMV) in Mumbai"
+                badgeText="If you or a loved one has severe aortic stenosis, early evaluation for Balloon Mitral Valvotomy (BMV) in Mumbai is important."
+                paraText="Heart Valve Experts offer structured, medically guided assessments to determine whether Balloon Mitral Valvotomy (BMV) in Mumbai is the most appropriate treatment option based on your clinical profile."
+                buttonText="Book a Balloon Mitral Valvotomy (BMV) Consultation"
                 buttonLink="/contact-us"
             />
         </>

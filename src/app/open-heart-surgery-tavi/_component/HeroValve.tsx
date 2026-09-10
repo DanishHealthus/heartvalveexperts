@@ -27,7 +27,7 @@ const HeroValve = () => {
                         Advised Open-Heart Surgery?
                     </h1>
                     <p className="font-medium mb-4 text-lg md:text-2xl xl:text-3xl ">
-                        Some heart valve conditions can be treated with minimally invasive procedures such as TAVI.
+                        Some heart valve conditions can be treated with minimally invasive procedures such as Transcatheter Aortic Valve Implantation (TAVI).
                     </p>
                     <p className="text-white/80 mb-6 text-sm md:text-base font-light">
                         At Heart Valve Experts, we focus specifically on advanced heart valve and structural heart procedures. Every patient is evaluated in detail before we recommend the safest and most suitable option.

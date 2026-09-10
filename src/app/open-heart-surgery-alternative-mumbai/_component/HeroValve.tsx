@@ -54,7 +54,7 @@ const HeroValve = () => {
               "Valve-only specialists",
               "Interventional cardiologist-led care",
               "Advanced imaging support",
-              "Transcatheter Aortic Valve Implantation (TAVI) | TMVR | MitraClip",
+              "Transcatheter Aortic Valve Implantation (TAVI) | Transcatheter Mitral Valve Repair (TMVR) | MitraClip",
               "Pioneers of MyClip in India",
               "Experience in high-risk patients",
               "1000+ Successful Transcatheter Aortic Valve Implantation (TAVI) Procedures",

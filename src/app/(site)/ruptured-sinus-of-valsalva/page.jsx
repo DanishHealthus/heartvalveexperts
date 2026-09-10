@@ -30,7 +30,7 @@ const risksData = [
 const timelineData = [
   {
     title: "Day 1",
-    desc: "Sudden symptoms such as chest pain or shortness of breath prompt emergency hospital admission. Echocardiogram and CT imaging confirm the diagnosis of RSOV. The cardiac surgery team evaluates the patient urgently for immediate intervention.",
+    desc: "Sudden symptoms such as chest pain or shortness of breath prompt emergency hospital admission. Echocardiogram and CT imaging confirm the diagnosis of Ruptured Sinus of Valsalva (RSOV). The cardiac surgery team evaluates the patient urgently for immediate intervention.",
     iconSrc: "/images/service/icon/bed.svg",
   },
   {
@@ -64,7 +64,7 @@ const benefitsData2 = [
   {
     iconSrc: "/images/service/icon/b1.svg",
     title: "Expert Team of Cardiac Surgeons in Mumbai",
-    desc: "Our team is led by the best heart surgeon in Mumbai, known for pioneering complex structural heart repairs, including RSOV.",
+    desc: "Our team is led by the best heart surgeon in Mumbai, known for pioneering complex structural heart repairs, including Ruptured Sinus of Valsalva (RSOV).",
   },
   {
     iconSrc: "/images/service/icon/b2.svg",
@@ -84,43 +84,43 @@ const benefitsData2 = [
   {
     iconSrc: "/images/service/icon/b5.svg",
     title: "24/7 Emergency Cardiac Care",
-    desc: "Immediate response protocols are in place to manage life-threatening RSOV cases round-the-clock.",
+    desc: "Immediate response protocols are in place to manage life-threatening Ruptured Sinus of Valsalva (RSOV) cases round-the-clock.",
   },
   {
     iconSrc: "/images/service/icon/b6.svg",
     title: "High Surgical Success Rates",
-    desc: "We have a proven track record in treating rare and complex valve pathologies, including RSOV.",
+    desc: "We have a proven track record in treating rare and complex valve pathologies, including Ruptured Sinus of Valsalva (RSOV).",
   },
 ];
 
 const faqData = [
   {
     id: 1,
-    question: "Is RSOV life-threatening?",
+    question: "Is Ruptured Sinus of Valsalva (RSOV) life-threatening?",
     answer:
-      "Yes. If left untreated, RSOV can cause severe heart failure, arrhythmias, or even death. Early diagnosis and surgery offer excellent outcomes.",
+      "Yes. If left untreated, Ruptured Sinus of Valsalva (RSOV) can cause severe heart failure, arrhythmias, or even death. Early diagnosis and surgery offer excellent outcomes.",
   },
   {
     id: 2,
-    question: "What is the difference between RSOV and an aortic aneurysm?",
+    question: "What is the difference between Ruptured Sinus of Valsalva (RSOV) and an aortic aneurysm?",
     answer:
-      "RSOV is a rupture of the sinus of Valsalva (near the aortic valve), while an aortic aneurysm is a dilation of the aorta wall itself. Both require timely care but are anatomically and clinically different.",
+      "Ruptured Sinus of Valsalva (RSOV) is a rupture of the sinus of Valsalva (near the aortic valve), while an aortic aneurysm is a dilation of the aorta wall itself. Both require timely care but are anatomically and clinically different.",
   },
   {
     id: 3,
-    question: "Is transcatheter closure safe for RSOV?",
+    question: "Is transcatheter closure safe for Ruptured Sinus of Valsalva (RSOV)?",
     answer:
       "In selected patients, yes. It’s minimally invasive and avoids open surgery, but not suitable for all types of ruptures.",
   },
   {
     id: 4,
-    question: "What is the recovery time after RSOV surgery?",
+    question: "What is the recovery time after Ruptured Sinus of Valsalva (RSOV) surgery?",
     answer:
       "Recovery typically takes 4–6 weeks for surgical cases and less for catheter-based procedures.",
   },
   {
     id: 5,
-    question: "Is RSOV always congenital?",
+    question: "Is Ruptured Sinus of Valsalva (RSOV) always congenital?",
     answer:
       "No. It can be acquired due to trauma, infection, or connective tissue disorders.",
   },
@@ -132,9 +132,9 @@ const faqData = [
   },
   {
     id: 7,
-    question: "How do you diagnose RSOV",
+    question: "How do you diagnose Ruptured Sinus of Valsalva (RSOV)",
     answer:
-      "RSOV is typically diagnosed through echocardiography, often confirmed with CT or cardiac MRI for detailed assessment of the rupture.",
+      "Ruptured Sinus of Valsalva (RSOV) is typically diagnosed through echocardiography, often confirmed with CT or cardiac MRI for detailed assessment of the rupture.",
   },
   {
     id: 8,
@@ -148,7 +148,7 @@ const serviceSchema = {
   "@type": "MedicalProcedure",
   name: "Repair of Ruptured Sinus of Valsalva (RSOV)",
   description:
-    "RSOV is a condition where one of the sinuses of Valsalva in the aortic root ruptures, causing abnormal blood flow into a heart chamber. Repair involves closing the rupture surgically or via a minimally invasive approach.",
+    "Ruptured Sinus of Valsalva (RSOV) is a condition where one of the sinuses of Valsalva in the aortic root ruptures, causing abnormal blood flow into a heart chamber. Repair involves closing the rupture surgically or via a minimally invasive approach.",
   procedureType: "http://schema.org/PercutaneousProcedure",
   bodyLocation: "Aortic root – Sinus of Valsalva",
   howPerformed:
@@ -184,19 +184,19 @@ const servciepage = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <BreadCrumb
-        title="RSOV Surgery"
+        title="Ruptured Sinus of Valsalva (RSOV) Surgery"
         subpage="false"
         image="/images/service/RSOV/bread.webp"
       />
       <TaviSectionAll
         imageSrc="/images/service/RSOV/1.webp"
-        imageAlt="TEER Surgery"
+        imageAlt="Transcatheter Edge-to-Edge Repair (TEER) Surgery"
         imageTitle=""
         tag="About"
-        title="What is RSOV?"
+        title="What is Ruptured Sinus of Valsalva (RSOV)?"
         description={[
           "RSOV stands for Ruptured Sinus of Valsalva, a rare but potentially life-threatening heart condition that involves a tear in one of the sinuses of Valsalva. These sinuses are small, balloon-like pouches located in the aortic root, just above the aortic valve. They help the aortic valve open and close smoothly and assist in directing blood flow from the aorta into the coronary arteries. A rupture results in an abnormal connection between the aorta and a nearby heart chamber, most commonly the right atrium or right ventricle.",
-          "This condition causes blood to leak directly into the heart chambers, leading to sudden volume overload, shortness of breath, and, if left untreated, eventual heart failure. RSOV occurs more frequently in young to middle-aged individuals, particularly when congenital, and often presents suddenly after physical exertion or rising blood pressure.",
+          "This condition causes blood to leak directly into the heart chambers, leading to sudden volume overload, shortness of breath, and, if left untreated, eventual heart failure. Ruptured Sinus of Valsalva (RSOV) occurs more frequently in young to middle-aged individuals, particularly when congenital, and often presents suddenly after physical exertion or rising blood pressure.",
         ]}
         buttonText="Request a Consultation"
       />
@@ -207,9 +207,9 @@ const servciepage = () => {
       01  overflow-hidden">
           <FollowUpSection
             tag="Who it’s for?"
-            title="Who Needs RSOV Surgery?"
+            title="Who Needs Ruptured Sinus of Valsalva (RSOV) Surgery?"
             intro="Patients with a sinus of Valsalva aneurysm that has ruptured or is at risk of rupture typically need surgical or transcatheter intervention. Symptoms may include chest pain, shortness of breath, palpitations, fatigue, or even loss of consciousness, depending on the severity of the rupture and the chamber involved. Early detection and ruptured sinus of Valsalva treatment can be life-saving."
-            subIntro="You may need RSOV repair if:"
+            subIntro="You may need Ruptured Sinus of Valsalva (RSOV) repair if:"
             bulletPoints={[
               "You have a confirmed sinus of Valsalva aneurysm on imaging",
               "You are experiencing symptoms due to left-to-right shunt or heart failure",
@@ -224,7 +224,7 @@ const servciepage = () => {
         </div>
       </section>
       <ProcedureDelayRisks
-        title="Risks of Delay of RSOV Treatment"
+        title="Risks of Delay of Ruptured Sinus of Valsalva (RSOV) Treatment"
         subtitle="Outcomes of Procedure Delay"
         desc="Delaying treatment for a ruptured sinus of Valsalva can lead to serious and life-threatening complications. The rupture causes abnormal blood flow between the aorta and heart chambers, which can quickly escalate if not addressed. Some of the key risks include:"
         risks={risksData}
@@ -235,7 +235,7 @@ const servciepage = () => {
         <ProcedureTimeline
           timeline={timelineData}
           sectionTitle="Procedure Timeline"
-          heading="RSOV Surgery Timeline & Recovery"
+          heading="Ruptured Sinus of Valsalva (RSOV) Surgery Timeline & Recovery"
           leftImageSrc="/images/service/RSOV/Rectangle 42.webp"
         />
       </section>

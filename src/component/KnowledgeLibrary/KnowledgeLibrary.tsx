@@ -34,6 +34,13 @@ const KnowledgeLibrary: React.FC = () => {
     "Patient Stories": [
       {
         title:
+          "Successful Pacemaker & Transcatheter Aortic Valve Implantation (TAVI) Surgery | Patient Testimonial | Heart Valve Experts",
+        thumbnail: "/images/testimonial/pat1.webp",
+        youtube:
+          "https://www.youtube.com/embed/VQ8lHlWnyzo?si=1oDpKzdDhdXPlBZ1",
+      },
+      {
+        title:
           "Dr. Ankur Phatarpekar | Transforming Elderly Heart Care Through Transcatheter Aortic Valve Implantation (TAVI) – A Patient’s Story",
         thumbnail: "/images/testimonial/thumb1.webp",
         youtube:
@@ -116,8 +123,14 @@ const KnowledgeLibrary: React.FC = () => {
           "https://www.youtube.com/embed/jZ0CU7xuZ8E?si=8yABXP0bEMXj6klj",
       },
     ],
-
     "Procedure Insights": [
+      {
+        title:
+          "Fix Your Leaky Mitral Valve WITHOUT Open-Heart Surgery! (TEER / MitraClip)",
+        thumbnail: "/images/testimonial/pat2.webp",
+        youtube:
+          "https://www.youtube.com/embed/Hq0eIx3wwWA?si=rQGHWf6J7EqwZcLf",
+      },
       {
         title:
           "Dr. Ankur Phatarpekar | TAVI: Restoring Life, One Heart at a Time",
@@ -189,8 +202,14 @@ const KnowledgeLibrary: React.FC = () => {
           "https://www.youtube.com/embed/0tjHdCRwOcc?si=_tdJxscpgjPl5jWC",
       },
     ],
-
     "Awareness & Education": [
+      {
+        title:
+          "Aortic Stenosis: Why Your Heart Valve Is Silently Failing You",
+        thumbnail: "/images/testimonial/pat3.webp",
+        youtube:
+          "https://www.youtube.com/embed/b5mjypQ60FQ?si=PDXo1LJVYdH30-jk",
+      },
       {
         title:
           "Heart Attack vs Cardiac Arrest – Explained in Gujarati by Dr. Meghav Shah",
@@ -255,8 +274,14 @@ const KnowledgeLibrary: React.FC = () => {
           "https://www.youtube.com/embed/pOLIn8-bLZU?si=r1ULBEe7R4Ki5DrR",
       },
     ],
-
     "News & Achievements": [
+      {
+        title:
+          "बिना ओपन हार्ट सर्जरी के लीक वॉल्व का इलाज - Clip Procedure क्या है? | Dr. Ankur Phatarpekar | HVE",
+        thumbnail: "/images/testimonial/pat4.webp",
+        youtube:
+          "https://www.youtube.com/embed/d9reF1oLT6U?si=43xHgnrK5GTBprrb",
+      },
       {
         title: "Home to the Best Cardiologists Around the World",
         thumbnail: "/images/testimonial/news1.webp",
@@ -308,11 +333,10 @@ const KnowledgeLibrary: React.FC = () => {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-4 border-2 py-2 sm:px-8 sm:py-2 cursor-pointer rounded-full text-[13px] sm:text-lg font-medium transition-all duration-200 ${
-                activeTab === tab
+              className={`px-4 border-2 py-2 sm:px-8 sm:py-2 cursor-pointer rounded-full text-[13px] sm:text-lg font-medium transition-all duration-200 ${activeTab === tab
                   ? "bg-gradient-to-tl animate-gradient-circle from-[#0074dd] border-2 border-[#0074dd] to-[#8d0f19]  text-white"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-              }`}
+                }`}
             >
               {tab}
             </button>

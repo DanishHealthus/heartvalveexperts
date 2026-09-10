@@ -70,7 +70,7 @@ const page = () => {
       id: 9,
       question: "Do you treat conditions beyond valve disease?",
       answer:
-        "Yes. In addition to valve interventions, structural heart procedures such as LAAO and device closures for congenital heart defects are also performed following specialist evaluation.",
+        "Yes. In addition to valve interventions, structural heart procedures such as Left Atrial Appendage Occlusion (LAAO) and device closures for congenital heart defects are also performed following specialist evaluation.",
     },
   ];
   const benefitsData2 = [
@@ -186,7 +186,7 @@ A specialist valve review helps determine the most appropriate treatment pathway
             {
               id: 1,
               image: "/images/lp/1.webp",
-              title: "TAVI / TAVR",
+              title: "Transcatheter Aortic Valve Implantation (TAVI) / TAVR",
               subtitle: "For aortic valve disease (aortic stenosis)",
               description:
                 "Aortic stenosis (narrowed aortic valve). Often presents with breathlessness, chest pain, dizziness or fainting.",
@@ -194,7 +194,7 @@ A specialist valve review helps determine the most appropriate treatment pathway
             {
               id: 2,
               image: "/images/lp/2.webp",
-              title: "MitraClip / TEER",
+              title: "MitraClip / Transcatheter Edge-to-Edge Repair (TEER)",
               subtitle: "For mitral valve leakage (mitral regurgitation)",
               description:
                 "May present with breathlessness, fatigue, swelling, or reduced exercise tolerance.",
@@ -202,7 +202,7 @@ A specialist valve review helps determine the most appropriate treatment pathway
             {
               id: 3,
               image: "/images/lp/3.webp",
-              title: "TMVR",
+              title: "Transcatheter Mitral Valve Repair (TMVR)",
               subtitle: "For selected complex mitral valve conditions",
               description:
                 "Considered in specific situations when repair or conventional surgery may not be suitable.",
@@ -210,7 +210,7 @@ A specialist valve review helps determine the most appropriate treatment pathway
             {
               id: 4,
               image: "/images/lp/4.webp",
-              title: "LAAO",
+              title: "Left Atrial Appendage Occlusion (LAAO)",
               subtitle: "For atrial fibrillation patients at risk of stroke",
               description:
                 "May be considered when long-term blood thinners are not suitable.",
@@ -220,7 +220,7 @@ A specialist valve review helps determine the most appropriate treatment pathway
               image: "/images/lp/5.webp",
               title: "Device Closure",
               subtitle:
-                "For selected structural heart defects (ASD, PFO, VSD or PDA)",
+                "For selected structural heart defects (Atrial Septal Defect (ASD), Patent Foramen Ovale (PFO), Ventricular Septal Defect (VSD) or Patent Ductus Arteriosus (PDA))",
               description:
                 "Considered for abnormal heart openings that can be closed using catheter-based devices.",
             },
@@ -235,7 +235,7 @@ A specialist valve review helps determine the most appropriate treatment pathway
             {
               id: 7,
               image: "/images/lp/7.webp",
-              title: "RSOV Device Closure",
+              title: "Ruptured Sinus of Valsalva (RSOV) Device Closure",
               subtitle: "For ruptured sinus of Valsalva (RSOV)",
               description:
                 "A structural defect that may be treated using catheter-based closure in selected patients.",
