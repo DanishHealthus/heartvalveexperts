@@ -290,7 +290,7 @@ const servciepage = () => {
         heading="Who Needs Transcatheter Aortic Valve Implantation (TAVI) Surgery/Procedure?"
         buttonText="Request a Consultation"
         conditions={conditionsData}
-        imageSrc="/images/service/TAVI/Rectangle 27.webp"
+        imageSrc="/images/service/TAVI/who.webp"
         imageAlt="Patient"
       />
       <TaviBenefits
@@ -303,7 +303,7 @@ const servciepage = () => {
         title="Risks of Delay of Transcatheter Aortic Valve Implantation (TAVI)/Transcatheter Aortic Valve Replacement (TAVR) Surgery/Procedure"
         subtitle="Outcomes of Procedure Delay"
         risks={risksData}
-        imageSrc="/images/service/TAVI/Rectangle 28.webp"
+        imageSrc="/images/service/TAVI/risk.webp"
         buttonText="Request a Consultation"
       />
       <section className="animate-gradient-circle text-white relative overflow-hidden">
@@ -311,7 +311,7 @@ const servciepage = () => {
           timeline={timelineData}
           sectionTitle="Procedure Timeline"
           heading="Transcatheter Aortic Valve Implantation (TAVI) Procedure Timeline & Recovery"
-          leftImageSrc="/images/service/TAVI/Rectangle 29.webp"
+          leftImageSrc="/images/service/TAVI/procedure.webp"
         />
         <FollowUpSection
           tag="Procedure Follow Up"
@@ -326,7 +326,7 @@ const servciepage = () => {
           ]}
           conclusion="This highlights the importance of long-term planning with your heart team, considering factors like valve type, patient anatomy, and individual risks to ensure the best possible care throughout your lifetime."
           buttonText="Request a Consultation"
-          imageSrc="/images/service/TAVI/Rectangle 30.webp"
+          imageSrc="/images/service/TAVI/long.webp"
           imageAlt="Doctor Consultation"
         />
       </section>

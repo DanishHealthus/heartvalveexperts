@@ -287,7 +287,7 @@ const servciepage = () => {
         heading="Who Needs Transcatheter Mitral Valve Repair (TMVR) Surgery/Procedure?"
         buttonText="Request a Consultation"
         conditions={conditionsData}
-        imageSrc="/images/service/TMVR/Rectangle 31.webp"
+        imageSrc="/images/service/TMVR/who.webp"
         imageAlt="Patient"
       />
       <TaviBenefits
@@ -302,7 +302,7 @@ const servciepage = () => {
           timeline={timelineData}
           sectionTitle="Procedure Timeline"
           heading="Transcatheter Mitral Valve Repair (TMVR) Procedure Timeline & Recovery"
-          leftImageSrc="/images/service/TMVR/Rectangle 32.webp"
+          leftImageSrc="/images/service/TMVR/2.webp"
         />
         <FollowUpSection
           tag="Procedure Follow Up"

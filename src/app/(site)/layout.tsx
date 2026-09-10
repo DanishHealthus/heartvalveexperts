@@ -69,12 +69,12 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
       <FloatingButtonSite />
       <Footer />
       {/* Kenyt Chatbot */}
-      <Script
+      {/* <Script
         id="kenyt-chatbot"
         src="https://india.kenyt.ai/botapp/ChatbotUI/dist/js/bot-loader.js"
         strategy="afterInteractive"
         data-bot="51349922"
-      />
+      /> */}
     </>
   );
 }

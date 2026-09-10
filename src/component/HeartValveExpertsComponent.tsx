@@ -54,7 +54,7 @@ export default function HeartValveExpertsComponent({ appointmentLink = "#" }) {
 
                 {/* COLLAPSIBLE MAIN CONTENT */}
                 <div
-                    className={`overflow-hidden transition-all duration-500 bg-white rounded-2xl border border-slate-100 p-6 lg:p-8 ${expanded ? "max-h-[3000px]" : "max-h-[250px]"
+                    className={`overflow-hidden transition-all duration-500 bg-white rounded-2xl border border-slate-100 p-6 lg:p-8 ${expanded ? "max-h-[3000px]" : "max-h-[240px]"
                         }`}
                 >
                     <div className="prose prose-slate max-w-none text-slate-700 text-sm leading-relaxed space-y-3">

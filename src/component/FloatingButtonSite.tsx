@@ -5,7 +5,6 @@ import React from "react";
 import { CgMail } from "react-icons/cg";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdCall } from "react-icons/md";
-import { FaUserDoctor } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
 
 
@@ -13,10 +12,10 @@ const FloatingButtonSite = () => {
   const pathname = usePathname();
   const buttons = [
     {
-      href: "/contact-us",
-      img: FaUserDoctor,
-      alt: "Book Appointment",
-      label: "Book Appt.",
+      href: "https://wa.me/918828473147?text=Hello",
+      img: FaWhatsapp,
+      alt: "WhatsApp",
+      label: "WhatsApp",
     },
     // {
     //   href: "https://wa.me/+919070057005?text=Hello",
@@ -47,11 +46,11 @@ const FloatingButtonSite = () => {
         <Link
           target="_blank"
           href={
-            "/contact-us"
+            "https://wa.me/918828473147?text=Hello"
           }
-          className="absolute rounded-full transition-all cursor-pointer bg-indigo-600 hover:bg-indigo-700 duration-[0.2s] ease-out scale-y-0 group-hover:scale-y-100 group-hover:-translate-x-16 flex p-2.5 hover:p-3 bg-dark scale-100 hover:bg-primary text-white"
+          className="absolute rounded-full transition-all cursor-pointer bg-[#25D366] hover:bg-[#25D366] duration-[0.2s] ease-out scale-y-0 group-hover:scale-y-100 group-hover:-translate-x-16 flex p-2.5 hover:p-3 bg-dark scale-100 hover:bg-primary text-white"
         >
-          <FaUserDoctor className="text-2xl" />
+          <FaWhatsapp className="text-2xl" />
         </Link>
         <Link
           target="_blank"
