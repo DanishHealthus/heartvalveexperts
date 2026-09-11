@@ -338,3 +338,170 @@ body {
     right: 0;
     margin-right: 20px;
 }
+/* ------------------------------------------------------------------ *
+ * Speciality landing template  (/speciality/[slug])
+ * ------------------------------------------------------------------ */
+
+/* Layered so per-element Tailwind utilities keep the upper hand: unlayered
+   rules would otherwise beat every @layer, whatever their specificity. */
+@layer base {
+
+
+  .speciality-page {
+    --hve-blue: #0074dd;
+    --hve-blue-dark: #005cb2;
+    --hve-blue-tint: #f4faff;
+    --hve-ink: #0e2033;
+    --hve-body: #4a5b6e;
+    --hve-line: #e2ecf6;
+    --hve-accent: #97323b;
+    --hve-shadow: 0 18px 50px -24px rgba(14, 32, 51, 0.35);
+
+    font-family: "Rubik", "basic-sans", system-ui, sans-serif;
+    color: var(--hve-body);
+    overflow-x: clip;
+  }
+
+  /* Zero-specificity so per-element utilities (e.g. text-white on the dark CTA)
+     still win without needing !important. */
+  :where(.speciality-page) :where(h1, h2, h3, h4, h5, h6) {
+    color: var(--hve-ink);
+    font-family: inherit;
+  }
+
+  /* Rich text coming from the WordPress editor */
+  .hve-rich {
+    color: var(--hve-body);
+    font-size: clamp(0.9375rem, 0.9rem + 0.2vw, 1rem);
+    line-height: 1.75;
+  }
+
+  .hve-rich > *:first-child {
+    margin-top: 0;
+  }
+
+  .hve-rich > *:last-child {
+    margin-bottom: 0;
+  }
+
+  .hve-rich p {
+    margin: 0 0 1em;
+  }
+
+  .hve-rich :where(h2, h3, h4, h5, h6) {
+    margin: 1.5em 0 0.5em;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .hve-rich h2 { font-size: 1.375rem; }
+  .hve-rich h3 { font-size: 1.1875rem; }
+  .hve-rich h4 { font-size: 1.0625rem; }
+
+  .hve-rich :where(strong, b) {
+    color: var(--hve-ink);
+    font-weight: 600;
+  }
+
+  .hve-rich a {
+    color: var(--hve-blue);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .hve-rich ul,
+  .hve-rich ol {
+    margin: 0 0 1em;
+    padding-left: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.625rem;
+  }
+
+  .hve-rich ol {
+    counter-reset: hve-ol;
+  }
+
+  .hve-rich li {
+    position: relative;
+    padding-left: 1.875rem;
+  }
+
+  .hve-rich ul > li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 9999px;
+    background: var(--hve-blue);
+    box-shadow: 0 0 0 4px rgba(0, 116, 221, 0.14);
+  }
+
+  .hve-rich ol > li {
+    counter-increment: hve-ol;
+  }
+
+  .hve-rich ol > li::before {
+    content: counter(hve-ol) ".";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--hve-blue);
+    font-weight: 600;
+  }
+
+  .hve-rich blockquote {
+    margin: 1em 0;
+    padding: 0.75rem 1.25rem;
+    border-left: 3px solid var(--hve-blue);
+    background: var(--hve-blue-tint);
+    border-radius: 0 0.75rem 0.75rem 0;
+  }
+
+  .hve-rich img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+  }
+
+  .hve-rich table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+    font-size: 0.9375rem;
+  }
+
+  .hve-rich :where(th, td) {
+    border: 1px solid var(--hve-line);
+    padding: 0.625rem 0.75rem;
+    text-align: left;
+  }
+
+  /* Rich text placed on the dark hero / image cards */
+  .hve-rich--invert,
+  .hve-rich--invert :where(h2, h3, h4, strong, b) {
+    color: #ffffff;
+  }
+
+  .hve-rich--invert {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .hve-rich--invert ul > li::before {
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.18);
+  }
+
+  .hve-rich--compact p {
+    margin-bottom: 0.75em;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .speciality-page * {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}

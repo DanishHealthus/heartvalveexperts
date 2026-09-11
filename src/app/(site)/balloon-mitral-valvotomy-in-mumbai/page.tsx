@@ -47,22 +47,22 @@ const faqData = [
     },
 ];
 const conditionsData = [
-  {
-    title: "Dedicated focus on structural heart procedures",
-    desc: "The practice specialises in catheter-based valve treatments, including Balloon Mitral Valvotomy (BMV) for mitral stenosis.",
-  },
-  {
-    title: "Thorough pre-procedure evaluation",
-    desc: "Suitability for Balloon Mitral Valvotomy (BMV) is assessed using detailed echocardiography and clinical review to ensure the right patients are recommended for the procedure.",
-  },
-  {
-    title: "Experience with complex and high-risk cases",
-    desc: "Many patients are referred after being told that the surgical risk is elevated due to age or other health conditions.",
-  },
-  {
-    title: "Coordinated care in Mumbai",
-    desc: "Consultations, treatment planning, and follow-up can all be managed locally, which is important for patients requiring long-term valve monitoring.",
-  },  
+    {
+        title: "Dedicated focus on structural heart procedures",
+        desc: "The practice specialises in catheter-based valve treatments, including Balloon Mitral Valvotomy (BMV) for mitral stenosis.",
+    },
+    {
+        title: "Thorough pre-procedure evaluation",
+        desc: "Suitability for Balloon Mitral Valvotomy (BMV) is assessed using detailed echocardiography and clinical review to ensure the right patients are recommended for the procedure.",
+    },
+    {
+        title: "Experience with complex and high-risk cases",
+        desc: "Many patients are referred after being told that the surgical risk is elevated due to age or other health conditions.",
+    },
+    {
+        title: "Coordinated care in Mumbai",
+        desc: "Consultations, treatment planning, and follow-up can all be managed locally, which is important for patients requiring long-term valve monitoring.",
+    },
 ];
 const serviceSchema = {
     "@context": "https://schema.org",
@@ -192,8 +192,7 @@ const servciepage = () => {
                         imageAlt="reverse"
                     />
                 </div>
-            </section>           
-            
+            </section>
             <FollowUpSection
                 tag="Who it’s For"
                 title="Who May Benefit from Balloon Mitral Valvotomy (BMV)?"
@@ -227,13 +226,13 @@ const servciepage = () => {
                 imageAlt="reverse"
             />
             <TaviWhoFor
-                    sectionTag="Who It’s For?"
-                    heading="Why Choose Heart Valve Experts for Balloon Mitral Valvotomy (BMV) in Mumbai?"
-                    buttonText="Request a Consultation"
-                    conditions={conditionsData}
-                    imageSrc="/images/lp/bmv/6.webp"
-                    imageAlt="Patient"
-                  />
+                sectionTag="Who It’s For?"
+                heading="Why Choose Heart Valve Experts for Balloon Mitral Valvotomy (BMV) in Mumbai?"
+                buttonText="Request a Consultation"
+                conditions={conditionsData}
+                imageSrc="/images/lp/bmv/6.webp"
+                imageAlt="Patient"
+            />
             <FAQAccordion faqs={faqData} />
             <AppointmentCTAMumbai
                 imageSrc="/images/lp/bmv/6.webp"
