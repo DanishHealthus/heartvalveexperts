@@ -30,7 +30,7 @@ const ClinicFooter: React.FC<FooterProps> = ({
     poweredByText,
 }) => {
     return (
-        <footer className="bg-gradient-to-br from-[#262B55] via-[#2F2950] to-[#4A2A4F] text-white">
+        <footer className="bg-gradient-to-br from-[#c20937] via-[#3735a7] to-[#c20937] text-white">
             <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-24 py-20">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
@@ -38,7 +38,7 @@ const ClinicFooter: React.FC<FooterProps> = ({
                     <div>
                         <img src={logoSrc} alt="logo" className="h-28 mb-8" />
 
-                        <h3 className="text-xl lg:text-3xl font-semibold mb-4">
+                        <h3 className="text-xl lg:text-3xl text-gray-200 font-semibold mb-4">
                             {clinicTitle}
                         </h3>
 

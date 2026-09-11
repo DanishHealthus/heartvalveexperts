@@ -9,7 +9,7 @@ import { ArrowIcon, Container, CONSULTATION_ANCHOR } from "./ui";
  */
 export default function SpecialityHeader({
   ctaLabel = "Book Consultation",
-  phone = "+919920262227",
+  phone = "+918828473147",
 }: {
   ctaLabel?: string;
   phone?: string;

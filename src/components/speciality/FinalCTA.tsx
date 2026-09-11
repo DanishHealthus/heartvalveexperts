@@ -13,7 +13,7 @@ export default function FinalCTA({ understand }: { understand: SpecialityUnderst
   return (
     <section className="py-[clamp(28px,4vw,50px)]">
       <Container>
-        <div className="grid overflow-hidden rounded-[24px] bg-[linear-gradient(115deg,#08203c_0%,#0b3a6b_48%,#0074dd_100%)] lg:min-h-[422px] lg:grid-cols-[623fr_555fr]">
+        <div className="grid overflow-hidden rounded-[24px] bg-gradient-to-br from-[#c20937] via-[#3735a7] to-[#c20937] lg:min-h-[422px] lg:grid-cols-[623fr_555fr]">
           <div className="flex flex-col justify-center p-7 sm:p-10 lg:py-[73px] lg:pl-[40px] lg:pr-[40px]">
             {understand.title ? (
               <h2 className="max-w-[516px] text-[clamp(1.5rem,1.1rem+1.5vw,2rem)] font-semibold leading-[1.2] tracking-[-0.01em] text-white">

@@ -10,6 +10,8 @@ import SpecialityHeader from "./SpecialityHeader";
 import SpecialityHero from "./SpecialityHero";
 import WhoSection from "./WhoSection";
 import { Container } from "./ui";
+import ClinicFooter from "@/app/open-heart-surgery-alternative-mumbai/_component/ClinicFooter";
+import AppointmentCTA from "@/component/AppointmentCTA";
 /**
  * One template for every speciality. Each section renders only when the API
  * returned something for it, so a new slug added in WordPress works without any
@@ -39,31 +41,25 @@ export default function SpecialityLandingPage({
         <RecoverySection items={data.recovery} />
         <FAQSection faqs={data.faqs} />
         <FinalCTA understand={data.understand} />
-        {/* Same form component as the hero, repeated for readers who reach the end. */}
-        <section id="book-consultation" className="scroll-mt-[84px] bg-[#f4faff] py-[clamp(48px,7.1vw,100px)] md:scroll-mt-[120px]">
-          <Container>
-            <div className="grid items-center gap-10 lg:grid-cols-[1fr_500px] lg:gap-[69px]">
-              <div className="max-w-[560px]">
-                <h2 className="text-[clamp(1.5rem,1.1rem+1.5vw,2rem)] font-semibold leading-[1.2] tracking-[-0.01em]">
-                  Speak to the Heart Valve Experts team about your reports
-                </h2>
-                <p className="mt-4 text-[clamp(0.9375rem,0.9rem+0.2vw,1rem)] leading-[1.7]">
-                  Share your details and our coordinator will arrange a consultation and a review of
-                  your echocardiogram and scans with the structural heart team.
-                </p>
-              </div>
-              <ConsultationForm
-                endpoint={formEndpoint}
-                specialitySlug={data.slug}
-                specialityName={data.name}
-                heading="Request a consultation"
-                className="lg:justify-self-end"
-              />
-            </div>
-          </Container>
-        </section>
+        {/* <AppointmentCTA understand={data.understand} /> */}
       </main>
-      <Footer />
+     <ClinicFooter
+        logoSrc="/images/homeimages/logo.png"
+        clinicTitle="Clinic Location (Mumbai)"
+        clinicName="Heart Valve Experts"
+        addressLines={[
+          "Silver Apartments, A12, Shankar Ghanekar Rd,",
+          "Behind Siddhivinayak Mandir, Prabhadevi,",
+          "Mumbai, Maharashtra 400025, India",
+        ]}
+        phone="+91 90040 54701"
+        email="heartvalveexperts@gmail.com"
+        mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.090644804407!2d72.8325404!3d19.015727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cfa3864d704d%3A0xcc355fceb456cff9!2sHeart%20Valve%20Experts%20%7C%20Best%20TAVI%2C%20TAVR%2C%20TMVR%20%26%20MitraClip%20Valve%20Replacement%20in%20Mumbai%20%7C%20Interventional%20Cardiologist%20Mumbai!5e0!3m2!1sen!2sin!4v1770722405464!5m2!1sen!2sin"
+        ctaText="Book Consultation"
+        ctaLink="/book-consultation"
+        copyrightText="© Heart Valve Experts 2024. All rights reserved"
+        poweredByText="Powered by healthus.ai"
+      />
     </div>
   );
 }

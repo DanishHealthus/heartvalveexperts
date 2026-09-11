@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
+// import { gsap } from "gsap";
 import {
   FaFacebookF,
   FaInstagram,
@@ -12,18 +12,18 @@ import Image from "next/image";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function Footer() {
-  const bgRef = useRef(null); // ✅ no <HTMLDivElement>
+  // const bgRef = useRef(null); // ✅ no <HTMLDivElement>
 
-  useEffect(() => {
-    if (bgRef.current) {
-      gsap.to(bgRef.current, {
-        backgroundPosition: "200% 50%",
-        duration: 15,
-        ease: "linear",
-        repeat: -1,
-      });
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (bgRef.current) {
+  //     gsap.to(bgRef.current, {
+  //       backgroundPosition: "200% 50%",
+  //       duration: 15,
+  //       ease: "linear",
+  //       repeat: -1,
+  //     });
+  //   }
+  // }, []);
   const navLinks = [
     { label: "Home", url: "/" },
     { label: "Cardiologists", url: "/cardiologist-mumbai" },
