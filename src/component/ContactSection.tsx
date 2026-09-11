@@ -18,63 +18,63 @@ export default function ContactSection() {
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
 
   const validate = () => {
-  const newErrors: { [key: string]: string } = {};
+    const newErrors: { [key: string]: string } = {};
 
-  if (!form.name.trim()) newErrors.name = "Full Name is required";
-  if (!form.phone.trim()) {
-    newErrors.phone = "Contact Number is required";
-  } else if (!/^\d{10}$/.test(form.phone)) {
-    newErrors.phone = "Enter a valid 10-digit number";
-  }
-  if (!form.email.trim()) {
-    newErrors.email = "Email is required";
-  } else if (!/\S+@\S+\.\S+/.test(form.email)) {
-    newErrors.email = "Enter a valid email address";
-  }
-  if (!form.message.trim()) newErrors.message = "Message is required";
+    if (!form.name.trim()) newErrors.name = "Full Name is required";
+    if (!form.phone.trim()) {
+      newErrors.phone = "Contact Number is required";
+    } else if (!/^\d{10}$/.test(form.phone)) {
+      newErrors.phone = "Enter a valid 10-digit number";
+    }
+    if (!form.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(form.email)) {
+      newErrors.email = "Enter a valid email address";
+    }
+    if (!form.message.trim()) newErrors.message = "Message is required";
 
-  setErrors(newErrors);
-  return Object.keys(newErrors).length === 0;
-};
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
-const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
 
-  if (validate()) {
-    try {
-      const response = await fetch("/api/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: form.name,
-          phone: form.phone,
-          email: form.email,
-          message: form.message,
-        }),
-      });
+    if (validate()) {
+      try {
+        const response = await fetch("/api/send-email", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: form.name,
+            phone: form.phone,
+            email: form.email,
+            message: form.message,
+          }),
+        });
 
-      if (response.ok) {
-        setForm({ name: "", phone: "", email: "", message: "" });
-        router.push("/thank-you");
-      } else {
+        if (response.ok) {
+          setForm({ name: "", phone: "", email: "", message: "" });
+          router.push("/thank-you");
+        } else {
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "❌ Failed to submit. Please try again.",
+          });
+        }
+      } catch (error) {
+        console.error("Error submitting form:", error);
         Swal.fire({
-          icon: "error",
-          title: "Oops...",
-          text: "❌ Failed to submit. Please try again.",
+          icon: "warning",
+          title: "Error",
+          text: "⚠️ Something went wrong. Please try again later.",
         });
       }
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      Swal.fire({
-        icon: "warning",
-        title: "Error",
-        text: "⚠️ Something went wrong. Please try again later.",
-      });
     }
-  }
-};
+  };
 
 
   return (
@@ -82,10 +82,10 @@ const handleSubmit = async (e: React.FormEvent) => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Side - Contact Info */}
         <div
-          // initial={{ opacity: 0, x: -50 }}
-          // whileInView={{ opacity: 1, x: 0 }}
-          // transition={{ duration: 0.8 }}
-          // viewport={{ once: true }}
+        // initial={{ opacity: 0, x: -50 }}
+        // whileInView={{ opacity: 1, x: 0 }}
+        // transition={{ duration: 0.8 }}
+        // viewport={{ once: true }}
         >
           <p
             style={{ letterSpacing: "2px" }}
@@ -122,11 +122,12 @@ const handleSubmit = async (e: React.FormEvent) => {
               </a>
             </li>
             <li className="flex items-start gap-3">
-              <FiMapPin className="text-black text-4xl mt-1 border p-2 rounded-full" />
+              <FiMapPin className="text-black text-4xl mt-1 border p-2 rounded-full shrink-0" />
               <p>
-                Silver Apartments, A12, Shankar Ghanekar Rd, <br />
-                behind Siddhivinayak Mandir, Prabhadevi, Mumbai, Maharashtra
-                400025
+                2nd Floor, Sane Guruji Premises, 386,
+                Swatantryaveer Savarkar Rd,
+                opp. Siddhivinayak Temple, Dadar West,
+                Prabhadevi, Mumbai, Maharashtra 400025
               </p>
             </li>
           </ul>

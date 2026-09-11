@@ -21,7 +21,7 @@ const cardiologistspage = () => {
   return (
     <>
       <BreadCrumb
-        title="Expert Interventional Cardiologist"
+        title="Expert Interventional Cardiologists"
         subpage="false"
         image="/images/service/bread.webp"
       />

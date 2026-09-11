@@ -69,38 +69,34 @@ const FloatingButtonSite = () => {
       </div>
       <div className="lg:hidden fixed bottom-2 left-3 right-3 z-50">
         <div className="flex items-center justify-around rounded-[22px] border border-white/70 bg-white/95 px-2 py-2 shadow-[0_10px_35px_rgba(55,0,37,0.18)] backdrop-blur-xl">
-
           {buttons.map((btn, index) => {
             const isActive = pathname === btn.href;
-
             return (
               <React.Fragment key={index}>
                 <Link
                   href={btn.href}
                   className={`
-              relative flex min-w-[64px] flex-col items-center
-              justify-center rounded-2xl px-3 py-1
-              transition-all duration-300 active:scale-95
-              ${isActive
-                      ? "bg-[#370025] text-white shadow-[0_5px_16px_rgba(55,0,37,0.28)]"
-                      : "text-[#6b5264] hover:bg-[#370025]/5"
-                    }
-            `}
-                >
+                  relative flex min-w-[64px] flex-col items-center
+                  justify-center rounded-2xl px-3 py-1
+                  transition-all duration-300 active:scale-95
+                  ${isActive
+                          ? "bg-[#370025] text-white shadow-[0_5px_16px_rgba(55,0,37,0.28)]"
+                          : "text-[#6b5264] hover:bg-[#370025]/5"
+                        }
+                  `}>
                   <div
                     className={`
-                mb-1 flex h-7 w-7 items-center justify-center rounded-lg pb-2
-                ${isActive ? "bg-white/10" : ""}
-              `}
+                    mb-1 flex h-7 w-7 items-center justify-center rounded-lg pb-2
+                    ${isActive ? "bg-white/10" : ""}
+                  `}
                   >
                     <btn.img
                       className={`
-                  h-6 w-6 object-contain
-                  ${isActive ? "brightness-0 invert" : ""}
-                `}
+                      h-6 w-6 object-contain
+                      ${isActive ? "brightness-0 invert" : ""}
+                    `}
                     />
                   </div>
-
                   <span className="text-sm font-semibold leading-none">
                     {btn.label}
                   </span>

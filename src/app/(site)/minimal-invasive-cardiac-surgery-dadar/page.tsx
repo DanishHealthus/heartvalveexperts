@@ -83,7 +83,7 @@ const faqData = [
     question:
       "Where can I find minimally invasive heart valve treatment near me?",
     answer:
-      "Heart Valve Experts offers consultations for patients across dadar and India. Contact the team to arrange an evaluation and discuss your treatment options.",
+      "Heart Valve Experts offers consultations for patients across Dadar and India. Contact the team to arrange an evaluation and discuss your treatment options.",
   },
 ];
 
@@ -176,7 +176,7 @@ const page = () => {
           `Advanced interventional and transcatheter procedures for heart valve disease`,
           "If you or a loved one has been advised to consider heart valve surgery, it is natural to worry about the complications of open-heart surgery and the long recovery time.",
           "Today, many heart valve conditions can be treated using minimally invasive, catheter-based procedures that repair or replace the valve without opening the chest.",
-          `At <a target="_blank" href="https://heartvalveexperts.com/" class="text-blue-600 underline">Heart Valve Experts</a> in dadar, our care focuses exclusively on advanced interventional treatments designed to treat heart valve disease while minimising physical trauma and supporting faster recovery.`,
+          `At <a target="_blank" href="https://heartvalveexperts.com/" class="text-blue-600 underline">Heart Valve Experts</a> in Dadar, our care focuses exclusively on advanced interventional treatments designed to treat heart valve disease while minimising physical trauma and supporting faster recovery.`,
         ]}
         buttonText="Request a Consultation"
       />
@@ -218,7 +218,7 @@ const page = () => {
       </section>
 
       <TaviProMumbai
-        heading="Minimally Invasive Heart Valve Procedures Available in dadar"
+        heading="Minimally Invasive Heart Valve Procedures Available in Dadar"
         procedures={[
           {
             id: 1,
@@ -281,7 +281,7 @@ const page = () => {
         conclusion="A comprehensive heart valve evaluation is required before deciding on the most appropriate treatment."
         buttonText="Request a Consultation"
         imageSrc="/images/service/BMV/Rectangle 38.webp"
-        imageAlt="Who is Eligible for Transcatheter Aortic Valve Implantation (TAVI) Surgery in dadar?"
+        imageAlt="Who is Eligible for Transcatheter Aortic Valve Implantation (TAVI) Surgery in Dadar?"
       />
 
       <section className="text-white relative animate-gradient-circle overflow-hidden">
@@ -304,14 +304,14 @@ const page = () => {
           />
           <FollowUpSection
             tag="What Sets us Apart"
-            title="Why Choose Heart Valve Experts for Minimally Invasive Heart Valve Treatment in dadar?"
+            title="Why Choose Heart Valve Experts for Minimally Invasive Heart Valve Treatment in Dadar?"
             intro="Patients considering minimally invasive heart valve procedures often look for centers with specialised expertise in interventional cardiology."
             subIntro="Heart Valve Experts focuses specifically on advanced catheter-based heart valve therapies and structural heart interventions, helping patients across India explore modern treatment options."
             bulletPoints={[
               "Dedicated Focus on Heart Valve Disease",
               "Expertise in Complex and High-Risk Cases",
               "Access to Advanced Transcatheter Treatments",
-              "Care Close to Home in dadar",
+              "Care Close to Home in Dadar",
             ]}
             conclusion=""
             buttonText="Request a Consultation"

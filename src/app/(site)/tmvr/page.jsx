@@ -78,7 +78,7 @@ const delayRiskData = {
       description: "The heart weakens over time due to persistent backflow.",
     },
   ],
-  imageSrc: "/images/service/TMVR/Rectangle 33.webp",
+  imageSrc: "/images/service/TMVR/2.webp",
   imagePosition: "right",
 };
 
@@ -302,7 +302,7 @@ const servciepage = () => {
           timeline={timelineData}
           sectionTitle="Procedure Timeline"
           heading="Transcatheter Mitral Valve Repair (TMVR) Procedure Timeline & Recovery"
-          leftImageSrc="/images/service/TMVR/2.webp"
+          leftImageSrc="/images/service/TMVR/3.webp"
         />
         <FollowUpSection
           tag="Procedure Follow Up"

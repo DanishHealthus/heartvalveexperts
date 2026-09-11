@@ -184,8 +184,7 @@ export default function HomePage() {
           ref={titleRef}
           className="text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl xl:leading-snug font-medium pt-10"
         >
-          India’s Trusted Heart Specialist’s for Advanced and Complex Cardiac
-          Care
+          India’s Trusted Heart Specialists for Advanced and Complex Cardiac Care
         </h1>
         <div className="pt-10 lg:pt-7 xl:pt-10 flex justify-center" ref={buttonRef}>
           <div className="cursor-pointer" onClick={() => setShowModal(true)}>
