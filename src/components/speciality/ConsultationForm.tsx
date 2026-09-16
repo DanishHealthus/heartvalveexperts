@@ -81,13 +81,13 @@ export default function ConsultationForm({
   onSubmitLead,
   specialitySlug,
   specialityName,
-  heading = "Consultation + Report Review",
-  subheading = "Share a few details and our team will call you back.",
-  submitLabel = "Request a Call Back",
-  footnote = "Your details stay private. We usually reply within one working day.",
+  heading = "Discuss Your Valve Treatment Options",
+  subheading = "All enquiries reviewed by a dedicated specialist.",
+  submitLabel = "Book Consultation",
+  footnote = "100% confidential · No obligation",
   variant = "card",
   accent = false,
-  className = "",
+  className = "text-center",
 }: ConsultationFormProps) {
   const uid = useId();
   const formRef = useRef<HTMLFormElement>(null);
@@ -178,7 +178,7 @@ export default function ConsultationForm({
   const accentBar = accent ? (
     <span
       aria-hidden="true"
-      className="absolute inset-x-0 top-0 h-[5px] bg-[linear-gradient(90deg,#0074dd_0%,#97323b_100%)]"
+      className="absolute inset-x-0 top-0 h-[5px] "
     />
   ) : null;
 
@@ -219,21 +219,13 @@ export default function ConsultationForm({
     <div className={`${shell} ${className}`}>
       {accentBar}
       {heading ? (
-        <div className="flex items-center gap-3">
-          {accent ? (
-            <span
-              aria-hidden="true"
-              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#eaf3fc] text-[#0074dd]"
-            >
-              <HeartPulseIcon className="h-[18px] w-[18px]" />
-            </span>
-          ) : null}
-          <h2 className="text-[clamp(1.125rem,1rem+0.5vw,1.25rem)] font-semibold leading-[1.35]">{heading}</h2>
+        <div className="">         
+          <h2 className="animate-gradient-text text-xl font-semibold ">{heading}</h2>
         </div>
       ) : null}
-      {subheading ? <p className="mt-[5px] text-[14px] leading-[1.36]">{subheading}</p> : null}
+      {subheading ? <p className="mt-[5px] text-[12px] leading-[1.36]">{subheading}</p> : null}
 
-      <form ref={formRef} onSubmit={handleSubmit} noValidate className="mt-[13px] grid gap-[10px]">
+      <form ref={formRef} onSubmit={handleSubmit} noValidate className="text-left mt-8 grid gap-[10px]">
         <Field
           name="name"
           label="Full name"
@@ -293,7 +285,7 @@ export default function ConsultationForm({
           type="submit"
           disabled={status === "submitting"}
           aria-busy={status === "submitting"}
-          className="inline-flex h-[45px] w-full items-center justify-center gap-2 rounded-full bg-[#0074dd] px-6 text-[15px] font-medium text-white transition-colors hover:bg-[#005cb2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0074dd] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-70"
+          className="inline-flex h-[45px] w-full items-center justify-center gap-2 rounded-full animate-gradient-circle px-6 text-[15px] font-medium text-white transition-colors hover:bg-[#005cb2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0074dd] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-70"
         >
           {status === "submitting" ? (
             <>
@@ -303,7 +295,7 @@ export default function ConsultationForm({
           ) : (
             <>
               <span>{submitLabel}</span>
-              <ArrowIcon className="h-4 w-4" />
+              {/* <ArrowIcon className="h-4 w-4" /> */}
             </>
           )}
         </button>

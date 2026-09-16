@@ -191,9 +191,9 @@ export function SectionHeading({
       className={`font-semibold tracking-[-0.01em] ${
         align === "center"
           ? // Figma centres section headings on a 42px line box.
-            "text-center text-[clamp(1.5rem,1.15rem+1.25vw,2rem)] leading-[1.3125]"
+            "text-center text-3xl "
           : // Left-aligned content headings sit on a 48px line box.
-            "text-[clamp(1.5rem,1.05rem+1.6vw,2.25rem)] leading-[1.333]"
+            "text-3xl "
       } ${className}`}
     >
       {title}

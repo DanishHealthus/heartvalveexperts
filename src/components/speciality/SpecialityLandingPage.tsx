@@ -26,8 +26,8 @@ export default function SpecialityLandingPage({
   formEndpoint: string;
 }) {
   return (
-    <div className="speciality-page landing-main-font min-h-screen bg-white">
-      <SpecialityHeader />
+    <div className="speciality-page   bg-white">
+      {/* <SpecialityHeader /> */}
       <main>
         <SpecialityHero
           banner={data.banner}
@@ -42,8 +42,8 @@ export default function SpecialityLandingPage({
         <FAQSection faqs={data.faqs} />
         <FinalCTA understand={data.understand} />
         {/* <AppointmentCTA understand={data.understand} /> */}
-      </main>
-     <ClinicFooter
+   </main>
+      <ClinicFooter
         logoSrc="/images/homeimages/logo.png"
         clinicTitle="Clinic Location (Mumbai)"
         clinicName="Heart Valve Experts"

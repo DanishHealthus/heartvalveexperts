@@ -30,7 +30,7 @@ const ClinicFooter: React.FC<FooterProps> = ({
     poweredByText,
 }) => {
     return (
-        <footer className="bg-gradient-to-br from-[#c20937] via-[#3735a7] to-[#c20937] text-white">
+        <footer className="animate-gradient-circle text-white">
             <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-24 py-20">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 

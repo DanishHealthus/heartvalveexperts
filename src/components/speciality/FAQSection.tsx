@@ -55,7 +55,7 @@ export default function FAQSection({
   }
 
   return (
-    <section className="bg-[#f4faff] py-[clamp(48px,7.1vw,100px)]">
+    <section className="bg-[#fff] py-[clamp(48px,7.1vw,100px)]">
       <Container width="narrow">
         <h2 className="text-center text-[clamp(1.5rem,1.15rem+1.25vw,2rem)] font-semibold leading-[1.3125] tracking-[-0.01em]">
           {heading}

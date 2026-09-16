@@ -38,27 +38,27 @@ function RecoveryRow({ item, reversed }: { item: SpecialityFeature; reversed: bo
       />
 
       <div
-        className={`flex flex-col justify-center rounded-[20px] border border-[#dbe9f7] bg-white p-6 sm:p-8 lg:p-[30px] ${
+        className={`flex flex-col justify-center rounded-[20px] border border-[#dbe9f7] animate-gradient-circle text-white p-6 sm:p-8 lg:p-[30px] ${
           reversed ? "lg:order-1" : ""
         }`}
         style={{ boxShadow: "0 18px 44px -32px rgba(14,32,51,0.45)" }}
       >
-        <SectionHeading title={item.title} />
+        <SectionHeading className="text-white" title={item.title} />
 
-        <RichText html={intro} className="mt-4" compact />
+        <RichText html={intro} className="mt-4 text-white" compact />
 
         {bullets.length ? (
           <ul className="mt-4 grid gap-[13px]">
             {bullets.map((bullet) => (
               <li key={bullet} className="flex items-start gap-[10px] pl-1">
-                <EnterArrow className="mt-[3px] h-[18px] w-[18px] shrink-0 text-[#0074dd]" />
-                <span className="text-[15px] leading-[1.5] text-[#4a5b6e]">{bullet}</span>
+                <EnterArrow className="mt-[3px] h-[18px] w-[18px] shrink-0 text-[#fff]" />
+                <span className="text-[15px] leading-[1.5] text-[#fff]">{bullet}</span>
               </li>
             ))}
           </ul>
         ) : null}
 
-        <RichText html={outro} className="mt-4" compact />
+        <RichText html={outro} className="mt-4 text-white" compact />
 
         {item.buttonName ? <CtaButton label={item.buttonName} className="mt-6 self-start" /> : null}
       </div>

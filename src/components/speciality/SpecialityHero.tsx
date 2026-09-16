@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { SpecialityBanner } from "@/lib/speciality/types";
 import ConsultationForm from "./ConsultationForm";
 import { Container, CONSULTATION_ANCHOR } from "./ui";
+import SpecialityHeader from "./SpecialityHeader";
 
 /**
  * Hero: 1440 x 688 in Figma — a full-bleed rounded banner holding the headline
@@ -21,7 +22,8 @@ export default function SpecialityHero({
   endpoint: string;
 }) {
   return (
-    <section className="relative isolate overflow-hidden rounded-b-[28px] bg-[#f4faff] md:rounded-b-[40px]">
+    <section className="relative isolate overflow-hidden ">
+      <SpecialityHeader />
       {banner.image ? (
         <Image
           src={banner.image.url}
@@ -64,12 +66,13 @@ export default function SpecialityHero({
         {/* Figma vertical rhythm, measured from the 103px header baseline:
             form card at y=155 (+52), headline at y=212 (+109), hero ends 100
             below the card. */}
-        <div className="grid gap-10 pt-[40px] pb-[64px] md:pt-[52px] md:pb-[88px] lg:grid-cols-[minmax(0,1fr)_500px] lg:gap-[60px] lg:pb-[100px]">
+        <div className="grid gap-10 pt-[40px] pb-[64px] md:pt-[52px] md:pb-[88px] lg:grid-cols-[minmax(0,1fr)_500px] lg:gap-[100px] lg:pb-[100px]">
           <div className="max-w-[720px] lg:pt-[57px]">
             {/* 685 x 130 in Figma: three lines at 40/1.1 land on that box. */}
-            <h1 className="text-[clamp(1.875rem,1.2rem+2.1vw,2.5rem)] font-semibold leading-[1.1] tracking-[-0.015em] text-[#0e2033] lg:max-w-[685px]">
+           <h1 className="animate-gradient-text text-[clamp(1.875rem,1.2rem+2.1vw,2.5rem)] font-semibold leading-[1.1] tracking-[-0.015em] lg:max-w-[685px]">
               {banner.title}
             </h1>
+            
 
             {banner.description ? (
               <p className="mt-4 max-w-[672px] text-[clamp(0.9375rem,0.9rem+0.2vw,1rem)] leading-[1.65] text-[#4a5b6e] lg:mt-[17px]">
@@ -78,11 +81,11 @@ export default function SpecialityHero({
             ) : null}
 
             {banner.blackTitle || banner.blueTitle ? (
-              <div className="mt-6 flex flex-wrap gap-3 lg:mt-[28px]">
+              <div className="mt-6 lg:mt-[28px]">
                 {banner.blackTitle ? (
-                  <TrustBadge text={banner.blackTitle} tone="ink" />
+                  <b className="text-[#0e2033] text-lg lg:text-xl">{banner.blackTitle}</b>
                 ) : null}
-                {banner.blueTitle ? <TrustBadge text={banner.blueTitle} tone="blue" /> : null}
+                {banner.blueTitle ?  <p className="text-[#0074dd] pt-2 text-xl lg:text-2xl">{banner.blueTitle}</p> : null}
               </div>
             ) : null}
           </div>

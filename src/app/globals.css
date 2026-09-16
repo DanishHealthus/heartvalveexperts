@@ -91,40 +91,68 @@ body {
   display: none;
 }
 
-@keyframes gradient-circle {
+/*
+ * The old version of this animation moved `background-position`, which is
+ * a main-thread paint property: the several `window.addEventListener("mousemove", ...)`
+ * parallax handlers around the site (Header, HeroSection, BreadCrumb,
+ * Comp404, BlogBreadCrumb) compete with it for main-thread time, so moving
+ * the mouse starved the animation's paint frames and it visibly "blinked" /
+ * jumped instead of drifting smoothly.
+ *
+ * Fix: animate `transform` on an oversized ::before layer instead. Transform
+ * is compositor/GPU-driven, so it keeps running smoothly no matter how busy
+ * the main thread is. `position: relative` + `isolation: isolate` on the
+ * class scopes the pseudo-element's `z-index: -1` to just this box, and
+ * `overflow: hidden` clips the oversized layer to the element's own bounds
+ * (several existing usages already added `overflow-hidden` by hand for this
+ * exact reason).
+ */
+@keyframes gradient-circle-shift {
   0% {
-    background-position: 0% 0%;
+    transform: translate3d(0, 0, 0);
   }
 
   25% {
-    background-position: 100% 0%;
+    transform: translate3d(10%, -6%, 0);
   }
 
   50% {
-    background-position: 100% 100%;
+    transform: translate3d(0, 10%, 0);
   }
 
   75% {
-    background-position: 0% 100%;
+    transform: translate3d(-10%, -6%, 0);
   }
 
   100% {
-    background-position: 0% 0%;
+    transform: translate3d(0, 0, 0);
   }
 }
 
-.animate-gradient-circle {
-  background: radial-gradient(circle at center, #0074dd, #97323b, #0074dd);
-  background-size: 250% 250%;
-  animation: gradient-circle 15s ease-in-out infinite;
+.animate-gradient-circle,
+.animate-gradient-circle-aalekh {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   filter: brightness(1.1) saturate(1.1);
 }
 
-.animate-gradient-circle-aalekh {
+.animate-gradient-circle::before,
+.animate-gradient-circle-aalekh::before {
+  content: "";
+  position: absolute;
+  inset: -60%;
+  z-index: -1;
+  animation: gradient-circle-shift 15s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-gradient-circle::before {
+  background: radial-gradient(circle at center, #0074dd, #97323b, #0074dd);
+}
+
+.animate-gradient-circle-aalekh::before {
   background: radial-gradient(circle at center, #3E4094, #97323b, #3E4094);
-  background-size: 250% 250%;
-  animation: gradient-circle 15s ease-in-out infinite;
-  filter: brightness(1.1) saturate(1.1);
 }
 
 
@@ -289,14 +317,27 @@ body {
 }
 
 .hve-blog-cta {
-  background: radial-gradient(circle at center, #0074dd, #97323b, #0074dd);
-  background-size: 250% 250%;
-  animation: gradient-circle 15s ease-in-out infinite;
+  /* Same fix as .animate-gradient-circle above: transform on an oversized
+     ::before instead of animating background-position, so it doesn't blink
+     when a mousemove-driven parallax handler elsewhere is busy. */
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   filter: brightness(1.1) saturate(1.1);
   color: white;
   padding: 20px 20px 45px;
   border-radius: 20px;
   text-align: center;
+}
+
+.hve-blog-cta::before {
+  content: "";
+  position: absolute;
+  inset: -60%;
+  z-index: -1;
+  background: radial-gradient(circle at center, #0074dd, #97323b, #0074dd);
+  animation: gradient-circle-shift 15s ease-in-out infinite;
+  will-change: transform;
 }
 
 .hve-blog-cta h3{
@@ -503,5 +544,34 @@ body {
       transition-duration: 0.01ms !important;
       animation-duration: 0.01ms !important;
     }
+  }
+}
+.animate-gradient-text {
+  background: radial-gradient(
+    circle at center,
+    #0074dd,
+    #97323b,
+    #0074dd
+  );
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* animation: gradient-text-shift 15s ease-in-out infinite; */
+  will-change: background-position;
+}
+
+@keyframes gradient-text-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
   }
 }

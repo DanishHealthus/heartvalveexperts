@@ -15,7 +15,7 @@ export default function SpecialityHeader({
   phone?: string;
 }) {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-[#e9f0f7] bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/85">
+    <header className="sticky top-0 z-50 w-full border-b border-[#e9f0f7] bg-transparent b85">
       <Container width="wide">
         <div className="flex h-[68px] items-center justify-between gap-3 md:h-[101px]">
           <Link href="/" className="flex shrink-0 items-center lg:ml-[8px]" aria-label="Heart Valve Experts — home">
@@ -30,7 +30,7 @@ export default function SpecialityHeader({
           </Link>
 
           <div className="flex items-center gap-2 sm:gap-3">
-            <a
+            {/* <a
               href={`tel:${phone.replace(/[^\d+]/g, "")}`}
               className="inline-flex h-[42px] w-[42px] items-center justify-center rounded-full border border-[#dbe6f1] text-[#0074dd] transition-colors hover:border-[#0074dd] hover:bg-[#f4faff] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0074dd] focus-visible:ring-offset-2 md:h-[48px] md:w-[48px]"
               aria-label="Call Heart Valve Experts"
@@ -43,11 +43,11 @@ export default function SpecialityHeader({
                   strokeLinejoin="round"
                 />
               </svg>
-            </a>
+            </a> */}
 
             <a
               href={`#${CONSULTATION_ANCHOR}`}
-              className="inline-flex h-[42px] items-center justify-center gap-2 rounded-full bg-[#0074dd] px-4 text-[13px] font-medium text-white transition-colors hover:bg-[#005cb2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0074dd] focus-visible:ring-offset-2 sm:px-6 sm:text-[15px] md:h-[58px] md:min-w-[231px]"
+              className="inline-flex h-[40px] items-center justify-center gap-2 rounded-full animate-gradient-circle px-4 text-[13px] font-medium text-white transition-colors hover:bg-[#005cb2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0074dd] focus-visible:ring-offset-2 sm:px-6 sm:text-[15px] md:h-[58px] md:min-w-[231px]"
             >
               <span className="whitespace-nowrap">{ctaLabel}</span>
               <ArrowIcon className="h-4 w-4 shrink-0" />

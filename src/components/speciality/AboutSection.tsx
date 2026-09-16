@@ -15,7 +15,7 @@ export default function AboutSection({ about }: { about: SpecialityAbout | null 
         <div className="grid items-start gap-8 lg:grid-cols-[566fr_539fr] lg:gap-[69px]">
           <MediaFrame
             image={about.image}
-            className="aspect-[566/400] w-full"
+            className="h-full w-full"
             fallbackLabel={about.title}
           />
 
