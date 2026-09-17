@@ -13,7 +13,7 @@ export default function RecoverySection({ items }: { items: SpecialityFeature[] 
   return (
     <section className="py-[clamp(28px,4vw,50px)]">
       <Container>
-        <div className="grid gap-[clamp(40px,7.1vw,100px)]">
+        <div className="grid gap-[clamp(40px,7.1vw,80px)]">
           {items.map((item, index) => (
             <RecoveryRow key={item.id} item={item} reversed={index % 2 === 1} />
           ))}
@@ -30,7 +30,7 @@ function RecoveryRow({ item, reversed }: { item: SpecialityFeature; reversed: bo
     <div className="grid items-stretch gap-6 lg:grid-cols-2 lg:gap-[44px]">
       <MediaFrame
         image={item.image}
-        className={`aspect-[566/400] w-full lg:aspect-auto lg:min-h-[400px] ${
+        className={`aspect-[566/400] w-full lg:aspect-auto lg:min-h-[330px] ${
           reversed ? "lg:order-2" : ""
         }`}
         sizes="(min-width: 1024px) 566px, 100vw"

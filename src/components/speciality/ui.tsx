@@ -135,7 +135,7 @@ export function CtaButton({
   return (
     <a href={href} className={`${BUTTON_BASE} h-[45px] ${variants[variant]} ${className}`}>
       <span>{label}</span>
-      <ArrowIcon className="h-4 w-4 shrink-0" />
+      {/* <ArrowIcon className="h-4 w-4 shrink-0" /> */}
     </a>
   );
 }

@@ -34,7 +34,7 @@ const stories = [
 export default function PatientSuccessStories() {
   return (
     <section className="w-full bg-white py-10 sm:py-12 lg:py-14">
-      <div className="mx-auto max-w-7xl px-5 sm:px-6">
+      <div className="mx-auto max-w-7xl px-5 sm:px-6 px-8">
         {/* Heading */}
         <div className="text-center">
           <h2 className="text-xl font-semibold leading-tight text-[#111111] sm:text-2xl lg:text-3xl">
@@ -53,16 +53,16 @@ export default function PatientSuccessStories() {
           {stories.map((story) => (
             <div
               key={story.name}
-              className="flex min-h-[176px] flex-col rounded-[22px] border border-[#DDE3EB] bg-[#F5F7FA] px-[14px] py-[13px]"
+              className="flex min-h-[176px] flex-col rounded-[22px] border border-[#DDE3EB] bg-[#F5F7FA] p-5 lg:p-7"
             >
               {/* Card Header */}
               <div className="flex items-center justify-between">
                 <div className="min-w-0">
-                  <h3 className="truncate text-lg font-semibold  text-[#171717]">
+                  <h3 className="truncate text-lg lg:text-xl font-semibold  text-[#171717]">
                     {story.name}
                   </h3>
 
-                  <p className="mt-[3px] text-sm text-[#7D8490]">
+                  <p className="mt-[3px] text-sm lg:text-base text-[#7D8490]">
                     {story.procedure} - {story.relation}, {story.age}
                   </p>
                 </div>

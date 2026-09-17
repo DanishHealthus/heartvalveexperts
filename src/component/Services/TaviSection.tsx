@@ -27,7 +27,7 @@ export default function TaviSection({
 
         {/* Left: Image */}
         <div
-          className="relative w-full md:w-1/2 h-72 md:h-[480px] rounded-t-[100px] rounded-bl-[100px] rounded-br-2xl overflow-hidden shadow"
+          className="relative w-full md:w-1/2 h-72 md:h-[480px] rounded-t-[70px] lg:rounded-t-[100px] rounded-bl-[70px] lg:rounded-bl-[100px] rounded-br-2xl overflow-hidden shadow"
         // initial={{ opacity: 0, x: -50 }}
         // whileInView={{ opacity: 1, x: 0 }}
         // viewport={{ once: true, amount: 0.3 }}

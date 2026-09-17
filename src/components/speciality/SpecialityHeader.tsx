@@ -47,10 +47,10 @@ export default function SpecialityHeader({
 
             <a
               href={`#${CONSULTATION_ANCHOR}`}
-              className="inline-flex h-[40px] items-center justify-center gap-2 rounded-full animate-gradient-circle px-4 text-[13px] font-medium text-white transition-colors hover:bg-[#005cb2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0074dd] focus-visible:ring-offset-2 sm:px-6 sm:text-[15px] md:h-[58px] md:min-w-[231px]"
+              className="inline-flex h-[35px] items-center justify-center gap-2 rounded-full animate-gradient-circle px-4 text-[13px] font-medium text-white transition-colors hover:bg-[#005cb2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0074dd] focus-visible:ring-offset-2 sm:px-6 sm:text-[15px] md:h-[50px] md:min-w-[231px]"
             >
               <span className="whitespace-nowrap">{ctaLabel}</span>
-              <ArrowIcon className="h-4 w-4 shrink-0" />
+              {/* <ArrowIcon className="h-4 w-4 shrink-0" /> */}
             </a>
           </div>
         </div>

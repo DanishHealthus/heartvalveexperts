@@ -18,12 +18,11 @@ export default function AboutSection({ about }: { about: SpecialityAbout | null 
             className="h-full w-full"
             fallbackLabel={about.title}
           />
-
           <div>
             <SectionHeading title={about.title} />
-            <RichText html={about.description} className="mt-5 lg:mt-[20px]" />
+            <RichText html={about.description} className="mt-5 lg:mt-[20px] leading-relaxed" />
             {about.buttonName ? (
-              <CtaButton label={about.buttonName} className="mt-7 lg:mt-[42px]" />
+              <CtaButton label={about.buttonName} className="mt-5 lg:mt-5 animate-gradient-circle" />
             ) : null}
           </div>
         </div>

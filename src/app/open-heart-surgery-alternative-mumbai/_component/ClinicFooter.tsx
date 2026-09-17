@@ -43,7 +43,7 @@ const ClinicFooter: React.FC<FooterProps> = ({
                         </h3>
 
                         <div className="text-base lg:text-lg text-gray-200 space-y-1 leading-relaxed">
-                            <p className="font-medium">{clinicName}</p>
+                            <p className="font-medium pb-3 text-xl lg:text-2xl">{clinicName}</p>
                             {addressLines.map((line, index) => (
                                 <p key={index}>{line}</p>
                             ))}

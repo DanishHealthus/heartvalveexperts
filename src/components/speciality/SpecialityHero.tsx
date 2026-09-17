@@ -75,7 +75,7 @@ export default function SpecialityHero({
             
 
             {banner.description ? (
-              <p className="mt-4 max-w-[672px] text-[clamp(0.9375rem,0.9rem+0.2vw,1rem)] leading-[1.65] text-[#4a5b6e] lg:mt-[17px]">
+              <p className="mt-4 max-w-[672px] text-[clamp(0.9375rem,0.9rem+0.2vw,1rem)] text-[#4a5b6e] lg:mt-[17px]">
                 {banner.description}
               </p>
             ) : null}

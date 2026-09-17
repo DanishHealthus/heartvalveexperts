@@ -1,8 +1,12 @@
 "use client";
 
 import { useId, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 import type { ConsultationLead } from "@/lib/speciality/types";
 import { ArrowIcon } from "./ui";
+
+/** Shared thank-you page for every /speciality/[slug] consultation form. */
+const SPECIALITY_THANK_YOU_PATH = "/speciality/thank-you";
 
 type FieldName = "name" | "phone" | "city" | "notes";
 
@@ -65,6 +69,8 @@ export interface ConsultationFormProps {
   subheading?: string;
   submitLabel?: string;
   footnote?: string;
+  /** Where to send the visitor after a successful submit. */
+  thankYouHref?: string;
   /** Visual treatment: the hero card is elevated, the inline one sits flat. */
   variant?: "card" | "inline";
   /**
@@ -85,10 +91,12 @@ export default function ConsultationForm({
   subheading = "All enquiries reviewed by a dedicated specialist.",
   submitLabel = "Book Consultation",
   footnote = "100% confidential · No obligation",
+  thankYouHref = SPECIALITY_THANK_YOU_PATH,
   variant = "card",
   accent = false,
   className = "text-center",
 }: ConsultationFormProps) {
+  const router = useRouter();
   const uid = useId();
   const formRef = useRef<HTMLFormElement>(null);
   const [values, setValues] = useState<FormValues>(EMPTY);
@@ -150,6 +158,8 @@ export default function ConsultationForm({
       if (onSubmitLead) {
         await onSubmitLead(lead);
       } else {
+        // Posts to /api/landing-mail (or whatever `endpoint` the page passes in) —
+        // the API itself is untouched, this only calls it and reacts to the result.
         const response = await fetch(endpoint, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -161,6 +171,7 @@ export default function ConsultationForm({
       setValues(EMPTY);
       setTouched({});
       setErrors({});
+      router.push(thankYouHref);
     } catch (error) {
       console.error("[consultation] submit failed", error);
       setStatus("error");
@@ -183,32 +194,14 @@ export default function ConsultationForm({
   ) : null;
 
   if (status === "success") {
+    // Submit already redirects to `thankYouHref` — this only covers the brief
+    // moment before that client-side navigation lands.
     return (
       <div className={`${shell} ${className}`}>
         {accentBar}
-        <div role="status" aria-live="polite" className="text-center">
-          <span className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#e7f5ec] text-[#1f8a4c]">
-            <svg viewBox="0 0 24 24" fill="none" className="h-6 w-6" aria-hidden="true">
-              <path
-                d="m5 12.5 4.5 4.5L19 7.5"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </span>
-          <h3 className="text-[20px] font-semibold">Thank you we have your details</h3>
-          <p className="mt-2 text-[15px] leading-relaxed">
-            Our coordinator will call you to arrange your consultation and report review.
-          </p>
-          <button
-            type="button"
-            onClick={() => setStatus("idle")}
-            className="mt-5 inline-flex h-[45px] items-center justify-center rounded-full border border-[#0074dd] px-7 text-[15px] font-medium text-[#0074dd] transition-colors hover:bg-[#0074dd] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0074dd] focus-visible:ring-offset-2"
-          >
-            Send another enquiry
-          </button>
+        <div role="status" aria-live="polite" className="flex flex-col items-center justify-center gap-3 py-10 text-center">
+          <Spinner />
+          <p className="text-[14px] text-[#4a5b6e]">Taking you to the confirmation page…</p>
         </div>
       </div>
     );

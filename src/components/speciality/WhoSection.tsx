@@ -19,7 +19,7 @@ export default function WhoSection({ items }: { items: SpecialityFeature[] }) {
 
       <Container>
         <div className="grid gap-[clamp(48px,7.1vw,100px)]">
-          {items.map((item, index) => (
+          {items.slice(0, 1).map((item, index) => (
             <WhoRow key={item.id} item={item} reversed={index % 2 === 1} />
           ))}
         </div>
