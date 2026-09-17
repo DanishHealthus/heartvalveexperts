@@ -24,7 +24,7 @@ export const specialitydata = {
     about: {
         title: "Why choose HVE",
         image: {
-            url: "/images/speciality.webp",
+            url: "/images/special.webp",
             alt: "",
         },
         description:

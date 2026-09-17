@@ -62,7 +62,7 @@ export default function WhyChooseHVEDan() {
                         </span>
                         Procedures Overview
                     </p>
-                    <h2 className="text-2xl md:text-3xl font-normal mb-10">
+                    <h2 className="text-2xl md:text-3xl text-white font-normal mb-10">
                         Advanced Solutions for Every Heart Valve Need
                     </h2>
                 </div>
