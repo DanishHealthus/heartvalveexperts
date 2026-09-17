@@ -15,6 +15,7 @@ import Doctors from "@/component/Doctors";
 import SpecialityHeader from "@/components/speciality/SpecialityHeader";
 import HospitalCarousel from "@/component/HospitalCarousel";
 import PatientSuccessStories from "@/components/speciality/PatientSuccessStories";
+import Script from "next/script";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/+$/, "") ?? "https://heartvalveexperts.com";
 
@@ -91,10 +92,18 @@ export default async function SpecialityPage({ params }: PageProps) {
   const { data } = result;
 
   return (
-    <>
-      <body>
-
-
+    <> 
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TVQ5P76L"
+            height="0"
+            width="0"
+            style={{
+              display: "none",
+              visibility: "hidden",
+            }}
+          />
+        </noscript>
         <div className="speciality-page   bg-white">
           {/* <SpecialityHeader /> */}
           <main>
@@ -109,7 +118,7 @@ export default async function SpecialityPage({ params }: PageProps) {
             <WhoSection items={data.who} />
             <ProcedureSection procedure={data.procedure} />
             <RecoverySection items={data.recovery} />
-            <PatientSuccessStories/>
+            <PatientSuccessStories />
             <FinalCTA understand={data.understand} />
             <FAQSection faqs={data.faqs} />
           </main>
@@ -132,7 +141,6 @@ export default async function SpecialityPage({ params }: PageProps) {
             poweredByText="Powered by healthus.ai"
           />
         </div>
-      </body>
       {/* <SpecialityLandingPage data={data} formEndpoint={LEAD_ENDPOINT} /> */}
       {/*   <SpecialityJsonLd
         slug={data.slug}

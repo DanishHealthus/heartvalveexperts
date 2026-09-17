@@ -13,10 +13,7 @@ import WhyChooseHVEDan from '@/components/speciality/WhyChooseHVEDan';
 const page = () => {
     const LEAD_ENDPOINT = process.env.NEXT_PUBLIC_LEAD_ENDPOINT ?? "/api/landing-mail";
   return (
-    <body>
-
-
-        <div className="speciality-page   bg-white">
+        <div className="speciality-page bg-white">
           {/* <SpecialityHeader /> */}
           <main>
             <SpecialityHero
@@ -52,7 +49,6 @@ const page = () => {
             poweredByText="Powered by healthus.ai"
           />
         </div>
-      </body>
   )
 }
 
