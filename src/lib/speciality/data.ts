@@ -142,28 +142,52 @@ export const specialitydata = {
     faqs: [
         {
             id: '1',
-            question: "What is heart valve replacement?",
+            question: "What is TAVI and who is it suitable for?",
             answer:
-                "Heart valve replacement is a treatment used when a heart valve is severely narrowed or damaged and needs to be replaced or treated.",
+                "TAVI replaces a diseased aortic valve without open-heart surgery, using a catheter inserted through the leg. It is suitable for patients with severe aortic stenosis, particularly high and intermediate-risk patients. HVE was the first in India to introduce this procedure.",
         },
         {
             id: '2',
-            question: "Who can undergo minimally invasive valve treatment?",
+            question: "Is this procedure safe for elderly patients?",
             answer:
-                "Suitability depends on the patient's valve condition, anatomy, overall health, and other individual factors. A specialist Heart Team evaluates each case before recommending treatment.",
+                "It is often considered specifically for elderly or high-risk patients when surgery carries a higher risk.",
         },
         {
             id: '3',
-            question: "How long does recovery take?",
+            question: "How long does recovery usually take?",
             answer:
-                "Recovery varies depending on the procedure and the individual patient. Your treating team will provide personalised guidance based on your condition and treatment.",
+                "Many patients begin walking within a day and are discharged within a few days, depending on individual recovery.",
+        },
+        {
+            id: '4',
+            question: "Will I still need open-heart surgery later?",
+            answer:
+                "In many cases this procedure is definitive. Long-term planning is discussed during evaluation.",
+        },
+        {
+            id: '5',
+            question: "How is suitability decided?",
+            answer:
+                "The decision is made through imaging, heart team discussion, and clinical assessment.",
+        },
+        {
+            id: '6',
+            question: "Is this treatment available in Mumbai?",
+            answer:
+                "Yes. The procedure is performed by specialised interventional cardiologist teams in Mumbai.",
+        },
+        {
+            id: '7',
+            question: "Can I share my previous reports for review before visiting?",
+            answer:
+                "Yes. The specialist team can review existing reports and test results to guide further evaluation and next steps.",
         },
     ],
 
     understand: {
         title: "Your Heart Deserves the Best in Mumbai",
         image: {
-            url: "/images/speciality.webp",
+            url: "/images/homeimages/cta.png",
             alt: "",
         },
         description:

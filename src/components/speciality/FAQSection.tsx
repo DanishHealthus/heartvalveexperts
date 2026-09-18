@@ -55,9 +55,9 @@ export default function FAQSection({
   }
 
   return (
-    <section className="bg-[#fff] py-[clamp(48px,7.1vw,100px)]">
+    <section className="bg-[#fff] py-1">
       <Container width="narrow">
-        <h2 className="text-center text-[clamp(1.5rem,1.15rem+1.25vw,2rem)] font-semibold leading-[1.3125] tracking-[-0.01em]">
+        <h2 className="text-center text-[clamp(1.5rem,1.15rem+1.25vw,2rem)] font-semibold leading-relaxed tracking-[-0.01em]">
           {heading}
         </h2>
 
@@ -83,7 +83,7 @@ export default function FAQSection({
                     aria-controls={panelId}
                     onClick={() => setOpenId(isOpen ? null : faq.id)}
                     onKeyDown={(event) => handleKeyDown(event, index)}
-                    className={`flex w-full items-start gap-3 px-5 pt-[18px] text-left transition-colors hover:bg-[#f4faff] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#0074dd] sm:gap-[28px] sm:px-[30px] sm:pt-[30px] ${isOpen ? "pb-0" : "pb-[18px] sm:pb-[30px]"}`}
+                    className={`flex w-full items-start gap-3 px-5 pt-[18px] text-left transition-colors hover:bg-[#f4faff] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#0074dd] sm:gap-[28px] sm:px-[30px] sm:pt-5 ${isOpen ? "pb-0" : "pb-1 sm:pb-5"}`}
                   >
                     <span
                       aria-hidden="true"

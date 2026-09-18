@@ -60,26 +60,16 @@ export default function WhyChooseHVEDan() {
                                 alt=""
                             />
                         </span>
-                        Procedures Overview
+                        Every Heart Valve Condition, Covered
                     </p>
                     <h2 className="text-2xl md:text-3xl text-white font-normal mb-10">
-                        Advanced Solutions for Every Heart Valve Need
+                        Our specialists are trained in the full spectrum of structural heart interventions — from the most common to the most complex.
                     </h2>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-10 items-start">
                     {/* Image Section */}
-                    <div className="relative w-full h-[300px] md:h-[500px] overflow-hidden rounded-[70px] rounded-br-2xl">
-                        <Image
-                            src={
-                                procedures.find((p) => p.id === activeId)?.img ||
-                                "/images/tavi.jpg"
-                            }
-                            alt="Procedure"
-                            fill
-                            className="object-cover scale-105"
-                        />
-                    </div>
+                  
 
                     {/* Procedures List */}
                     <div>
@@ -116,6 +106,18 @@ export default function WhyChooseHVEDan() {
                                 </div>
                             ))}
                         </div>
+                    </div>
+
+                      <div className="relative w-full h-[300px] md:h-[500px] overflow-hidden rounded-[70px] rounded-br-2xl">
+                        <Image
+                            src={
+                                procedures.find((p) => p.id === activeId)?.img ||
+                                "/images/tavi.jpg"
+                            }
+                            alt="Procedure"
+                            fill
+                            className="object-cover scale-105"
+                        />
                     </div>
                 </div>
             </div>
