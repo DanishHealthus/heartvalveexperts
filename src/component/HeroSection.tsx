@@ -168,7 +168,7 @@ export default function HomePage() {
         ref={logoRef}
         className="absolute top-3 lg:top-6 left-1/2 -translate-x-1/2"
       >
-        <Link href="/">
+        {/* <Link href="/"> */}
           <Image
             src="/images/homeimages/logo.png"
             alt="Logo"
@@ -176,7 +176,7 @@ export default function HomePage() {
             height={100}
             className="w-full h-20 lg:h-24"
           />
-        </Link>
+        {/* </Link> */}
       </div>
 
       <div className="relative z-10 text-center md:bottom-[110px] max-w-5xl px-6">
