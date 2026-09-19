@@ -337,7 +337,12 @@ export default function Header() {
             )}
           </div>
 
-        
+          <Link
+            href="/international-patients"
+            className="block hover:text-[#0074dd] text-xl transition"
+          >
+            International Patients
+          </Link>
         </nav>
 
         {/* Social Links */}

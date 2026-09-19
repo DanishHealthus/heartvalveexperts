@@ -379,7 +379,167 @@ body {
     margin-right: 20px;
 }
 /* ------------------------------------------------------------------ *
+ * International-patient hub  (/international)
+ *
+ * Values sampled straight off the Figma frame "International Patients - Hub"
+ * (node 1570-1661): the brand band runs indigo -> crimson on a 135deg axis
+ * (corners measured #3E4094 / #6F3A7B / #993566 / #CF2F4B), and the pill CTAs
+ * and inline links use the purple -> crimson slice of that same ramp.
+ * ------------------------------------------------------------------ */
+
+.intl {
+  --intl-indigo: #3e4094;
+  --intl-violet: #7a4586;
+  --intl-crimson: #cf2f4b;
+  --intl-btn-from: #6c3b7d;
+  --intl-btn-to: #9c3665;
+  --intl-ink: #000000;
+  --intl-body: #1d2a49;
+  --intl-panel: #ebeef4;
+  --intl-dot: #6db6ff;
+}
+
+/* The full-bleed brand band. Several consecutive sections sit inside one of
+   these, because Figma runs the ramp continuously across them. */
+.intl-band {
+  background: linear-gradient(
+    135deg,
+    var(--intl-indigo) 0%,
+    var(--intl-violet) 45%,
+    var(--intl-crimson) 100%
+  );
+}
+
+/* Pill CTA on light backgrounds. */
+.intl-btn-gradient {
+  background: linear-gradient(90deg, var(--intl-btn-from) 0%, var(--intl-btn-to) 100%);
+}
+
+/* Inline links and the labels of white pills sitting on the band: Figma fills
+   the glyphs with the same ramp rather than a flat colour. */
+.intl-grad-text {
+  background: linear-gradient(90deg, var(--intl-btn-from) 0%, var(--intl-btn-to) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* The "Select Your Country" rail. Figma aligns the first card with the content
+   column and lets the track bleed past the right edge, which needs a
+   max()/calc() pair Tailwind will not emit as an arbitrary value. */
+.intl-rail {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  /* Mandatory snapping aligns the first card to the scrollport edge, which
+     scrolls the gutter out of view — scroll-padding keeps the rail lined up
+     with the content column. */
+  scroll-padding-left: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .intl-rail {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    scroll-padding-left: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .intl-rail {
+    padding-left: max(2rem, calc((100vw - 1180px) / 2));
+    padding-right: max(2rem, calc((100vw - 1180px) / 2));
+    scroll-padding-left: max(2rem, calc((100vw - 1180px) / 2));
+  }
+}
+
+/* WordPress rich text inside the international template. Figma marks list items
+   with a turn-down-right glyph rather than a bullet, and links are plain
+   underlines that inherit the surrounding colour (dark on white, white on the
+   band) instead of the site blue. */
+.intl-rich ul {
+  list-style: none;
+  margin: 0 0 1em;
+  padding-left: 0;
+  display: grid;
+  gap: 0.875rem;
+}
+
+.intl-rich ul > li {
+  position: relative;
+  padding-left: 2.125rem;
+}
+
+/* `.hve-rich` also styles this pseudo-element as a filled dot, so every one of
+   its properties has to be cleared here or the dot renders behind the glyph. */
+.intl-rich ul > li::before {
+  content: "↳";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #6db6ff;
+  font-size: 1.15em;
+  line-height: 1.5;
+}
+
+.intl-rich ol {
+  margin: 0 0 1em;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.875rem;
+}
+
+.intl-rich a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.intl-rich a:hover {
+  opacity: 0.8;
+}
+
+.intl-rich :where(strong, b) {
+  color: inherit;
+  font-weight: 600;
+}
+
+.intl-rich p {
+  margin: 0 0 1em;
+}
+
+.intl-rich > *:last-child {
+  margin-bottom: 0;
+}
+
+/* Inside the condition cards the trailing link is the card's call to action, so
+   it takes the brand ramp. */
+.intl-card-link a {
+  text-decoration: none;
+  font-weight: 500;
+  background: linear-gradient(90deg, var(--intl-btn-from, #6c3b7d) 0%, var(--intl-btn-to, #9c3665) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Cards and rules drawn on top of the band. */
+.intl-on-band-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.intl-on-band-rule {
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+/* ------------------------------------------------------------------ *
  * Speciality landing template  (/speciality/[slug])
+ * and international-patient template  (/international, /international/[slug])
  * ------------------------------------------------------------------ */
 
 /* Layered so per-element Tailwind utilities keep the upper hand: unlayered
@@ -387,7 +547,8 @@ body {
 @layer base {
 
 
-  .speciality-page {
+  .speciality-page,
+  .international-page {
     --hve-blue: #0074dd;
     --hve-blue-dark: #005cb2;
     --hve-blue-tint: #f4faff;
@@ -404,7 +565,7 @@ body {
 
   /* Zero-specificity so per-element utilities (e.g. text-white on the dark CTA)
      still win without needing !important. */
-  :where(.speciality-page) :where(h1, h2, h3, h4, h5, h6) {
+  :where(.speciality-page, .international-page) :where(h1, h2, h3, h4, h5, h6) {
     color: var(--hve-ink);
     font-family: inherit;
   }
@@ -539,7 +700,8 @@ body {
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .speciality-page * {
+    .speciality-page *,
+    .international-page * {
       transition-duration: 0.01ms !important;
       animation-duration: 0.01ms !important;
     }

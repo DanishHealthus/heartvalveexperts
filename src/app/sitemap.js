@@ -27,6 +27,7 @@ export default async function sitemap() {
     { url: `${siteUrl}/ruptured-sinus-of-valsalva`, priority: 0.8 },
     { url: `${siteUrl}/tric-valve`, priority: 0.8 },
     { url: `${siteUrl}/knowledge-library`, priority: 0.8 },
+    { url: `${siteUrl}/international-patients`, priority: 0.8 },
     { url: `${siteUrl}/a-legacy-of-leadership`, priority: 0.64 },
     { url: `${siteUrl}/device-closure`, priority: 0.8 },
     { url: `${siteUrl}/device-closure/atrial-septal-defect`, priority: 0.8 },
@@ -78,5 +79,26 @@ export default async function sitemap() {
     console.error("Error fetching cardiologist URLs:", err);
   }
 
-  return [...staticUrls, ...blogUrls, ...cardiologistUrls];
+  let internationalUrls = [];
+  try {
+    const intlRes = await fetch(
+      `https://backend.heartvalveexperts.com/wp-json/hve/v1/international-pages?per_page=100`,
+      { next: { revalidate: 3600 } }
+    );
+    const intlData = await intlRes.json();
+
+    if (Array.isArray(intlData) && intlData.length) {
+      internationalUrls = intlData
+        .filter((item) => item?.slug)
+        .map((item) => ({
+          url: `${siteUrl}/international-patients/${item.slug}`,
+          lastModified: lastMod,
+          priority: 0.8,
+        }));
+    }
+  } catch (err) {
+    console.error("Error fetching international page URLs:", err);
+  }
+
+  return [...staticUrls, ...blogUrls, ...cardiologistUrls, ...internationalUrls];
 }
